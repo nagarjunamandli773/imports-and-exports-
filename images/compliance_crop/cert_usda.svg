@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100" width="100%" height="100%">
+  <!-- Circular USDA emblem -->
+  <circle cx="50" cy="50" r="40" fill="#006039"/>
+  <!-- Inner ring -->
+  <circle cx="50" cy="50" r="38" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+  <!-- Upper half circle white background for USDA -->
+  <path d="M12 50 A38 38 0 0 1 88 50 Z" fill="#ffffff"/>
+  <!-- Lower lines in green -->
+  <path d="M14 50 Q50 68 86 50" fill="none" stroke="#a38458" stroke-width="3"/>
+  <path d="M18 58 Q50 74 82 58" fill="none" stroke="#a38458" stroke-width="3"/>
+  <path d="M25 66 Q50 80 75 66" fill="none" stroke="#a38458" stroke-width="3"/>
+
+  <!-- Text inside seal -->
+  <text x="50" y="44" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="16" font-weight="900" fill="#006039" text-anchor="middle" letter-spacing="1">USDA</text>
+  <text x="50" y="60" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="10.5" font-weight="800" fill="#ffffff" text-anchor="middle" letter-spacing="1">ORGANIC</text>
+
+  <!-- Right text -->
+  <text x="100" y="42" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="18" font-weight="900" fill="#006039" letter-spacing="0.5">USDA</text>
+  <text x="100" y="60" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="13" font-weight="800" fill="#a38458" letter-spacing="1.5">ORGANIC</text>
+  <rect x="100" y="68" width="90" height="18" rx="4" fill="#006039"/>
+  <text x="145" y="81" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="8.5" font-weight="800" fill="#ffffff" text-anchor="middle" letter-spacing="0.5">100% CERTIFIED</text>
+</svg>

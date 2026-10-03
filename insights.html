@@ -1,0 +1,1300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Market Intelligence &amp; Insights | CONCEPT EXIM - Global Trade, Greater Opportunities.</title>
+  <meta name="description" content="Stay ahead with the latest market trends, industry updates, trade insights and expert analysis. At CONCEPT EXIM, we turn information into opportunities for your global success.">
+
+  <!-- Google Fonts: Plus Jakarta Sans & Dancing Script -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome 6 Pro Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Dedicated Insights Stylesheet -->
+  <link rel="stylesheet" href="insights.css">
+  <link rel="stylesheet" href="navbar.css">
+</head>
+<body>
+
+  <div class="site-wrapper">
+
+    <!-- ==========================================================================
+         1. TOP SLIM BAR (Deep Navy)
+         ========================================================================== -->
+    <div class="top-slim-bar">
+      <div class="page-container top-bar-inner">
+        <!-- Left: 4 Trust Features with Orange Icons & Dividers -->
+        <div class="top-features-list">
+          <div class="top-feature-item">
+            <i class="fa-solid fa-globe"></i>
+            <span>Global Reach</span>
+          </div>
+          <div class="top-divider"></div>
+          <div class="top-feature-item">
+            <i class="fa-solid fa-shield-halved"></i>
+            <span>Trusted Suppliers</span>
+          </div>
+          <div class="top-divider"></div>
+          <div class="top-feature-item">
+            <i class="fa-solid fa-certificate"></i>
+            <span>Quality Assured</span>
+          </div>
+          <div class="top-divider"></div>
+          <div class="top-feature-item">
+            <i class="fa-solid fa-truck-fast"></i>
+            <span>On-Time Delivery</span>
+          </div>
+        </div>
+
+        <!-- Right: Language, Login & Cart -->
+        <div class="top-right-group">
+          <button class="top-link-btn" id="topLangBtn" aria-label="Language Selector">
+            <i class="fa-solid fa-globe"></i>
+            <span>English</span>
+            <i class="fa-solid fa-chevron-down" style="font-size: 8.5px; opacity: 0.85;"></i>
+          </button>
+          <div class="top-divider"></div>
+          <a href="login.html" class="top-link-btn">
+            <i class="fa-regular fa-user"></i>
+            <span>Login / Register</span>
+          </a>
+          <div class="top-divider"></div>
+          <button class="top-cart-btn" id="openCartBtn" aria-label="View Shopping Cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="cart-badge-count" id="cartCountBadge">0</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==========================================================================
+         2. MAIN HEADER & NAVBAR (CONCEPT EXIM)
+         ========================================================================== -->
+    <header class="main-header" id="navbar">
+      <div class="page-container header-inner">
+
+        <!-- Brand Logo (CONCEPT EXIM) -->
+        <a href="index.html" class="brand-logo-link" title="CONCEPT EXIM - Global Trade, Greater Opportunities.">
+          <img src="images/concept_exim_logo.png" srcset="images/concept_exim_logo@3x.png 3x" alt="CONCEPT EXIM - Global Trade, Greater Opportunities." class="concept-exim-logo">
+        </a>
+
+        <!-- Center Nav: Home | About Us | Products | Services | Global Presence | Quality & Compliance | Insights (ACTIVE ORANGE PILL) | Contact -->
+        <nav class="main-nav-wrapper">
+          <ul class="main-nav-bar">
+            <li>
+              <a href="index.html" class="nav-link">
+                <span>Home</span>
+              </a>
+            </li>
+
+            <!-- About Us Dropdown -->
+            <li class="nav-item-dropdown">
+              <a href="about.html" class="nav-link" aria-expanded="false" aria-haspopup="true">
+                <span>About Us</span>
+                <span class="nav-arrow-btn" role="button" tabindex="0" aria-label="Toggle About Us submenu">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </span>
+              </a>
+              <div class="nav-dropdown-menu nav-dropdown-about" role="menu">
+                <div class="dropdown-header">
+                  <span class="dropdown-eyebrow">COMPANY OVERVIEW</span>
+                  <a href="about.html" class="dropdown-header-all">View All <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="dropdown-items-grid dropdown-col-1">
+                  <a href="about.html#who-we-are" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-building-flag"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Who We Are</span>
+                      <span class="dropdown-item-desc">Global trade leadership &amp; company story</span>
+                    </div>
+                  </a>
+                  <a href="about.html#who-we-are" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-compass"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Our Journey</span>
+                      <span class="dropdown-item-desc">From trade pioneer to global logistics</span>
+                    </div>
+                  </a>
+                  <a href="about.html#who-we-are" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-bullseye"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Mission &amp; Values</span>
+                      <span class="dropdown-item-desc">Integrity, excellence &amp; reliability</span>
+                    </div>
+                  </a>
+                  <a href="about.html#why-choose" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Why Choose Us</span>
+                      <span class="dropdown-item-desc">5 core advantages for international trade</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <!-- Products Dropdown -->
+            <li class="nav-item-dropdown">
+              <a href="products.html" class="nav-link" aria-expanded="false" aria-haspopup="true">
+                <span>Products</span>
+                <span class="nav-arrow-btn" role="button" tabindex="0" aria-label="Toggle Products submenu">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </span>
+              </a>
+              <div class="nav-dropdown-menu nav-dropdown-products" role="menu">
+                <div class="dropdown-header">
+                  <span class="dropdown-eyebrow">COMMODITIES CATALOGUE</span>
+                  <a href="products.html" class="dropdown-header-all">View All 32+ Products <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="dropdown-items-grid dropdown-col-2">
+                  <a href="products.html?category=grains" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-wheat-awn"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Rice &amp; Grains</span>
+                      <span class="dropdown-item-desc">Basmati, non-basmati &amp; organic grains</span>
+                    </div>
+                  </a>
+                  <a href="products.html?category=spices" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-mortar-pestle"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Spices &amp; Herbs</span>
+                      <span class="dropdown-item-desc">Premium whole &amp; ground spices</span>
+                    </div>
+                  </a>
+                  <a href="products.html?category=pulses" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-cubes-stacked"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Pulses &amp; Legumes</span>
+                      <span class="dropdown-item-desc">Lentils, chickpeas &amp; beans</span>
+                    </div>
+                  </a>
+                  <a href="products.html?category=fruits" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-apple-whole"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Fruits &amp; Vegetables</span>
+                      <span class="dropdown-item-desc">Fresh agricultural farm produce</span>
+                    </div>
+                  </a>
+                  <a href="products.html?category=oils" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-bottle-droplet"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Oils &amp; Fats</span>
+                      <span class="dropdown-item-desc">Edible culinary &amp; cold-pressed oils</span>
+                    </div>
+                  </a>
+                  <a href="products.html?category=dryfruits" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-seedling"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Dry Fruits &amp; Nuts</span>
+                      <span class="dropdown-item-desc">Graded cashews, almonds &amp; raisins</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="dropdown-footer-strip">
+                  <span>Looking for bulk container shipments?</span>
+                  <a href="contact.html#quote">Request Bulk Quote <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </li>
+
+            <!-- Services Dropdown -->
+            <li class="nav-item-dropdown">
+              <a href="services.html" class="nav-link" aria-expanded="false" aria-haspopup="true">
+                <span>Services</span>
+                <span class="nav-arrow-btn" role="button" tabindex="0" aria-label="Toggle Services submenu">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </span>
+              </a>
+              <div class="nav-dropdown-menu nav-dropdown-services" role="menu">
+                <div class="dropdown-header">
+                  <span class="dropdown-eyebrow">TRADE CAPABILITIES</span>
+                  <a href="services.html" class="dropdown-header-all">View All Services <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="dropdown-items-grid dropdown-col-2">
+                  <a href="services.html#card-import-solutions" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-ship"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Import Solutions</span>
+                      <span class="dropdown-item-desc">Clearance, compliance &amp; door delivery</span>
+                    </div>
+                  </a>
+                  <a href="services.html#card-export-management" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-plane-departure"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Export Management</span>
+                      <span class="dropdown-item-desc">Global shipping &amp; market outreach</span>
+                    </div>
+                  </a>
+                  <a href="services.html#card-global-sourcing" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-globe"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Global Sourcing</span>
+                      <span class="dropdown-item-desc">Verified suppliers &amp; contract terms</span>
+                    </div>
+                  </a>
+                  <a href="services.html#card-logistics-coordination" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-truck-moving"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Logistics Coordination</span>
+                      <span class="dropdown-item-desc">Multimodal ocean, air &amp; land freight</span>
+                    </div>
+                  </a>
+                  <a href="services.html#card-customs-support" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Customs Support</span>
+                      <span class="dropdown-item-desc">Duty optimization &amp; regulatory filing</span>
+                    </div>
+                  </a>
+                  <a href="services.html#card-trade-consulting" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-handshake-angle"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Trade Consulting</span>
+                      <span class="dropdown-item-desc">Cross-border advice &amp; risk management</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <!-- Global Presence Dropdown -->
+            <li class="nav-item-dropdown">
+              <a href="global-presence.html" class="nav-link" aria-expanded="false" aria-haspopup="true">
+                <span>Global Presence</span>
+                <span class="nav-arrow-btn" role="button" tabindex="0" aria-label="Toggle Global Presence submenu">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </span>
+              </a>
+              <div class="nav-dropdown-menu nav-dropdown-presence" role="menu">
+                <div class="dropdown-header">
+                  <span class="dropdown-eyebrow">WORLDWIDE FOOTPRINT</span>
+                  <a href="global-presence.html" class="dropdown-header-all">Explore Network <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="dropdown-items-grid dropdown-col-1">
+                  <a href="global-presence.html#interactive-map" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-map-location-dot"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Interactive World Map</span>
+                      <span class="dropdown-item-desc">Trade routes across 60+ countries</span>
+                    </div>
+                  </a>
+                  <a href="global-presence.html#continental-hubs" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-earth-americas"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Continental Hubs</span>
+                      <span class="dropdown-item-desc">Asia, Europe, Middle East &amp; Americas</span>
+                    </div>
+                  </a>
+                  <a href="global-presence.html#transit-calculator" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-calculator"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Transit Calculator</span>
+                      <span class="dropdown-item-desc">Estimate shipping times &amp; lane routes</span>
+                    </div>
+                  </a>
+                  <a href="global-presence.html#infrastructure" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-warehouse"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Trade Infrastructure</span>
+                      <span class="dropdown-item-desc">42+ bonded logistics &amp; cold hubs</span>
+                    </div>
+                  </a>
+                  <a href="global-presence.html#regional-desks" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-headset"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Regional Desks</span>
+                      <span class="dropdown-item-desc">Local bilingual trade advisors in 18 HQs</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <!-- Quality & Compliance Dropdown -->
+            <li class="nav-item-dropdown">
+              <a href="compliance.html" class="nav-link" aria-expanded="false" aria-haspopup="true">
+                <span>Quality &amp; Compliance</span>
+                <span class="nav-arrow-btn" role="button" tabindex="0" aria-label="Toggle Quality &amp; Compliance submenu">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </span>
+              </a>
+              <div class="nav-dropdown-menu nav-dropdown-compliance" role="menu">
+                <div class="dropdown-header">
+                  <span class="dropdown-eyebrow">GLOBAL STANDARDS</span>
+                  <a href="compliance.html" class="dropdown-header-all">View All Standards <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="dropdown-items-grid dropdown-col-1">
+                  <a href="compliance.html#certifications" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-certificate"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Our Certifications</span>
+                      <span class="dropdown-item-desc">ISO 9001, HACCP, FSSAI, APEDA, GMP</span>
+                    </div>
+                  </a>
+                  <a href="compliance.html#quality-process" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-list-check"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Quality Assurance</span>
+                      <span class="dropdown-item-desc">5-tier testing &amp; pre-shipment audit</span>
+                    </div>
+                  </a>
+                  <a href="compliance.html#commitment" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-scale-balanced"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Regulatory Framework</span>
+                      <span class="dropdown-item-desc">Export-import guidelines &amp; safety</span>
+                    </div>
+                  </a>
+                  <a href="compliance.html#commitment" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-leaf"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">ESG &amp; Sustainability</span>
+                      <span class="dropdown-item-desc">Eco-packaging &amp; ethical trade sourcing</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <!-- Insights Dropdown (Active) -->
+            <li class="nav-item-dropdown">
+              <a href="insights.html" class="nav-link active nav-pill-active" aria-expanded="false" aria-haspopup="true">
+                <span>Insights</span>
+                <span class="nav-arrow-btn" role="button" tabindex="0" aria-label="Toggle Insights submenu">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </span>
+              </a>
+              <div class="nav-dropdown-menu nav-dropdown-insights" role="menu">
+                <div class="dropdown-header">
+                  <span class="dropdown-eyebrow">TRADE INTELLIGENCE</span>
+                  <a href="insights.html" class="dropdown-header-all">View All Insights <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="dropdown-items-grid dropdown-col-1">
+                  <a href="insights.html?category=trends" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-arrow-trend-up"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Market Trends</span>
+                      <span class="dropdown-item-desc">Global commodity cycles &amp; forecasts</span>
+                    </div>
+                  </a>
+                  <a href="insights.html?category=industry" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-chart-pie"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Industry Analysis</span>
+                      <span class="dropdown-item-desc">Deep dives into agricultural &amp; trade sectors</span>
+                    </div>
+                  </a>
+                  <a href="insights.html?category=regulations" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-gavel"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Trade Regulations</span>
+                      <span class="dropdown-item-desc">Tariff changes, customs rules &amp; compliance</span>
+                    </div>
+                  </a>
+                  <a href="insights.html?category=articles" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-newspaper"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Expert Articles</span>
+                      <span class="dropdown-item-desc">Practical import-export guides &amp; tips</span>
+                    </div>
+                  </a>
+                  <a href="insights.html?category=cases" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-book-open"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Case Studies</span>
+                      <span class="dropdown-item-desc">Real client success stories across borders</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <a href="contact.html" class="nav-link">
+                <span>Contact</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Vertical Separator Divider -->
+        <div class="nav-divider"></div>
+
+        <!-- Right: Search Bar + "Request a Quote" Button -->
+        <div class="header-right-group">
+          <div class="header-search-wrap">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" class="header-search-input" id="insightsSearchInput" placeholder="Search market intelligence, trade news..." autocomplete="off">
+            <span class="search-kbd-hint">Ctrl K</span>
+          </div>
+          <a href="contact.html#quote" class="btn-request-quote" id="openQuoteModalBtn">
+            <i class="fa-regular fa-file-lines"></i>
+            <span>Request a Quote</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+
+      </div>
+    </header>
+
+    <!-- ==========================================================================
+         3. HERO BANNER SECTION (Insights Master Panorama)
+         Clean Navy Blue (#07192f) and White styling - strictly NO black colors
+         ========================================================================== -->
+    <section class="insights-hero-section">
+      <div class="hero-panorama-container">
+        <img src="images/insights_crop/insights_hero_banner.png" alt="Insights for a Smarter Global Tomorrow - CONCEPT EXIM" class="hero-panorama-img" width="4096" height="1364" loading="eager" fetchpriority="high">
+      </div>
+
+      <!-- Premium Hero Features Strip with Color Icons -->
+      <div class="hero-features-strip">
+        <div class="page-container hero-features-container">
+          <div class="hero-feature-pill">
+            <div class="feature-icon-badge icon-badge-blue">
+              <i class="fa-solid fa-chart-line"></i>
+            </div>
+            <div class="feature-info">
+              <span class="feature-title">Market Intelligence</span>
+              <span class="feature-desc">Live Price Indexes &amp; Trends</span>
+            </div>
+          </div>
+          <div class="hero-feature-pill">
+            <div class="feature-icon-badge icon-badge-amber">
+              <i class="fa-solid fa-scale-balanced"></i>
+            </div>
+            <div class="feature-info">
+              <span class="feature-title">Tariff &amp; Policy Watch</span>
+              <span class="feature-desc">Regulatory &amp; Customs Alerts</span>
+            </div>
+          </div>
+          <div class="hero-feature-pill">
+            <div class="feature-icon-badge icon-badge-emerald">
+              <i class="fa-solid fa-compass"></i>
+            </div>
+            <div class="feature-info">
+              <span class="feature-title">Quarterly Forecasts</span>
+              <span class="feature-desc">Predictive Supply Analytics</span>
+            </div>
+          </div>
+          <div class="hero-feature-pill">
+            <div class="feature-icon-badge icon-badge-purple">
+              <i class="fa-solid fa-file-contract"></i>
+            </div>
+            <div class="feature-info">
+              <span class="feature-title">Trade Research</span>
+              <span class="feature-desc">Executive B2B Whitepapers</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         4. MAIN 3-COLUMN LAYOUT
+         ========================================================================== -->
+    <main class="insights-main-section">
+      <div class="page-container">
+        <div class="insights-grid-layout">
+
+          <!-- ================= COLUMN 1: LEFT SIDEBAR ================= -->
+          <aside class="insights-col-left">
+
+            <!-- 1. "Explore Insights" Menu Card -->
+            <div class="explore-menu-card">
+              <div class="explore-menu-header">
+                <i class="fa-solid fa-award"></i>
+                <span>Explore Insights</span>
+              </div>
+              <ul class="explore-menu-list" id="exploreMenuList">
+                
+                <li class="explore-menu-item active" data-category="trends">
+                  <button class="explore-menu-btn">
+                    <span class="explore-btn-left">
+                      <i class="fa-solid fa-globe"></i>
+                      <span>Global Market Trends</span>
+                    </span>
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </button>
+                </li>
+
+                <li class="explore-menu-item" data-category="industry">
+                  <button class="explore-menu-btn">
+                    <span class="explore-btn-left">
+                      <i class="fa-solid fa-chart-pie"></i>
+                      <span>Industry Analysis</span>
+                    </span>
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </button>
+                </li>
+
+                <li class="explore-menu-item" data-category="regulations">
+                  <button class="explore-menu-btn">
+                    <span class="explore-btn-left">
+                      <i class="fa-solid fa-scale-balanced"></i>
+                      <span>Trade Regulations</span>
+                    </span>
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </button>
+                </li>
+
+                <li class="explore-menu-item" data-category="articles">
+                  <button class="explore-menu-btn">
+                    <span class="explore-btn-left">
+                      <i class="fa-solid fa-newspaper"></i>
+                      <span>Expert Articles</span>
+                    </span>
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </button>
+                </li>
+
+                <li class="explore-menu-item" data-category="cases">
+                  <button class="explore-menu-btn">
+                    <span class="explore-btn-left">
+                      <i class="fa-solid fa-briefcase"></i>
+                      <span>Case Studies</span>
+                    </span>
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </button>
+                </li>
+
+                <li class="explore-menu-item" data-category="infographics">
+                  <button class="explore-menu-btn">
+                    <span class="explore-btn-left">
+                      <i class="fa-solid fa-diagram-project"></i>
+                      <span>Infographics</span>
+                    </span>
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </button>
+                </li>
+
+                <li class="explore-menu-item" data-category="news">
+                  <button class="explore-menu-btn">
+                    <span class="explore-btn-left">
+                      <i class="fa-solid fa-bullhorn"></i>
+                      <span>News & Updates</span>
+                    </span>
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </button>
+                </li>
+
+                <li class="explore-menu-item" data-category="sustainability">
+                  <button class="explore-menu-btn">
+                    <span class="explore-btn-left">
+                      <i class="fa-solid fa-seedling"></i>
+                      <span>Sustainability Insights</span>
+                    </span>
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </button>
+                </li>
+
+              </ul>
+            </div>
+
+            <!-- 2. "Global Trade Insights at Your Fingertips" Box -->
+            <div class="fingertips-box-card">
+              <img src="images/insights_crop/widget_custom_insights.jpg" alt="Global connection lines background" class="fingertips-bg">
+              <div class="fingertips-card-body">
+                <div>
+                  <h3 class="fingertips-title">Global Trade<br>Insights at Your Fingertips</h3>
+                  <p class="fingertips-desc">Real data. Expert analysis.<br>Smarter decisions.</p>
+                </div>
+                <button class="btn-fingertips-sub" id="btnOpenSubModal">
+                  <span>Subscribe to Insights</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+
+          </aside>
+
+          <!-- ================= COLUMN 2: CENTER ================= -->
+          <section class="insights-col-center">
+
+            <!-- Featured Growth Outlook Card -->
+            <div class="featured-report-hero-card">
+              <img src="images/insights_crop/featured_growth_vessel.jpg" alt="Vessel at dusk in global port" class="featured-growth-bg-img">
+              <div class="featured-growth-overlay">
+                
+                <div class="featured-growth-left">
+                  <div>
+                    <div class="featured-growth-meta">
+                      <span class="tag-pill-navy">Market Trends</span>
+                      <span class="date-text-white">Apr 28, 2025</span>
+                    </div>
+                    <h2 class="featured-growth-title">Global Trade Growth Outlook<br>for 2025: Key Trends to Watch</h2>
+                    <p class="featured-growth-para">
+                      Explore the latest projections, emerging markets, and opportunities shaping global trade in 2025.
+                    </p>
+                  </div>
+                  <button class="btn-read-full-report" id="btnReadGrowthReport">
+                    <span>Read Full Report</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+
+                <!-- 4 Translucent Highlight Bullets -->
+                <div class="featured-bullets-col">
+                  <div class="featured-bullet-pill">
+                    <i class="fa-solid fa-seedling"></i>
+                    <span>Rising demand for sustainable products</span>
+                  </div>
+                  <div class="featured-bullet-pill">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <span>Growth in emerging markets</span>
+                  </div>
+                  <div class="featured-bullet-pill">
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <span>Digital transformation in logistics</span>
+                  </div>
+                  <div class="featured-bullet-pill">
+                    <i class="fa-solid fa-handshake-angle"></i>
+                    <span>Shifting trade alliances and policies</span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Latest Articles & Insights Section -->
+            <div class="latest-articles-section-box">
+              <div class="section-title-row-flex">
+                <h2 class="section-box-title">Latest Articles & Insights</h2>
+                <a href="#all-articles" class="link-view-all" id="btnViewAllArticles">
+                  <span>View All</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+
+              <!-- 3 Article Cards Grid -->
+              <div class="articles-grid-3" id="articlesContainer">
+
+                <!-- Article 1: Food Export -->
+                <article class="article-card-box" data-category="industry">
+                  <div class="article-thumb-wrap">
+                    <img src="images/insights_crop/article_food.jpg" alt="Commercial container freight terminal" class="article-thumb-img">
+                  </div>
+                  <div class="article-card-body">
+                    <div class="article-meta-row">
+                      <span class="article-tag">Industry Analysis</span>
+                      <span class="article-date">Apr 25, 2025</span>
+                    </div>
+                    <h3 class="article-title">Top 5 Food Export Opportunities in Global Markets</h3>
+                    <p class="article-desc">Discover high-demand food products and emerging markets for export.</p>
+                    <a href="#read-article" class="article-read-more" data-article="Top 5 Food Export Opportunities in Global Markets">
+                      <span>Read More</span>
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </article>
+
+                <!-- Article 2: Green Supply Chains -->
+                <article class="article-card-box" data-category="sustainability">
+                  <div class="article-thumb-wrap">
+                    <img src="images/insights_crop/article_green.jpg" alt="Wind turbines over green landscape" class="article-thumb-img">
+                  </div>
+                  <div class="article-card-body">
+                    <div class="article-meta-row">
+                      <span class="article-tag" style="color: #15803d;">Sustainability</span>
+                      <span class="article-date">Apr 18, 2025</span>
+                    </div>
+                    <h3 class="article-title">How Green Supply Chains Are Shaping the Future</h3>
+                    <p class="article-desc">Explore how sustainable practices are driving long-term growth.</p>
+                    <a href="#read-article" class="article-read-more" data-article="How Green Supply Chains Are Shaping the Future">
+                      <span>Read More</span>
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </article>
+
+                <!-- Article 3: Digitalization -->
+                <article class="article-card-box" data-category="trends">
+                  <div class="article-thumb-wrap">
+                    <img src="images/insights_crop/article_digital.jpg" alt="High tech smart maritime logistics cranes" class="article-thumb-img">
+                  </div>
+                  <div class="article-card-body">
+                    <div class="article-meta-row">
+                      <span class="article-tag" style="color: #0284c7;">Technology</span>
+                      <span class="article-date">Apr 12, 2025</span>
+                    </div>
+                    <h3 class="article-title">Digitalization in Global Trade: Trends and Opportunities</h3>
+                    <p class="article-desc">See how technology is transforming logistics, customs and trade finance.</p>
+                    <a href="#read-article" class="article-read-more" data-article="Digitalization in Global Trade: Trends and Opportunities">
+                      <span>Read More</span>
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </article>
+
+              </div>
+            </div>
+
+          </section>
+
+          <!-- ================= COLUMN 3: RIGHT ================= -->
+          <aside class="insights-col-right">
+
+            <!-- Top Row: Trade at a Glance + Sustainable Sourcing Card -->
+            <div class="right-top-pair">
+
+              <!-- Box 1: Global Trade at a Glance -->
+              <div class="trade-glance-card">
+                <div class="glance-header-row">
+                  <div>
+                    <h3 class="glance-title">Global Trade at a Glance</h3>
+                    <span class="glance-sub">Key statistics shaping the future of global commerce.</span>
+                  </div>
+                  <div class="year-toggle-pill-group" id="yearToggleGroup">
+                    <button class="year-btn active" data-year="2024">2024</button>
+                    <button class="year-btn" data-year="2023">2023</button>
+                    <button class="year-btn" data-year="2022">2022</button>
+                  </div>
+                </div>
+
+                <!-- 2x2 Stats Grid -->
+                <div class="glance-stats-grid">
+                  <div class="glance-stat-item">
+                    <i class="fa-solid fa-globe glance-stat-icon"></i>
+                    <div class="glance-stat-data">
+                      <span class="glance-stat-val" id="statGlobalTrade">$23.4T</span>
+                      <span class="glance-stat-label">Total Global Trade (<span class="positive">+2.8% YoY</span>)</span>
+                    </div>
+                  </div>
+
+                  <div class="glance-stat-item">
+                    <i class="fa-solid fa-chart-line glance-stat-icon"></i>
+                    <div class="glance-stat-data">
+                      <span class="glance-stat-val" id="statGrowth">8.6%</span>
+                      <span class="glance-stat-label">Trade Growth (2024)</span>
+                    </div>
+                  </div>
+
+                  <div class="glance-stat-item">
+                    <i class="fa-solid fa-chart-pie glance-stat-icon"></i>
+                    <div class="glance-stat-data">
+                      <span class="glance-stat-val" id="statEmerging">12.7%</span>
+                      <span class="glance-stat-label">Emerging Markets Share (<span class="positive">↑ 1.9%</span>)</span>
+                    </div>
+                  </div>
+
+                  <div class="glance-stat-item">
+                    <i class="fa-solid fa-truck glance-stat-icon"></i>
+                    <div class="glance-stat-data">
+                      <span class="glance-stat-val" id="statLogistics">7.3%</span>
+                      <span class="glance-stat-label">Global Logistics Cost (<span class="positive">↓ 2.1%</span>)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Box 2: Sustainable Sourcing: A Global Imperative -->
+              <div class="sustainable-report-card">
+                <img src="images/insights_crop/widget_sustainable_report.jpg" alt="Corporate sustainability analyst with digital report" class="sustainable-report-bg">
+                <div class="sustainable-report-content">
+                  <span class="tag-pill-gold">Featured Report</span>
+                  <h3 class="sustainable-report-title">Sustainable Sourcing:<br>A Global Imperative</h3>
+                  <p class="sustainable-report-desc">
+                    Understand how sustainability is reshaping global supply chains and creating long-term value.
+                  </p>
+                  <button class="btn-download-report" id="btnDownloadReport">
+                    <span>Download Report</span>
+                    <i class="fa-solid fa-download"></i>
+                  </button>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Bottom Row: Industry Insights + Newsletter Signup -->
+            <div class="right-bottom-pair">
+
+              <!-- Box 3: Industry Insights -->
+              <div class="industry-insights-card">
+                <div class="section-title-row-flex" style="margin-bottom: 6px;">
+                  <h3 class="glance-title">Industry Insights</h3>
+                  <a href="#view-industry" class="link-view-all" id="btnViewAllIndustry">
+                    <span>View All</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </div>
+
+                <div class="industry-list">
+                  <div class="industry-item-row">
+                    <div class="industry-item-left">
+                      <div class="industry-icon-pill"><i class="fa-solid fa-wheat-awn" style="color: var(--gold-primary);"></i></div>
+                      <div class="industry-item-text">
+                        <span class="industry-item-name">Agriculture & Food</span>
+                        <span class="industry-item-desc">Global food demand and price trends</span>
+                      </div>
+                    </div>
+                    <span class="industry-item-date">Apr 26, 2025</span>
+                  </div>
+
+                  <div class="industry-item-row">
+                    <div class="industry-item-left">
+                      <div class="industry-icon-pill"><i class="fa-solid fa-shirt"></i></div>
+                      <div class="industry-item-text">
+                        <span class="industry-item-name">Textiles & Apparel</span>
+                        <span class="industry-item-desc">Sourcing and production trends</span>
+                      </div>
+                    </div>
+                    <span class="industry-item-date">Apr 22, 2025</span>
+                  </div>
+
+                  <div class="industry-item-row">
+                    <div class="industry-item-left">
+                      <div class="industry-icon-pill"><i class="fa-solid fa-microchip"></i></div>
+                      <div class="industry-item-text">
+                        <span class="industry-item-name">Electronics & Electrical</span>
+                        <span class="industry-item-desc">Supply chain insights</span>
+                      </div>
+                    </div>
+                    <span class="industry-item-date">Apr 18, 2025</span>
+                  </div>
+
+                  <div class="industry-item-row">
+                    <div class="industry-item-left">
+                      <div class="industry-icon-pill"><i class="fa-solid fa-prescription-bottle-medical"></i></div>
+                      <div class="industry-item-text">
+                        <span class="industry-item-name">Pharmaceuticals</span>
+                        <span class="industry-item-desc">Regulatory updates and market outlook</span>
+                      </div>
+                    </div>
+                    <span class="industry-item-date">Apr 15, 2025</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Box 4: Get the Latest Trade Updates (Newsletter) -->
+              <div class="newsletter-signup-box">
+                <img src="images/insights_crop/widget_custom_insights.jpg" alt="World connection dots" class="newsletter-bg-mesh">
+                <div class="newsletter-content">
+                  <h3 class="newsletter-title">Get the Latest<br>Trade Updates</h3>
+                  <p class="newsletter-desc">
+                    Subscribe to our newsletter and receive global trade insights, industry news and market trends directly in your inbox.
+                  </p>
+                  
+                  <form class="newsletter-form-inline" id="newsletterForm">
+                    <input type="email" class="newsletter-input-email" id="newsEmailInput" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn-newsletter-sub">
+                      <span>Subscribe</span>
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                  </form>
+
+                  <div class="newsletter-badges-row">
+                    <div class="newsletter-badge-item">
+                      <i class="fa-solid fa-newspaper"></i>
+                      <span>Weekly<br>Newsletter</span>
+                    </div>
+                    <div class="newsletter-badge-item">
+                      <i class="fa-solid fa-file-lines"></i>
+                      <span>Exclusive<br>Reports</span>
+                    </div>
+                    <div class="newsletter-badge-item">
+                      <i class="fa-solid fa-magnifying-glass-chart"></i>
+                      <span>Expert<br>Analysis</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </aside>
+
+        </div>
+      </div>
+    </main>
+
+    <!-- ==========================================================================
+         5. BOTTOM BANNER: "Data-Driven Insights for Smarter Decisions"
+         ========================================================================== -->
+    <section class="insights-bottom-banner">
+      <div class="page-container insights-bottom-inner">
+
+        <!-- Left: Icon & Headline -->
+        <div class="bottom-lead-left">
+          <div class="bottom-lead-icon"><i class="fa-solid fa-lightbulb"></i></div>
+          <h2 class="bottom-lead-title">Data-Driven Insights<br>for Smarter Decisions</h2>
+        </div>
+
+        <!-- Center 4 Metrics -->
+        <div class="bottom-metrics-group">
+          <div class="bottom-metric-node">
+            <div class="bottom-metric-circle"><i class="fa-solid fa-globe"></i></div>
+            <div class="bottom-metric-text">
+              <span class="bottom-metric-val">100+</span>
+              <span class="bottom-metric-label">Countries Covered</span>
+            </div>
+          </div>
+
+          <div class="bottom-metric-node">
+            <div class="bottom-metric-circle"><i class="fa-solid fa-users"></i></div>
+            <div class="bottom-metric-text">
+              <span class="bottom-metric-val">2,500+</span>
+              <span class="bottom-metric-label">Trusted Clients</span>
+            </div>
+          </div>
+
+          <div class="bottom-metric-node">
+            <div class="bottom-metric-circle"><i class="fa-solid fa-handshake"></i></div>
+            <div class="bottom-metric-text">
+              <span class="bottom-metric-val">500+</span>
+              <span class="bottom-metric-label">Global Partners</span>
+            </div>
+          </div>
+
+          <div class="bottom-metric-node">
+            <div class="bottom-metric-circle"><i class="fa-solid fa-chart-line"></i></div>
+            <div class="bottom-metric-text">
+              <span class="bottom-metric-val">98%</span>
+              <span class="bottom-metric-label">Client Satisfaction</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Explore Button -->
+        <button class="btn-explore-more-insights" id="btnExploreMoreBottom">
+          <span>Explore More Insights</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+
+      </div>
+    </section>
+
+    <!-- ================= GLOBAL CORPORATE FOOTER ================= -->
+    <footer class="site-global-footer">
+      <div class="footer-waves-overlay" aria-hidden="true"></div>
+      <div class="footer-inner-container">
+        
+        <!-- Top Row: Left Brand & CTA, Right Nav & Socials -->
+        <div class="footer-main-row">
+          
+          <!-- Left: Logo + Vertical Divider + CTA Pitch & Button -->
+          <div class="footer-left-brand-group">
+            <a href="index.html" class="footer-logo-link" title="CONCEPT EXIM">
+              <img src="images/concept_exim_logo_white.png" srcset="images/concept_exim_logo_white@3x.png 3x" alt="CONCEPT EXIM - Global Trade Simplified" class="footer-concept-logo">
+            </a>
+            <div class="footer-vert-divider"></div>
+            <div class="footer-cta-text-wrap">
+              <span class="footer-cta-heading">Ready to Grow Globally?</span>
+              <span class="footer-cta-sub">Let's build your next success story together.</span>
+            </div>
+            <button type="button" class="footer-btn-quote" onclick="if(typeof openRfqModal==='function'){openRfqModal();}else if(typeof openQuoteModal==='function'){openQuoteModal();}else{window.location.href='contact.html';}">
+              <span>Get a Free Quote</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+
+          <!-- Right: Horizontal Nav Links + Social Icons -->
+          <div class="footer-right-nav-group">
+            <nav class="footer-horizontal-nav" aria-label="Footer Navigation">
+              <a href="index.html">Home</a>
+              <a href="about.html">About Us</a>
+              <a href="services.html">Services</a>
+              <a href="products.html">Products</a>
+              <a href="global-presence.html">Global Network</a>
+              <a href="insights.html">Insights</a>
+              <a href="contact.html">Contact</a>
+            </nav>
+            <div class="footer-social-icons">
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer-social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="footer-social-icon" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="footer-social-icon" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Bottom Subline: Copyright + Legal -->
+        <div class="footer-bottom-row">
+          <div class="footer-copyright-text">
+            &copy; 2026 CONCEPT EXIM. All rights reserved.
+          </div>
+          <div class="footer-legal-links">
+            <a href="compliance.html">Privacy Policy</a>
+            <span class="footer-legal-sep">|</span>
+            <a href="compliance.html">Terms &amp; Conditions</a>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- ==========================================================================
+       7. MODAL DIALOG: REPORT & NEWSLETTER SUBSCRIPTION
+       ========================================================================== -->
+  <div class="modal-overlay" id="insightsModalOverlay">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3>
+          <i class="fa-solid fa-file-arrow-down" style="color: var(--gold-primary);"></i>
+          <span id="modalInsightsTitle">CONCEPT EXIM Market Intelligence</span>
+        </h3>
+        <button class="modal-close-btn" id="closeInsightsModalBtn" aria-label="Close dialog">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <form class="modal-body" id="insightsForm">
+        <div class="form-group">
+          <label for="insName">Full Name *</label>
+          <input type="text" id="insName" class="form-input" placeholder="e.g. David Vance" required>
+        </div>
+        <div class="form-group">
+          <label for="insEmail">Corporate Email *</label>
+          <input type="email" id="insEmail" class="form-input" placeholder="e.g. david@globaltrader.com" required>
+        </div>
+        <div class="form-group">
+          <label for="insReportSelect">Selected Research Dossier *</label>
+          <select id="insReportSelect" class="form-select" required>
+            <option value="Global Trade Growth Outlook 2025">Global Trade Growth Outlook 2025</option>
+            <option value="Sustainable Sourcing: A Global Imperative">Sustainable Sourcing: A Global Imperative</option>
+            <option value="Top 5 Food Export Opportunities">Top 5 Food Export Opportunities</option>
+            <option value="Digitalization in Global Trade Trends">Digitalization in Global Trade Trends</option>
+            <option value="Agriculture & Food Commodity Index">Agriculture & Food Commodity Index</option>
+            <option value="Textiles & Apparel Sourcing Report">Textiles & Apparel Sourcing Report</option>
+            <option value="Full Market Intelligence Weekly Digest">Full Market Intelligence Weekly Digest</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="insNotes">Custom Requirements / Data Query</label>
+          <textarea id="insNotes" class="form-textarea" rows="3" placeholder="Specific HS Codes, trade routes, bilateral market outlooks..."></textarea>
+        </div>
+        <button type="submit" class="btn-modal-submit">
+          <i class="fa-solid fa-paper-plane" style="margin-right: 6px;"></i>
+          <span>Access Research Report</span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast-msg" id="insightsToast">
+    <i class="fa-solid fa-circle-check" style="color: var(--gold-primary); font-size: 16px;"></i>
+    <span id="insightsToastText">Your request has been processed successfully!</span>
+  </div>
+
+  <!-- ==========================================================================
+       8. INTERACTIVE JAVASCRIPT
+       ========================================================================== -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+      // 1. Year Toggle on "Global Trade at a Glance"
+      const yearStats = {
+        '2024': { trade: '$23.4T', growth: '8.6%', emerging: '12.7%', logistics: '7.3%' },
+        '2023': { trade: '$21.8T', growth: '6.4%', emerging: '11.2%', logistics: '8.1%' },
+        '2022': { trade: '$19.9T', growth: '4.9%', emerging: '9.8%', logistics: '9.0%' }
+      };
+
+      const yearBtns = document.querySelectorAll('.year-btn');
+      const valTrade = document.getElementById('statGlobalTrade');
+      const valGrowth = document.getElementById('statGrowth');
+      const valEmerging = document.getElementById('statEmerging');
+      const valLogistics = document.getElementById('statLogistics');
+
+      yearBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          yearBtns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          const yr = btn.getAttribute('data-year');
+          if (yearStats[yr]) {
+            valTrade.textContent = yearStats[yr].trade;
+            valGrowth.textContent = yearStats[yr].growth;
+            valEmerging.textContent = yearStats[yr].emerging;
+            valLogistics.textContent = yearStats[yr].logistics;
+          }
+        });
+      });
+
+      // 2. Explore Menu Category Switching
+      const menuItems = document.querySelectorAll('.explore-menu-item');
+      const articleCards = document.querySelectorAll('.article-card-box');
+
+      menuItems.forEach(item => {
+        item.addEventListener('click', () => {
+          menuItems.forEach(i => i.classList.remove('active'));
+          item.classList.add('active');
+
+          const category = item.getAttribute('data-category');
+          articleCards.forEach(card => {
+            const cardCat = card.getAttribute('data-category');
+            if (category === 'trends' || cardCat === category) {
+              card.style.display = 'flex';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+
+      // 3. Search Filter
+      const searchInput = document.getElementById('insightsSearchInput');
+      if (searchInput) {
+        searchInput.addEventListener('input', (e) => {
+          const q = e.target.value.toLowerCase().trim();
+          articleCards.forEach(card => {
+            const title = card.querySelector('.article-title').textContent.toLowerCase();
+            const desc = card.querySelector('.article-desc').textContent.toLowerCase();
+            if (title.includes(q) || desc.includes(q)) {
+              card.style.display = 'flex';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      }
+
+      // 4. Modal Handler
+      const modal = document.getElementById('insightsModalOverlay');
+      const modalTitle = document.getElementById('modalInsightsTitle');
+      const reportSelect = document.getElementById('insReportSelect');
+      const closeBtn = document.getElementById('closeInsightsModalBtn');
+      const form = document.getElementById('insightsForm');
+      const toast = document.getElementById('insightsToast');
+      const toastText = document.getElementById('insightsToastText');
+
+      function showToast(msg) {
+        toastText.textContent = msg;
+        toast.classList.add('show');
+        setTimeout(() => toast.classList.remove('show'), 3500);
+      }
+
+      function openModal(title, preSelect) {
+        if (modalTitle) modalTitle.textContent = title;
+        if (preSelect && reportSelect) reportSelect.value = preSelect;
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeModal() {
+        modal.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+
+      // Buttons linking to modal
+      const btnQuote = document.getElementById('openQuoteModalBtn');
+      if (btnQuote) btnQuote.addEventListener('click', () => openModal('Request Custom Market Intelligence', 'Full Market Intelligence Weekly Digest'));
+
+      const btnGrowth = document.getElementById('btnReadGrowthReport');
+      if (btnGrowth) btnGrowth.addEventListener('click', () => openModal('Download Outlook 2025 Report', 'Global Trade Growth Outlook 2025'));
+
+      const btnDownload = document.getElementById('btnDownloadReport');
+      if (btnDownload) btnDownload.addEventListener('click', () => openModal('Download Sustainable Sourcing Report', 'Sustainable Sourcing: A Global Imperative'));
+
+      const btnSub = document.getElementById('btnOpenSubModal');
+      if (btnSub) btnSub.addEventListener('click', () => openModal('Subscribe to Global Trade Insights', 'Full Market Intelligence Weekly Digest'));
+
+      const btnExploreMore = document.getElementById('btnExploreMoreBottom');
+      if (btnExploreMore) btnExploreMore.addEventListener('click', () => openModal('Access CONCEPT EXIM Research Library', 'Full Market Intelligence Weekly Digest'));
+
+      document.querySelectorAll('.article-read-more').forEach(link => {
+        link.addEventListener('click', (e) => {
+          e.preventDefault();
+          const artName = link.getAttribute('data-article') || 'Research Dossier';
+          openModal(`Read Report: ${artName}`, reportSelect.options[0].value);
+        });
+      });
+
+      if (closeBtn) closeBtn.addEventListener('click', closeModal);
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) closeModal();
+      });
+
+      if (form) {
+        form.addEventListener('submit', (e) => {
+          e.preventDefault();
+          const val = reportSelect.value;
+          closeModal();
+          showToast(`Report '${val}' will be dispatched to your email!`);
+          form.reset();
+        });
+      }
+
+      // 5. Newsletter Form
+      const newsForm = document.getElementById('newsletterForm');
+      if (newsForm) {
+        newsForm.addEventListener('submit', (e) => {
+          e.preventDefault();
+          const email = document.getElementById('newsEmailInput').value;
+          showToast(`Thank you! Weekly Trade Digest confirmed for ${email}`);
+          newsForm.reset();
+        });
+      }
+
+      // 6. Top Bar Language handled globally by navbar.js
+
+    });
+  </script>
+
+  <script src="cart.js"></script>
+  <script src="navbar.js"></script>
+</body>
+</html>

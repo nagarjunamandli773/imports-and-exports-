@@ -1,0 +1,2373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Global Presence &amp; Trade Hubs | CONCEPT EXIM - International Trade &amp; Logistics</title>
+  <meta name="description" content="Explore CONCEPT EXIM's worldwide trade presence spanning 60+ countries, 18 regional headquarters, 42 bonded logistics hubs, and 120+ active maritime and air corridors.">
+  
+  <!-- Google Fonts: Plus Jakarta Sans, Space Grotesk, Dancing Script -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome 6 Pro Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="global-presence.css">
+  <link rel="stylesheet" href="navbar.css">
+</head>
+<body>
+
+  <div class="site-wrapper">
+
+    <!-- ==========================================================================
+         1. TOP SLIM BAR (Deep Navy with Trust Badges & Auth/Cart)
+         ========================================================================== -->
+    <div class="top-slim-bar">
+      <div class="page-container top-bar-inner">
+        <!-- Left: 4 Trust Features -->
+        <div class="top-features-list">
+          <div class="top-feature-item">
+            <i class="fa-solid fa-globe"></i>
+            <span>Global Reach</span>
+          </div>
+          <div class="top-divider"></div>
+          <div class="top-feature-item">
+            <i class="fa-solid fa-shield-halved"></i>
+            <span>Trusted Suppliers</span>
+          </div>
+          <div class="top-divider"></div>
+          <div class="top-feature-item">
+            <i class="fa-solid fa-certificate"></i>
+            <span>Quality Assured</span>
+          </div>
+          <div class="top-divider"></div>
+          <div class="top-feature-item">
+            <i class="fa-solid fa-truck-fast"></i>
+            <span>On-Time Delivery</span>
+          </div>
+        </div>
+
+        <!-- Right: Language, Login & Cart -->
+        <div class="top-right-group">
+          <button class="top-link-btn" id="topLangBtn" aria-label="Language Selector">
+            <i class="fa-solid fa-globe"></i>
+            <span>English</span>
+            <i class="fa-solid fa-chevron-down" style="font-size: 8.5px; opacity: 0.85;"></i>
+          </button>
+          <div class="top-divider"></div>
+          <a href="login.html" class="top-link-btn">
+            <i class="fa-regular fa-user"></i>
+            <span>Login / Register</span>
+          </a>
+          <div class="top-divider"></div>
+          <button class="top-cart-btn" id="openCartBtn" aria-label="View Shopping Cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="cart-badge-count" id="cartCountBadge">0</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==========================================================================
+         2. MAIN HEADER & NAVBAR (CONCEPT EXIM)
+         ========================================================================== -->
+    <header class="main-header" id="navbar">
+      <div class="page-container header-inner">
+
+        <!-- Brand Logo (CONCEPT EXIM) -->
+        <a href="index.html" class="brand-logo-link" title="CONCEPT EXIM - Global Trade, Greater Opportunities.">
+          <img src="images/concept_exim_logo.png" srcset="images/concept_exim_logo@3x.png 3x" alt="CONCEPT EXIM - Global Trade, Greater Opportunities." class="concept-exim-logo">
+        </a>
+
+        <!-- Center Nav: Home | About Us | Products | Services | Global Presence (ACTIVE) | Quality & Compliance | Insights | Contact -->
+        <nav class="main-nav-wrapper">
+          <ul class="main-nav-bar">
+            <li>
+              <a href="index.html" class="nav-link">
+                <span>Home</span>
+              </a>
+            </li>
+
+            <!-- About Us Dropdown -->
+            <li class="nav-item-dropdown">
+              <a href="about.html" class="nav-link" aria-expanded="false" aria-haspopup="true">
+                <span>About Us</span>
+                <span class="nav-arrow-btn" role="button" tabindex="0" aria-label="Toggle About Us submenu">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </span>
+              </a>
+              <div class="nav-dropdown-menu nav-dropdown-about" role="menu">
+                <div class="dropdown-header">
+                  <span class="dropdown-eyebrow">COMPANY OVERVIEW</span>
+                  <a href="about.html" class="dropdown-header-all">View All <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="dropdown-items-grid dropdown-col-1">
+                  <a href="about.html#who-we-are" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-building-flag"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Who We Are</span>
+                      <span class="dropdown-item-desc">Global trade leadership &amp; company story</span>
+                    </div>
+                  </a>
+                  <a href="about.html#who-we-are" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-compass"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Our Journey</span>
+                      <span class="dropdown-item-desc">From trade pioneer to global logistics</span>
+                    </div>
+                  </a>
+                  <a href="about.html#who-we-are" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-bullseye"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Mission &amp; Values</span>
+                      <span class="dropdown-item-desc">Integrity, excellence &amp; reliability</span>
+                    </div>
+                  </a>
+                  <a href="about.html#why-choose" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Why Choose Us</span>
+                      <span class="dropdown-item-desc">5 core advantages for international trade</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <!-- Products Dropdown -->
+            <li class="nav-item-dropdown">
+              <a href="products.html" class="nav-link" aria-expanded="false" aria-haspopup="true">
+                <span>Products</span>
+                <span class="nav-arrow-btn" role="button" tabindex="0" aria-label="Toggle Products submenu">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </span>
+              </a>
+              <div class="nav-dropdown-menu nav-dropdown-products" role="menu">
+                <div class="dropdown-header">
+                  <span class="dropdown-eyebrow">COMMODITIES CATALOGUE</span>
+                  <a href="products.html" class="dropdown-header-all">View All 32+ Products <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="dropdown-items-grid dropdown-col-2">
+                  <a href="products.html?category=grains" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-wheat-awn"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Rice &amp; Grains</span>
+                      <span class="dropdown-item-desc">Basmati, non-basmati &amp; organic grains</span>
+                    </div>
+                  </a>
+                  <a href="products.html?category=spices" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-mortar-pestle"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Spices &amp; Herbs</span>
+                      <span class="dropdown-item-desc">Premium whole &amp; ground spices</span>
+                    </div>
+                  </a>
+                  <a href="products.html?category=pulses" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-cubes-stacked"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Pulses &amp; Legumes</span>
+                      <span class="dropdown-item-desc">Lentils, chickpeas &amp; beans</span>
+                    </div>
+                  </a>
+                  <a href="products.html?category=fruits" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-apple-whole"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Fruits &amp; Vegetables</span>
+                      <span class="dropdown-item-desc">Fresh agricultural farm produce</span>
+                    </div>
+                  </a>
+                  <a href="products.html?category=oils" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-bottle-droplet"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Oils &amp; Fats</span>
+                      <span class="dropdown-item-desc">Edible culinary &amp; cold-pressed oils</span>
+                    </div>
+                  </a>
+                  <a href="products.html?category=dryfruits" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-seedling"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Dry Fruits &amp; Nuts</span>
+                      <span class="dropdown-item-desc">Graded cashews, almonds &amp; raisins</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="dropdown-footer-strip">
+                  <span>Looking for bulk container shipments?</span>
+                  <a href="contact.html#quote">Request Bulk Quote <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </li>
+
+            <!-- Services Dropdown -->
+            <li class="nav-item-dropdown">
+              <a href="services.html" class="nav-link" aria-expanded="false" aria-haspopup="true">
+                <span>Services</span>
+                <span class="nav-arrow-btn" role="button" tabindex="0" aria-label="Toggle Services submenu">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </span>
+              </a>
+              <div class="nav-dropdown-menu nav-dropdown-services" role="menu">
+                <div class="dropdown-header">
+                  <span class="dropdown-eyebrow">TRADE CAPABILITIES</span>
+                  <a href="services.html" class="dropdown-header-all">View All Services <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="dropdown-items-grid dropdown-col-2">
+                  <a href="services.html#card-import-solutions" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-ship"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Import Solutions</span>
+                      <span class="dropdown-item-desc">Clearance, compliance &amp; door delivery</span>
+                    </div>
+                  </a>
+                  <a href="services.html#card-export-management" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-plane-departure"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Export Management</span>
+                      <span class="dropdown-item-desc">Global shipping &amp; market outreach</span>
+                    </div>
+                  </a>
+                  <a href="services.html#card-global-sourcing" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-globe"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Global Sourcing</span>
+                      <span class="dropdown-item-desc">Verified suppliers &amp; contract terms</span>
+                    </div>
+                  </a>
+                  <a href="services.html#card-logistics-coordination" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-truck-moving"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Logistics Coordination</span>
+                      <span class="dropdown-item-desc">Multimodal ocean, air &amp; land freight</span>
+                    </div>
+                  </a>
+                  <a href="services.html#card-customs-support" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Customs Support</span>
+                      <span class="dropdown-item-desc">Duty optimization &amp; regulatory filing</span>
+                    </div>
+                  </a>
+                  <a href="services.html#card-trade-consulting" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-handshake-angle"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Trade Consulting</span>
+                      <span class="dropdown-item-desc">Cross-border advice &amp; risk management</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <!-- Global Presence Dropdown (Active) -->
+            <li class="nav-item-dropdown">
+              <a href="global-presence.html" class="nav-link active" aria-expanded="false" aria-haspopup="true">
+                <span>Global Presence</span>
+                <span class="nav-arrow-btn" role="button" tabindex="0" aria-label="Toggle Global Presence submenu">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </span>
+              </a>
+              <div class="nav-dropdown-menu nav-dropdown-presence" role="menu">
+                <div class="dropdown-header">
+                  <span class="dropdown-eyebrow">WORLDWIDE FOOTPRINT</span>
+                  <a href="global-presence.html" class="dropdown-header-all">Explore Network <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="dropdown-items-grid dropdown-col-1">
+                  <a href="global-presence.html#interactive-map" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-map-location-dot"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Interactive World Map</span>
+                      <span class="dropdown-item-desc">Trade routes across 60+ countries</span>
+                    </div>
+                  </a>
+                  <a href="global-presence.html#continental-hubs" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-earth-americas"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Continental Hubs</span>
+                      <span class="dropdown-item-desc">Asia, Europe, Middle East &amp; Americas</span>
+                    </div>
+                  </a>
+                  <a href="global-presence.html#transit-calculator" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-calculator"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Transit Calculator</span>
+                      <span class="dropdown-item-desc">Estimate shipping times &amp; lane routes</span>
+                    </div>
+                  </a>
+                  <a href="global-presence.html#infrastructure" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-warehouse"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Trade Infrastructure</span>
+                      <span class="dropdown-item-desc">42+ bonded logistics &amp; cold hubs</span>
+                    </div>
+                  </a>
+                  <a href="global-presence.html#regional-desks" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-headset"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Regional Desks</span>
+                      <span class="dropdown-item-desc">Local bilingual trade advisors in 18 HQs</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <!-- Quality & Compliance Dropdown -->
+            <li class="nav-item-dropdown">
+              <a href="compliance.html" class="nav-link" aria-expanded="false" aria-haspopup="true">
+                <span>Quality &amp; Compliance</span>
+                <span class="nav-arrow-btn" role="button" tabindex="0" aria-label="Toggle Quality &amp; Compliance submenu">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </span>
+              </a>
+              <div class="nav-dropdown-menu nav-dropdown-compliance" role="menu">
+                <div class="dropdown-header">
+                  <span class="dropdown-eyebrow">GLOBAL STANDARDS</span>
+                  <a href="compliance.html" class="dropdown-header-all">View All Standards <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="dropdown-items-grid dropdown-col-1">
+                  <a href="compliance.html#certifications" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-certificate"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Our Certifications</span>
+                      <span class="dropdown-item-desc">ISO 9001, HACCP, FSSAI, APEDA, GMP</span>
+                    </div>
+                  </a>
+                  <a href="compliance.html#quality-process" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-list-check"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Quality Assurance</span>
+                      <span class="dropdown-item-desc">5-tier testing &amp; pre-shipment audit</span>
+                    </div>
+                  </a>
+                  <a href="compliance.html#commitment" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-scale-balanced"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Regulatory Framework</span>
+                      <span class="dropdown-item-desc">Export-import guidelines &amp; safety</span>
+                    </div>
+                  </a>
+                  <a href="compliance.html#commitment" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-leaf"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">ESG &amp; Sustainability</span>
+                      <span class="dropdown-item-desc">Eco-packaging &amp; ethical trade sourcing</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <!-- Insights Dropdown -->
+            <li class="nav-item-dropdown">
+              <a href="insights.html" class="nav-link" aria-expanded="false" aria-haspopup="true">
+                <span>Insights</span>
+                <span class="nav-arrow-btn" role="button" tabindex="0" aria-label="Toggle Insights submenu">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </span>
+              </a>
+              <div class="nav-dropdown-menu nav-dropdown-insights" role="menu">
+                <div class="dropdown-header">
+                  <span class="dropdown-eyebrow">TRADE INTELLIGENCE</span>
+                  <a href="insights.html" class="dropdown-header-all">View All Insights <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="dropdown-items-grid dropdown-col-1">
+                  <a href="insights.html?category=trends" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-arrow-trend-up"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Market Trends</span>
+                      <span class="dropdown-item-desc">Global commodity cycles &amp; forecasts</span>
+                    </div>
+                  </a>
+                  <a href="insights.html?category=industry" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-chart-pie"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Industry Analysis</span>
+                      <span class="dropdown-item-desc">Deep dives into agricultural &amp; trade sectors</span>
+                    </div>
+                  </a>
+                  <a href="insights.html?category=regulations" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-gavel"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Trade Regulations</span>
+                      <span class="dropdown-item-desc">Tariff changes, customs rules &amp; compliance</span>
+                    </div>
+                  </a>
+                  <a href="insights.html?category=articles" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-newspaper"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Expert Articles</span>
+                      <span class="dropdown-item-desc">Practical import-export guides &amp; tips</span>
+                    </div>
+                  </a>
+                  <a href="insights.html?category=cases" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-book-open"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Case Studies</span>
+                      <span class="dropdown-item-desc">Real client success stories across borders</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <a href="contact.html" class="nav-link">
+                <span>Contact</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Vertical Separator Divider -->
+        <div class="nav-divider"></div>
+
+        <!-- Right: Search Bar + "Request a Quote" Button -->
+        <div class="header-right-group">
+          <div class="header-search-wrap">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" class="header-search-input" id="globalSearchInput" placeholder="Search hubs, ports, lanes..." autocomplete="off">
+            <span class="search-kbd-hint">Ctrl K</span>
+          </div>
+          <button class="btn-request-quote" id="openQuoteModalBtn">
+            <i class="fa-regular fa-file-lines"></i>
+            <span>Request a Quote</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+
+      </div>
+    </header>
+
+    <!-- ==========================================================================
+         3. HERO BANNER - GLOBAL TRADE NETWORK & CORRIDORS
+         ========================================================================== -->
+    <section class="presence-hero-section">
+      <div class="presence-hero-bg">
+        <img src="images/global_presence_hero.jpg" alt="Global Trade Network, Maritime Container Ports, Cargo Aircraft" class="hero-bg-img">
+        <div class="hero-gradient-overlay"></div>
+      </div>
+
+      <div class="page-container presence-hero-inner">
+        <!-- Left Hero Content -->
+        <div class="hero-content-col">
+          <div class="hero-tag-pill">
+            <i class="fa-solid fa-earth-americas"></i>
+            <span>Worldwide Trade Logistics &amp; Distribution</span>
+          </div>
+
+          <h1 class="hero-main-heading">
+            Connecting Continents,<br>
+            <span class="highlight">Powering Global Commerce</span>
+          </h1>
+
+          <p class="hero-description">
+            With 18 regional trade headquarters, 42 bonded warehousing hubs, and direct multimodal freight routes across 60+ countries, CONCEPT EXIM guarantees seamless, rapid, and compliant cross-border trade operations.
+          </p>
+
+          <div class="hero-actions-row">
+            <a href="#interactive-map" class="btn-hero-primary">
+              <i class="fa-solid fa-map-location-dot"></i>
+              <span>Explore Interactive World Map</span>
+            </a>
+            <a href="#transit-calculator" class="btn-hero-secondary">
+              <i class="fa-solid fa-calculator"></i>
+              <span>Shipping Lane Calculator</span>
+            </a>
+          </div>
+
+          <!-- 4 KPI Footprint Stats -->
+          <div class="hero-stats-strip">
+            <div class="hero-stat-card">
+              <div class="hero-stat-icon-box stat-blue">
+                <i class="fa-solid fa-earth-americas"></i>
+              </div>
+              <div class="hero-stat-meta">
+                <div class="hero-stat-number">60+</div>
+                <div class="hero-stat-label">Export Markets</div>
+              </div>
+            </div>
+            <div class="hero-stat-card">
+              <div class="hero-stat-icon-box stat-amber">
+                <i class="fa-solid fa-building-flag"></i>
+              </div>
+              <div class="hero-stat-meta">
+                <div class="hero-stat-number">18</div>
+                <div class="hero-stat-label">Regional HQs</div>
+              </div>
+            </div>
+            <div class="hero-stat-card">
+              <div class="hero-stat-icon-box stat-emerald">
+                <i class="fa-solid fa-warehouse"></i>
+              </div>
+              <div class="hero-stat-meta">
+                <div class="hero-stat-number">42+</div>
+                <div class="hero-stat-label">Bonded Hubs</div>
+              </div>
+            </div>
+            <div class="hero-stat-card">
+              <div class="hero-stat-icon-box stat-purple">
+                <i class="fa-solid fa-shield-halved"></i>
+              </div>
+              <div class="hero-stat-meta">
+                <div class="hero-stat-number">99.4%</div>
+                <div class="hero-stat-label">On-Time Clearance</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Hero Visual Box: Active Trade Corridor Monitor -->
+        <div class="hero-visual-col">
+          <div class="hero-glass-preview-box">
+            <div class="preview-box-header">
+              <div class="preview-status-indicator">
+                <span class="pulse-dot"></span>
+                <span>Live Freight Network Monitor</span>
+              </div>
+              <span style="font-size: 11px; color: #94a3b8; font-family: var(--font-mono);">24/7 SATELLITE DISPATCH</span>
+            </div>
+
+            <div class="preview-corridor-list">
+              <div class="corridor-item">
+                <div class="corridor-ports">
+                  <i class="fa-solid fa-ship"></i>
+                  <span>Nhava Sheva (IN) &rarr; Rotterdam (NL)</span>
+                </div>
+                <div class="corridor-meta">
+                  <span class="corridor-badge">Maritime Express</span>
+                  <span class="corridor-time">18 Days</span>
+                </div>
+              </div>
+
+              <div class="corridor-item">
+                <div class="corridor-ports">
+                  <i class="fa-solid fa-plane-departure"></i>
+                  <span>Singapore (SG) &rarr; Dubai (UAE)</span>
+                </div>
+                <div class="corridor-meta">
+                  <span class="corridor-badge" style="background: rgba(223, 139, 26, 0.2); color: #fbbf24; border-color: rgba(223, 139, 26, 0.4);">Air Cargo</span>
+                  <span class="corridor-time">7 Hours</span>
+                </div>
+              </div>
+
+              <div class="corridor-item">
+                <div class="corridor-ports">
+                  <i class="fa-solid fa-ship"></i>
+                  <span>Shanghai (CN) &rarr; Houston (US)</span>
+                </div>
+                <div class="corridor-meta">
+                  <span class="corridor-badge">Pacific Carrier</span>
+                  <span class="corridor-time">22 Days</span>
+                </div>
+              </div>
+
+              <div class="corridor-item">
+                <div class="corridor-ports">
+                  <i class="fa-solid fa-snowflake"></i>
+                  <span>Santos (BR) &rarr; Jebel Ali (UAE)</span>
+                </div>
+                <div class="corridor-meta">
+                  <span class="corridor-badge" style="background: rgba(16, 185, 129, 0.2); color: #34d399; border-color: rgba(16, 185, 129, 0.4);">Reefer Cold Chain</span>
+                  <span class="corridor-time">24 Days</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         4. INTERACTIVE GLOBAL TRADE MAP & REGIONAL EXPLORER
+         ========================================================================== -->
+    <section class="map-explorer-section" id="interactive-map">
+      <div class="page-container">
+
+        <div class="section-header-block">
+          <div class="section-eyebrow">
+            <i class="fa-solid fa-map-location-dot"></i>
+            <span>Interactive World Trade Map</span>
+          </div>
+          <h2 class="section-title">Explore Our Strategic Global Hubs &amp; Facilities</h2>
+          <p class="section-subtitle">
+            Filter by continent or click any illuminated trade node to inspect port facilities, cold chain storage capacity, primary commodities traded, and dedicated regional trade desks.
+          </p>
+        </div>
+
+        <!-- Region Navigation Filter Tabs -->
+        <div class="map-filter-nav">
+          <button class="region-tab-btn active" data-region="all">
+            <i class="fa-solid fa-globe"></i>
+            <span>All Global Hubs (18)</span>
+          </button>
+          <button class="region-tab-btn" data-region="apac">
+            <i class="fa-solid fa-anchor"></i>
+            <span>Asia-Pacific (APAC)</span>
+          </button>
+          <button class="region-tab-btn" data-region="mena">
+            <i class="fa-solid fa-building-columns"></i>
+            <span>Middle East &amp; Gulf (MENA)</span>
+          </button>
+          <button class="region-tab-btn" data-region="europe">
+            <i class="fa-solid fa-landmark-dome"></i>
+            <span>Europe &amp; UK</span>
+          </button>
+          <button class="region-tab-btn" data-region="americas">
+            <i class="fa-solid fa-plane-up"></i>
+            <span>North &amp; Latin America</span>
+          </button>
+          <button class="region-tab-btn" data-region="africa">
+            <i class="fa-solid fa-truck-moving"></i>
+            <span>Africa (Sub-Saharan)</span>
+          </button>
+        </div>
+
+        <!-- Map & Details Side-by-Side Canvas -->
+        <div class="map-canvas-grid">
+          
+          <!-- Left: High-Tech Interactive SVG Map -->
+          <div class="map-viewport-card">
+            <div class="map-card-topbar">
+              <div class="map-title-tag">
+                <i class="fa-solid fa-satellite-dish"></i>
+                <span>GLOBAL SATELLITE DISPATCH &amp; HUB RADAR</span>
+              </div>
+              <div class="map-legend-pills">
+                <div class="map-legend-item">
+                  <span class="legend-color-dot dot-hq"></span>
+                  <span>Regional HQ</span>
+                </div>
+                <div class="map-legend-item">
+                  <span class="legend-color-dot dot-port"></span>
+                  <span>Deep-Sea Port</span>
+                </div>
+                <div class="map-legend-item">
+                  <span class="legend-color-dot dot-ftz"></span>
+                  <span>Bonded FTZ Hub</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- SVG Map Canvas with Interactive Beacons & Connected Routes -->
+            <div class="interactive-world-svg-wrap">
+              <svg viewBox="0 0 1000 520" class="world-map-svg" id="worldMapSvg" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <!-- Neon Glow Filters -->
+                  <filter id="gold-glow" x="-20%" y="-20%" width="140%" height="140%">
+                    <feGaussianBlur stdDeviation="4" result="blur"/>
+                    <feMerge>
+                      <feMergeNode in="blur"/>
+                      <feMergeNode in="SourceGraphic"/>
+                    </feMerge>
+                  </filter>
+                  <filter id="cyan-glow" x="-20%" y="-20%" width="140%" height="140%">
+                    <feGaussianBlur stdDeviation="4" result="blur"/>
+                    <feMerge>
+                      <feMergeNode in="blur"/>
+                      <feMergeNode in="SourceGraphic"/>
+                    </feMerge>
+                  </filter>
+                  
+                  <!-- Gradient for Trade Lanes -->
+                  <linearGradient id="gradient-trade-lane" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#38ef7d" stop-opacity="0.85"/>
+                    <stop offset="50%" stop-color="#fbbf24" stop-opacity="0.95"/>
+                    <stop offset="100%" stop-color="#00f2fe" stop-opacity="0.85"/>
+                  </linearGradient>
+                </defs>
+
+                <!-- Continents Landmass Shapes -->
+                <g class="world-landmass-group" fill="#142c4b" stroke="#1d406b" stroke-width="1.2">
+                  <!-- North America -->
+                  <path class="map-country-path" d="M120 80 Q170 50 240 60 Q270 90 280 130 Q240 170 210 200 Q160 210 130 160 Q100 120 120 80 Z" />
+                  <path class="map-country-path" d="M70 70 Q110 40 150 70 Q130 100 80 90 Z" />
+                  <path class="map-country-path" d="M220 30 Q260 20 300 40 Q280 70 230 60 Z" />
+                  <!-- Central & South America -->
+                  <path class="map-country-path" d="M200 230 Q240 220 280 260 Q300 320 280 400 Q240 440 220 380 Q210 300 200 230 Z" />
+                  <!-- Europe -->
+                  <path class="map-country-path" d="M440 80 Q520 70 550 110 Q530 150 480 160 Q440 140 430 110 Q430 90 440 80 Z" />
+                  <path class="map-country-path" d="M420 90 Q440 80 450 100 Q430 110 420 90 Z" />
+                  <!-- Africa -->
+                  <path class="map-country-path" d="M450 180 Q550 170 570 260 Q550 360 490 380 Q450 340 440 250 Q430 200 450 180 Z" />
+                  <!-- Middle East & Central Asia -->
+                  <path class="map-country-path" d="M550 150 Q630 140 650 190 Q620 230 570 220 Q550 180 550 150 Z" />
+                  <!-- Asia & India -->
+                  <path class="map-country-path" d="M600 80 Q780 70 850 140 Q830 230 730 230 Q680 270 640 230 Q620 160 600 80 Z" />
+                  <path class="map-country-path" d="M630 190 Q670 190 660 260 Q630 240 630 190 Z" />
+                  <!-- Southeast Asia & Indonesia -->
+                  <path class="map-country-path" d="M720 240 Q780 230 810 270 Q770 290 730 270 Z" />
+                  <path class="map-country-path" d="M750 280 Q800 280 820 310 Q770 320 750 280 Z" />
+                  <!-- Australia & Oceania -->
+                  <path class="map-country-path" d="M780 340 Q890 330 910 400 Q860 450 800 430 Q770 380 780 340 Z" />
+                  <path class="map-country-path" d="M910 410 Q940 410 930 440 Q910 440 910 410 Z" />
+                </g>
+
+                <!-- Animated Trade Corridors (SVG Arcs) -->
+                <g class="world-trade-arcs-group" stroke="url(#gradient-trade-lane)" stroke-width="2.2" fill="none" opacity="0.88">
+                  <!-- Mumbai to Rotterdam -->
+                  <path d="M645 220 Q540 100 480 120" class="trade-route-arc"/>
+                  <!-- Mumbai to Dubai -->
+                  <path d="M645 220 Q610 190 580 185" class="trade-route-arc"/>
+                  <!-- Dubai to Rotterdam -->
+                  <path d="M580 185 Q510 120 480 120" class="trade-route-arc"/>
+                  <!-- Singapore to Mumbai -->
+                  <path d="M740 265 Q690 250 645 220" class="trade-route-arc"/>
+                  <!-- Singapore to Shanghai -->
+                  <path d="M740 265 Q770 200 780 160" class="trade-route-arc"/>
+                  <!-- Shanghai to Tokyo -->
+                  <path d="M780 160 Q810 140 840 145" class="trade-route-arc"/>
+                  <!-- Shanghai to Los Angeles/Houston -->
+                  <path d="M780 160 Q900 80 220 150" class="trade-route-arc"/>
+                  <!-- Rotterdam to New York -->
+                  <path d="M480 120 Q340 70 230 125" class="trade-route-arc"/>
+                  <!-- Houston to Santos -->
+                  <path d="M210 160 Q230 250 270 340" class="trade-route-arc"/>
+                  <!-- Santos to Durban -->
+                  <path d="M270 340 Q400 390 510 350" class="trade-route-arc"/>
+                  <!-- Durban to Dubai -->
+                  <path d="M510 350 Q560 270 580 185" class="trade-route-arc"/>
+                  <!-- Singapore to Sydney -->
+                  <path d="M740 265 Q800 320 835 395" class="trade-route-arc"/>
+                </g>
+
+                <!-- Interactive Hub Beacons & Node Markers -->
+                <g class="world-hub-nodes-group" id="hubNodesGroup">
+
+                  <!-- 1. MUMBAI (Global Logistics Central HQ) -->
+                  <g class="hub-svg-node" data-hub="mumbai" data-region="apac" transform="translate(645, 220)">
+                    <circle cx="0" cy="0" r="14" fill="none" stroke="#fbbf24" stroke-width="1.5" class="hub-beacon-pulse" opacity="0.6"/>
+                    <circle cx="0" cy="0" r="6.5" fill="#fbbf24" filter="url(#gold-glow)"/>
+                    <circle cx="0" cy="0" r="2.5" fill="#ffffff"/>
+                    <text x="10" y="4" class="hub-node-label">Mumbai HQ</text>
+                  </g>
+
+                  <!-- 2. SINGAPORE (ASEAN Gateway) -->
+                  <g class="hub-svg-node" data-hub="singapore" data-region="apac" transform="translate(740, 265)">
+                    <circle cx="0" cy="0" r="12" fill="none" stroke="#00f2fe" stroke-width="1.5" class="hub-beacon-pulse" opacity="0.6"/>
+                    <circle cx="0" cy="0" r="5.5" fill="#00f2fe" filter="url(#cyan-glow)"/>
+                    <circle cx="0" cy="0" r="2" fill="#ffffff"/>
+                    <text x="9" y="4" class="hub-node-label">Singapore</text>
+                  </g>
+
+                  <!-- 3. DUBAI (JAFZA Trade Hub) -->
+                  <g class="hub-svg-node" data-hub="dubai" data-region="mena" transform="translate(580, 185)">
+                    <circle cx="0" cy="0" r="13" fill="none" stroke="#fbbf24" stroke-width="1.5" class="hub-beacon-pulse" opacity="0.6"/>
+                    <circle cx="0" cy="0" r="6" fill="#fbbf24" filter="url(#gold-glow)"/>
+                    <circle cx="0" cy="0" r="2" fill="#ffffff"/>
+                    <text x="9" y="-6" class="hub-node-label">Dubai JAFZA</text>
+                  </g>
+
+                  <!-- 4. ROTTERDAM (European Maritime Central) -->
+                  <g class="hub-svg-node" data-hub="rotterdam" data-region="europe" transform="translate(480, 120)">
+                    <circle cx="0" cy="0" r="13" fill="none" stroke="#00f2fe" stroke-width="1.5" class="hub-beacon-pulse" opacity="0.6"/>
+                    <circle cx="0" cy="0" r="6" fill="#00f2fe" filter="url(#cyan-glow)"/>
+                    <circle cx="0" cy="0" r="2" fill="#ffffff"/>
+                    <text x="-68" y="-6" class="hub-node-label">Rotterdam</text>
+                  </g>
+
+                  <!-- 5. LONDON (UK & Western Europe Desk) -->
+                  <g class="hub-svg-node" data-hub="london" data-region="europe" transform="translate(450, 105)">
+                    <circle cx="0" cy="0" r="4.5" fill="#10b981"/>
+                    <text x="-48" y="12" class="hub-node-label">London</text>
+                  </g>
+
+                  <!-- 6. NEW YORK (North American East Coast) -->
+                  <g class="hub-svg-node" data-hub="newyork" data-region="americas" transform="translate(230, 125)">
+                    <circle cx="0" cy="0" r="12" fill="none" stroke="#fbbf24" stroke-width="1.5" class="hub-beacon-pulse" opacity="0.6"/>
+                    <circle cx="0" cy="0" r="5.5" fill="#fbbf24" filter="url(#gold-glow)"/>
+                    <text x="-65" y="-6" class="hub-node-label">New York</text>
+                  </g>
+
+                  <!-- 7. HOUSTON (Gulf Maritime Terminal) -->
+                  <g class="hub-svg-node" data-hub="houston" data-region="americas" transform="translate(200, 160)">
+                    <circle cx="0" cy="0" r="5" fill="#00f2fe"/>
+                    <text x="-55" y="12" class="hub-node-label">Houston</text>
+                  </g>
+
+                  <!-- 8. SANTOS / SÃO PAULO (LATAM Agri Hub) -->
+                  <g class="hub-svg-node" data-hub="santos" data-region="americas" transform="translate(270, 340)">
+                    <circle cx="0" cy="0" r="11" fill="none" stroke="#10b981" stroke-width="1.5" class="hub-beacon-pulse" opacity="0.6"/>
+                    <circle cx="0" cy="0" r="5" fill="#10b981"/>
+                    <text x="8" y="4" class="hub-node-label">Santos</text>
+                  </g>
+
+                  <!-- 9. DURBAN (South Africa Port) -->
+                  <g class="hub-svg-node" data-hub="durban" data-region="africa" transform="translate(510, 350)">
+                    <circle cx="0" cy="0" r="11" fill="none" stroke="#00f2fe" stroke-width="1.5" class="hub-beacon-pulse" opacity="0.6"/>
+                    <circle cx="0" cy="0" r="5" fill="#00f2fe"/>
+                    <text x="8" y="4" class="hub-node-label">Durban</text>
+                  </g>
+
+                  <!-- 10. MOMBASA (East Africa Transit) -->
+                  <g class="hub-svg-node" data-hub="mombasa" data-region="africa" transform="translate(540, 265)">
+                    <circle cx="0" cy="0" r="4.5" fill="#fbbf24"/>
+                    <text x="8" y="4" class="hub-node-label">Mombasa</text>
+                  </g>
+
+                  <!-- 11. SHANGHAI (East Asia Terminal) -->
+                  <g class="hub-svg-node" data-hub="shanghai" data-region="apac" transform="translate(780, 160)">
+                    <circle cx="0" cy="0" r="12" fill="none" stroke="#00f2fe" stroke-width="1.5" class="hub-beacon-pulse" opacity="0.6"/>
+                    <circle cx="0" cy="0" r="5.5" fill="#00f2fe" filter="url(#cyan-glow)"/>
+                    <text x="9" y="3" class="hub-node-label">Shanghai</text>
+                  </g>
+
+                  <!-- 12. TOKYO (Pacific Trade Office) -->
+                  <g class="hub-svg-node" data-hub="tokyo" data-region="apac" transform="translate(840, 145)">
+                    <circle cx="0" cy="0" r="4.5" fill="#fbbf24"/>
+                    <text x="8" y="3" class="hub-node-label">Tokyo</text>
+                  </g>
+
+                  <!-- 13. SYDNEY (Oceania Gateway) -->
+                  <g class="hub-svg-node" data-hub="sydney" data-region="apac" transform="translate(835, 395)">
+                    <circle cx="0" cy="0" r="5" fill="#00f2fe"/>
+                    <text x="8" y="4" class="hub-node-label">Sydney</text>
+                  </g>
+                </g>
+              </svg>
+            </div>
+
+            <!-- Zoom & Pan Controls -->
+            <div class="map-control-tools">
+              <button class="map-btn-tool" id="btnMapReset" title="Reset Map View">
+                <i class="fa-solid fa-arrows-rotate"></i>
+              </button>
+              <button class="map-btn-tool" id="btnMapFullscreen" title="Toggle Focus">
+                <i class="fa-solid fa-expand"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Right: Interactive Selected Hub Details Card -->
+          <div class="hub-details-sidebar" id="hubDetailsSidebar">
+            <div>
+              <div class="hub-sidebar-header">
+                <div class="hub-badge-group">
+                  <div class="hub-meta-text">
+                    <h3 id="sidebarHubTitle">Mumbai Central HQ</h3>
+                    <span id="sidebarHubCountry">India (Nhava Sheva JNPT Port)</span>
+                  </div>
+                </div>
+                <div class="hub-clock-tag">
+                  <i class="fa-regular fa-clock"></i>
+                  <span id="sidebarHubClock">IST --:--:--</span>
+                </div>
+              </div>
+
+              <!-- Specs Grid -->
+              <div class="hub-info-specs-grid">
+                <div class="spec-item">
+                  <div class="spec-item-label">
+                    <i class="fa-solid fa-warehouse"></i>
+                    <span>Bonded Capacity</span>
+                  </div>
+                  <div class="spec-item-val" id="sidebarHubArea">450,000 Sq. Ft.</div>
+                </div>
+
+                <div class="spec-item">
+                  <div class="spec-item-label">
+                    <i class="fa-solid fa-temperature-arrow-down"></i>
+                    <span>Cold Chain</span>
+                  </div>
+                  <div class="spec-item-val" id="sidebarHubColdChain">-25&deg;C to +15&deg;C Controlled</div>
+                </div>
+
+                <div class="spec-item">
+                  <div class="spec-item-label">
+                    <i class="fa-solid fa-ship"></i>
+                    <span>Primary Seaport</span>
+                  </div>
+                  <div class="spec-item-val" id="sidebarHubPort">Nhava Sheva (JNPT)</div>
+                </div>
+
+                <div class="spec-item">
+                  <div class="spec-item-label">
+                    <i class="fa-solid fa-stopwatch"></i>
+                    <span>SLA Customs Speed</span>
+                  </div>
+                  <div class="spec-item-val" id="sidebarHubClearance">&lt; 4 Hours Fast-Track</div>
+                </div>
+              </div>
+
+              <!-- Traded Commodities -->
+              <div class="hub-commodities-box">
+                <div class="hub-commodities-title">
+                  <i class="fa-solid fa-boxes-stacked"></i>
+                  <span>Key Handled Commodities</span>
+                </div>
+                <div class="hub-commodity-tags" id="sidebarHubCommodities">
+                  <span class="commodity-pill">Basmati Rice</span>
+                  <span class="commodity-pill">Organic Spices</span>
+                  <span class="commodity-pill">Cotton Fabrics</span>
+                  <span class="commodity-pill">Pharma APIs</span>
+                  <span class="commodity-pill">Industrial Pumps</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Hub Contact Officer & Action -->
+            <div class="hub-contact-card">
+              <div class="contact-officer-info">
+                <div class="officer-avatar">
+                  <i class="fa-solid fa-user-tie"></i>
+                </div>
+                <div class="officer-details">
+                  <div class="officer-name" id="sidebarOfficerName">Rajesh Verma</div>
+                  <div class="officer-role" id="sidebarOfficerRole">VP - South Asia Operations</div>
+                </div>
+              </div>
+              <button class="btn-desk-inquire" id="btnHubDirectInquire">
+                <span>Contact Desk</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         5. CONTINENTAL HUBS & REGIONAL OPERATIONS DEEP-DIVE GRID
+         ========================================================================== -->
+    <section class="continental-hubs-section" id="continental-hubs">
+      <div class="page-container">
+
+        <div class="section-header-block">
+          <div class="section-eyebrow">
+            <i class="fa-solid fa-network-wired"></i>
+            <span>Regional Headquarters &amp; Operations</span>
+          </div>
+          <h2 class="section-title">Strategic Trade Centers Across 6 Continents</h2>
+          <p class="section-subtitle">
+            Every CONCEPT EXIM trade center is staffed by multilingual customs brokers, certified freight forwarders, and quality inspection labs.
+          </p>
+        </div>
+
+        <!-- Continental Tabs -->
+        <div class="hubs-continent-tabs-row">
+          <button class="continent-tab-pill active" data-continent="all">All Hubs (9)</button>
+          <button class="continent-tab-pill" data-continent="apac">Asia-Pacific (APAC)</button>
+          <button class="continent-tab-pill" data-continent="mena">Middle East (MENA)</button>
+          <button class="continent-tab-pill" data-continent="europe">Europe &amp; UK</button>
+          <button class="continent-tab-pill" data-continent="americas">The Americas</button>
+          <button class="continent-tab-pill" data-continent="africa">Africa</button>
+        </div>
+
+        <!-- 9 Hub Cards Grid -->
+        <div class="continental-hubs-grid" id="continentalHubsGrid">
+
+          <!-- Card 1: Mumbai HQ (APAC) -->
+          <div class="hub-card" data-continent="apac">
+            <div class="hub-card-header">
+              <div>
+                <div class="hub-city-name">
+                  <i class="fa-solid fa-location-dot" style="color: var(--gold-primary); font-size: 15px;"></i>
+                  <span>Mumbai</span>
+                </div>
+                <div class="hub-country-tag">India &bull; Global Operations HQ</div>
+              </div>
+              <span class="hub-zone-badge zone-hq">Central HQ</span>
+            </div>
+
+            <div class="hub-specs-summary">
+              <div class="hub-spec-col">
+                <span class="lbl">Port Terminal</span>
+                <span class="val">Nhava Sheva (JNPT)</span>
+              </div>
+              <div class="hub-spec-col">
+                <span class="lbl">Storage Area</span>
+                <span class="val">450,000 Sq. Ft.</span>
+              </div>
+            </div>
+
+            <ul class="hub-capabilities-list">
+              <li><i class="fa-solid fa-circle-check"></i> Automated Cold Chain &amp; Agri Silos</li>
+              <li><i class="fa-solid fa-circle-check"></i> AEO-T3 Fast-Track Customs Clearance</li>
+              <li><i class="fa-solid fa-circle-check"></i> Dedicated Spices, Rice &amp; Pharma Hub</li>
+            </ul>
+
+            <div class="hub-card-footer">
+              <div class="hub-local-clock" data-tz="Asia/Kolkata">
+                <i class="fa-regular fa-clock"></i>
+                <span class="clock-val">IST --:--:--</span>
+              </div>
+              <button class="btn-card-inquire" onclick="openRegionalQuoteModal('Mumbai Central HQ')">
+                <span>Inquire Desk</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 2: Singapore (APAC) -->
+          <div class="hub-card" data-continent="apac">
+            <div class="hub-card-header">
+              <div>
+                <div class="hub-city-name">
+                  <i class="fa-solid fa-location-dot" style="color: var(--gold-primary); font-size: 15px;"></i>
+                  <span>Singapore</span>
+                </div>
+                <div class="hub-country-tag">Singapore &bull; ASEAN Gateway</div>
+              </div>
+              <span class="hub-zone-badge zone-port">Maritime Hub</span>
+            </div>
+
+            <div class="hub-specs-summary">
+              <div class="hub-spec-col">
+                <span class="lbl">Port Terminal</span>
+                <span class="val">PSA Singapore Terminals</span>
+              </div>
+              <div class="hub-spec-col">
+                <span class="lbl">Storage Area</span>
+                <span class="val">280,000 Sq. Ft.</span>
+              </div>
+            </div>
+
+            <ul class="hub-capabilities-list">
+              <li><i class="fa-solid fa-circle-check"></i> Transshipment &amp; Cross-Docking</li>
+              <li><i class="fa-solid fa-circle-check"></i> Changi Air Cargo Bonded Logistics</li>
+              <li><i class="fa-solid fa-circle-check"></i> Electronics &amp; High-Tech Machinery</li>
+            </ul>
+
+            <div class="hub-card-footer">
+              <div class="hub-local-clock" data-tz="Asia/Singapore">
+                <i class="fa-regular fa-clock"></i>
+                <span class="clock-val">SGT --:--:--</span>
+              </div>
+              <button class="btn-card-inquire" onclick="openRegionalQuoteModal('Singapore ASEAN Gateway')">
+                <span>Inquire Desk</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 3: Dubai JAFZA (MENA) -->
+          <div class="hub-card" data-continent="mena">
+            <div class="hub-card-header">
+              <div>
+                <div class="hub-city-name">
+                  <i class="fa-solid fa-location-dot" style="color: var(--gold-primary); font-size: 15px;"></i>
+                  <span>Dubai</span>
+                </div>
+                <div class="hub-country-tag">United Arab Emirates &bull; GCC Freezone</div>
+              </div>
+              <span class="hub-zone-badge zone-ftz">Bonded FTZ</span>
+            </div>
+
+            <div class="hub-specs-summary">
+              <div class="hub-spec-col">
+                <span class="lbl">Port Terminal</span>
+                <span class="val">Jebel Ali Port (DP World)</span>
+              </div>
+              <div class="hub-spec-col">
+                <span class="lbl">Storage Area</span>
+                <span class="val">380,000 Sq. Ft.</span>
+              </div>
+            </div>
+
+            <ul class="hub-capabilities-list">
+              <li><i class="fa-solid fa-circle-check"></i> 0% Duty Bonded Re-Export Zone</li>
+              <li><i class="fa-solid fa-circle-check"></i> Middle East &amp; North Africa Transit</li>
+              <li><i class="fa-solid fa-circle-check"></i> Halal Certified Food Warehousing</li>
+            </ul>
+
+            <div class="hub-card-footer">
+              <div class="hub-local-clock" data-tz="Asia/Dubai">
+                <i class="fa-regular fa-clock"></i>
+                <span class="clock-val">GST --:--:--</span>
+              </div>
+              <button class="btn-card-inquire" onclick="openRegionalQuoteModal('Dubai JAFZA Freezone')">
+                <span>Inquire Desk</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 4: Rotterdam (Europe) -->
+          <div class="hub-card" data-continent="europe">
+            <div class="hub-card-header">
+              <div>
+                <div class="hub-city-name">
+                  <i class="fa-solid fa-location-dot" style="color: var(--gold-primary); font-size: 15px;"></i>
+                  <span>Rotterdam</span>
+                </div>
+                <div class="hub-country-tag">Netherlands &bull; Euro Maritime Gate</div>
+              </div>
+              <span class="hub-zone-badge zone-port">EU Port Central</span>
+            </div>
+
+            <div class="hub-specs-summary">
+              <div class="hub-spec-col">
+                <span class="lbl">Port Terminal</span>
+                <span class="val">Port of Rotterdam (Maasvlakte)</span>
+              </div>
+              <div class="hub-spec-col">
+                <span class="lbl">Storage Area</span>
+                <span class="val">320,000 Sq. Ft.</span>
+              </div>
+            </div>
+
+            <ul class="hub-capabilities-list">
+              <li><i class="fa-solid fa-circle-check"></i> EU Customs Union Direct Clearance</li>
+              <li><i class="fa-solid fa-circle-check"></i> Multi-modal Rhine Rail &amp; Barge Links</li>
+              <li><i class="fa-solid fa-circle-check"></i> Certified Phytosanitary Inspection Lab</li>
+            </ul>
+
+            <div class="hub-card-footer">
+              <div class="hub-local-clock" data-tz="Europe/Amsterdam">
+                <i class="fa-regular fa-clock"></i>
+                <span class="clock-val">CET --:--:--</span>
+              </div>
+              <button class="btn-card-inquire" onclick="openRegionalQuoteModal('Rotterdam European Terminal')">
+                <span>Inquire Desk</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 5: Hamburg (Europe) -->
+          <div class="hub-card" data-continent="europe">
+            <div class="hub-card-header">
+              <div>
+                <div class="hub-city-name">
+                  <i class="fa-solid fa-location-dot" style="color: var(--gold-primary); font-size: 15px;"></i>
+                  <span>Hamburg</span>
+                </div>
+                <div class="hub-country-tag">Germany &bull; Central European Desk</div>
+              </div>
+              <span class="hub-zone-badge zone-hq">Regional Office</span>
+            </div>
+
+            <div class="hub-specs-summary">
+              <div class="hub-spec-col">
+                <span class="lbl">Port Terminal</span>
+                <span class="val">Port of Hamburg (HHLA)</span>
+              </div>
+              <div class="hub-spec-col">
+                <span class="lbl">Storage Area</span>
+                <span class="val">210,000 Sq. Ft.</span>
+              </div>
+            </div>
+
+            <ul class="hub-capabilities-list">
+              <li><i class="fa-solid fa-circle-check"></i> Heavy Industrial Goods &amp; Machinery</li>
+              <li><i class="fa-solid fa-circle-check"></i> Direct Rail Freight to Eastern Europe</li>
+              <li><i class="fa-solid fa-circle-check"></i> CE Mark &amp; ISO Compliance Support</li>
+            </ul>
+
+            <div class="hub-card-footer">
+              <div class="hub-local-clock" data-tz="Europe/Berlin">
+                <i class="fa-regular fa-clock"></i>
+                <span class="clock-val">CET --:--:--</span>
+              </div>
+              <button class="btn-card-inquire" onclick="openRegionalQuoteModal('Hamburg Central Europe Desk')">
+                <span>Inquire Desk</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 6: Houston (Americas) -->
+          <div class="hub-card" data-continent="americas">
+            <div class="hub-card-header">
+              <div>
+                <div class="hub-city-name">
+                  <i class="fa-solid fa-location-dot" style="color: var(--gold-primary); font-size: 15px;"></i>
+                  <span>Houston</span>
+                </div>
+                <div class="hub-country-tag">United States &bull; Gulf Coast Terminal</div>
+              </div>
+              <span class="hub-zone-badge zone-port">US Gateway</span>
+            </div>
+
+            <div class="hub-specs-summary">
+              <div class="hub-spec-col">
+                <span class="lbl">Port Terminal</span>
+                <span class="val">Port Houston (Barbours Cut)</span>
+              </div>
+              <div class="hub-spec-col">
+                <span class="lbl">Storage Area</span>
+                <span class="val">340,000 Sq. Ft.</span>
+              </div>
+            </div>
+
+            <ul class="hub-capabilities-list">
+              <li><i class="fa-solid fa-circle-check"></i> US Customs FDA / USDA Priority Lanes</li>
+              <li><i class="fa-solid fa-circle-check"></i> Petrochemicals &amp; Agro-commodity Hub</li>
+              <li><i class="fa-solid fa-circle-check"></i> Intermodal Rail Links to US Midwest</li>
+            </ul>
+
+            <div class="hub-card-footer">
+              <div class="hub-local-clock" data-tz="America/Chicago">
+                <i class="fa-regular fa-clock"></i>
+                <span class="clock-val">CST --:--:--</span>
+              </div>
+              <button class="btn-card-inquire" onclick="openRegionalQuoteModal('Houston Americas Gateway')">
+                <span>Inquire Desk</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 7: Santos (Americas) -->
+          <div class="hub-card" data-continent="americas">
+            <div class="hub-card-header">
+              <div>
+                <div class="hub-city-name">
+                  <i class="fa-solid fa-location-dot" style="color: var(--gold-primary); font-size: 15px;"></i>
+                  <span>Santos / S&atilde;o Paulo</span>
+                </div>
+                <div class="hub-country-tag">Brazil &bull; South America Hub</div>
+              </div>
+              <span class="hub-zone-badge zone-ftz">Agri-Commodity</span>
+            </div>
+
+            <div class="hub-specs-summary">
+              <div class="hub-spec-col">
+                <span class="lbl">Port Terminal</span>
+                <span class="val">Port of Santos (BTP)</span>
+              </div>
+              <div class="hub-spec-col">
+                <span class="lbl">Storage Area</span>
+                <span class="val">260,000 Sq. Ft.</span>
+              </div>
+            </div>
+
+            <ul class="hub-capabilities-list">
+              <li><i class="fa-solid fa-circle-check"></i> Coffee, Soybeans, Sugar &amp; Pulp</li>
+              <li><i class="fa-solid fa-circle-check"></i> MERCOSUR Trade Documentation</li>
+              <li><i class="fa-solid fa-circle-check"></i> Deep-Sea Reefer Vessel Capacity</li>
+            </ul>
+
+            <div class="hub-card-footer">
+              <div class="hub-local-clock" data-tz="America/Sao_Paulo">
+                <i class="fa-regular fa-clock"></i>
+                <span class="clock-val">BRT --:--:--</span>
+              </div>
+              <button class="btn-card-inquire" onclick="openRegionalQuoteModal('Santos LATAM Hub')">
+                <span>Inquire Desk</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 8: Durban (Africa) -->
+          <div class="hub-card" data-continent="africa">
+            <div class="hub-card-header">
+              <div>
+                <div class="hub-city-name">
+                  <i class="fa-solid fa-location-dot" style="color: var(--gold-primary); font-size: 15px;"></i>
+                  <span>Durban</span>
+                </div>
+                <div class="hub-country-tag">South Africa &bull; Maritime Portal</div>
+              </div>
+              <span class="hub-zone-badge zone-port">Africa Gate</span>
+            </div>
+
+            <div class="hub-specs-summary">
+              <div class="hub-spec-col">
+                <span class="lbl">Port Terminal</span>
+                <span class="val">Port of Durban (Transnet)</span>
+              </div>
+              <div class="hub-spec-col">
+                <span class="lbl">Storage Area</span>
+                <span class="val">190,000 Sq. Ft.</span>
+              </div>
+            </div>
+
+            <ul class="hub-capabilities-list">
+              <li><i class="fa-solid fa-circle-check"></i> Southern Africa Development (SADC) Transit</li>
+              <li><i class="fa-solid fa-circle-check"></i> Minerals, Agri-products &amp; Automotive</li>
+              <li><i class="fa-solid fa-circle-check"></i> Bulk Container Handling Facilities</li>
+            </ul>
+
+            <div class="hub-card-footer">
+              <div class="hub-local-clock" data-tz="Africa/Johannesburg">
+                <i class="fa-regular fa-clock"></i>
+                <span class="clock-val">SAST --:--:--</span>
+              </div>
+              <button class="btn-card-inquire" onclick="openRegionalQuoteModal('Durban African Gateway')">
+                <span>Inquire Desk</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 9: Shanghai (APAC) -->
+          <div class="hub-card" data-continent="apac">
+            <div class="hub-card-header">
+              <div>
+                <div class="hub-city-name">
+                  <i class="fa-solid fa-location-dot" style="color: var(--gold-primary); font-size: 15px;"></i>
+                  <span>Shanghai</span>
+                </div>
+                <div class="hub-country-tag">China &bull; East Asia Industrial Hub</div>
+              </div>
+              <span class="hub-zone-badge zone-ftz">Mega Terminal</span>
+            </div>
+
+            <div class="hub-specs-summary">
+              <div class="hub-spec-col">
+                <span class="lbl">Port Terminal</span>
+                <span class="val">Yangshan Deep-Water Port</span>
+              </div>
+              <div class="hub-spec-col">
+                <span class="lbl">Storage Area</span>
+                <span class="val">420,000 Sq. Ft.</span>
+              </div>
+            </div>
+
+            <ul class="hub-capabilities-list">
+              <li><i class="fa-solid fa-circle-check"></i> World's Largest Automated Container Port</li>
+              <li><i class="fa-solid fa-circle-check"></i> Solar Panels, Electronics &amp; Raw Material</li>
+              <li><i class="fa-solid fa-circle-check"></i> Fast-Track Bilateral Export Compliance</li>
+            </ul>
+
+            <div class="hub-card-footer">
+              <div class="hub-local-clock" data-tz="Asia/Shanghai">
+                <i class="fa-regular fa-clock"></i>
+                <span class="clock-val">CST --:--:--</span>
+              </div>
+              <button class="btn-card-inquire" onclick="openRegionalQuoteModal('Shanghai East Asia Hub')">
+                <span>Inquire Desk</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         6. INTERACTIVE SHIPPING LANE & FREIGHT TRANSIT CALCULATOR
+         ========================================================================== -->
+    <section class="transit-calculator-section" id="transit-calculator">
+      <div class="page-container">
+        <div class="transit-calc-wrapper">
+
+          <!-- Left Calculator Form -->
+          <div class="calc-left-block">
+            <div class="calc-eyebrow">
+              <i class="fa-solid fa-route"></i>
+              <span>Interactive Trade Corridor Matrix</span>
+            </div>
+            <h2 class="calc-title">Calculate Freight Transit Times &amp; Route Specs</h2>
+            <p class="calc-desc">
+              Select your origin port and target destination to view estimated sea freight days, air cargo express options, sailing schedules, and container availability.
+            </p>
+
+            <form class="calc-form-card" id="routeCalcForm">
+              <div class="calc-form-grid">
+                
+                <div class="calc-form-group">
+                  <label for="originPortSelect" class="calc-label">Origin Port / Terminal</label>
+                  <select id="originPortSelect" class="calc-select">
+                    <option value="in_nhava">Nhava Sheva (IN - JNPT)</option>
+                    <option value="sg_singapore">Port of Singapore (SG)</option>
+                    <option value="ae_dubai">Jebel Ali Port (UAE)</option>
+                    <option value="cn_shanghai">Shanghai Yangshan (CN)</option>
+                    <option value="nl_rotterdam">Rotterdam Port (NL)</option>
+                    <option value="us_houston">Houston Terminal (US)</option>
+                    <option value="br_santos">Santos Port (BR)</option>
+                  </select>
+                </div>
+
+                <div class="calc-form-group">
+                  <label for="destPortSelect" class="calc-label">Destination Port / Hub</label>
+                  <select id="destPortSelect" class="calc-select">
+                    <option value="nl_rotterdam">Rotterdam Port (NL)</option>
+                    <option value="ae_dubai">Jebel Ali Port (UAE)</option>
+                    <option value="us_newyork">New York / New Jersey (US)</option>
+                    <option value="in_nhava">Nhava Sheva (IN - JNPT)</option>
+                    <option value="sg_singapore">Port of Singapore (SG)</option>
+                    <option value="de_hamburg">Hamburg Port (DE)</option>
+                    <option value="za_durban">Durban Terminal (ZA)</option>
+                  </select>
+                </div>
+
+                <div class="calc-form-group">
+                  <label for="cargoTypeSelect" class="calc-label">Cargo Specification</label>
+                  <select id="cargoTypeSelect" class="calc-select">
+                    <option value="fcl_dry">Dry Container (20ft / 40ft HC FCL)</option>
+                    <option value="reefer">Cold Chain Reefer (-25&deg;C to +15&deg;C)</option>
+                    <option value="lcl_cargo">Consolidated LCL Cargo</option>
+                    <option value="air_express">Express Air Freight Charter</option>
+                    <option value="bulk_vessel">Bulk Commodity Vessel</option>
+                  </select>
+                </div>
+
+                <div class="calc-form-group">
+                  <label for="incotermSelect" class="calc-label">Trade Incoterm</label>
+                  <select id="incotermSelect" class="calc-select">
+                    <option value="cif">CIF (Cost, Insurance &amp; Freight)</option>
+                    <option value="fob">FOB (Free on Board)</option>
+                    <option value="cfr">CFR (Cost and Freight)</option>
+                    <option value="ddp">DDP (Delivered Duty Paid)</option>
+                    <option value="exw">EXW (Ex Works)</option>
+                  </select>
+                </div>
+
+              </div>
+
+              <button type="button" class="btn-calculate-route" id="btnRunCalc">
+                <i class="fa-solid fa-arrows-spin"></i>
+                <span>Calculate Trade Transit Specs</span>
+              </button>
+            </form>
+          </div>
+
+          <!-- Right Calculation Result Box -->
+          <div class="calc-result-box" id="calcResultBox">
+            <div class="calc-result-header">
+              <div class="calc-route-name">
+                <i class="fa-solid fa-ship"></i>
+                <span id="resRouteName">Nhava Sheva &rarr; Rotterdam</span>
+              </div>
+              <span class="calc-badge-mode" id="resRouteMode">Direct Sea Corridor</span>
+            </div>
+
+            <div class="transit-times-row">
+              <div class="transit-time-block primary">
+                <div class="tt-label">
+                  <i class="fa-solid fa-anchor"></i>
+                  <span>Sea Freight Transit</span>
+                </div>
+                <div class="tt-value" id="resSeaTransit">18 - 21 Days</div>
+                <div class="tt-sub">Direct Vessel Sailing</div>
+              </div>
+
+              <div class="transit-time-block">
+                <div class="tt-label">
+                  <i class="fa-solid fa-plane"></i>
+                  <span>Air Express Transit</span>
+                </div>
+                <div class="tt-value" id="resAirTransit">24 - 36 Hours</div>
+                <div class="tt-sub">Direct Cargo Charter</div>
+              </div>
+            </div>
+
+            <div class="calc-details-list">
+              <div class="calc-detail-item">
+                <span class="lbl">Sailing Frequency:</span>
+                <span class="val" id="resFrequency">3x Weekly Direct Departures</span>
+              </div>
+              <div class="calc-detail-item">
+                <span class="lbl">Customs Pre-Clearance:</span>
+                <span class="val" id="resCustoms">EDI Supported (&lt; 6 Hours SLA)</span>
+              </div>
+              <div class="calc-detail-item">
+                <span class="lbl">Cold-Chain Availability:</span>
+                <span class="val" id="resReefer">Active Continuous Temperature Telemetry</span>
+              </div>
+              <div class="calc-detail-item">
+                <span class="lbl">Carbon Efficiency Index:</span>
+                <span class="val" style="color: #34d399;" id="resCarbon">Class A+ Optimized</span>
+              </div>
+            </div>
+
+            <button type="button" class="btn-book-route" id="btnBookRouteInquiry">
+              <i class="fa-solid fa-paper-plane"></i>
+              <span>Request Quote for this Route</span>
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         7. STRATEGIC INFRASTRUCTURE & MULTIMODAL NETWORK
+         ========================================================================== -->
+    <section class="infra-network-section" id="infrastructure">
+      <div class="page-container">
+
+        <div class="section-header-block">
+          <div class="section-eyebrow">
+            <i class="fa-solid fa-dolly"></i>
+            <span>Logistics Assets &amp; Infrastructure</span>
+          </div>
+          <h2 class="section-title">End-to-End Multimodal Trade Capabilities</h2>
+          <p class="section-subtitle">
+            From deep-water container berths to temperature-controlled air freight and bonded distribution warehouses, our infrastructure ensures zero supply-chain bottlenecks.
+          </p>
+        </div>
+
+        <div class="infra-cards-grid">
+          
+          <!-- Card 1 -->
+          <div class="infra-card">
+            <div class="infra-icon-wrap">
+              <i class="fa-solid fa-ship"></i>
+            </div>
+            <h3 class="infra-card-title">Ocean &amp; Maritime Freight</h3>
+            <p class="infra-card-desc">
+              Chartered vessel space and priority container allocations across global top-tier shipping lines. FCL, LCL, bulk break, and roll-on/roll-off capability.
+            </p>
+            <div class="infra-stats-tag">120+ Active Lanes</div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="infra-card">
+            <div class="infra-icon-wrap">
+              <i class="fa-solid fa-plane-departure"></i>
+            </div>
+            <h3 class="infra-card-title">Air Cargo Charters</h3>
+            <p class="infra-card-desc">
+              Dedicated air freight allotments for time-critical, high-value, and perishable consignments through premier international airport hubs with 24/7 tarmac handling.
+            </p>
+            <div class="infra-stats-tag">&lt; 24h Express SLA</div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="infra-card">
+            <div class="infra-icon-wrap">
+              <i class="fa-solid fa-warehouse"></i>
+            </div>
+            <h3 class="infra-card-title">Bonded FTZ Warehousing</h3>
+            <p class="infra-card-desc">
+              Over 2.5 million sq. ft. of strategically situated bonded storage space featuring tariff deferral, automated barcode picking, and custom repacking.
+            </p>
+            <div class="infra-stats-tag">42 Facilities Worldwide</div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="infra-card">
+            <div class="infra-icon-wrap">
+              <i class="fa-solid fa-satellite"></i>
+            </div>
+            <h3 class="infra-card-title">IoT Satellite Tracking</h3>
+            <p class="infra-card-desc">
+              Real-time temperature, humidity, shock, and GPS telematics sensor telemetry deployed on all reefer and sensitive container consignments.
+            </p>
+            <div class="infra-stats-tag">Live 24/7 Visibility</div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         8. REGIONAL TRADE DIRECTORS & MULTILINGUAL DESKS
+         ========================================================================== -->
+    <section class="trade-desks-section" id="regional-desks">
+      <div class="page-container">
+
+        <div class="section-header-block">
+          <div class="section-eyebrow">
+            <i class="fa-solid fa-headset"></i>
+            <span>Local Support, Worldwide Reach</span>
+          </div>
+          <h2 class="section-title">Dedicated Regional Trade Directors</h2>
+          <p class="section-subtitle">
+            Connect directly with our regional trade specialists for immediate advisory on tariff structures, bilateral customs treaties, and door-to-door delivery.
+          </p>
+        </div>
+
+        <div class="trade-desks-grid">
+
+          <!-- Director 1: APAC -->
+          <div class="director-card">
+            <div>
+              <div class="director-card-top">
+                <div class="director-avatar-box">
+                  <i class="fa-solid fa-user-tie"></i>
+                </div>
+                <div class="director-info">
+                  <h4>Rajesh Verma</h4>
+                  <p class="role">Managing Director &bull; Asia-Pacific (APAC)</p>
+                </div>
+              </div>
+
+              <div class="director-meta-list">
+                <div class="director-meta-item">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <span>Hub: Mumbai &amp; Singapore</span>
+                </div>
+                <div class="director-meta-item">
+                  <i class="fa-solid fa-language"></i>
+                  <span>Languages: English, Hindi, Mandarin</span>
+                </div>
+                <div class="director-meta-item">
+                  <i class="fa-regular fa-envelope"></i>
+                  <span>apac.desk@conceptexim.com</span>
+                </div>
+              </div>
+            </div>
+
+            <button class="btn-desk-contact" onclick="openRegionalQuoteModal('Asia-Pacific Trade Desk (Rajesh Verma)')">
+              <i class="fa-solid fa-paper-plane"></i>
+              <span>Connect with APAC Desk</span>
+            </button>
+          </div>
+
+          <!-- Director 2: EMEA / Europe & MENA -->
+          <div class="director-card">
+            <div>
+              <div class="director-card-top">
+                <div class="director-avatar-box">
+                  <i class="fa-solid fa-user-tie"></i>
+                </div>
+                <div class="director-info">
+                  <h4>Julian De Jong</h4>
+                  <p class="role">Director &bull; Europe &amp; Middle East (EMEA)</p>
+                </div>
+              </div>
+
+              <div class="director-meta-list">
+                <div class="director-meta-item">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <span>Hub: Rotterdam &amp; Dubai</span>
+                </div>
+                <div class="director-meta-item">
+                  <i class="fa-solid fa-language"></i>
+                  <span>Languages: English, Dutch, German, Arabic</span>
+                </div>
+                <div class="director-meta-item">
+                  <i class="fa-regular fa-envelope"></i>
+                  <span>emea.desk@conceptexim.com</span>
+                </div>
+              </div>
+            </div>
+
+            <button class="btn-desk-contact" onclick="openRegionalQuoteModal('EMEA Trade Desk (Julian De Jong)')">
+              <i class="fa-solid fa-paper-plane"></i>
+              <span>Connect with EMEA Desk</span>
+            </button>
+          </div>
+
+          <!-- Director 3: Americas -->
+          <div class="director-card">
+            <div>
+              <div class="director-card-top">
+                <div class="director-avatar-box">
+                  <i class="fa-solid fa-user-tie"></i>
+                </div>
+                <div class="director-info">
+                  <h4>Marcus Sterling</h4>
+                  <p class="role">Director &bull; North &amp; South America (Americas)</p>
+                </div>
+              </div>
+
+              <div class="director-meta-list">
+                <div class="director-meta-item">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <span>Hub: Houston &amp; S&atilde;o Paulo</span>
+                </div>
+                <div class="director-meta-item">
+                  <i class="fa-solid fa-language"></i>
+                  <span>Languages: English, Spanish, Portuguese</span>
+                </div>
+                <div class="director-meta-item">
+                  <i class="fa-regular fa-envelope"></i>
+                  <span>americas.desk@conceptexim.com</span>
+                </div>
+              </div>
+            </div>
+
+            <button class="btn-desk-contact" onclick="openRegionalQuoteModal('Americas Trade Desk (Marcus Sterling)')">
+              <i class="fa-solid fa-paper-plane"></i>
+              <span>Connect with Americas Desk</span>
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         9. GLOBAL COMPLIANCE CERTIFICATION STRIP
+         ========================================================================== -->
+    <section class="compliance-strip-section">
+      <div class="page-container">
+        <div class="compliance-strip-inner">
+          <div class="strip-left-label">
+            <i class="fa-solid fa-certificate"></i>
+            <div class="strip-title-text">
+              <h4>International Trade Accreditations</h4>
+              <p>Recognized globally for quality assurance and compliance</p>
+            </div>
+          </div>
+
+          <div class="accreditation-badges-row">
+            <span class="cert-badge-pill"><i class="fa-solid fa-shield-check"></i> AEO-T3 Certified</span>
+            <span class="cert-badge-pill"><i class="fa-solid fa-shield-check"></i> ISO 9001:2015</span>
+            <span class="cert-badge-pill"><i class="fa-solid fa-shield-check"></i> HACCP Certified</span>
+            <span class="cert-badge-pill"><i class="fa-solid fa-shield-check"></i> FDA Registered</span>
+            <span class="cert-badge-pill"><i class="fa-solid fa-shield-check"></i> Halal &amp; Kosher</span>
+            <span class="cert-badge-pill"><i class="fa-solid fa-shield-check"></i> CE Compliant</span>
+            <span class="cert-badge-pill"><i class="fa-solid fa-shield-check"></i> FIATA Member</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         10. CONNECT WITH REGIONAL TRADE DESK CTA
+         ========================================================================== -->
+    <section class="presence-cta-section">
+      <div class="page-container">
+        <div class="presence-cta-card">
+          <div class="cta-left-content">
+            <h2>Ready to Expand Your Global Trade Footprint?</h2>
+            <p>
+              Whether you are sourcing premium agricultural commodities, importing industrial machinery, or optimizing maritime freight transit, our global team is ready to assist.
+            </p>
+            <div class="cta-trust-points">
+              <div class="cta-trust-point">
+                <i class="fa-solid fa-bolt"></i>
+                <span>Fast 2-Hour Response SLA</span>
+              </div>
+              <div class="cta-trust-point">
+                <i class="fa-solid fa-shield-halved"></i>
+                <span>Complete Trade Risk Mitigation</span>
+              </div>
+              <div class="cta-trust-point">
+                <i class="fa-solid fa-globe"></i>
+                <span>Direct Local Customs Clearance</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="cta-right-box">
+            <button class="btn-cta-inquire" id="btnBottomInquire">
+              <i class="fa-solid fa-paper-plane"></i>
+              <span>Inquire with Nearest Trade Hub</span>
+            </button>
+            <a href="contact.html" class="btn-cta-directory">
+              <i class="fa-solid fa-phone-volume"></i>
+              <span>View All Office Contact Details</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= GLOBAL CORPORATE FOOTER ================= -->
+    <footer class="site-global-footer">
+      <div class="footer-waves-overlay" aria-hidden="true"></div>
+      <div class="footer-inner-container">
+        
+        <!-- Top Row: Left Brand & CTA, Right Nav & Socials -->
+        <div class="footer-main-row">
+          
+          <!-- Left: Logo + Vertical Divider + CTA Pitch & Button -->
+          <div class="footer-left-brand-group">
+            <a href="index.html" class="footer-logo-link" title="CONCEPT EXIM">
+              <img src="images/concept_exim_logo_white.png" srcset="images/concept_exim_logo_white@3x.png 3x" alt="CONCEPT EXIM - Global Trade Simplified" class="footer-concept-logo">
+            </a>
+            <div class="footer-vert-divider"></div>
+            <div class="footer-cta-text-wrap">
+              <span class="footer-cta-heading">Ready to Grow Globally?</span>
+              <span class="footer-cta-sub">Let's build your next success story together.</span>
+            </div>
+            <button type="button" class="footer-btn-quote" onclick="if(typeof openRfqModal==='function'){openRfqModal();}else if(typeof openQuoteModal==='function'){openQuoteModal();}else{window.location.href='contact.html';}">
+              <span>Get a Free Quote</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+
+          <!-- Right: Horizontal Nav Links + Social Icons -->
+          <div class="footer-right-nav-group">
+            <nav class="footer-horizontal-nav" aria-label="Footer Navigation">
+              <a href="index.html">Home</a>
+              <a href="about.html">About Us</a>
+              <a href="services.html">Services</a>
+              <a href="products.html">Products</a>
+              <a href="global-presence.html">Global Network</a>
+              <a href="insights.html">Insights</a>
+              <a href="contact.html">Contact</a>
+            </nav>
+            <div class="footer-social-icons">
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer-social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="footer-social-icon" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="footer-social-icon" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Bottom Subline: Copyright + Legal -->
+        <div class="footer-bottom-row">
+          <div class="footer-copyright-text">
+            &copy; 2026 CONCEPT EXIM. All rights reserved.
+          </div>
+          <div class="footer-legal-links">
+            <a href="compliance.html">Privacy Policy</a>
+            <span class="footer-legal-sep">|</span>
+            <a href="compliance.html">Terms &amp; Conditions</a>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- ==========================================================================
+       12. MODAL: REGIONAL TRADE DESK INQUIRY & QUOTE
+       ========================================================================== -->
+  <div class="modal-backdrop" id="regionalQuoteModal" aria-hidden="true" role="dialog">
+    <div class="modal-container">
+      <div class="modal-header-block">
+        <button class="modal-close-btn" id="closeRegionalQuoteModal" aria-label="Close Modal">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <h3 class="modal-title-text" id="modalTradeTitle">Connect with Regional Trade Desk</h3>
+        <p class="modal-subtitle-text">Dedicated local account manager assigned with under 2-hour response guarantee.</p>
+      </div>
+
+      <form class="modal-body-form" id="regionalTradeForm" onsubmit="handleQuoteSubmit(event)">
+        <div class="modal-form-group">
+          <label for="qTargetDesk">Selected Trade Desk / Regional Hub *</label>
+          <input type="text" id="qTargetDesk" class="modal-form-input" value="Mumbai Central HQ" required readonly style="background: #f8fafc; font-weight: 700; color: var(--navy-dark);">
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+          <div class="modal-form-group">
+            <label for="qFullName">Full Name *</label>
+            <input type="text" id="qFullName" class="modal-form-input" placeholder="e.g. David Sterling" required>
+          </div>
+          <div class="modal-form-group">
+            <label for="qCompany">Company / Entity Name *</label>
+            <input type="text" id="qCompany" class="modal-form-input" placeholder="e.g. Global Trade Ltd." required>
+          </div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+          <div class="modal-form-group">
+            <label for="qEmail">Corporate Email *</label>
+            <input type="email" id="qEmail" class="modal-form-input" placeholder="name@company.com" required>
+          </div>
+          <div class="modal-form-group">
+            <label for="qPhone">Phone / WhatsApp</label>
+            <input type="tel" id="qPhone" class="modal-form-input" placeholder="+1 (555) 019-2834">
+          </div>
+        </div>
+
+        <div class="modal-form-group">
+          <label for="qCommodity">Commodity / Trade Requirement *</label>
+          <select id="qCommodity" class="modal-form-select" required>
+            <option value="Agricultural Commodities (Rice, Spices, Grains)">Agricultural Commodities (Rice, Spices, Grains)</option>
+            <option value="Cotton, Textiles & Garments">Cotton, Textiles &amp; Garments</option>
+            <option value="Industrial Machinery & Pumps">Industrial Machinery &amp; Pumps</option>
+            <option value="Pharmaceutical APIs & Formulations">Pharmaceutical APIs &amp; Formulations</option>
+            <option value="Renewable Energy & Solar Panels">Renewable Energy &amp; Solar Panels</option>
+            <option value="Custom Freight & Logistics Clearance Only">Custom Freight &amp; Logistics Clearance Only</option>
+          </select>
+        </div>
+
+        <div class="modal-form-group">
+          <label for="qNotes">Route Details / Estimated Volume</label>
+          <textarea id="qNotes" class="modal-form-textarea" rows="3" placeholder="Origin port, destination port, estimated monthly container volume or tonnage..."></textarea>
+        </div>
+
+        <button type="submit" class="btn-form-submit">
+          <i class="fa-solid fa-paper-plane"></i>
+          <span>Submit Priority Trade Inquiry</span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast-msg" id="globalToast">
+    <i class="fa-solid fa-circle-check" style="color: #fbbf24; font-size: 16px;"></i>
+    <span id="globalToastText">Your trade inquiry has been dispatched to the regional desk!</span>
+  </div>
+
+  <!-- ==========================================================================
+       13. INTERACTIVE JAVASCRIPT LOGIC
+       ========================================================================== -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+      // --- 1. Hub Database for Interactive Map & Sidebar ---
+      const hubDatabase = {
+        mumbai: {
+          title: 'Mumbai Central Operations HQ',
+          country: 'India (Nhava Sheva JNPT Port)',
+          tz: 'Asia/Kolkata',
+          tzLabel: 'IST',
+          area: '450,000 Sq. Ft.',
+          coldChain: '-25°C to +15°C Controlled',
+          port: 'Nhava Sheva (JNPT)',
+          clearance: '< 4 Hours Fast-Track AEO',
+          officer: 'Rajesh Verma',
+          role: 'VP - South Asia Operations',
+          commodities: ['Basmati Rice', 'Organic Spices', 'Cotton Fabrics', 'Pharma APIs', 'Industrial Pumps']
+        },
+        singapore: {
+          title: 'Singapore ASEAN Gateway',
+          country: 'Singapore (PSA Terminals)',
+          tz: 'Asia/Singapore',
+          tzLabel: 'SGT',
+          area: '280,000 Sq. Ft.',
+          coldChain: 'Changi Air & Port Reefer',
+          port: 'PSA Singapore Terminals',
+          clearance: '< 2 Hours Automated EDI',
+          officer: 'Evelyn Tan',
+          role: 'Head of Southeast Asia Logistics',
+          commodities: ['Semiconductors', 'Electronics', 'Refined Oils', 'Textiles', 'Precision Tools']
+        },
+        dubai: {
+          title: 'Dubai JAFZA Freezone Hub',
+          country: 'United Arab Emirates (Jebel Ali)',
+          tz: 'Asia/Dubai',
+          tzLabel: 'GST',
+          area: '380,000 Sq. Ft.',
+          coldChain: 'Halal Certified Deep Freeze',
+          port: 'Jebel Ali Port (DP World)',
+          clearance: '< 3 Hours 0% Duty Transit',
+          officer: 'Tariq Al-Mansoor',
+          role: 'Middle East Regional Director',
+          commodities: ['Foodstuffs', 'Gold & Precious Metals', 'Automotive Spares', 'Chemicals', 'Building Materials']
+        },
+        rotterdam: {
+          title: 'Rotterdam European Maritime Central',
+          country: 'Netherlands (Maasvlakte Terminal)',
+          tz: 'Europe/Amsterdam',
+          tzLabel: 'CET',
+          area: '320,000 Sq. Ft.',
+          coldChain: 'Phytosanitary Cold Inspection',
+          port: 'Port of Rotterdam',
+          clearance: '< 6 Hours EU Union Clearance',
+          officer: 'Julian De Jong',
+          role: 'Director - European Operations',
+          commodities: ['Fresh Produce', 'Organic Grains', 'Specialty Chemicals', 'Machinery', 'Bio-fuels']
+        },
+        london: {
+          title: 'London UK Trade Office',
+          country: 'United Kingdom (London Gateway)',
+          tz: 'Europe/London',
+          tzLabel: 'GMT',
+          area: '160,000 Sq. Ft.',
+          coldChain: 'Controlled Atmosphere Hub',
+          port: 'London Gateway & Heathrow Air',
+          clearance: '< 4 Hours HMRC Express',
+          officer: 'Arthur Pendelton',
+          role: 'UK & Atlantic Desk Lead',
+          commodities: ['Textiles', 'Agri Commodities', 'Pharmaceuticals', 'Spirits', 'Industrial Components']
+        },
+        newyork: {
+          title: 'New York / New Jersey Terminal',
+          country: 'United States (Port Newark / Elizabeth)',
+          tz: 'America/New_York',
+          tzLabel: 'EST',
+          area: '310,000 Sq. Ft.',
+          coldChain: 'USDA / FDA Approved Chill Hub',
+          port: 'Port of NY & NJ',
+          clearance: '< 5 Hours US CBP FastLane',
+          officer: 'Marcus Sterling',
+          role: 'North America Trade VP',
+          commodities: ['Food Ingredients', 'Apparel', 'Specialty Chemicals', 'Consumer Electronics']
+        },
+        houston: {
+          title: 'Houston Gulf Coast Terminal',
+          country: 'United States (Port Houston)',
+          tz: 'America/Chicago',
+          tzLabel: 'CST',
+          area: '340,000 Sq. Ft.',
+          coldChain: 'HazMat & Temperature Controlled',
+          port: 'Port Houston (Barbours Cut)',
+          clearance: '< 4 Hours Gulf Port Lane',
+          officer: 'Sarah Jenkins',
+          role: 'Gulf & Intermodal Logistics Lead',
+          commodities: ['Petrochemicals', 'Industrial Valving', 'Agro-bulk', 'Steel Products']
+        },
+        santos: {
+          title: 'Santos / São Paulo LATAM Hub',
+          country: 'Brazil (Port of Santos)',
+          tz: 'America/Sao_Paulo',
+          tzLabel: 'BRT',
+          area: '260,000 Sq. Ft.',
+          coldChain: 'Meat & Fruit Deep Freeze Silos',
+          port: 'Port of Santos (BTP)',
+          clearance: '< 8 Hours MERCOSUR Gateway',
+          officer: 'Mateo Silva',
+          role: 'Director - LATAM Agri-Trade',
+          commodities: ['Coffee Beans', 'Raw Cane Sugar', 'Soybeans', 'Poultry', 'Cellulose Pulp']
+        },
+        durban: {
+          title: 'Durban African Maritime Gateway',
+          country: 'South Africa (Port of Durban)',
+          tz: 'Africa/Johannesburg',
+          tzLabel: 'SAST',
+          area: '190,000 Sq. Ft.',
+          coldChain: 'Cold Storage Transit Facility',
+          port: 'Port of Durban (Transnet)',
+          clearance: '< 8 Hours SADC Transit',
+          officer: 'Kwame Ndlovu',
+          role: 'Head of Sub-Saharan Trade',
+          commodities: ['Citrus Fruits', 'Minerals & Ores', 'Wine', 'Automotive Assemblies', 'Grains']
+        },
+        mombasa: {
+          title: 'Mombasa East Africa Transit Gate',
+          country: 'Kenya (Port of Mombasa)',
+          tz: 'Africa/Nairobi',
+          tzLabel: 'EAT',
+          area: '150,000 Sq. Ft.',
+          coldChain: 'Tea & Horticultural Cold Store',
+          port: 'Port of Mombasa (KPA)',
+          clearance: '< 10 Hours EAC Corridor',
+          officer: 'Amina Hassan',
+          role: 'East Africa Corridor Lead',
+          commodities: ['Tea', 'Cut Flowers', 'Coffee', 'Spices', 'Textiles']
+        },
+        shanghai: {
+          title: 'Shanghai East Asia Mega Terminal',
+          country: 'China (Yangshan Deep-Water Port)',
+          tz: 'Asia/Shanghai',
+          tzLabel: 'CST',
+          area: '420,000 Sq. Ft.',
+          coldChain: 'Automated Cold Storage Mega-Hub',
+          port: 'Yangshan Deep-Water Port',
+          clearance: '< 3 Hours Automated Berth',
+          officer: 'Wei Zhang',
+          role: 'Director - Greater China Trade',
+          commodities: ['Solar PV Panels', 'Industrial Machinery', 'Consumer Electronics', 'Active Chemicals']
+        },
+        tokyo: {
+          title: 'Tokyo Pacific Trade Office',
+          country: 'Japan (Port of Tokyo / Yokohama)',
+          tz: 'Asia/Tokyo',
+          tzLabel: 'JST',
+          area: '180,000 Sq. Ft.',
+          coldChain: 'Ultra-Low Temp Cold Facility',
+          port: 'Port of Yokohama',
+          clearance: '< 4 Hours Japan Customs',
+          officer: 'Kenji Takahashi',
+          role: 'Pacific Region Advisor',
+          commodities: ['Precision Robotics', 'Specialty Seafood', 'Medical Devices', 'Automotive Electronics']
+        },
+        sydney: {
+          title: 'Sydney Oceania Gateway',
+          country: 'Australia (Port Botany)',
+          tz: 'Australia/Sydney',
+          tzLabel: 'AEDT',
+          area: '200,000 Sq. Ft.',
+          coldChain: 'Biosecurity Approved Cold Hub',
+          port: 'Port Botany',
+          clearance: '< 6 Hours DAFF Biosecurity Lane',
+          officer: 'Liam O’Connor',
+          role: 'Oceania Trade Manager',
+          commodities: ['Beef & Dairy', 'Wheat', 'Wool', 'Mining Equipment', 'Wine']
+        }
+      };
+
+      // --- 2. Live Timezone Clock Updating ---
+      function updateClocks() {
+        const now = new Date();
+        
+        // Update sidebar clock if active hub exists
+        const currentHubKey = window.activeHubKey || 'mumbai';
+        const hub = hubDatabase[currentHubKey];
+        if (hub) {
+          try {
+            const timeString = now.toLocaleTimeString('en-US', { timeZone: hub.tz, hour12: false });
+            const clockEl = document.getElementById('sidebarHubClock');
+            if (clockEl) clockEl.textContent = `${hub.tzLabel} ${timeString}`;
+          } catch(e) {}
+        }
+
+        // Update all hub card clocks in the grid
+        document.querySelectorAll('.hub-local-clock').forEach(clockBlock => {
+          const tz = clockBlock.getAttribute('data-tz');
+          if (tz) {
+            try {
+              const timeString = now.toLocaleTimeString('en-US', { timeZone: tz, hour12: false });
+              const span = clockBlock.querySelector('.clock-val');
+              if (span) {
+                const tzCode = tz.split('/')[1] ? tz.split('/')[1].substring(0,3).toUpperCase() : 'LCL';
+                span.textContent = `${timeString} (${tzCode})`;
+              }
+            } catch(e) {}
+          }
+        });
+      }
+
+      setInterval(updateClocks, 1000);
+      updateClocks();
+
+      // --- 3. Interactive Hub Node Click Handling ---
+      function selectHub(hubKey) {
+        const hub = hubDatabase[hubKey];
+        if (!hub) return;
+        window.activeHubKey = hubKey;
+
+        // Update Sidebar Elements
+        document.getElementById('sidebarHubTitle').textContent = hub.title;
+        document.getElementById('sidebarHubCountry').textContent = hub.country;
+        document.getElementById('sidebarHubArea').textContent = hub.area;
+        document.getElementById('sidebarHubColdChain').textContent = hub.coldChain;
+        document.getElementById('sidebarHubPort').textContent = hub.port;
+        document.getElementById('sidebarHubClearance').textContent = hub.clearance;
+        document.getElementById('sidebarOfficerName').textContent = hub.officer;
+        document.getElementById('sidebarOfficerRole').textContent = hub.role;
+
+        const commWrap = document.getElementById('sidebarHubCommodities');
+        if (commWrap) {
+          commWrap.innerHTML = hub.commodities.map(c => `<span class="commodity-pill">${c}</span>`).join('');
+        }
+
+        updateClocks();
+      }
+
+      document.querySelectorAll('.hub-svg-node').forEach(node => {
+        node.addEventListener('click', () => {
+          const hubKey = node.getAttribute('data-hub');
+          selectHub(hubKey);
+          
+          // Visual highlight
+          document.querySelectorAll('.hub-svg-node').forEach(n => n.style.opacity = '0.55');
+          node.style.opacity = '1';
+        });
+      });
+
+      // --- 4. Region Tab Filtering on Map ---
+      const regionBtns = document.querySelectorAll('.region-tab-btn');
+      regionBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          regionBtns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          const region = btn.getAttribute('data-region');
+
+          const nodes = document.querySelectorAll('.hub-svg-node');
+          nodes.forEach(node => {
+            const nodeRegion = node.getAttribute('data-region');
+            if (region === 'all' || nodeRegion === region) {
+              node.style.display = 'block';
+              node.style.opacity = '1';
+            } else {
+              node.style.display = 'none';
+            }
+          });
+
+          // If current selected hub is hidden, auto-select first visible hub
+          const firstVisible = document.querySelector(`.hub-svg-node[data-region="${region}"]`) || document.querySelector('.hub-svg-node');
+          if (firstVisible) {
+            selectHub(firstVisible.getAttribute('data-hub'));
+          }
+        });
+      });
+
+      // --- 5. Continental Hubs Grid Filtering ---
+      const contTabs = document.querySelectorAll('.continent-tab-pill');
+      const hubCards = document.querySelectorAll('.hub-card');
+
+      contTabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          contTabs.forEach(t => t.classList.remove('active'));
+          tab.classList.add('active');
+          const continent = tab.getAttribute('data-continent');
+
+          hubCards.forEach(card => {
+            const cardCont = card.getAttribute('data-continent');
+            if (continent === 'all' || cardCont === continent) {
+              card.style.display = 'flex';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+
+      // --- 6. Shipping Lane Transit Calculator Logic ---
+      const transitMatrix = {
+        'in_nhava-nl_rotterdam': { sea: '18 - 21 Days', air: '24 - 36 Hours', freq: '3x Weekly Direct Departures', customs: 'EDI Pre-clearance (< 6 Hours SLA)', name: 'Nhava Sheva (IN) &rarr; Rotterdam (NL)' },
+        'in_nhava-ae_dubai': { sea: '3 - 5 Days', air: '6 - 12 Hours', freq: 'Daily Direct Express Vessels', customs: 'Instant GCC Trade Protocol', name: 'Nhava Sheva (IN) &rarr; Jebel Ali (UAE)' },
+        'in_nhava-us_newyork': { sea: '22 - 26 Days', air: '28 - 40 Hours', freq: '2x Weekly Direct Services', customs: 'US CBP Fast-Track & FDA', name: 'Nhava Sheva (IN) &rarr; New York (US)' },
+        'sg_singapore-nl_rotterdam': { sea: '19 - 23 Days', air: '18 - 24 Hours', freq: '4x Weekly Direct Sailings', customs: 'EU Green Channel Supported', name: 'Singapore (SG) &rarr; Rotterdam (NL)' },
+        'sg_singapore-ae_dubai': { sea: '9 - 12 Days', air: '7 - 14 Hours', freq: '5x Weekly Maritime Express', customs: 'Duty-free Bonded Transit', name: 'Singapore (SG) &rarr; Jebel Ali (UAE)' },
+        'cn_shanghai-us_houston': { sea: '22 - 27 Days', air: '24 - 36 Hours', freq: '3x Weekly Transpacific Express', customs: 'Automated CBP Manifest', name: 'Shanghai (CN) &rarr; Houston (US)' },
+        'br_santos-ae_dubai': { sea: '24 - 28 Days', air: '36 - 48 Hours', freq: '2x Weekly Reefer Specialized', customs: 'Halal Certified Inspection', name: 'Santos (BR) &rarr; Jebel Ali (UAE)' },
+        'br_santos-za_durban': { sea: '14 - 17 Days', air: '20 - 30 Hours', freq: 'Weekly South Atlantic Service', customs: 'SADC Express Protocol', name: 'Santos (BR) &rarr; Durban (ZA)' }
+      };
+
+      function calculateRoute() {
+        const origin = document.getElementById('originPortSelect').value;
+        const dest = document.getElementById('destPortSelect').value;
+        const cargo = document.getElementById('cargoTypeSelect').value;
+        const key = `${origin}-${dest}`;
+
+        const data = transitMatrix[key] || {
+          sea: '16 - 24 Days',
+          air: '24 - 48 Hours',
+          freq: '2x - 3x Weekly Regular Departures',
+          customs: 'Standard Fast-Track Pre-Clearance',
+          name: `${origin.replace('_',' ').toUpperCase()} &rarr; ${dest.replace('_',' ').toUpperCase()}`
+        };
+
+        document.getElementById('resRouteName').innerHTML = data.name;
+        document.getElementById('resSeaTransit').textContent = data.sea;
+        document.getElementById('resAirTransit').textContent = data.air;
+        document.getElementById('resFrequency').textContent = data.freq;
+        document.getElementById('resCustoms').textContent = data.customs;
+
+        // Visual feedback
+        const box = document.getElementById('calcResultBox');
+        box.style.transform = 'scale(0.98)';
+        setTimeout(() => box.style.transform = 'scale(1)', 150);
+      }
+
+      document.getElementById('btnRunCalc').addEventListener('click', calculateRoute);
+      document.getElementById('originPortSelect').addEventListener('change', calculateRoute);
+      document.getElementById('destPortSelect').addEventListener('change', calculateRoute);
+
+      // --- 7. Modal & Toast Handling ---
+      const modal = document.getElementById('regionalQuoteModal');
+      const closeBtn = document.getElementById('closeRegionalQuoteModal');
+      const toast = document.getElementById('globalToast');
+      const toastText = document.getElementById('globalToastText');
+
+      window.openRegionalQuoteModal = function(deskName) {
+        document.getElementById('qTargetDesk').value = deskName || 'Mumbai Central Operations HQ';
+        modal.classList.add('is-open');
+        modal.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+      };
+
+      if (closeBtn) {
+        closeBtn.addEventListener('click', () => {
+          modal.classList.remove('is-open');
+          modal.setAttribute('aria-hidden', 'true');
+          document.body.style.overflow = '';
+        });
+      }
+
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+          modal.classList.remove('is-open');
+          modal.setAttribute('aria-hidden', 'true');
+          document.body.style.overflow = '';
+        }
+      });
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modal.classList.contains('is-open')) {
+          modal.classList.remove('is-open');
+          modal.setAttribute('aria-hidden', 'true');
+          document.body.style.overflow = '';
+        }
+      });
+
+      const openQuoteBtn = document.getElementById('openQuoteModalBtn');
+      if (openQuoteBtn) {
+        openQuoteBtn.addEventListener('click', () => openRegionalQuoteModal('Global Trade Desk Direct'));
+      }
+
+      const btnHubDirectInquire = document.getElementById('btnHubDirectInquire');
+      if (btnHubDirectInquire) {
+        btnHubDirectInquire.addEventListener('click', () => {
+          const title = document.getElementById('sidebarHubTitle').textContent;
+          openRegionalQuoteModal(title);
+        });
+      }
+
+      const btnBottomInquire = document.getElementById('btnBottomInquire');
+      if (btnBottomInquire) {
+        btnBottomInquire.addEventListener('click', () => openRegionalQuoteModal('General Global Inquiries'));
+      }
+
+      const btnBookRoute = document.getElementById('btnBookRouteInquiry');
+      if (btnBookRoute) {
+        btnBookRoute.addEventListener('click', () => {
+          const route = document.getElementById('resRouteName').textContent;
+          openRegionalQuoteModal(`Route Booking: ${route}`);
+        });
+      }
+
+      // Handle Quote Form Submit
+      window.handleQuoteSubmit = function(e) {
+        e.preventDefault();
+        const desk = document.getElementById('qTargetDesk').value;
+        const name = document.getElementById('qFullName').value;
+        
+        modal.classList.remove('is-open');
+        modal.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+
+        toastText.textContent = `Thank you ${name}! Your inquiry has been routed to ${desk}. An advisor will reach out within 2 hours.`;
+        toast.classList.add('show');
+        setTimeout(() => toast.classList.remove('show'), 4500);
+
+        document.getElementById('regionalTradeForm').reset();
+      };
+
+      // Language Switcher handled globally by navbar.js
+
+    });
+  </script>
+
+  <script src="cart.js"></script>
+  <script src="navbar.js"></script>
+</body>
+</html>

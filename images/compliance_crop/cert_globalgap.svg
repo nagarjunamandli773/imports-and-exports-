@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100" width="100%" height="100%">
+  <defs>
+    <linearGradient id="ggapGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#15803d"/>
+      <stop offset="100%" stop-color="#0f5132"/>
+    </linearGradient>
+  </defs>
+  <!-- Stylized G icon -->
+  <circle cx="50" cy="50" r="38" fill="#f0fdf4" stroke="url(#ggapGreen)" stroke-width="3"/>
+  <path d="M68 34 A24 24 0 1 0 74 54 L52 54 L52 44 L74 44" fill="none" stroke="#15803d" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="50" cy="50" r="4" fill="#df8b1a"/>
+
+  <!-- Right text -->
+  <text x="96" y="38" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="16" font-weight="900" fill="#0f5132" letter-spacing="-0.3">GLOBALG.A.P.</text>
+  <text x="96" y="56" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="9" font-weight="700" fill="#15803d" letter-spacing="0.5">RESPONSIBLE FARMING</text>
+  <rect x="96" y="66" width="94" height="18" rx="4" fill="#0f5132"/>
+  <text x="143" y="79" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="8" font-weight="800" fill="#ffffff" text-anchor="middle" letter-spacing="0.5">FARM ASSURANCE</text>
+</svg>

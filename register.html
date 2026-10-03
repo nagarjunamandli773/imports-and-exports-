@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Account &amp; Register | CONCEPT EXIM - Global Trade, Greater Opportunities.</title>
+  <meta name="description" content="Register for CONCEPT EXIM's Global Trade Platform to connect with verified suppliers, manage international shipments, and trade with confidence.">
+  
+  <!-- Google Fonts: Plus Jakarta Sans, Dancing Script, Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="navbar.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       1. GLOBAL TOP HEADER (Standard Single-Line Nav + Auth Controls)
+       ========================================================================== -->
+  <header class="main-header" id="navbar">
+    <div class="page-container header-inner">
+
+      <!-- Brand Logo (CONCEPT EXIM) -->
+      <a href="index.html" class="brand-logo-link" title="CONCEPT EXIM - Global Trade, Greater Opportunities.">
+        <img src="images/concept_exim_logo.png" srcset="images/concept_exim_logo@3x.png 3x" alt="CONCEPT EXIM - Global Trade, Greater Opportunities." class="concept-exim-logo">
+      </a>
+
+      <!-- Center Nav (Standard 8 Core Links) -->
+      <nav class="main-nav-wrapper">
+        <ul class="main-nav-bar">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="products.html" class="nav-link">Products</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="global-presence.html" class="nav-link">Global Presence</a></li>
+          <li><a href="compliance.html" class="nav-link">Quality &amp; Compliance</a></li>
+          <li><a href="insights.html" class="nav-link">Insights</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Right Side: Auth Mode Switcher -->
+      <div class="header-right-group">
+        <div class="header-auth-switch">
+          <span class="auth-prompt-text" id="authPromptText">Already have an account?</span>
+          <button class="btn-header-action" id="headerAuthActionBtn" data-target="login">
+            <span id="headerActionBtnLabel">Sign In</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       2. AUTHENTICATION HERO SECTION (Split Composition)
+       ========================================================================== -->
+  <main class="auth-hero-section">
+    <!-- Visual Background Overlays -->
+    <div class="hero-bg-art" style="background-image: url('images/login_crop/login_hero_bg_clean.jpg');"></div>
+    <div class="hero-bg-overlay-gradient"></div>
+    <div class="hero-network-canvas"></div>
+
+    <div class="page-container auth-hero-inner">
+      
+      <!-- ================= LEFT COLUMN: HERO INFORMATION ================= -->
+      <section class="auth-hero-info">
+        
+        <!-- Eyebrow Tag -->
+        <div class="hero-eyebrow-tag">GLOBAL TRADE PLATFORM</div>
+
+        <!-- Main Headline -->
+        <h1 class="hero-title-main">
+          Trade Without<br>
+          <span class="gold-gradient-word">Boundaries</span>
+        </h1>
+
+        <!-- Subtitle Paragraph -->
+        <p class="hero-lead-desc">
+          Join CONCEPT EXIM's international business network. Connect directly with verified suppliers, secure supply chains, and unlock frictionless global trade.
+        </p>
+
+        <!-- 4 Core Trust Pillars (Horizontal Row) -->
+        <div class="hero-pillars-grid">
+          
+          <div class="pillar-card">
+            <div class="pillar-icon-box pillar-blue">
+              <i class="fa-solid fa-globe"></i>
+            </div>
+            <div class="pillar-content">
+              <h3 class="pillar-title">Global Network</h3>
+              <p class="pillar-text">Connect with verified suppliers &amp; buyers worldwide.</p>
+            </div>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-icon-box pillar-emerald">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <div class="pillar-content">
+              <h3 class="pillar-title">Secure Transactions</h3>
+              <p class="pillar-text">Bank-grade security for safe and reliable trade.</p>
+            </div>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-icon-box pillar-amber">
+              <i class="fa-solid fa-truck-fast"></i>
+            </div>
+            <div class="pillar-content">
+              <h3 class="pillar-title">Real-Time Tracking</h3>
+              <p class="pillar-text">Track your shipments from origin to destination.</p>
+            </div>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-icon-box pillar-purple">
+              <i class="fa-solid fa-handshake"></i>
+            </div>
+            <div class="pillar-content">
+              <h3 class="pillar-title">Trusted Partnerships</h3>
+              <p class="pillar-text">Build long-term relationships with global partners.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- 3 Metric Badges in Frosted Dark Container -->
+        <div class="hero-metrics-strip">
+          
+          <div class="metric-item">
+            <div class="metric-icon metric-blue">
+              <i class="fa-solid fa-users"></i>
+            </div>
+            <div class="metric-info">
+              <span class="metric-num">2,500+</span>
+              <span class="metric-label">Verified Suppliers</span>
+            </div>
+          </div>
+
+          <div class="metric-sep"></div>
+
+          <div class="metric-item">
+            <div class="metric-icon metric-amber">
+              <i class="fa-solid fa-box-archive"></i>
+            </div>
+            <div class="metric-info">
+              <span class="metric-num">100+</span>
+              <span class="metric-label">Countries Served</span>
+            </div>
+          </div>
+
+          <div class="metric-sep"></div>
+
+          <div class="metric-item">
+            <div class="metric-icon metric-emerald">
+              <i class="fa-solid fa-shield-check"></i>
+            </div>
+            <div class="metric-info">
+              <span class="metric-num">98%</span>
+              <span class="metric-label">On-Time Delivery Rate</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Golden Bottom Fine Tagline -->
+        <div class="hero-bottom-tagline">
+          <span class="tag-word">YOUR TRUST</span>
+          <span class="tag-slash">/</span>
+          <span class="tag-word">OUR COMMITMENT</span>
+          <span class="tag-slash">/</span>
+          <span class="tag-word">GLOBAL SUCCESS</span>
+        </div>
+
+      </section>
+
+      <!-- ================= RIGHT COLUMN: ELEVATED WHITE AUTH CARD ================= -->
+      <section class="auth-card-container">
+        
+        <div class="auth-card" id="authCard">
+          
+          <!-- Top Card Brand & Calligraphy Script Decal -->
+          <div class="card-top-header">
+            
+            <div class="card-brand">
+              <svg class="card-logo-graphic" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7 6H16V38H7V6Z" fill="#0B1A30"/>
+                <path d="M16 22L31 6H41L24 24L41 38H30L16 24" fill="#0B1A30"/>
+                <path d="M21 17L33 5H41L26 21L21 17Z" fill="#0B1A30"/>
+                <path d="M25 21L41 38H31L18 24L25 21Z" fill="#DF8B1A"/>
+              </svg>
+              <div class="card-logo-text">
+                <span class="card-logo-name">KlanExim</span>
+                <span class="card-logo-tagline">Global Trade. Greater Horizons.</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Auth Mode Toggle Bar (Login vs Register) -->
+          <div class="auth-tabs-bar" role="tablist">
+            <button class="auth-tab-btn" id="tabLoginBtn" role="tab" aria-selected="false" aria-controls="loginFormPanel">
+              <i class="fa-solid fa-right-to-bracket"></i>
+              <span>Sign In</span>
+            </button>
+            <button class="auth-tab-btn active" id="tabRegisterBtn" role="tab" aria-selected="true" aria-controls="registerFormPanel">
+              <i class="fa-solid fa-user-plus"></i>
+              <span>Create Account</span>
+            </button>
+          </div>
+
+          <!-- ================= LOGIN FORM VIEW ================= -->
+          <div class="auth-form-panel" id="loginFormPanel">
+            
+            <div class="form-header-block">
+              <span class="form-eyebrow">WELCOME BACK</span>
+              <h2 class="form-title">Login to Your Account</h2>
+              <p class="form-subtitle">Access your trade dashboard, manage shipments, connect with global partners and more.</p>
+            </div>
+
+            <form id="loginForm" class="auth-form" onsubmit="handleLoginSubmit(event)">
+              
+              <div class="form-group">
+                <div class="input-control-box">
+                  <i class="fa-regular fa-envelope input-icon"></i>
+                  <input type="text" id="loginUsername" class="auth-input" placeholder="Email Address or Username" required autocomplete="username">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="input-control-box">
+                  <i class="fa-solid fa-lock input-icon"></i>
+                  <input type="password" id="loginPassword" class="auth-input" placeholder="Password" required autocomplete="current-password">
+                  <button type="button" class="btn-toggle-pw" id="toggleLoginPw" aria-label="Toggle password visibility">
+                    <i class="fa-regular fa-eye-slash" id="loginPwEyeIcon"></i>
+                  </button>
+                </div>
+              </div>
+
+              <div class="form-options-row">
+                <label class="custom-checkbox-wrap">
+                  <input type="checkbox" id="rememberMeCheckbox" checked>
+                  <span class="custom-checkbox-box"></span>
+                  <span class="checkbox-text">Remember me</span>
+                </label>
+                <a href="#forgot" class="forgot-pw-link" id="forgotPwLink">Forgot Password?</a>
+              </div>
+
+              <button type="submit" class="btn-primary-auth" id="btnLoginSubmit">
+                <span>Login</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+
+            </form>
+
+            <div class="auth-divider">
+              <span class="divider-text">Or continue with</span>
+            </div>
+
+            <div class="social-logins-row">
+              <button type="button" class="btn-social-login" id="googleLoginBtn" onclick="handleSocialAuth('Google')">
+                <svg class="social-icon-svg" viewBox="0 0 24 24">
+                  <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                  <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                  <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/>
+                  <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/>
+                </svg>
+                <span>Continue with Google</span>
+              </button>
+
+              <button type="button" class="btn-social-login" id="msLoginBtn" onclick="handleSocialAuth('Microsoft')">
+                <svg class="social-icon-svg" viewBox="0 0 24 24">
+                  <path fill="#F25022" d="M1 1h10v10H1z"/>
+                  <path fill="#7FBA00" d="M13 1h10v10H13z"/>
+                  <path fill="#00A4EF" d="M1 13h10v10H1z"/>
+                  <path fill="#FFB900" d="M13 13h10v10H13z"/>
+                </svg>
+                <span>Continue with Microsoft</span>
+              </button>
+            </div>
+
+          </div>
+
+          <!-- ================= REGISTER FORM VIEW (Pre-Activated) ================= -->
+          <div class="auth-form-panel active" id="registerFormPanel">
+            
+            <div class="form-header-block">
+              <span class="form-eyebrow">GLOBAL REGISTRATION</span>
+              <h2 class="form-title">Create Your Account</h2>
+              <p class="form-subtitle">Join 2,500+ global enterprises trading across 100+ countries with verified security.</p>
+            </div>
+
+            <form id="registerForm" class="auth-form" onsubmit="handleRegisterSubmit(event)">
+              
+              <div class="form-row-2col">
+                <div class="form-group">
+                  <div class="input-control-box">
+                    <i class="fa-regular fa-user input-icon"></i>
+                    <input type="text" id="regFullName" class="auth-input" placeholder="Full Name" required autocomplete="name">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <div class="input-control-box">
+                    <i class="fa-solid fa-building input-icon"></i>
+                    <input type="text" id="regCompanyName" class="auth-input" placeholder="Company Name" required autocomplete="organization">
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="input-control-box">
+                  <i class="fa-regular fa-envelope input-icon"></i>
+                  <input type="email" id="regEmail" class="auth-input" placeholder="Business Email Address" required autocomplete="email">
+                </div>
+              </div>
+
+              <div class="form-row-2col">
+                <div class="form-group">
+                  <div class="input-control-box">
+                    <i class="fa-solid fa-lock input-icon"></i>
+                    <input type="password" id="regPassword" class="auth-input" placeholder="Create Password" required autocomplete="new-password">
+                    <button type="button" class="btn-toggle-pw" id="toggleRegPw" aria-label="Toggle password visibility">
+                      <i class="fa-regular fa-eye-slash" id="regPwEyeIcon"></i>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <div class="input-control-box">
+                    <i class="fa-solid fa-globe input-icon"></i>
+                    <select id="regCountry" class="auth-input auth-select" required>
+                      <option value="" disabled selected>Country / Region</option>
+                      <option value="IN">India</option>
+                      <option value="US">United States</option>
+                      <option value="AE">United Arab Emirates</option>
+                      <option value="SG">Singapore</option>
+                      <option value="GB">United Kingdom</option>
+                      <option value="DE">Germany</option>
+                      <option value="JP">Japan</option>
+                      <option value="AU">Australia</option>
+                      <option value="OTHER">Other Country</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-options-row">
+                <label class="custom-checkbox-wrap">
+                  <input type="checkbox" id="regTermsCheckbox" required>
+                  <span class="custom-checkbox-box"></span>
+                  <span class="checkbox-text">I agree to KlanExim's <a href="#terms">Terms</a> &amp; <a href="#privacy">Privacy Policy</a></span>
+                </label>
+              </div>
+
+              <button type="submit" class="btn-primary-auth" id="btnRegisterSubmit">
+                <span>Create Account</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+
+            </form>
+
+            <div class="auth-divider">
+              <span class="divider-text">Or register with</span>
+            </div>
+
+            <div class="social-logins-row">
+              <button type="button" class="btn-social-login" onclick="handleSocialAuth('Google')">
+                <svg class="social-icon-svg" viewBox="0 0 24 24">
+                  <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                  <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                  <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/>
+                  <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/>
+                </svg>
+                <span>Continue with Google</span>
+              </button>
+
+              <button type="button" class="btn-social-login" onclick="handleSocialAuth('Microsoft')">
+                <svg class="social-icon-svg" viewBox="0 0 24 24">
+                  <path fill="#F25022" d="M1 1h10v10H1z"/>
+                  <path fill="#7FBA00" d="M13 1h10v10H13z"/>
+                  <path fill="#00A4EF" d="M1 13h10v10H1z"/>
+                  <path fill="#FFB900" d="M13 13h10v10H13z"/>
+                </svg>
+                <span>Continue with Microsoft</span>
+              </button>
+            </div>
+
+          </div>
+
+          <!-- ================= SECURITY ASSURANCE BANNER ================= -->
+          <div class="security-assurance-banner">
+            <div class="sec-badge-left">
+              <div class="sec-shield-icon">
+                <i class="fa-solid fa-shield-halved"></i>
+              </div>
+              <div class="sec-text-col">
+                <strong class="sec-title">Your Security Matters</strong>
+                <p class="sec-desc">We use advanced encryption and multi-factor authentication to keep your account safe.</p>
+              </div>
+            </div>
+            
+            <div class="sec-badge-right">
+              <img src="images/login_crop/security_badge_graphic.jpg" alt="Security Lock" class="sec-graphic-img" onerror="this.style.display='none'; document.getElementById('secLockIconFallback').style.display='block';">
+              <div class="sec-lock-fallback" id="secLockIconFallback" style="display:none;">
+                <i class="fa-solid fa-lock"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- ================= NEED HELP FOOTER ROW ================= -->
+          <div class="card-help-row">
+            <span class="help-prompt">Need Help? )</span>
+            <div class="help-links-group">
+              <a href="contact.html" class="help-link">
+                <i class="fa-solid fa-headset"></i>
+                <span>Contact Support</span>
+              </a>
+              <span class="help-dot">|</span>
+              <a href="#livechat" class="help-link" id="btnLiveChat">
+                <i class="fa-regular fa-comment-dots"></i>
+                <span>Live Chat</span>
+              </a>
+              <span class="help-dot">|</span>
+              <a href="tel:+911234567890" class="help-link">
+                <i class="fa-solid fa-phone"></i>
+                <span>+91 123 456 7890</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ================= GLOBAL CORPORATE FOOTER ================= -->
+  <footer class="site-global-footer">
+    <div class="footer-waves-overlay" aria-hidden="true"></div>
+    <div class="footer-inner-container">
+      
+      <!-- Top Row: Left Brand & CTA, Right Nav & Socials -->
+      <div class="footer-main-row">
+        
+        <!-- Left: Logo + Vertical Divider + CTA Pitch & Button -->
+        <div class="footer-left-brand-group">
+          <a href="index.html" class="footer-logo-link" title="CONCEPT EXIM">
+            <img src="images/concept_exim_logo_white.png" srcset="images/concept_exim_logo_white@3x.png 3x" alt="CONCEPT EXIM - Global Trade Simplified" class="footer-concept-logo">
+          </a>
+          <div class="footer-vert-divider"></div>
+          <div class="footer-cta-text-wrap">
+            <span class="footer-cta-heading">Ready to Grow Globally?</span>
+            <span class="footer-cta-sub">Let's build your next success story together.</span>
+          </div>
+          <a href="contact.html" class="footer-btn-quote">
+            <span>Get a Free Quote</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <!-- Right: Horizontal Nav Links + Social Icons -->
+        <div class="footer-right-nav-group">
+          <nav class="footer-horizontal-nav" aria-label="Footer Navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="products.html">Products</a>
+            <a href="global-presence.html">Global Network</a>
+            <a href="insights.html">Insights</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+          <div class="footer-social-icons">
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer-social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="footer-social-icon" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="footer-social-icon" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Subline: Copyright + Legal -->
+      <div class="footer-bottom-row">
+        <div class="footer-copyright-text">
+          &copy; 2026 CONCEPT EXIM. All rights reserved.
+        </div>
+        <div class="footer-legal-links">
+          <a href="compliance.html">Privacy Policy</a>
+          <span class="footer-legal-sep">|</span>
+          <a href="compliance.html">Terms &amp; Conditions</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ================= NOTIFICATION TOAST ================= -->
+  <div class="toast-popup" id="toastNotification" role="alert" aria-live="polite">
+    <i class="fa-solid fa-circle-check toast-icon" id="toastIcon"></i>
+    <span class="toast-message" id="toastMessage">Action completed successfully.</span>
+  </div>
+
+  <!-- ================= JAVASCRIPT LOGIC ================= -->
+  <script>
+    const tabLoginBtn = document.getElementById('tabLoginBtn');
+    const tabRegisterBtn = document.getElementById('tabRegisterBtn');
+    const loginFormPanel = document.getElementById('loginFormPanel');
+    const registerFormPanel = document.getElementById('registerFormPanel');
+    const authPromptText = document.getElementById('authPromptText');
+    const headerAuthActionBtn = document.getElementById('headerAuthActionBtn');
+    const headerActionBtnLabel = document.getElementById('headerActionBtnLabel');
+    const toast = document.getElementById('toastNotification');
+    const toastMsg = document.getElementById('toastMessage');
+
+    function showToast(message, isSuccess = true) {
+      if (!toast || !toastMsg) return;
+      toastMsg.textContent = message;
+      const icon = document.getElementById('toastIcon');
+      if (icon) {
+        icon.className = isSuccess ? 'fa-solid fa-circle-check toast-icon' : 'fa-solid fa-circle-exclamation toast-icon error';
+      }
+      toast.classList.add('show');
+      setTimeout(() => {
+        toast.classList.remove('show');
+      }, 3500);
+    }
+
+    function setAuthMode(mode) {
+      if (mode === 'register') {
+        tabRegisterBtn.classList.add('active');
+        tabLoginBtn.classList.remove('active');
+        loginFormPanel.classList.remove('active');
+        registerFormPanel.classList.add('active');
+        authPromptText.textContent = 'Already have an account?';
+        headerActionBtnLabel.textContent = 'Sign In';
+        headerAuthActionBtn.setAttribute('data-target', 'login');
+      } else {
+        tabLoginBtn.classList.add('active');
+        tabRegisterBtn.classList.remove('active');
+        loginFormPanel.classList.add('active');
+        registerFormPanel.classList.remove('active');
+        authPromptText.textContent = 'New to KlanExim?';
+        headerActionBtnLabel.textContent = 'Create Account';
+        headerAuthActionBtn.setAttribute('data-target', 'register');
+      }
+    }
+
+    tabLoginBtn.addEventListener('click', () => setAuthMode('login'));
+    tabRegisterBtn.addEventListener('click', () => setAuthMode('register'));
+
+    headerAuthActionBtn.addEventListener('click', () => {
+      const target = headerAuthActionBtn.getAttribute('data-target') || 'login';
+      setAuthMode(target);
+    });
+
+    function setupPwToggle(toggleBtnId, inputId, eyeIconId) {
+      const btn = document.getElementById(toggleBtnId);
+      const input = document.getElementById(inputId);
+      const icon = document.getElementById(eyeIconId);
+      if (btn && input && icon) {
+        btn.addEventListener('click', () => {
+          if (input.type === 'password') {
+            input.type = 'text';
+            icon.className = 'fa-regular fa-eye';
+          } else {
+            input.type = 'password';
+            icon.className = 'fa-regular fa-eye-slash';
+          }
+        });
+      }
+    }
+
+    setupPwToggle('toggleLoginPw', 'loginPassword', 'loginPwEyeIcon');
+    setupPwToggle('toggleRegPw', 'regPassword', 'regPwEyeIcon');
+
+    function handleLoginSubmit(e) {
+      e.preventDefault();
+      const username = document.getElementById('loginUsername').value;
+      showToast(`Welcome back, ${username}! Authenticating secure session...`);
+      setTimeout(() => {
+        window.location.href = 'dashboard.html';
+      }, 1200);
+    }
+
+    function handleRegisterSubmit(e) {
+      e.preventDefault();
+      const fullName = document.getElementById('regFullName').value;
+      showToast(`Account created for ${fullName}! Redirecting to portal...`);
+      setTimeout(() => {
+        window.location.href = 'dashboard.html';
+      }, 1200);
+    }
+
+    function handleSocialAuth(provider) {
+      showToast(`Connecting to ${provider} Secure OAuth 2.0...`);
+      setTimeout(() => {
+        showToast(`${provider} authorization successful!`, true);
+      }, 1000);
+    }
+
+    document.getElementById('btnLiveChat')?.addEventListener('click', (e) => {
+      e.preventDefault();
+      showToast('Connecting to KlanExim 24/7 Global Trade Specialist...');
+    });
+
+    document.getElementById('forgotPwLink')?.addEventListener('click', (e) => {
+      e.preventDefault();
+      const email = prompt('Enter your registered business email to receive a password reset link:');
+      if (email) {
+        showToast(`Password reset link sent to ${email}`);
+      }
+    });
+  </script>
+
+  <script src="cart.js"></script>
+</body>
+</html>

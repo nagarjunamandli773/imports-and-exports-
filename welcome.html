@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to KlanExim | Global Trade. Greater Horizons.</title>
+  <meta name="description" content="Welcome to KlanExim - Building Global Connections for a Stronger Tomorrow. International Trade, Logistics and Sourcing.">
+  
+  <!-- Google Fonts: Plus Jakarta Sans, Dancing Script, Playball, Great Vibes & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Great+Vibes&family=Playball&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="cart.css">
+  
+  <style>
+    /* ==========================================================================
+       KLANEXIM WELCOME PAGE - PIXEL-PERFECT IMPLEMENTATION
+       ========================================================================== */
+    :root {
+      --navy-darkest: #051427;
+      --navy-dark: #07192f;
+      --navy-text: #0b1c33;
+      --gold-primary: #d49a38;
+      --gold-accent: #e5a842;
+      --gold-light: #f6c86a;
+      --gold-gradient: linear-gradient(135deg, #f3be5d 0%, #d49a38 50%, #b87b28 100%);
+      --blue-sky-top: #2575fc;
+      --blue-sky-mid: #6a11cb;
+      --font-main: 'Plus Jakarta Sans', sans-serif;
+      --font-script: 'Great Vibes', cursive;
+      --font-cursive: 'Dancing Script', cursive;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      font-family: var(--font-main);
+      overflow-x: hidden;
+      background-color: #07192f;
+      color: #ffffff;
+    }
+
+    /* Welcome Canvas Container */
+    .welcome-canvas {
+      position: relative;
+      width: 100vw;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      overflow: hidden;
+      background: radial-gradient(circle at 75% 20%, #8ec5fc 0%, #306eb5 45%, #0f3d79 80%, #071e3d 100%);
+    }
+
+    /* Background Visual Composite */
+    .welcome-bg-layer {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    .welcome-bg-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: right center;
+      opacity: 0.92;
+    }
+
+    /* Translucent Sky & Lighting Gradients */
+    .sky-lighting-gradient {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.96) 0%,
+        rgba(255, 255, 255, 0.88) 32%,
+        rgba(240, 248, 255, 0.45) 50%,
+        rgba(15, 61, 121, 0.15) 75%,
+        rgba(5, 20, 39, 0.4) 100%
+      );
+    }
+
+    /* Glowing Digital Network Globe Layer in Sky */
+    .network-globe-layer {
+      position: absolute;
+      top: 2%;
+      right: 18%;
+      width: 650px;
+      height: 650px;
+      opacity: 0.85;
+      pointer-events: none;
+      z-index: 2;
+    }
+
+    /* ================= TOP HEADER BAR ================= */
+    .welcome-top-bar {
+      position: relative;
+      z-index: 10;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 36px 60px 20px;
+      width: 100%;
+    }
+
+    /* Brand Logo */
+    .welcome-brand-logo {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      text-decoration: none;
+    }
+
+    .brand-logo-mark {
+      width: 58px;
+      height: 58px;
+      flex-shrink: 0;
+    }
+
+    .brand-logo-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .brand-name-title {
+      font-family: var(--font-main);
+      font-weight: 900;
+      font-size: 2.5rem;
+      color: #071a30;
+      line-height: 0.95;
+      letter-spacing: -1px;
+    }
+
+    .brand-tagline-text {
+      font-size: 0.92rem;
+      font-weight: 700;
+      color: #071a30;
+      letter-spacing: 0.4px;
+      margin-top: 4px;
+    }
+
+    /* Top Right Pillar Slogans */
+    .top-pillars-slogan {
+      font-size: 0.86rem;
+      font-weight: 700;
+      letter-spacing: 3px;
+      color: #ffffff;
+      text-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      text-transform: uppercase;
+    }
+
+    .slogan-slash {
+      opacity: 0.65;
+      color: #ffffff;
+      font-weight: 400;
+    }
+
+    /* ================= MAIN WELCOME HERO SECTION ================= */
+    .welcome-main-body {
+      position: relative;
+      z-index: 10;
+      padding: 10px 60px 40px;
+      display: flex;
+      align-items: center;
+      flex: 1;
+    }
+
+    .welcome-card-content {
+      max-width: 620px;
+      animation: fadeInSlideUp 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+
+    @keyframes fadeInSlideUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* "Welcome" Script Heading */
+    .welcome-script-text {
+      font-family: var(--font-script);
+      font-size: 8rem;
+      font-weight: 400;
+      color: #072146;
+      line-height: 0.85;
+      margin-bottom: -15px;
+      margin-left: -8px;
+      text-shadow: 0 2px 8px rgba(7, 33, 70, 0.15);
+      letter-spacing: 1px;
+    }
+
+    /* "to KlanExim" Heading */
+    .welcome-sub-heading {
+      font-family: var(--font-main);
+      font-size: 4.2rem;
+      font-weight: 900;
+      color: #072146;
+      line-height: 1;
+      letter-spacing: -1.5px;
+      margin-bottom: 8px;
+    }
+
+    /* Golden Curved Swoosh Line Underneath */
+    .golden-swoosh-divider {
+      width: 520px;
+      height: 24px;
+      margin: 4px 0 18px;
+    }
+
+    .golden-swoosh-svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    /* Subtitle */
+    .welcome-mission-subtitle {
+      font-size: 1.55rem;
+      font-weight: 600;
+      color: #0a254a;
+      line-height: 1.35;
+      max-width: 480px;
+      margin-bottom: 28px;
+      letter-spacing: -0.2px;
+    }
+
+    /* Interactive Portal Action Buttons */
+    .welcome-action-buttons {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .btn-enter-portal {
+      background: var(--gold-gradient);
+      color: #ffffff;
+      padding: 14px 34px;
+      border-radius: 50px;
+      font-size: 1.05rem;
+      font-weight: 800;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0 8px 24px rgba(212, 154, 56, 0.45);
+      transition: all 0.3s ease;
+    }
+
+    .btn-enter-portal:hover {
+      transform: translateY(-3px) scale(1.02);
+      box-shadow: 0 12px 30px rgba(212, 154, 56, 0.6);
+      color: #ffffff;
+    }
+
+    .btn-explore-services {
+      background: rgba(7, 33, 70, 0.08);
+      backdrop-filter: blur(8px);
+      border: 2px solid #072146;
+      color: #072146;
+      padding: 14px 30px;
+      border-radius: 50px;
+      font-size: 1.02rem;
+      font-weight: 700;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.3s ease;
+    }
+
+    .btn-explore-services:hover {
+      background: #072146;
+      color: #ffffff;
+      transform: translateY(-3px);
+    }
+
+    /* ================= BOTTOM CURVED WAVE FOOTER ================= */
+    .welcome-bottom-wave-bar {
+      position: relative;
+      z-index: 20;
+      width: 100%;
+    }
+
+    /* SVG Wave Container */
+    .bottom-wave-container {
+      position: relative;
+      width: 100%;
+      background: #1e0534;
+      padding: 24px 60px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    /* Top Wave Curve with Golden Line */
+    .wave-header-svg-wrap {
+      position: absolute;
+      top: -65px;
+      left: 0;
+      width: 100%;
+      height: 68px;
+      pointer-events: none;
+    }
+
+    .wave-svg {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    /* 4 Golden Pillars Badges */
+    .bottom-pillars-grid {
+      display: flex;
+      align-items: center;
+      gap: 36px;
+      flex-wrap: wrap;
+    }
+
+    .pillar-badge-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 8px;
+      cursor: pointer;
+      transition: transform 0.25s ease;
+    }
+
+    .pillar-badge-item:hover {
+      transform: translateY(-4px);
+    }
+
+    .pillar-icon-circle {
+      width: 54px;
+      height: 54px;
+      border-radius: 50%;
+      border: 2px solid var(--gold-primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--gold-light);
+      font-size: 1.4rem;
+      background: rgba(212, 154, 56, 0.08);
+      box-shadow: 0 0 16px rgba(212, 154, 56, 0.2);
+      transition: all 0.3s ease;
+    }
+
+    .pillar-badge-item:hover .pillar-icon-circle {
+      background: var(--gold-primary);
+      color: #ffffff;
+      box-shadow: 0 0 24px rgba(212, 154, 56, 0.5);
+    }
+
+    .pillar-label-text {
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: #ffffff;
+      line-height: 1.2;
+      max-width: 100px;
+    }
+
+    /* Right Cursive Callout: "Let's Build a Bigger Tomorrow" */
+    .tomorrow-callout-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      text-align: right;
+      transform: rotate(-3deg);
+    }
+
+    .tomorrow-script-text {
+      font-family: var(--font-cursive);
+      font-size: 2.1rem;
+      font-weight: 700;
+      color: #f6c86a;
+      line-height: 1.15;
+      text-shadow: 0 2px 10px rgba(246, 200, 106, 0.3);
+    }
+
+    .tomorrow-underline-svg {
+      width: 190px;
+      height: 12px;
+      margin-top: 4px;
+    }
+
+    /* Responsive Adjustments */
+    @media (max-width: 1200px) {
+      .welcome-script-text { font-size: 6.5rem; }
+      .welcome-sub-heading { font-size: 3.4rem; }
+      .golden-swoosh-divider { width: 420px; }
+      .bottom-pillars-grid { gap: 24px; }
+    }
+
+    @media (max-width: 900px) {
+      .welcome-top-bar { padding: 24px 30px; flex-direction: column; align-items: flex-start; gap: 16px; }
+      .top-pillars-slogan { font-size: 0.75rem; }
+      .welcome-main-body { padding: 20px 30px; }
+      .welcome-script-text { font-size: 5rem; }
+      .welcome-sub-heading { font-size: 2.6rem; }
+      .golden-swoosh-divider { width: 320px; }
+      .welcome-mission-subtitle { font-size: 1.25rem; }
+      .bottom-wave-container { padding: 20px 30px; flex-direction: column; gap: 24px; }
+      .tomorrow-callout-wrap { align-items: center; transform: none; }
+    }
+
+    @media (max-width: 600px) {
+      .welcome-script-text { font-size: 4rem; }
+      .welcome-sub-heading { font-size: 2rem; }
+      .golden-swoosh-divider { width: 240px; }
+      .welcome-mission-subtitle { font-size: 1.1rem; }
+      .bottom-pillars-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="welcome-canvas">
+    
+    <!-- Background Image Layer: Ship, Cranes, Water, Airplane -->
+    <div class="welcome-bg-layer">
+      <img src="images/hero_banner.jpg" alt="KlanExim Global Shipping and Logistics" class="welcome-bg-img" onerror="this.src='https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=1920&q=80'">
+      <div class="sky-lighting-gradient"></div>
+    </div>
+
+    <!-- Glowing Network Globe Graphic Overlay -->
+    <div class="network-globe-layer">
+      <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: 100%;">
+        <defs>
+          <filter id="globe-glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="6" result="blur"/>
+            <feMerge>
+              <feMergeNode in="blur"/>
+              <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+          </filter>
+        </defs>
+        <!-- Transparent Globe Continents & Latitude Grid -->
+        <circle cx="250" cy="250" r="210" stroke="#ffffff" stroke-width="1.5" stroke-opacity="0.35" stroke-dasharray="4,4"/>
+        <ellipse cx="250" cy="250" rx="210" ry="85" stroke="#ffffff" stroke-width="1.2" stroke-opacity="0.3"/>
+        <ellipse cx="250" cy="250" rx="90" ry="210" stroke="#ffffff" stroke-width="1.2" stroke-opacity="0.3"/>
+        
+        <!-- Connected Trade Glowing Beacons & Curves -->
+        <path d="M120 180 Q250 80 380 160" stroke="#ffffff" stroke-width="2.5" stroke-dasharray="6,4" stroke-opacity="0.75" filter="url(#globe-glow)"/>
+        <path d="M160 300 Q260 220 370 290" stroke="#ffffff" stroke-width="2" stroke-dasharray="5,4" stroke-opacity="0.6"/>
+        <path d="M120 180 Q140 250 160 300" stroke="#ffffff" stroke-width="1.5" stroke-opacity="0.5"/>
+        <path d="M380 160 Q380 240 370 290" stroke="#ffffff" stroke-width="1.5" stroke-opacity="0.5"/>
+        
+        <!-- Glowing Hub Points -->
+        <circle cx="120" cy="180" r="6" fill="#ffd200" filter="url(#globe-glow)"/>
+        <circle cx="250" cy="115" r="7" fill="#ffffff" filter="url(#globe-glow)"/>
+        <circle cx="380" cy="160" r="6" fill="#ffd200" filter="url(#globe-glow)"/>
+        <circle cx="160" cy="300" r="5.5" fill="#00f2fe" filter="url(#globe-glow)"/>
+        <circle cx="370" cy="290" r="6" fill="#ffd200" filter="url(#globe-glow)"/>
+      </svg>
+    </div>
+
+    <!-- ================= TOP HEADER BAR ================= -->
+    <header class="welcome-top-bar">
+      
+      <!-- KlanExim Brand Logo -->
+      <a href="index.html" class="welcome-brand-logo">
+        <div class="brand-logo-mark">
+          <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: 100%;">
+            <path d="M6 6H15V38H6V6Z" fill="#07192F"/>
+            <path d="M15 22L29 7H40L23 25L40 38H29L15 24" fill="#07192F"/>
+            <path d="M19 18L32 6H38L24 20L19 18Z" fill="#C58A36"/>
+            <path d="M25 22L38 38H30L19 25L25 22Z" fill="#D89D3C"/>
+            <!-- Golden Diamond Accent -->
+            <polygon points="41,20 44,24 41,28 38,24" fill="#C58A36"/>
+          </svg>
+        </div>
+        <div class="brand-logo-text">
+          <div class="brand-name-title">KlanExim</div>
+          <div class="brand-tagline-text">Global Trade. Greater Horizons.</div>
+        </div>
+      </a>
+
+      <!-- Top Right Slogan: TRUST / TRADE / GROWTH / TOGETHER -->
+      <div class="top-pillars-slogan">
+        <span>TRUST</span>
+        <span class="slogan-slash">/</span>
+        <span>TRADE</span>
+        <span class="slogan-slash">/</span>
+        <span>GROWTH</span>
+        <span class="slogan-slash">/</span>
+        <span>TOGETHER</span>
+      </div>
+
+    </header>
+
+    <!-- ================= MAIN WELCOME HERO ================= -->
+    <main class="welcome-main-body">
+      <div class="welcome-card-content">
+        
+        <!-- "Welcome" Script Heading -->
+        <h1 class="welcome-script-text">Welcome</h1>
+        
+        <!-- "to KlanExim" Heading -->
+        <div class="welcome-sub-heading">to KlanExim</div>
+
+        <!-- Golden Curved Ribbon Swoosh Underneath -->
+        <div class="golden-swoosh-divider">
+          <svg viewBox="0 0 520 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="golden-swoosh-svg">
+            <path d="M2 14 C120 2 360 2 518 16" stroke="url(#gold-swoosh-grad)" stroke-width="4.5" stroke-linecap="round"/>
+            <defs>
+              <linearGradient id="gold-swoosh-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#b87b28"/>
+                <stop offset="35%" stop-color="#f6c86a"/>
+                <stop offset="70%" stop-color="#d49a38"/>
+                <stop offset="100%" stop-color="#e8a838" stop-opacity="0.3"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+
+        <!-- Subtitle: Building Global Connections for a Stronger Tomorrow -->
+        <p class="welcome-mission-subtitle">
+          Building Global Connections<br>for a Stronger Tomorrow
+        </p>
+
+        <!-- Interactive CTAs -->
+        <div class="welcome-action-buttons">
+          <a href="index.html" class="btn-enter-portal">
+            <span>Enter Global Portal</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <a href="index.html#services" class="btn-explore-services">
+            <span>Explore Services</span>
+            <i class="fa-solid fa-compass"></i>
+          </a>
+          <button type="button" class="btn-explore-services" onclick="ConceptCart.openDrawer('track')" style="cursor: pointer; background: rgba(7, 33, 70, 0.12); border-color: #d49a38; color: #072146;">
+            <i class="fa-solid fa-satellite-dish" style="color: #d49a38;"></i>
+            <span>Track Cargo</span>
+          </button>
+        </div>
+
+      </div>
+    </main>
+
+    <!-- ================= BOTTOM DEEP NAVY WAVE FOOTER ================= -->
+    <footer class="welcome-bottom-wave-bar">
+      
+      <!-- Top Organic Wave Curve with Golden Line -->
+      <div class="wave-header-svg-wrap">
+        <svg viewBox="0 0 1440 68" preserveAspectRatio="none" class="wave-svg">
+          <path d="M 0,40 C 380,-15 1060,85 1440,25 L 1440,68 L 0,68 Z" fill="#07192f"/>
+          <path d="M 0,40 C 380,-15 1060,85 1440,25" stroke="#d49a38" stroke-width="3" fill="none"/>
+        </svg>
+      </div>
+
+      <!-- Bottom Pillars & Callout Bar -->
+      <div class="bottom-wave-container">
+        
+        <!-- 4 Key Pillars -->
+        <div class="bottom-pillars-grid">
+          
+          <!-- Pillar 1: Global Reach -->
+          <div class="pillar-badge-item" onclick="window.location.href='index.html#network'">
+            <div class="pillar-icon-circle">
+              <i class="fa-solid fa-globe"></i>
+            </div>
+            <div class="pillar-label-text">Global Reach</div>
+          </div>
+
+          <!-- Pillar 2: Trusted Partnerships -->
+          <div class="pillar-badge-item" onclick="window.location.href='index.html#about'">
+            <div class="pillar-icon-circle">
+              <i class="fa-solid fa-shield-check"></i>
+            </div>
+            <div class="pillar-label-text">Trusted Partnerships</div>
+          </div>
+
+          <!-- Pillar 3: Reliable Deliveries -->
+          <div class="pillar-badge-item" onclick="window.location.href='index.html#services'">
+            <div class="pillar-icon-circle">
+              <i class="fa-solid fa-truck-fast"></i>
+            </div>
+            <div class="pillar-label-text">Reliable Deliveries</div>
+          </div>
+
+          <!-- Pillar 4: Sustainable Growth -->
+          <div class="pillar-badge-item" onclick="window.location.href='index.html#products'">
+            <div class="pillar-icon-circle">
+              <i class="fa-solid fa-chart-line-up"></i>
+            </div>
+            <div class="pillar-label-text">Sustainable Growth</div>
+          </div>
+
+        </div>
+
+        <!-- Right Tagline: Let's Build a Bigger Tomorrow -->
+        <div class="tomorrow-callout-wrap">
+          <div class="tomorrow-script-text">Let's Build<br>a Bigger Tomorrow</div>
+          <svg viewBox="0 0 190 12" class="tomorrow-underline-svg" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 9 C60 2 130 2 188 8" stroke="#f6c86a" stroke-width="2.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+
+      </div>
+
+    </footer>
+
+  </div>
+
+  <script src="cart.js"></script>
+  <script src="navbar.js"></script>
+</body>
+</html>

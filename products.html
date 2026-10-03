@@ -1,0 +1,2001 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products | CONCEPT EXIM - Global Trade, Greater Opportunities.</title>
+  <meta name="description" content="Explore CONCEPT EXIM's premium agricultural, spices, pulses, grains, oils, and commodity products sourced globally with complete quality assurance and reliable logistics.">
+  
+  <!-- Google Fonts: Plus Jakarta Sans & Dancing Script -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome 6 Pro Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="products.css">
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="cart.css">
+  <link rel="stylesheet" href="product-modal.css">
+</head>
+<body>
+
+  <div class="site-wrapper">
+
+    <!-- ==========================================================================
+         1. TOP SLIM BAR (Deep Navy)
+         ========================================================================== -->
+    <div class="top-slim-bar">
+      <div class="page-container top-bar-inner">
+        <!-- Left: 4 Trust Features with Icons & Dividers -->
+        <div class="top-features-list">
+          <div class="top-feature-item">
+            <i class="fa-solid fa-globe"></i>
+            <span>Global Reach</span>
+          </div>
+          <div class="top-divider"></div>
+          <div class="top-feature-item">
+            <i class="fa-solid fa-shield-halved"></i>
+            <span>Trusted Suppliers</span>
+          </div>
+          <div class="top-divider"></div>
+          <div class="top-feature-item">
+            <i class="fa-solid fa-certificate"></i>
+            <span>Quality Assured</span>
+          </div>
+          <div class="top-divider"></div>
+          <div class="top-feature-item">
+            <i class="fa-solid fa-truck-fast"></i>
+            <span>On-Time Delivery</span>
+          </div>
+        </div>
+
+        <!-- Right: Language, Login & Cart -->
+        <div class="top-right-group">
+          <button class="top-link-btn" id="topLangBtn">
+            <i class="fa-solid fa-globe"></i>
+            <span>English</span>
+            <i class="fa-solid fa-chevron-down" style="font-size: 8.5px; opacity: 0.85;"></i>
+          </button>
+          <div class="top-divider"></div>
+          <a href="login.html" class="top-link-btn">
+            <i class="fa-regular fa-user"></i>
+            <span>Login / Register</span>
+          </a>
+          <div class="top-divider"></div>
+          <button class="top-cart-btn" id="openCartBtn">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="cart-badge-count" id="cartCountBadge">0</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==========================================================================
+         2. MAIN HEADER & NAVBAR (CONCEPT EXIM)
+         ========================================================================== -->
+    <header class="main-header" id="navbar">
+      <div class="page-container header-inner">
+        
+        <!-- Brand Logo (CONCEPT EXIM) -->
+        <a href="index.html" class="brand-logo-link" title="CONCEPT EXIM - Global Trade, Greater Opportunities.">
+          <img src="images/concept_exim_logo.png" srcset="images/concept_exim_logo@3x.png 3x" alt="CONCEPT EXIM - Global Trade, Greater Opportunities." class="concept-exim-logo">
+        </a>
+
+        <!-- Center Nav Links -->
+        <nav class="main-nav-wrapper">
+          <ul class="main-nav-bar">
+            <li>
+              <a href="index.html" class="nav-link">
+                <span>Home</span>
+              </a>
+            </li>
+
+            <!-- About Us Dropdown -->
+            <li class="nav-item-dropdown">
+              <a href="about.html" class="nav-link" aria-expanded="false" aria-haspopup="true">
+                <span>About Us</span>
+                <span class="nav-arrow-btn" role="button" tabindex="0" aria-label="Toggle About Us submenu">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </span>
+              </a>
+              <div class="nav-dropdown-menu nav-dropdown-about" role="menu">
+                <div class="dropdown-header">
+                  <span class="dropdown-eyebrow">COMPANY OVERVIEW</span>
+                  <a href="about.html" class="dropdown-header-all">View All <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="dropdown-items-grid dropdown-col-1">
+                  <a href="about.html#who-we-are" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-building-flag"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Who We Are</span>
+                      <span class="dropdown-item-desc">Global trade leadership &amp; company story</span>
+                    </div>
+                  </a>
+                  <a href="about.html#who-we-are" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-compass"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Our Journey</span>
+                      <span class="dropdown-item-desc">From trade pioneer to global logistics</span>
+                    </div>
+                  </a>
+                  <a href="about.html#who-we-are" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-bullseye"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Mission &amp; Values</span>
+                      <span class="dropdown-item-desc">Integrity, excellence &amp; reliability</span>
+                    </div>
+                  </a>
+                  <a href="about.html#why-choose" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Why Choose Us</span>
+                      <span class="dropdown-item-desc">5 core advantages for international trade</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <!-- Products Dropdown (Active) -->
+            <li class="nav-item-dropdown">
+              <a href="products.html" class="nav-link active" aria-expanded="false" aria-haspopup="true">
+                <span>Products</span>
+                <span class="nav-arrow-btn" role="button" tabindex="0" aria-label="Toggle Products submenu">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </span>
+              </a>
+              <div class="nav-dropdown-menu nav-dropdown-products" role="menu">
+                <div class="dropdown-header">
+                  <span class="dropdown-eyebrow">COMMODITIES CATALOGUE</span>
+                  <a href="products.html" class="dropdown-header-all">View All 32+ Products <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="dropdown-items-grid dropdown-col-2">
+                  <a href="products.html?category=grains" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-wheat-awn"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Rice &amp; Grains</span>
+                      <span class="dropdown-item-desc">Basmati, non-basmati &amp; organic grains</span>
+                    </div>
+                  </a>
+                  <a href="products.html?category=spices" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-mortar-pestle"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Spices &amp; Herbs</span>
+                      <span class="dropdown-item-desc">Premium whole &amp; ground spices</span>
+                    </div>
+                  </a>
+                  <a href="products.html?category=pulses" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-cubes-stacked"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Pulses &amp; Legumes</span>
+                      <span class="dropdown-item-desc">Lentils, chickpeas &amp; beans</span>
+                    </div>
+                  </a>
+                  <a href="products.html?category=fruits" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-apple-whole"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Fruits &amp; Vegetables</span>
+                      <span class="dropdown-item-desc">Fresh agricultural farm produce</span>
+                    </div>
+                  </a>
+                  <a href="products.html?category=oils" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-bottle-droplet"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Oils &amp; Fats</span>
+                      <span class="dropdown-item-desc">Edible culinary &amp; cold-pressed oils</span>
+                    </div>
+                  </a>
+                  <a href="products.html?category=dryfruits" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-seedling"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Dry Fruits &amp; Nuts</span>
+                      <span class="dropdown-item-desc">Graded cashews, almonds &amp; raisins</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="dropdown-footer-strip">
+                  <span>Looking for bulk container shipments?</span>
+                  <a href="contact.html#quote">Request Bulk Quote <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </li>
+
+            <!-- Services Dropdown -->
+            <li class="nav-item-dropdown">
+              <a href="services.html" class="nav-link" aria-expanded="false" aria-haspopup="true">
+                <span>Services</span>
+                <span class="nav-arrow-btn" role="button" tabindex="0" aria-label="Toggle Services submenu">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </span>
+              </a>
+              <div class="nav-dropdown-menu nav-dropdown-services" role="menu">
+                <div class="dropdown-header">
+                  <span class="dropdown-eyebrow">TRADE CAPABILITIES</span>
+                  <a href="services.html" class="dropdown-header-all">View All Services <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="dropdown-items-grid dropdown-col-2">
+                  <a href="services.html#card-import-solutions" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-ship"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Import Solutions</span>
+                      <span class="dropdown-item-desc">Clearance, compliance &amp; door delivery</span>
+                    </div>
+                  </a>
+                  <a href="services.html#card-export-management" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-plane-departure"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Export Management</span>
+                      <span class="dropdown-item-desc">Global shipping &amp; market outreach</span>
+                    </div>
+                  </a>
+                  <a href="services.html#card-global-sourcing" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-globe"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Global Sourcing</span>
+                      <span class="dropdown-item-desc">Verified suppliers &amp; contract terms</span>
+                    </div>
+                  </a>
+                  <a href="services.html#card-logistics-coordination" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-truck-moving"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Logistics Coordination</span>
+                      <span class="dropdown-item-desc">Multimodal ocean, air &amp; land freight</span>
+                    </div>
+                  </a>
+                  <a href="services.html#card-customs-support" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Customs Support</span>
+                      <span class="dropdown-item-desc">Duty optimization &amp; regulatory filing</span>
+                    </div>
+                  </a>
+                  <a href="services.html#card-trade-consulting" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-handshake-angle"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Trade Consulting</span>
+                      <span class="dropdown-item-desc">Cross-border advice &amp; risk management</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <!-- Global Presence Dropdown -->
+            <li class="nav-item-dropdown">
+              <a href="global-presence.html" class="nav-link" aria-expanded="false" aria-haspopup="true">
+                <span>Global Presence</span>
+                <span class="nav-arrow-btn" role="button" tabindex="0" aria-label="Toggle Global Presence submenu">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </span>
+              </a>
+              <div class="nav-dropdown-menu nav-dropdown-presence" role="menu">
+                <div class="dropdown-header">
+                  <span class="dropdown-eyebrow">WORLDWIDE FOOTPRINT</span>
+                  <a href="global-presence.html" class="dropdown-header-all">Explore Network <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="dropdown-items-grid dropdown-col-1">
+                  <a href="global-presence.html#interactive-map" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-map-location-dot"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Interactive World Map</span>
+                      <span class="dropdown-item-desc">Trade routes across 60+ countries</span>
+                    </div>
+                  </a>
+                  <a href="global-presence.html#continental-hubs" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-earth-americas"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Continental Hubs</span>
+                      <span class="dropdown-item-desc">Asia, Europe, Middle East &amp; Americas</span>
+                    </div>
+                  </a>
+                  <a href="global-presence.html#transit-calculator" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-calculator"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Transit Calculator</span>
+                      <span class="dropdown-item-desc">Estimate shipping times &amp; lane routes</span>
+                    </div>
+                  </a>
+                  <a href="global-presence.html#infrastructure" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-warehouse"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Trade Infrastructure</span>
+                      <span class="dropdown-item-desc">42+ bonded logistics &amp; cold hubs</span>
+                    </div>
+                  </a>
+                  <a href="global-presence.html#regional-desks" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-headset"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Regional Desks</span>
+                      <span class="dropdown-item-desc">Local bilingual trade advisors in 18 HQs</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <!-- Quality & Compliance Dropdown -->
+            <li class="nav-item-dropdown">
+              <a href="compliance.html" class="nav-link" aria-expanded="false" aria-haspopup="true">
+                <span>Quality &amp; Compliance</span>
+                <span class="nav-arrow-btn" role="button" tabindex="0" aria-label="Toggle Quality &amp; Compliance submenu">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </span>
+              </a>
+              <div class="nav-dropdown-menu nav-dropdown-compliance" role="menu">
+                <div class="dropdown-header">
+                  <span class="dropdown-eyebrow">GLOBAL STANDARDS</span>
+                  <a href="compliance.html" class="dropdown-header-all">View All Standards <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="dropdown-items-grid dropdown-col-1">
+                  <a href="compliance.html#certifications" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-certificate"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Our Certifications</span>
+                      <span class="dropdown-item-desc">ISO 9001, HACCP, FSSAI, APEDA, GMP</span>
+                    </div>
+                  </a>
+                  <a href="compliance.html#quality-process" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-list-check"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Quality Assurance</span>
+                      <span class="dropdown-item-desc">5-tier testing &amp; pre-shipment audit</span>
+                    </div>
+                  </a>
+                  <a href="compliance.html#commitment" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-scale-balanced"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Regulatory Framework</span>
+                      <span class="dropdown-item-desc">Export-import guidelines &amp; safety</span>
+                    </div>
+                  </a>
+                  <a href="compliance.html#commitment" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-leaf"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">ESG &amp; Sustainability</span>
+                      <span class="dropdown-item-desc">Eco-packaging &amp; ethical trade sourcing</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <!-- Insights Dropdown -->
+            <li class="nav-item-dropdown">
+              <a href="insights.html" class="nav-link" aria-expanded="false" aria-haspopup="true">
+                <span>Insights</span>
+                <span class="nav-arrow-btn" role="button" tabindex="0" aria-label="Toggle Insights submenu">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </span>
+              </a>
+              <div class="nav-dropdown-menu nav-dropdown-insights" role="menu">
+                <div class="dropdown-header">
+                  <span class="dropdown-eyebrow">TRADE INTELLIGENCE</span>
+                  <a href="insights.html" class="dropdown-header-all">View All Insights <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="dropdown-items-grid dropdown-col-1">
+                  <a href="insights.html?category=trends" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-arrow-trend-up"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Market Trends</span>
+                      <span class="dropdown-item-desc">Global commodity cycles &amp; forecasts</span>
+                    </div>
+                  </a>
+                  <a href="insights.html?category=industry" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-chart-pie"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Industry Analysis</span>
+                      <span class="dropdown-item-desc">Deep dives into agricultural &amp; trade sectors</span>
+                    </div>
+                  </a>
+                  <a href="insights.html?category=regulations" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-gavel"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Trade Regulations</span>
+                      <span class="dropdown-item-desc">Tariff changes, customs rules &amp; compliance</span>
+                    </div>
+                  </a>
+                  <a href="insights.html?category=articles" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-newspaper"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Expert Articles</span>
+                      <span class="dropdown-item-desc">Practical import-export guides &amp; tips</span>
+                    </div>
+                  </a>
+                  <a href="insights.html?category=cases" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-book-open"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Case Studies</span>
+                      <span class="dropdown-item-desc">Real client success stories across borders</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <a href="contact.html" class="nav-link">
+                <span>Contact</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Vertical Separator Divider -->
+        <div class="nav-divider"></div>
+
+        <!-- Right Header: Search & Request a Quote -->
+        <div class="header-right-group">
+          <div class="header-search-wrap">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" id="headerSearchInput" class="header-search-input" placeholder="Search 32+ commodities, pulses..." autocomplete="off">
+            <span class="search-kbd-hint">Ctrl K</span>
+          </div>
+          <a href="contact.html#quote" class="btn-request-quote" id="headerQuoteBtn">
+            <i class="fa-regular fa-file-lines"></i>
+            <span>Request a Quote</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+
+      </div>
+    </header>
+
+    <!-- ==========================================================================
+         3. HERO BANNER SECTION (Full Panorama - Aligned with Services & Compliance)
+         ========================================================================== -->
+    <section class="product-hero-section">
+      <div class="hero-panorama-container">
+        <img src="images/products_crop/product_hero_banner.png" alt="Our Premium Products - Global Sourcing - Concept Exim" class="hero-panorama-img" width="4096" height="1364" loading="eager" fetchpriority="high">
+      </div>
+
+      <!-- Premium Hero Features Strip with Color Icons -->
+      <div class="hero-features-strip">
+        <div class="page-container hero-features-container">
+          <div class="hero-feature-pill">
+            <div class="feature-icon-badge icon-badge-blue">
+              <i class="fa-solid fa-cubes-stacked"></i>
+            </div>
+            <div class="feature-info">
+              <span class="feature-title">32+ Commodities</span>
+              <span class="feature-desc">Agri, Spices &amp; Industrial</span>
+            </div>
+          </div>
+          <div class="hero-feature-pill">
+            <div class="feature-icon-badge icon-badge-amber">
+              <i class="fa-solid fa-award"></i>
+            </div>
+            <div class="feature-info">
+              <span class="feature-title">Quality Inspected</span>
+              <span class="feature-desc">ISO &amp; Lab Certified Grades</span>
+            </div>
+          </div>
+          <div class="hero-feature-pill">
+            <div class="feature-icon-badge icon-badge-emerald">
+              <i class="fa-solid fa-handshake"></i>
+            </div>
+            <div class="feature-info">
+              <span class="feature-title">Direct Sourcing</span>
+              <span class="feature-desc">Farm &amp; Mill Wholesale Rates</span>
+            </div>
+          </div>
+          <div class="hero-feature-pill">
+            <div class="feature-icon-badge icon-badge-purple">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <div class="feature-info">
+              <span class="feature-title">Safe Maritime Transit</span>
+              <span class="feature-desc">Moisture &amp; Temp Controlled</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         4. MAIN CATALOG AREA (3-Column Layout: Left Filters, Center 5-Col Grid, Right Widgets)
+         ========================================================================== -->
+    <main class="catalog-section">
+      <div class="page-container catalog-layout-grid">
+        
+        <!-- ================= LEFT: FILTER SIDEBAR ================= -->
+        <aside class="filter-sidebar-col">
+          <div class="filter-sidebar-card">
+            
+            <div class="sidebar-heading-group clickable-toggle" id="toggleCategoriesBtn" title="Toggle Category List" role="button" tabindex="0" aria-expanded="true">
+              <div class="heading-title-box">
+                <span class="heading-icon-badge"><i class="fa-solid fa-shapes"></i></span>
+                <span>Shop by All Categories</span>
+              </div>
+              <i class="fa-solid fa-chevron-down heading-arrow-down"></i>
+            </div>
+
+            <ul class="filter-category-list" id="sidebarCategoryList">
+              <li class="filter-category-item active" data-category="all">
+                <div class="cat-item-left">
+                  <span class="cat-icon-colored icon-cat-all"><i class="fa-solid fa-layer-group"></i></span>
+                  <span class="cat-name">All Categories</span>
+                </div>
+                <span class="cat-count-pill">32</span>
+              </li>
+              <li class="filter-category-item" data-category="grains">
+                <div class="cat-item-left">
+                  <span class="cat-icon-colored icon-cat-grains"><i class="fa-solid fa-wheat-awn"></i></span>
+                  <span class="cat-name">Rice &amp; Grains</span>
+                </div>
+                <span class="cat-count-pill">4</span>
+              </li>
+              <li class="filter-category-item" data-category="spices">
+                <div class="cat-item-left">
+                  <span class="cat-icon-colored icon-cat-spices"><i class="fa-solid fa-pepper-hot"></i></span>
+                  <span class="cat-name">Spices</span>
+                </div>
+                <span class="cat-count-pill">5</span>
+              </li>
+              <li class="filter-category-item" data-category="pulses">
+                <div class="cat-item-left">
+                  <span class="cat-icon-colored icon-cat-pulses"><i class="fa-solid fa-cubes-stacked"></i></span>
+                  <span class="cat-name">Pulses &amp; Legumes</span>
+                </div>
+                <span class="cat-count-pill">4</span>
+              </li>
+              <li class="filter-category-item" data-category="fruits">
+                <div class="cat-item-left">
+                  <span class="cat-icon-colored icon-cat-fruits"><i class="fa-solid fa-apple-whole"></i></span>
+                  <span class="cat-name">Fruits &amp; Vegetables</span>
+                </div>
+                <span class="cat-count-pill">6</span>
+              </li>
+              <li class="filter-category-item" data-category="oils">
+                <div class="cat-item-left">
+                  <span class="cat-icon-colored icon-cat-oils"><i class="fa-solid fa-bottle-droplet"></i></span>
+                  <span class="cat-name">Oils &amp; Fats</span>
+                </div>
+                <span class="cat-count-pill">4</span>
+              </li>
+              <li class="filter-category-item" data-category="processed">
+                <div class="cat-item-left">
+                  <span class="cat-icon-colored icon-cat-processed"><i class="fa-solid fa-box-open"></i></span>
+                  <span class="cat-name">Processed Foods</span>
+                </div>
+                <span class="cat-count-pill">4</span>
+              </li>
+              <li class="filter-category-item" data-category="dryfruits">
+                <div class="cat-item-left">
+                  <span class="cat-icon-colored icon-cat-dryfruits"><i class="fa-solid fa-seedling"></i></span>
+                  <span class="cat-name">Dry Fruits &amp; Nuts</span>
+                </div>
+                <span class="cat-count-pill">5</span>
+              </li>
+            </ul>
+
+            <div class="filter-divider"></div>
+
+            <!-- Price Range -->
+            <div class="filter-block-title">Price Range</div>
+            <div class="price-slider-wrap">
+              <input type="range" min="0" max="500000" step="5000" value="500000" class="price-range-slider" id="priceRangeSlider">
+              <div class="price-range-labels">
+                <span>₹0</span>
+                <span id="priceMaxLabel">₹5,00,000+</span>
+              </div>
+            </div>
+
+            <div class="filter-divider"></div>
+
+            <!-- Availability -->
+            <div class="filter-block-title">Availability</div>
+            <div class="filter-checkbox-group">
+              <label class="checkbox-label-wrap">
+                <input type="checkbox" checked id="filterInStock">
+                <span>In Stock (32)</span>
+              </label>
+              <label class="checkbox-label-wrap">
+                <input type="checkbox" id="filterMadeToOrder">
+                <span>Made to Order (12)</span>
+              </label>
+            </div>
+
+            <div class="filter-divider"></div>
+
+            <!-- Origin -->
+            <div class="filter-block-title">Origin</div>
+            <div class="filter-checkbox-group">
+              <label class="checkbox-label-wrap">
+                <input type="checkbox" class="origin-check" value="India">
+                <span>India (19)</span>
+              </label>
+              <label class="checkbox-label-wrap">
+                <input type="checkbox" class="origin-check" value="USA">
+                <span>USA (4)</span>
+              </label>
+              <label class="checkbox-label-wrap">
+                <input type="checkbox" class="origin-check" value="Other">
+                <span>Other (9)</span>
+              </label>
+            </div>
+
+            <!-- Clear Filters Button -->
+            <button class="btn-clear-filters" id="resetFiltersBtn">
+              <i class="fa-solid fa-rotate-left"></i>
+              <span>Clear Filters</span>
+            </button>
+
+          </div>
+        </aside>
+
+        <!-- ================= CENTER: CATALOG & 5-COL PRODUCT GRID ================= -->
+        <section class="catalog-center-col">
+          
+          <!-- Top Row: Catalog Intro Header + 8 Category Icon Cards -->
+          <div class="catalog-top-header-row">
+            
+            <div class="catalog-intro-header">
+              <span class="catalog-eyebrow">OUR PRODUCTS</span>
+              <h2 class="catalog-heading">Global Quality, Diverse Range</h2>
+              <p class="catalog-subtitle">
+                Explore our wide range of premium products sourced from trusted suppliers across the globe. We ensure quality, freshness and timely delivery, every time.
+              </p>
+            </div>
+
+            <!-- 8 Category Icon Cards -->
+            <div class="category-cards-grid">
+              <button class="cat-card-btn active" data-pill="all">
+                <div class="cat-card-icon cat-pill-all"><i class="fa-solid fa-layer-group"></i></div>
+                <span class="cat-card-label">All Products</span>
+              </button>
+              <button class="cat-card-btn" data-pill="grains">
+                <div class="cat-card-icon cat-pill-grains"><i class="fa-solid fa-wheat-awn"></i></div>
+                <span class="cat-card-label">Rice &amp; Grains</span>
+              </button>
+              <button class="cat-card-btn" data-pill="spices">
+                <div class="cat-card-icon cat-pill-spices"><i class="fa-solid fa-pepper-hot"></i></div>
+                <span class="cat-card-label">Spices</span>
+              </button>
+              <button class="cat-card-btn" data-pill="pulses">
+                <div class="cat-card-icon cat-pill-pulses"><i class="fa-solid fa-cubes-stacked"></i></div>
+                <span class="cat-card-label">Pulses &amp; Legumes</span>
+              </button>
+              <button class="cat-card-btn" data-pill="fruits">
+                <div class="cat-card-icon cat-pill-fruits"><i class="fa-solid fa-apple-whole"></i></div>
+                <span class="cat-card-label">Fruits &amp; Vegetables</span>
+              </button>
+              <button class="cat-card-btn" data-pill="oils">
+                <div class="cat-card-icon cat-pill-oils"><i class="fa-solid fa-bottle-droplet"></i></div>
+                <span class="cat-card-label">Oils &amp; Fats</span>
+              </button>
+              <button class="cat-card-btn" data-pill="processed">
+                <div class="cat-card-icon cat-pill-processed"><i class="fa-solid fa-box-open"></i></div>
+                <span class="cat-card-label">Processed Foods</span>
+              </button>
+              <button class="cat-card-btn" data-pill="dryfruits">
+                <div class="cat-card-icon cat-pill-dryfruits"><i class="fa-solid fa-seedling"></i></div>
+                <span class="cat-card-label">Dry Fruits &amp; Nuts</span>
+              </button>
+            </div>
+
+          </div>
+
+          <!-- Sort & View Controls Strip -->
+          <div class="catalog-controls-strip">
+            <span class="catalog-results-count">Showing <strong id="productCount">32</strong> products</span>
+            <div class="catalog-controls-right">
+              <div class="sort-dropdown-wrap">
+                <span>Sort by:</span>
+                <select class="sort-select" id="sortSelect">
+                  <option value="featured">Featured</option>
+                  <option value="price-low">Price: Low to High</option>
+                  <option value="price-high">Price: High to Low</option>
+                  <option value="rating">Highest Rated</option>
+                </select>
+              </div>
+              <div class="view-toggle-btns">
+                <button class="view-btn active" id="gridViewBtn" title="Grid View"><i class="fa-solid fa-table-cells"></i></button>
+                <button class="view-btn" id="listViewBtn" title="List View"><i class="fa-solid fa-list"></i></button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 32 Product Cards Grid (Categorized Across All Sessions) -->
+          <div class="products-grid-5cols" id="productsGridContainer">
+
+            <!-- Product 1: Basmati Rice -->
+            <article class="product-card" data-category="grains" data-origin="India" data-price="45">
+              <div class="product-card-thumb-wrap">
+                <span class="card-badge-pill badge-bestseller">Best Seller</span>
+                <button class="card-wishlist-btn" aria-label="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+                <img src="images/products_crop/prod_basmati.jpg" alt="Basmati Rice" class="product-thumb-img">
+              </div>
+              <div class="product-card-body">
+                <h3 class="product-item-title">Basmati Rice</h3>
+                <div class="product-item-spec">Long Grain | Premium Quality</div>
+                <div class="product-origin-tag"><span>🇮🇳</span><span>Origin: India</span></div>
+                <div class="product-rating-row"><i class="fa-solid fa-star"></i><strong>4.8</strong><span>(120)</span></div>
+                <div class="product-price-val">₹45.00 / Kg</div>
+                <div class="card-action-row">
+                  <div class="qty-stepper-box">
+                    <button class="qty-step-btn btn-minus">−</button>
+                    <input type="text" class="qty-input-field" value="1" readonly>
+                    <button class="qty-step-btn btn-plus">+</button>
+                  </div>
+                  <button class="btn-card-add-cart" data-name="Basmati Rice">
+                    <i class="fa-solid fa-cart-shopping"></i><span>Add to Cart</span>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Product 2: Black Pepper -->
+            <article class="product-card" data-category="spices" data-origin="India" data-price="320">
+              <div class="product-card-thumb-wrap">
+                <span class="card-badge-pill badge-hotdeal">Hot Deal</span>
+                <button class="card-wishlist-btn" aria-label="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+                <img src="images/background images/Black Pepper.png" alt="Black Pepper" class="product-thumb-img">
+              </div>
+              <div class="product-card-body">
+                <h3 class="product-item-title">Black Pepper</h3>
+                <div class="product-item-spec">Pure &amp; Natural</div>
+                <div class="product-origin-tag"><span>🇮🇳</span><span>Origin: India</span></div>
+                <div class="product-rating-row"><i class="fa-solid fa-star"></i><strong>4.7</strong><span>(98)</span></div>
+                <div class="product-price-val">₹320.00 / Kg</div>
+                <div class="card-action-row">
+                  <div class="qty-stepper-box">
+                    <button class="qty-step-btn btn-minus">−</button>
+                    <input type="text" class="qty-input-field" value="1" readonly>
+                    <button class="qty-step-btn btn-plus">+</button>
+                  </div>
+                  <button class="btn-card-add-cart" data-name="Black Pepper">
+                    <i class="fa-solid fa-cart-shopping"></i><span>Add to Cart</span>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Product 3: Masoor Dal -->
+            <article class="product-card" data-category="pulses" data-origin="Other" data-price="120">
+              <div class="product-card-thumb-wrap">
+                <span class="card-badge-pill badge-new">New</span>
+                <button class="card-wishlist-btn" aria-label="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+                <img src="images/background images/dal.png" alt="Masoor Dal" class="product-thumb-img">
+              </div>
+              <div class="product-card-body">
+                <h3 class="product-item-title">Masoor Dal</h3>
+                <div class="product-item-spec">High Protein | Natural</div>
+                <div class="product-origin-tag"><span>🇨🇦</span><span>Origin: Canada</span></div>
+                <div class="product-rating-row"><i class="fa-solid fa-star"></i><strong>4.6</strong><span>(76)</span></div>
+                <div class="product-price-val">₹120.00 / Kg</div>
+                <div class="card-action-row">
+                  <div class="qty-stepper-box">
+                    <button class="qty-step-btn btn-minus">−</button>
+                    <input type="text" class="qty-input-field" value="1" readonly>
+                    <button class="qty-step-btn btn-plus">+</button>
+                  </div>
+                  <button class="btn-card-add-cart" data-name="Masoor Dal">
+                    <i class="fa-solid fa-cart-shopping"></i><span>Add to Cart</span>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Product 4: Cashew Nuts -->
+            <article class="product-card" data-category="dryfruits" data-origin="Other" data-price="680">
+              <div class="product-card-thumb-wrap">
+                <span class="card-badge-pill badge-featured">Premium</span>
+                <button class="card-wishlist-btn" aria-label="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+                <img src="images/background images/Cashew Nuts.png" alt="Cashew Nuts" class="product-thumb-img">
+              </div>
+              <div class="product-card-body">
+                <h3 class="product-item-title">Cashew Nuts</h3>
+                <div class="product-item-spec">Premium Grade | Fresh</div>
+                <div class="product-origin-tag"><span>🇻🇳</span><span>Origin: Vietnam</span></div>
+                <div class="product-rating-row"><i class="fa-solid fa-star"></i><strong>4.9</strong><span>(143)</span></div>
+                <div class="product-price-val">₹680.00 / Kg</div>
+                <div class="card-action-row">
+                  <div class="qty-stepper-box">
+                    <button class="qty-step-btn btn-minus">−</button>
+                    <input type="text" class="qty-input-field" value="1" readonly>
+                    <button class="qty-step-btn btn-plus">+</button>
+                  </div>
+                  <button class="btn-card-add-cart" data-name="Cashew Nuts">
+                    <i class="fa-solid fa-cart-shopping"></i><span>Add to Cart</span>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Product 5: Coconut Oil -->
+            <article class="product-card" data-category="oils" data-origin="Other" data-price="250">
+              <div class="product-card-thumb-wrap">
+                <span class="card-badge-pill badge-organic">Pure</span>
+                <button class="card-wishlist-btn" aria-label="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+                <img src="images/products_crop/prod_coconut_oil.jpg" alt="Coconut Oil" class="product-thumb-img">
+              </div>
+              <div class="product-card-body">
+                <h3 class="product-item-title">Coconut Oil</h3>
+                <div class="product-item-spec">Cold Pressed | Pure</div>
+                <div class="product-origin-tag"><span>🇮🇩</span><span>Origin: Indonesia</span></div>
+                <div class="product-rating-row"><i class="fa-solid fa-star"></i><strong>4.5</strong><span>(62)</span></div>
+                <div class="product-price-val">₹250.00 / Ltr</div>
+                <div class="card-action-row">
+                  <div class="qty-stepper-box">
+                    <button class="qty-step-btn btn-minus">−</button>
+                    <input type="text" class="qty-input-field" value="1" readonly>
+                    <button class="qty-step-btn btn-plus">+</button>
+                  </div>
+                  <button class="btn-card-add-cart" data-name="Coconut Oil">
+                    <i class="fa-solid fa-cart-shopping"></i><span>Add to Cart</span>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Product 6: Almonds -->
+            <article class="product-card" data-category="dryfruits" data-origin="USA" data-price="950">
+              <div class="product-card-thumb-wrap">
+                <span class="card-badge-pill badge-organic">Organic</span>
+                <button class="card-wishlist-btn" aria-label="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+                <img src="images/background images/Almonds.png" alt="Almonds" class="product-thumb-img">
+              </div>
+              <div class="product-card-body">
+                <h3 class="product-item-title">Almonds</h3>
+                <div class="product-item-spec">Premium Quality | Natural</div>
+                <div class="product-origin-tag"><span>🇺🇸</span><span>Origin: USA</span></div>
+                <div class="product-rating-row"><i class="fa-solid fa-star"></i><strong>4.8</strong><span>(110)</span></div>
+                <div class="product-price-val">₹950.00 / Kg</div>
+                <div class="card-action-row">
+                  <div class="qty-stepper-box">
+                    <button class="qty-step-btn btn-minus">−</button>
+                    <input type="text" class="qty-input-field" value="1" readonly>
+                    <button class="qty-step-btn btn-plus">+</button>
+                  </div>
+                  <button class="btn-card-add-cart" data-name="Almonds">
+                    <i class="fa-solid fa-cart-shopping"></i><span>Add to Cart</span>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Product 7: Green Cardamom -->
+            <article class="product-card" data-category="spices" data-origin="Other" data-price="1200">
+              <div class="product-card-thumb-wrap">
+                <span class="card-badge-pill badge-featured">Featured</span>
+                <button class="card-wishlist-btn" aria-label="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+                <img src="images/background images/Green Cardamom.png" alt="Green Cardamom" class="product-thumb-img">
+              </div>
+              <div class="product-card-body">
+                <h3 class="product-item-title">Green Cardamom</h3>
+                <div class="product-item-spec">Aromatic | Premium</div>
+                <div class="product-origin-tag"><span>🇬🇹</span><span>Origin: Guatemala</span></div>
+                <div class="product-rating-row"><i class="fa-solid fa-star"></i><strong>4.7</strong><span>(88)</span></div>
+                <div class="product-price-val">₹1,200.00 / Kg</div>
+                <div class="card-action-row">
+                  <div class="qty-stepper-box">
+                    <button class="qty-step-btn btn-minus">−</button>
+                    <input type="text" class="qty-input-field" value="1" readonly>
+                    <button class="qty-step-btn btn-plus">+</button>
+                  </div>
+                  <button class="btn-card-add-cart" data-name="Green Cardamom">
+                    <i class="fa-solid fa-cart-shopping"></i><span>Add to Cart</span>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Product 8: Wheat -->
+            <article class="product-card" data-category="grains" data-origin="India" data-price="28">
+              <div class="product-card-thumb-wrap">
+                <span class="card-badge-pill badge-popular">Popular</span>
+                <button class="card-wishlist-btn" aria-label="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+                <img src="images/products_crop/prod_wheat.jpg" alt="Wheat" class="product-thumb-img">
+              </div>
+              <div class="product-card-body">
+                <h3 class="product-item-title">Wheat</h3>
+                <div class="product-item-spec">High Grade | Nutrient Rich</div>
+                <div class="product-origin-tag"><span>🇮🇳</span><span>Origin: India</span></div>
+                <div class="product-rating-row"><i class="fa-solid fa-star"></i><strong>4.6</strong><span>(74)</span></div>
+                <div class="product-price-val">₹28.00 / Kg</div>
+                <div class="card-action-row">
+                  <div class="qty-stepper-box">
+                    <button class="qty-step-btn btn-minus">−</button>
+                    <input type="text" class="qty-input-field" value="1" readonly>
+                    <button class="qty-step-btn btn-plus">+</button>
+                  </div>
+                  <button class="btn-card-add-cart" data-name="Wheat">
+                    <i class="fa-solid fa-cart-shopping"></i><span>Add to Cart</span>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Product 9: Dried Apricots -->
+            <article class="product-card" data-category="dryfruits" data-origin="Other" data-price="600">
+              <div class="product-card-thumb-wrap">
+                <span class="card-badge-pill badge-organic">Organic</span>
+                <button class="card-wishlist-btn" aria-label="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+                <img src="images/background images/Dried Apricots.png" alt="Dried Apricots" class="product-thumb-img">
+              </div>
+              <div class="product-card-body">
+                <h3 class="product-item-title">Dried Apricots</h3>
+                <div class="product-item-spec">Natural | No Added Sugar</div>
+                <div class="product-origin-tag"><span>🇹🇷</span><span>Origin: Turkey</span></div>
+                <div class="product-rating-row"><i class="fa-solid fa-star"></i><strong>4.5</strong><span>(52)</span></div>
+                <div class="product-price-val">₹600.00 / Kg</div>
+                <div class="card-action-row">
+                  <div class="qty-stepper-box">
+                    <button class="qty-step-btn btn-minus">−</button>
+                    <input type="text" class="qty-input-field" value="1" readonly>
+                    <button class="qty-step-btn btn-plus">+</button>
+                  </div>
+                  <button class="btn-card-add-cart" data-name="Dried Apricots">
+                    <i class="fa-solid fa-cart-shopping"></i><span>Add to Cart</span>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Product 10: Green Tea -->
+            <article class="product-card" data-category="processed" data-origin="Other" data-price="450">
+              <div class="product-card-thumb-wrap">
+                <span class="card-badge-pill badge-organic">Organic</span>
+                <button class="card-wishlist-btn" aria-label="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+                <img src="images/products_crop/prod_green_tea.jpg" alt="Green Tea" class="product-thumb-img">
+              </div>
+              <div class="product-card-body">
+                <h3 class="product-item-title">Green Tea</h3>
+                <div class="product-item-spec">Pure | Healthy</div>
+                <div class="product-origin-tag"><span>🇨🇳</span><span>Origin: China</span></div>
+                <div class="product-rating-row"><i class="fa-solid fa-star"></i><strong>4.7</strong><span>(90)</span></div>
+                <div class="product-price-val">₹450.00 / Kg</div>
+                <div class="card-action-row">
+                  <div class="qty-stepper-box">
+                    <button class="qty-step-btn btn-minus">−</button>
+                    <input type="text" class="qty-input-field" value="1" readonly>
+                    <button class="qty-step-btn btn-plus">+</button>
+                  </div>
+                  <button class="btn-card-add-cart" data-name="Green Tea">
+                    <i class="fa-solid fa-cart-shopping"></i><span>Add to Cart</span>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Product 11: Sona Masoori Rice -->
+            <article class="product-card" data-category="grains" data-origin="India" data-price="42">
+              <div class="product-card-thumb-wrap">
+                <span class="card-badge-pill badge-organic">Fresh Crop</span>
+                <button class="card-wishlist-btn" aria-label="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+                <img src="images/background images/Sona Masoori Rice.png" alt="Sona Masoori Rice" class="product-thumb-img">
+              </div>
+              <div class="product-card-body">
+                <h3 class="product-item-title">Sona Masoori Rice</h3>
+                <div class="product-item-spec">Lightweight &amp; Aromatic | Medium Grain</div>
+                <div class="product-origin-tag"><span>🇮🇳</span><span>Origin: India</span></div>
+                <div class="product-rating-row"><i class="fa-solid fa-star"></i><strong>4.7</strong><span>(92)</span></div>
+                <div class="product-price-val">₹42.00 / Kg</div>
+                <div class="card-action-row">
+                  <div class="qty-stepper-box">
+                    <button class="qty-step-btn btn-minus">−</button>
+                    <input type="text" class="qty-input-field" value="1" readonly>
+                    <button class="qty-step-btn btn-plus">+</button>
+                  </div>
+                  <button class="btn-card-add-cart" data-name="Sona Masoori Rice">
+                    <i class="fa-solid fa-cart-shopping"></i><span>Add to Cart</span>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Product 12: Yellow Maize Corn -->
+            <article class="product-card" data-category="grains" data-origin="USA" data-price="24">
+              <div class="product-card-thumb-wrap">
+                <span class="card-badge-pill badge-hotdeal">Hot Deal</span>
+                <button class="card-wishlist-btn" aria-label="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+                <img src="images/products_crop/prod_yellow_corn.jpg" alt="Yellow Maize Corn" class="product-thumb-img">
+              </div>
+              <div class="product-card-body">
+                <h3 class="product-item-title">Yellow Maize Corn</h3>
+                <div class="product-item-spec">Food &amp; Feed Grade | Low Moisture</div>
+                <div class="product-origin-tag"><span>🇺🇸</span><span>Origin: USA</span></div>
+                <div class="product-rating-row"><i class="fa-solid fa-star"></i><strong>4.5</strong><span>(58)</span></div>
+                <div class="product-price-val">₹24.00 / Kg</div>
+                <div class="card-action-row">
+                  <div class="qty-stepper-box">
+                    <button class="qty-step-btn btn-minus">−</button>
+                    <input type="text" class="qty-input-field" value="1" readonly>
+                    <button class="qty-step-btn btn-plus">+</button>
+                  </div>
+                  <button class="btn-card-add-cart" data-name="Yellow Maize Corn">
+                    <i class="fa-solid fa-cart-shopping"></i><span>Add to Cart</span>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Product 13: Turmeric Powder -->
+            <article class="product-card" data-category="spices" data-origin="India" data-price="140">
+              <div class="product-card-thumb-wrap">
+                <span class="card-badge-pill badge-organic">Organic</span>
+                <button class="card-wishlist-btn" aria-label="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+                <img src="images/background images/Turmeric Powder.png" alt="Turmeric Powder" class="product-thumb-img">
+              </div>
+              <div class="product-card-body">
+                <h3 class="product-item-title">Turmeric Powder</h3>
+                <div class="product-item-spec">High Curcumin 5%+ | Salem Pure</div>
+                <div class="product-origin-tag"><span>🇮🇳</span><span>Origin: India</span></div>
+                <div class="product-rating-row"><i class="fa-solid fa-star"></i><strong>4.9</strong><span>(135)</span></div>
+                <div class="product-price-val">₹140.00 / Kg</div>
+                <div class="card-action-row">
+                  <div class="qty-stepper-box">
+                    <button class="qty-step-btn btn-minus">−</button>
+                    <input type="text" class="qty-input-field" value="1" readonly>
+                    <button class="qty-step-btn btn-plus">+</button>
+                  </div>
+                  <button class="btn-card-add-cart" data-name="Turmeric Powder">
+                    <i class="fa-solid fa-cart-shopping"></i><span>Add to Cart</span>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Product 14: Guntur Red Chilli -->
+            <article class="product-card" data-category="spices" data-origin="India" data-price="165">
+              <div class="product-card-thumb-wrap">
+                <span class="card-badge-pill badge-bestseller">Best Seller</span>
+                <button class="card-wishlist-btn" aria-label="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+                <img src="images/products_crop/prod_red_chilli.jpg" alt="Guntur Teja Red Chilli" class="product-thumb-img">
+              </div>
+              <div class="product-card-body">
+                <h3 class="product-item-title">Guntur Red Chilli</h3>
+                <div class="product-item-spec">Stemless Export Grade | Vibrant Red</div>
+                <div class="product-origin-tag"><span>🇮🇳</span><span>Origin: India</span></div>
+                <div class="product-rating-row"><i class="fa-solid fa-star"></i><strong>4.8</strong><span>(112)</span></div>
+                <div class="product-price-val">₹165.00 / Kg</div>
+                <div class="card-action-row">
+                  <div class="qty-stepper-box">
+                    <button class="qty-step-btn btn-minus">−</button>
+                    <input type="text" class="qty-input-field" value="1" readonly>
+                    <button class="qty-step-btn btn-plus">+</button>
+                  </div>
+                  <button class="btn-card-add-cart" data-name="Guntur Red Chilli">
+                    <i class="fa-solid fa-cart-shopping"></i><span>Add to Cart</span>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Product 15: Cumin Seeds -->
+            <article class="product-card" data-category="spices" data-origin="India" data-price="280">
+              <div class="product-card-thumb-wrap">
+                <span class="card-badge-pill badge-organic">Fresh Crop</span>
+                <button class="card-wishlist-btn" aria-label="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+                <img src="images/products_crop/prod_cumin_seeds.jpg" alt="Cumin Seeds" class="product-thumb-img">
+              </div>
+              <div class="product-card-body">
+                <h3 class="product-item-title">Cumin Seeds (Jeera)</h3>
+                <div class="product-item-spec">Machine Cleaned 99.5% | Rich Aroma</div>
+                <div class="product-origin-tag"><span>🇮🇳</span><span>Origin: India</span></div>
+                <div class="product-rating-row"><i class="fa-solid fa-star"></i><strong>4.6</strong><span>(84)</span></div>
+                <div class="product-price-val">₹280.00 / Kg</div>
+                <div class="card-action-row">
+                  <div class="qty-stepper-box">
+                    <button class="qty-step-btn btn-minus">−</button>
+                    <input type="text" class="qty-input-field" value="1" readonly>
+                    <button class="qty-step-btn btn-plus">+</button>
+                  </div>
+                  <button class="btn-card-add-cart" data-name="Cumin Seeds">
+                    <i class="fa-solid fa-cart-shopping"></i><span>Add to Cart</span>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Product 16: Toor Dal -->
+            <article class="product-card" data-category="pulses" data-origin="India" data-price="145">
+              <div class="product-card-thumb-wrap">
+                <span class="card-badge-pill badge-bestseller">Best Seller</span>
+                <button class="card-wishlist-btn" aria-label="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+                <img src="images/products_crop/prod_toor_dal.jpg" alt="Premium Toor Dal" class="product-thumb-img">
+              </div>
+              <div class="product-card-body">
+                <h3 class="product-item-title">Toor Dal (Arhar)</h3>
+                <div class="product-item-spec">Fatka Quality | Unpolished &amp; Natural</div>
+                <div class="product-origin-tag"><span>🇮🇳</span><span>Origin: India</span></div>
+                <div class="product-rating-row"><i class="fa-solid fa-star"></i><strong>4.8</strong><span>(110)</span></div>
+                <div class="product-price-val">₹145.00 / Kg</div>
+                <div class="card-action-row">
+                  <div class="qty-stepper-box">
+                    <button class="qty-step-btn btn-minus">−</button>
+                    <input type="text" class="qty-input-field" value="1" readonly>
+                    <button class="qty-step-btn btn-plus">+</button>
+                  </div>
+                  <button class="btn-card-add-cart" data-name="Toor Dal">
+                    <i class="fa-solid fa-cart-shopping"></i><span>Add to Cart</span>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Product 17: Kabuli Chickpeas -->
+            <article class="product-card" data-category="pulses" data-origin="India" data-price="135">
+              <div class="product-card-thumb-wrap">
+                <span class="card-badge-pill badge-organic">Organic</span>
+                <button class="card-wishlist-btn" aria-label="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+                <img src="images/products_crop/prod_chickpeas.jpg" alt="Kabuli Chickpeas" class="product-thumb-img">
+              </div>
+              <div class="product-card-body">
+                <h3 class="product-item-title">Kabuli Chickpeas</h3>
+                <div class="product-item-spec">12mm Bold Grade | High Fiber</div>
+                <div class="product-origin-tag"><span>🇮🇳</span><span>Origin: India</span></div>
+                <div class="product-rating-row"><i class="fa-solid fa-star"></i><strong>4.7</strong><span>(94)</span></div>
+                <div class="product-price-val">₹135.00 / Kg</div>
+                <div class="card-action-row">
+                  <div class="qty-stepper-box">
+                    <button class="qty-step-btn btn-minus">−</button>
+                    <input type="text" class="qty-input-field" value="1" readonly>
+                    <button class="qty-step-btn btn-plus">+</button>
+                  </div>
+                  <button class="btn-card-add-cart" data-name="Kabuli Chickpeas">
+                    <i class="fa-solid fa-cart-shopping"></i><span>Add to Cart</span>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Product 18: Yellow Moong Dal -->
+            <article class="product-card" data-category="pulses" data-origin="India" data-price="115">
+              <div class="product-card-thumb-wrap">
+                <span class="card-badge-pill badge-popular">Popular</span>
+                <button class="card-wishlist-btn" aria-label="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+                <img src="images/background images/Yellow Moong Dal.png" alt="Yellow Moong Dal" class="product-thumb-img">
+              </div>
+              <div class="product-card-body">
+                <h3 class="product-item-title">Yellow Moong Dal</h3>
+                <div class="product-item-spec">Washed &amp; Cleaned | Easy Digestible</div>
+                <div class="product-origin-tag"><span>🇮🇳</span><span>Origin: India</span></div>
+                <div class="product-rating-row"><i class="fa-solid fa-star"></i><strong>4.6</strong><span>(67)</span></div>
+                <div class="product-price-val">₹115.00 / Kg</div>
+                <div class="card-action-row">
+                  <div class="qty-stepper-box">
+                    <button class="qty-step-btn btn-minus">−</button>
+                    <input type="text" class="qty-input-field" value="1" readonly>
+                    <button class="qty-step-btn btn-plus">+</button>
+                  </div>
+                  <button class="btn-card-add-cart" data-name="Yellow Moong Dal">
+                    <i class="fa-solid fa-cart-shopping"></i><span>Add to Cart</span>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Product 19: Alphonso Mangoes -->
+            <article class="product-card" data-category="fruits" data-origin="India" data-price="850">
+              <div class="product-card-thumb-wrap">
+                <span class="card-badge-pill badge-bestseller">Best Seller</span>
+                <button class="card-wishlist-btn" aria-label="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+                <img src="images/products_crop/prod_mangoes.jpg" alt="Alphonso Mangoes" class="product-thumb-img">
+              </div>
+              <div class="product-card-body">
+                <h3 class="product-item-title">Alphonso Mangoes</h3>
+                <div class="product-item-spec">GI Tagged | Ratnagiri Prime Export</div>
+                <div class="product-origin-tag"><span>🇮🇳</span><span>Origin: India</span></div>
+                <div class="product-rating-row"><i class="fa-solid fa-star"></i><strong>4.9</strong><span>(185)</span></div>
+                <div class="product-price-val">₹850.00 / Box</div>
+                <div class="card-action-row">
+                  <div class="qty-stepper-box">
+                    <button class="qty-step-btn btn-minus">−</button>
+                    <input type="text" class="qty-input-field" value="1" readonly>
+                    <button class="qty-step-btn btn-plus">+</button>
+                  </div>
+                  <button class="btn-card-add-cart" data-name="Alphonso Mangoes">
+                    <i class="fa-solid fa-cart-shopping"></i><span>Add to Cart</span>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Product 20: Royal Gala Apples -->
+            <article class="product-card" data-category="fruits" data-origin="USA" data-price="220">
+              <div class="product-card-thumb-wrap">
+                <span class="card-badge-pill badge-organic">Fresh Crop</span>
+                <button class="card-wishlist-btn" aria-label="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+                <img src="images/products_crop/prod_apples.jpg" alt="Royal Gala Apples" class="product-thumb-img">
+              </div>
+              <div class="product-card-body">
+                <h3 class="product-item-title">Royal Gala Apples</h3>
+                <div class="product-item-spec">Crisp &amp; Sweet | Washington Grade A</div>
+                <div class="product-origin-tag"><span>🇺🇸</span><span>Origin: USA</span></div>
+                <div class="product-rating-row"><i class="fa-solid fa-star"></i><strong>4.8</strong><span>(142)</span></div>
+                <div class="product-price-val">₹220.00 / Kg</div>
+                <div class="card-action-row">
+                  <div class="qty-stepper-box">
+                    <button class="qty-step-btn btn-minus">−</button>
+                    <input type="text" class="qty-input-field" value="1" readonly>
+                    <button class="qty-step-btn btn-plus">+</button>
+                  </div>
+                  <button class="btn-card-add-cart" data-name="Royal Gala Apples">
+                    <i class="fa-solid fa-cart-shopping"></i><span>Add to Cart</span>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Product 21: Nashik Red Onions -->
+            <article class="product-card" data-category="fruits" data-origin="India" data-price="35">
+              <div class="product-card-thumb-wrap">
+                <span class="card-badge-pill badge-popular">Popular</span>
+                <button class="card-wishlist-btn" aria-label="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+                <img src="images/products_crop/prod_red_onions.jpg" alt="Nashik Red Onions" class="product-thumb-img">
+              </div>
+              <div class="product-card-body">
+                <h3 class="product-item-title">Nashik Red Onions</h3>
+                <div class="product-item-spec">Export Quality 45mm+ | Fresh Harvest</div>
+                <div class="product-origin-tag"><span>🇮🇳</span><span>Origin: India</span></div>
+                <div class="product-rating-row"><i class="fa-solid fa-star"></i><strong>4.7</strong><span>(95)</span></div>
+                <div class="product-price-val">₹35.00 / Kg</div>
+                <div class="card-action-row">
+                  <div class="qty-stepper-box">
+                    <button class="qty-step-btn btn-minus">−</button>
+                    <input type="text" class="qty-input-field" value="1" readonly>
+                    <button class="qty-step-btn btn-plus">+</button>
+                  </div>
+                  <button class="btn-card-add-cart" data-name="Nashik Red Onions">
+                    <i class="fa-solid fa-cart-shopping"></i><span>Add to Cart</span>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Product 22: Bhagwa Pomegranates -->
+            <article class="product-card" data-category="fruits" data-origin="India" data-price="190">
+              <div class="product-card-thumb-wrap">
+                <span class="card-badge-pill badge-organic">Organic</span>
+                <button class="card-wishlist-btn" aria-label="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+                <img src="images/products_crop/prod_pomegranates.jpg" alt="Bhagwa Pomegranates" class="product-thumb-img">
+              </div>
+              <div class="product-card-body">
+                <h3 class="product-item-title">Bhagwa Pomegranates</h3>
+                <div class="product-item-spec">Ruby Red Arils | Sweet &amp; Juicy</div>
+                <div class="product-origin-tag"><span>🇮🇳</span><span>Origin: India</span></div>
+                <div class="product-rating-row"><i class="fa-solid fa-star"></i><strong>4.9</strong><span>(118)</span></div>
+                <div class="product-price-val">₹190.00 / Kg</div>
+                <div class="card-action-row">
+                  <div class="qty-stepper-box">
+                    <button class="qty-step-btn btn-minus">−</button>
+                    <input type="text" class="qty-input-field" value="1" readonly>
+                    <button class="qty-step-btn btn-plus">+</button>
+                  </div>
+                  <button class="btn-card-add-cart" data-name="Bhagwa Pomegranates">
+                    <i class="fa-solid fa-cart-shopping"></i><span>Add to Cart</span>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Product 23: Cavendish Bananas -->
+            <article class="product-card" data-category="fruits" data-origin="India" data-price="40">
+              <div class="product-card-thumb-wrap">
+                <span class="card-badge-pill badge-hotdeal">Hot Deal</span>
+                <button class="card-wishlist-btn" aria-label="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+                <img src="images/products_crop/prod_bananas.jpg" alt="Cavendish Bananas" class="product-thumb-img">
+              </div>
+              <div class="product-card-body">
+                <h3 class="product-item-title">Cavendish Bananas</h3>
+                <div class="product-item-spec">Fresh Golden | Grade A Export</div>
+                <div class="product-origin-tag"><span>🇮🇳</span><span>Origin: India</span></div>
+                <div class="product-rating-row"><i class="fa-solid fa-star"></i><strong>4.6</strong><span>(88)</span></div>
+                <div class="product-price-val">₹40.00 / Dozen</div>
+                <div class="card-action-row">
+                  <div class="qty-stepper-box">
+                    <button class="qty-step-btn btn-minus">−</button>
+                    <input type="text" class="qty-input-field" value="1" readonly>
+                    <button class="qty-step-btn btn-plus">+</button>
+                  </div>
+                  <button class="btn-card-add-cart" data-name="Cavendish Bananas">
+                    <i class="fa-solid fa-cart-shopping"></i><span>Add to Cart</span>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Product 24: Farm Fresh Veggie Crate -->
+            <article class="product-card" data-category="fruits" data-origin="India" data-price="320">
+              <div class="product-card-thumb-wrap">
+                <span class="card-badge-pill badge-organic">Organic</span>
+                <button class="card-wishlist-btn" aria-label="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+                <img src="images/products_crop/prod_vegetable_box.jpg" alt="Farm Fresh Veggie Crate" class="product-thumb-img">
+              </div>
+              <div class="product-card-body">
+                <h3 class="product-item-title">Veggie Crate</h3>
+                <div class="product-item-spec">Hydroponic &amp; Organic Assorted Mix</div>
+                <div class="product-origin-tag"><span>🇮🇳</span><span>Origin: India</span></div>
+                <div class="product-rating-row"><i class="fa-solid fa-star"></i><strong>4.8</strong><span>(104)</span></div>
+                <div class="product-price-val">₹320.00 / Box</div>
+                <div class="card-action-row">
+                  <div class="qty-stepper-box">
+                    <button class="qty-step-btn btn-minus">−</button>
+                    <input type="text" class="qty-input-field" value="1" readonly>
+                    <button class="qty-step-btn btn-plus">+</button>
+                  </div>
+                  <button class="btn-card-add-cart" data-name="Veggie Crate">
+                    <i class="fa-solid fa-cart-shopping"></i><span>Add to Cart</span>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Product 25: Extra Virgin Olive Oil -->
+            <article class="product-card" data-category="oils" data-origin="Other" data-price="650">
+              <div class="product-card-thumb-wrap">
+                <span class="card-badge-pill badge-featured">Featured</span>
+                <button class="card-wishlist-btn" aria-label="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+                <img src="images/products_crop/prod_olive_oil.jpg" alt="Extra Virgin Olive Oil" class="product-thumb-img">
+              </div>
+              <div class="product-card-body">
+                <h3 class="product-item-title">Extra Virgin Olive Oil</h3>
+                <div class="product-item-spec">First Cold Extraction | Acidity &lt;0.4%</div>
+                <div class="product-origin-tag"><span>🇪🇸</span><span>Origin: Spain</span></div>
+                <div class="product-rating-row"><i class="fa-solid fa-star"></i><strong>4.9</strong><span>(126)</span></div>
+                <div class="product-price-val">₹650.00 / Ltr</div>
+                <div class="card-action-row">
+                  <div class="qty-stepper-box">
+                    <button class="qty-step-btn btn-minus">−</button>
+                    <input type="text" class="qty-input-field" value="1" readonly>
+                    <button class="qty-step-btn btn-plus">+</button>
+                  </div>
+                  <button class="btn-card-add-cart" data-name="Olive Oil">
+                    <i class="fa-solid fa-cart-shopping"></i><span>Add to Cart</span>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Product 26: Pure Mustard Oil -->
+            <article class="product-card" data-category="oils" data-origin="India" data-price="160">
+              <div class="product-card-thumb-wrap">
+                <span class="card-badge-pill badge-popular">Popular</span>
+                <button class="card-wishlist-btn" aria-label="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+                <img src="images/products_crop/prod_mustard_oil.jpg" alt="Mustard Oil" class="product-thumb-img">
+              </div>
+              <div class="product-card-body">
+                <h3 class="product-item-title">Mustard Oil (Kachi Ghani)</h3>
+                <div class="product-item-spec">Traditional Cold Pressed | Strong Pungency</div>
+                <div class="product-origin-tag"><span>🇮🇳</span><span>Origin: India</span></div>
+                <div class="product-rating-row"><i class="fa-solid fa-star"></i><strong>4.7</strong><span>(89)</span></div>
+                <div class="product-price-val">₹160.00 / Ltr</div>
+                <div class="card-action-row">
+                  <div class="qty-stepper-box">
+                    <button class="qty-step-btn btn-minus">−</button>
+                    <input type="text" class="qty-input-field" value="1" readonly>
+                    <button class="qty-step-btn btn-plus">+</button>
+                  </div>
+                  <button class="btn-card-add-cart" data-name="Mustard Oil">
+                    <i class="fa-solid fa-cart-shopping"></i><span>Add to Cart</span>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Product 27: Refined Sunflower Oil -->
+            <article class="product-card" data-category="oils" data-origin="Other" data-price="135">
+              <div class="product-card-thumb-wrap">
+                <span class="card-badge-pill badge-hotdeal">Hot Deal</span>
+                <button class="card-wishlist-btn" aria-label="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+                <img src="images/background images/Sunflower Oil.png" alt="Sunflower Oil" class="product-thumb-img">
+              </div>
+              <div class="product-card-body">
+                <h3 class="product-item-title">Sunflower Oil</h3>
+                <div class="product-item-spec">Triple Refined | High Smoke Point</div>
+                <div class="product-origin-tag"><span>🇺🇦</span><span>Origin: Ukraine</span></div>
+                <div class="product-rating-row"><i class="fa-solid fa-star"></i><strong>4.6</strong><span>(73)</span></div>
+                <div class="product-price-val">₹135.00 / Ltr</div>
+                <div class="card-action-row">
+                  <div class="qty-stepper-box">
+                    <button class="qty-step-btn btn-minus">−</button>
+                    <input type="text" class="qty-input-field" value="1" readonly>
+                    <button class="qty-step-btn btn-plus">+</button>
+                  </div>
+                  <button class="btn-card-add-cart" data-name="Sunflower Oil">
+                    <i class="fa-solid fa-cart-shopping"></i><span>Add to Cart</span>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Product 28: Kashmiri Saffron -->
+            <article class="product-card" data-category="processed" data-origin="India" data-price="3200">
+              <div class="product-card-thumb-wrap">
+                <span class="card-badge-pill badge-featured">Featured</span>
+                <button class="card-wishlist-btn" aria-label="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+                <img src="images/background images/Kashmiri Saffron (Kesar).png" alt="Kashmiri Saffron (Kesar)" class="product-thumb-img">
+              </div>
+              <div class="product-card-body">
+                <h3 class="product-item-title">Kashmiri Saffron (Kesar)</h3>
+                <div class="product-item-spec">Mongra Grade A1 | High Crocin Content</div>
+                <div class="product-origin-tag"><span>🇮🇳</span><span>Origin: India</span></div>
+                <div class="product-rating-row"><i class="fa-solid fa-star"></i><strong>5.0</strong><span>(64)</span></div>
+                <div class="product-price-val">₹3,200.00 / 10g</div>
+                <div class="card-action-row">
+                  <div class="qty-stepper-box">
+                    <button class="qty-step-btn btn-minus">−</button>
+                    <input type="text" class="qty-input-field" value="1" readonly>
+                    <button class="qty-step-btn btn-plus">+</button>
+                  </div>
+                  <button class="btn-card-add-cart" data-name="Kashmiri Saffron">
+                    <i class="fa-solid fa-cart-shopping"></i><span>Add to Cart</span>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Product 29: Wild Forest Honey -->
+            <article class="product-card" data-category="processed" data-origin="India" data-price="380">
+              <div class="product-card-thumb-wrap">
+                <span class="card-badge-pill badge-bestseller">Best Seller</span>
+                <button class="card-wishlist-btn" aria-label="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+                <img src="images/background images/Wild Forest Honey.png" alt="Wild Forest Honey" class="product-thumb-img">
+              </div>
+              <div class="product-card-body">
+                <h3 class="product-item-title">Wild Forest Honey</h3>
+                <div class="product-item-spec">Raw &amp; Unfiltered | 100% Pure Pollen</div>
+                <div class="product-origin-tag"><span>🇮🇳</span><span>Origin: India</span></div>
+                <div class="product-rating-row"><i class="fa-solid fa-star"></i><strong>4.8</strong><span>(98)</span></div>
+                <div class="product-price-val">₹380.00 / Kg</div>
+                <div class="card-action-row">
+                  <div class="qty-stepper-box">
+                    <button class="qty-step-btn btn-minus">−</button>
+                    <input type="text" class="qty-input-field" value="1" readonly>
+                    <button class="qty-step-btn btn-plus">+</button>
+                  </div>
+                  <button class="btn-card-add-cart" data-name="Wild Forest Honey">
+                    <i class="fa-solid fa-cart-shopping"></i><span>Add to Cart</span>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Product 30: Mango Pulp -->
+            <article class="product-card" data-category="processed" data-origin="India" data-price="210">
+              <div class="product-card-thumb-wrap">
+                <span class="card-badge-pill badge-popular">Popular</span>
+                <button class="card-wishlist-btn" aria-label="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+                <img src="images/products_crop/prod_mango_pulp.jpg" alt="Alphonso Mango Pulp" class="product-thumb-img">
+              </div>
+              <div class="product-card-body">
+                <h3 class="product-item-title">Mango Pulp (Aamras)</h3>
+                <div class="product-item-spec">Aseptic Canning | No Preservatives</div>
+                <div class="product-origin-tag"><span>🇮🇳</span><span>Origin: India</span></div>
+                <div class="product-rating-row"><i class="fa-solid fa-star"></i><strong>4.9</strong><span>(115)</span></div>
+                <div class="product-price-val">₹210.00 / Can</div>
+                <div class="card-action-row">
+                  <div class="qty-stepper-box">
+                    <button class="qty-step-btn btn-minus">−</button>
+                    <input type="text" class="qty-input-field" value="1" readonly>
+                    <button class="qty-step-btn btn-plus">+</button>
+                  </div>
+                  <button class="btn-card-add-cart" data-name="Mango Pulp">
+                    <i class="fa-solid fa-cart-shopping"></i><span>Add to Cart</span>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Product 31: California Walnuts -->
+            <article class="product-card" data-category="dryfruits" data-origin="USA" data-price="820">
+              <div class="product-card-thumb-wrap">
+                <span class="card-badge-pill badge-featured">Featured</span>
+                <button class="card-wishlist-btn" aria-label="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+                <img src="images/background images/California Walnuts.png" alt="California Walnuts" class="product-thumb-img">
+              </div>
+              <div class="product-card-body">
+                <h3 class="product-item-title">California Walnuts</h3>
+                <div class="product-item-spec">Extra Light Halves | Heart Healthy</div>
+                <div class="product-origin-tag"><span>🇺🇸</span><span>Origin: USA</span></div>
+                <div class="product-rating-row"><i class="fa-solid fa-star"></i><strong>4.8</strong><span>(87)</span></div>
+                <div class="product-price-val">₹820.00 / Kg</div>
+                <div class="card-action-row">
+                  <div class="qty-stepper-box">
+                    <button class="qty-step-btn btn-minus">−</button>
+                    <input type="text" class="qty-input-field" value="1" readonly>
+                    <button class="qty-step-btn btn-plus">+</button>
+                  </div>
+                  <button class="btn-card-add-cart" data-name="California Walnuts">
+                    <i class="fa-solid fa-cart-shopping"></i><span>Add to Cart</span>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Product 32: Golden Afghan Raisins -->
+            <article class="product-card" data-category="dryfruits" data-origin="Other" data-price="340">
+              <div class="product-card-thumb-wrap">
+                <span class="card-badge-pill badge-hotdeal">Hot Deal</span>
+                <button class="card-wishlist-btn" aria-label="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+                <img src="images/background images/Golden Raisins (Kishmish).png" alt="Golden Raisins (Kishmish)" class="product-thumb-img">
+              </div>
+              <div class="product-card-body">
+                <h3 class="product-item-title">Golden Raisins (Kishmish)</h3>
+                <div class="product-item-spec">Long Seedless | Naturally Sweet</div>
+                <div class="product-origin-tag"><span>🇦🇫</span><span>Origin: Afghanistan</span></div>
+                <div class="product-rating-row"><i class="fa-solid fa-star"></i><strong>4.7</strong><span>(79)</span></div>
+                <div class="product-price-val">₹340.00 / Kg</div>
+                <div class="card-action-row">
+                  <div class="qty-stepper-box">
+                    <button class="qty-step-btn btn-minus">−</button>
+                    <input type="text" class="qty-input-field" value="1" readonly>
+                    <button class="qty-step-btn btn-plus">+</button>
+                  </div>
+                  <button class="btn-card-add-cart" data-name="Golden Raisins">
+                    <i class="fa-solid fa-cart-shopping"></i><span>Add to Cart</span>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </section>
+
+      </div>
+    </main>
+
+    <!-- ==========================================================================
+         5. BOTTOM "WHY CHOOSE CONCEPT EXIM?" IMPRESSIVE SHOWCASE SECTION
+         ========================================================================== -->
+    <section class="bottom-why-choose-bar">
+      <div class="page-container bottom-why-bar-inner">
+        
+        <!-- Left: Heading, Badge & Trust Certifications -->
+        <div class="bottom-why-left-wrap">
+          <div class="bottom-globe-icon-wrap" title="Global Trade Network">
+            <i class="fa-solid fa-earth-asia"></i>
+          </div>
+          <div class="bottom-why-heading-box">
+            <div class="bottom-why-title">Why Choose <span class="brand-gold">CONCEPT EXIM</span>?</div>
+            <div class="bottom-why-subtitle">Your Trusted Global Trade &amp; Supply Chain Partner</div>
+            <div class="bottom-why-tags">
+              <span class="bottom-trust-tag"><i class="fa-solid fa-certificate"></i> ISO 9001:2015</span>
+              <span class="bottom-trust-tag"><i class="fa-solid fa-shield-halved"></i> 100% Insured</span>
+              <span class="bottom-trust-tag"><i class="fa-solid fa-seedling"></i> APEDA Verified</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Middle: 4 Key Interactive Metrics Glass Cards -->
+        <div class="bottom-why-metrics-list">
+          
+          <div class="bottom-why-metric-item">
+            <div class="metric-circle-icon"><i class="fa-solid fa-earth-americas"></i></div>
+            <div class="metric-data-col">
+              <span class="metric-num-val">100+</span>
+              <span class="metric-label-val">Countries Served</span>
+            </div>
+          </div>
+
+          <div class="bottom-why-metric-item">
+            <div class="metric-circle-icon"><i class="fa-solid fa-ship"></i></div>
+            <div class="metric-data-col">
+              <span class="metric-num-val">2,500+</span>
+              <span class="metric-label-val">Successful Shipments</span>
+            </div>
+          </div>
+
+          <div class="bottom-why-metric-item">
+            <div class="metric-circle-icon"><i class="fa-solid fa-handshake"></i></div>
+            <div class="metric-data-col">
+              <span class="metric-num-val">500+</span>
+              <span class="metric-label-val">Global Trade Partners</span>
+            </div>
+          </div>
+
+          <div class="bottom-why-metric-item">
+            <div class="metric-circle-icon"><i class="fa-solid fa-clock-rotate-left"></i></div>
+            <div class="metric-data-col">
+              <span class="metric-num-val">99.4%</span>
+              <span class="metric-label-val">On-Time Delivery</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right: Explore Services Button & Status Badge -->
+        <div class="bottom-why-right-wrap">
+          <a href="services.html" class="btn-explore-services">
+            <span>Explore Our Services</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <div class="bottom-support-badge">
+            <i class="fa-solid fa-circle"></i>
+            <span>24/7 Global Export Desk Active</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= GLOBAL CORPORATE FOOTER ================= -->
+    <footer class="site-global-footer">
+      <div class="footer-waves-overlay" aria-hidden="true"></div>
+      <div class="footer-inner-container">
+        
+        <!-- Top Row: Left Brand & CTA, Right Nav & Socials -->
+        <div class="footer-main-row">
+          
+          <!-- Left: Logo + Vertical Divider + CTA Pitch & Button -->
+          <div class="footer-left-brand-group">
+            <a href="index.html" class="footer-logo-link" title="CONCEPT EXIM">
+              <img src="images/concept_exim_logo_white.png" srcset="images/concept_exim_logo_white@3x.png 3x" alt="CONCEPT EXIM - Global Trade Simplified" class="footer-concept-logo">
+            </a>
+            <div class="footer-vert-divider"></div>
+            <div class="footer-cta-text-wrap">
+              <span class="footer-cta-heading">Ready to Grow Globally?</span>
+              <span class="footer-cta-sub">Let's build your next success story together.</span>
+            </div>
+            <button type="button" class="footer-btn-quote" onclick="if(typeof openRfqModal==='function'){openRfqModal();}else if(typeof openQuoteModal==='function'){openQuoteModal();}else{window.location.href='contact.html';}">
+              <span>Get a Free Quote</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+
+          <!-- Right: Horizontal Nav Links + Social Icons -->
+          <div class="footer-right-nav-group">
+            <nav class="footer-horizontal-nav" aria-label="Footer Navigation">
+              <a href="index.html">Home</a>
+              <a href="about.html">About Us</a>
+              <a href="services.html">Services</a>
+              <a href="products.html">Products</a>
+              <a href="cart.html">Trade Cart</a>
+              <a href="global-presence.html">Global Network</a>
+              <a href="insights.html">Insights</a>
+              <a href="contact.html">Contact</a>
+            </nav>
+            <div class="footer-social-icons">
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer-social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="footer-social-icon" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="footer-social-icon" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Bottom Subline: Copyright + Legal -->
+        <div class="footer-bottom-row">
+          <div class="footer-copyright-text">
+            &copy; 2026 CONCEPT EXIM. All rights reserved.
+          </div>
+          <div class="footer-legal-links">
+            <a href="compliance.html">Privacy Policy</a>
+            <span class="footer-legal-sep">|</span>
+            <a href="compliance.html">Terms &amp; Conditions</a>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Interactive JavaScript -->
+  <script>
+    // Wishlist Buttons
+    document.querySelectorAll('.card-wishlist-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        btn.classList.toggle('active');
+        const icon = btn.querySelector('i');
+        if (btn.classList.contains('active')) {
+          icon.classList.remove('fa-regular');
+          icon.classList.add('fa-solid');
+          btn.style.color = '#ef4444';
+        } else {
+          icon.classList.remove('fa-solid');
+          icon.classList.add('fa-regular');
+          btn.style.color = '#94a3b8';
+        }
+      });
+    });
+
+    // Grid / List View Toggle
+    const gridContainer = document.getElementById('productsGridContainer');
+    const gridViewBtn = document.getElementById('gridViewBtn');
+    const listViewBtn = document.getElementById('listViewBtn');
+
+    if (gridViewBtn && listViewBtn && gridContainer) {
+      gridViewBtn.addEventListener('click', () => {
+        gridViewBtn.classList.add('active');
+        listViewBtn.classList.remove('active');
+        gridContainer.classList.remove('list-view');
+      });
+      listViewBtn.addEventListener('click', () => {
+        listViewBtn.classList.add('active');
+        gridViewBtn.classList.remove('active');
+        gridContainer.classList.add('list-view');
+      });
+    }
+
+    // State Variables
+    let currentCategory = 'all';
+    let maxPrice = 500000;
+    let searchQuery = '';
+    const productCards = Array.from(document.querySelectorAll('.product-card'));
+    const productCountEl = document.getElementById('productCount');
+    const cardButtons = document.querySelectorAll('.cat-card-btn');
+    const sidebarCatItems = document.querySelectorAll('.filter-category-item');
+
+    // Filter Evaluation
+    function applyAllFilters() {
+      const selectedOrigins = Array.from(document.querySelectorAll('.origin-check:checked')).map(c => c.value);
+      let visibleCount = 0;
+
+      productCards.forEach(card => {
+        const cardCat = card.getAttribute('data-category');
+        const cardOrigin = card.getAttribute('data-origin');
+        const cardPrice = (parseInt(card.getAttribute('data-price')) || 0) * 100;
+        const cardText = card.textContent.toLowerCase();
+
+        // 1. Category check
+        const matchCategory = (currentCategory === 'all' || cardCat === currentCategory);
+
+        // 2. Price check
+        const matchPrice = (cardPrice <= maxPrice);
+
+        // 3. Search check
+        const matchSearch = (!searchQuery || cardText.includes(searchQuery));
+
+        // 4. Origin check
+        const matchOrigin = (selectedOrigins.length === 0 || selectedOrigins.includes(cardOrigin));
+
+        if (matchCategory && matchPrice && matchSearch && matchOrigin) {
+          card.style.display = 'flex';
+          visibleCount++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
+
+      if (productCountEl) {
+        productCountEl.textContent = visibleCount;
+      }
+    }
+
+    // Category Card Click Handlers
+    cardButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        cardButtons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        currentCategory = btn.getAttribute('data-pill');
+
+        // Sync sidebar
+        sidebarCatItems.forEach(i => {
+          if (i.getAttribute('data-category') === currentCategory) {
+            i.classList.add('active');
+          } else {
+            i.classList.remove('active');
+          }
+        });
+
+        applyAllFilters();
+      });
+    });
+
+    // Sidebar Category Items
+    sidebarCatItems.forEach(item => {
+      item.addEventListener('click', () => {
+        sidebarCatItems.forEach(i => i.classList.remove('active'));
+        item.classList.add('active');
+        currentCategory = item.getAttribute('data-category');
+
+        // Sync category cards
+        cardButtons.forEach(b => {
+          if (b.getAttribute('data-pill') === currentCategory) {
+            b.classList.add('active');
+          } else {
+            b.classList.remove('active');
+          }
+        });
+
+        applyAllFilters();
+      });
+    });
+
+    // Toggle Category List Accordion with Down Arrow
+    const toggleCategoriesBtn = document.getElementById('toggleCategoriesBtn');
+    const sidebarCategoryList = document.getElementById('sidebarCategoryList');
+    if (toggleCategoriesBtn && sidebarCategoryList) {
+      toggleCategoriesBtn.addEventListener('click', () => {
+        const isCollapsed = toggleCategoriesBtn.classList.toggle('collapsed');
+        sidebarCategoryList.classList.toggle('collapsed');
+        toggleCategoriesBtn.setAttribute('aria-expanded', !isCollapsed);
+      });
+      toggleCategoriesBtn.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          toggleCategoriesBtn.click();
+        }
+      });
+    }
+
+    // Origin Checkbox Filters
+    document.querySelectorAll('.origin-check').forEach(c => {
+      c.addEventListener('change', applyAllFilters);
+    });
+
+    // Clear Filters
+    document.getElementById('resetFiltersBtn').addEventListener('click', () => {
+      currentCategory = 'all';
+      maxPrice = 500000;
+      searchQuery = '';
+
+      cardButtons.forEach(b => b.classList.remove('active'));
+      const defaultCard = document.querySelector('.cat-card-btn[data-pill="all"]');
+      if (defaultCard) defaultCard.classList.add('active');
+
+      sidebarCatItems.forEach(i => i.classList.remove('active'));
+      const defaultSidebarCat = document.querySelector('.filter-category-item[data-category="all"]');
+      if (defaultSidebarCat) defaultSidebarCat.classList.add('active');
+
+      document.querySelectorAll('.origin-check').forEach(c => c.checked = false);
+      document.getElementById('filterInStock').checked = true;
+      document.getElementById('filterMadeToOrder').checked = false;
+      document.getElementById('priceRangeSlider').value = 500000;
+      document.getElementById('priceMaxLabel').textContent = '₹5,00,000+';
+      
+      const searchInput = document.getElementById('headerSearchInput');
+      if (searchInput) searchInput.value = '';
+
+      applyAllFilters();
+    });
+
+    // Price Slider
+    const priceSlider = document.getElementById('priceRangeSlider');
+    const priceMaxLabel = document.getElementById('priceMaxLabel');
+    priceSlider.addEventListener('input', () => {
+      maxPrice = parseInt(priceSlider.value) || 500000;
+      priceMaxLabel.textContent = '₹' + maxPrice.toLocaleString('en-IN');
+      applyAllFilters();
+    });
+
+    // Live Search
+    const searchInput = document.getElementById('headerSearchInput');
+    if (searchInput) {
+      searchInput.addEventListener('input', () => {
+        searchQuery = searchInput.value.toLowerCase().trim();
+        applyAllFilters();
+      });
+    }
+
+    // Sort Dropdown
+    const sortSelect = document.getElementById('sortSelect');
+    if (sortSelect && gridContainer) {
+      sortSelect.addEventListener('change', () => {
+        const val = sortSelect.value;
+        const sorted = [...productCards];
+        sorted.sort((a, b) => {
+          const priceA = parseFloat(a.getAttribute('data-price')) || 0;
+          const priceB = parseFloat(b.getAttribute('data-price')) || 0;
+          const ratingA = parseFloat(a.querySelector('.product-rating-row strong')?.textContent) || 0;
+          const ratingB = parseFloat(b.querySelector('.product-rating-row strong')?.textContent) || 0;
+
+          if (val === 'price-low') return priceA - priceB;
+          if (val === 'price-high') return priceB - priceA;
+          if (val === 'rating') return ratingB - ratingA;
+          return 0;
+        });
+        sorted.forEach(card => gridContainer.appendChild(card));
+      });
+    }
+
+    // Quantity Stepper Handlers
+    document.querySelectorAll('.qty-stepper-box').forEach(box => {
+      const minus = box.querySelector('.btn-minus');
+      const plus = box.querySelector('.btn-plus');
+      const input = box.querySelector('.qty-input-field');
+      if (minus && plus && input) {
+        minus.addEventListener('click', (e) => {
+          e.stopPropagation();
+          let val = parseInt(input.value) || 1;
+          if (val > 1) input.value = val - 1;
+        });
+        plus.addEventListener('click', (e) => {
+          e.stopPropagation();
+          let val = parseInt(input.value) || 1;
+          input.value = val + 1;
+        });
+      }
+    });
+
+    // Add to Cart Handlers
+    document.querySelectorAll('.btn-card-add-cart').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const card = btn.closest('.product-card');
+        if (!card) return;
+        const name = card.querySelector('.product-item-title')?.textContent.trim() || btn.getAttribute('data-name');
+        const spec = card.querySelector('.product-item-spec')?.textContent.trim() || '';
+        const priceStr = card.getAttribute('data-price') || '0';
+        const price = parseFloat(priceStr) || 0;
+        const image = card.querySelector('.product-thumb-img')?.getAttribute('src') || '';
+        const origin = card.getAttribute('data-origin') || 'Global';
+        const qtyInput = card.querySelector('.qty-input-field');
+        const qty = qtyInput ? (parseInt(qtyInput.value) || 1) : 1;
+
+        if (window.ConceptCart && typeof window.ConceptCart.addItem === 'function') {
+          window.ConceptCart.addItem({
+            name,
+            spec,
+            price,
+            unit: 'Kg',
+            origin,
+            image,
+            qty
+          });
+        }
+      });
+    });
+  </script>
+
+  <script src="cart.js"></script>
+  <script src="product-modal.js"></script>
+  <script src="navbar.js"></script>
+</body>
+</html>

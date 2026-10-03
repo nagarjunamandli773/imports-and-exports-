@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 80" fill="none" preserveAspectRatio="none">
+  <defs>
+    <linearGradient id="mapFade" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#022a4d" stop-opacity="0" />
+      <stop offset="30%" stop-color="#022a4d" stop-opacity="0.02" />
+      <stop offset="70%" stop-color="#022a4d" stop-opacity="0.035" />
+      <stop offset="100%" stop-color="#022a4d" stop-opacity="0.05" />
+    </linearGradient>
+    <linearGradient id="arcFade" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.05" />
+      <stop offset="100%" stop-color="#2563eb" stop-opacity="0.25" />
+    </linearGradient>
+  </defs>
+
+  <!-- World Map Continents Outline (Soft Watermark) -->
+  <g fill="url(#mapFade)">
+    <!-- North America -->
+    <path d="M420,12 Q450,8 480,18 Q500,28 470,42 Q440,55 410,48 Q390,32 420,12 Z"/>
+    <!-- South America -->
+    <path d="M480,50 Q510,54 505,72 Q490,85 475,70 Q460,58 480,50 Z"/>
+    <!-- Europe & Africa -->
+    <path d="M680,10 Q720,6 740,24 Q725,48 700,50 Q660,38 670,18 Z"/>
+    <path d="M700,45 Q750,48 745,78 Q720,88 690,75 Q685,55 700,45 Z"/>
+    <!-- Asia -->
+    <path d="M760,10 Q850,5 920,20 Q960,40 910,65 Q850,60 800,48 Q760,35 760,10 Z"/>
+    <!-- Australia -->
+    <path d="M920,55 Q960,54 955,72 Q930,80 915,68 Z"/>
+  </g>
+
+  <!-- Longitude & Latitude Curved Lines -->
+  <path d="M1200,-20 C1280,20 1340,50 1400,100" stroke="#0284c7" stroke-opacity="0.08" stroke-width="1.2" fill="none"/>
+  <path d="M1250,-10 C1320,25 1370,55 1420,95" stroke="#0284c7" stroke-opacity="0.06" stroke-width="1" fill="none"/>
+
+  <!-- Flight Path Dotted Arc -->
+  <path d="M1020,78 Q1180,38 1320,14" stroke="url(#arcFade)" stroke-width="1.5" stroke-dasharray="3,3" fill="none"/>
+
+  <!-- Tiny Plane Silhouette at end of path -->
+  <g transform="translate(1322, 12) rotate(-22) scale(0.65)" fill="#2563eb" fill-opacity="0.25">
+    <path d="M12 2L9 9H2L0 11L9 13L8 18L5 19L5 21L10 20L15 21L15 19L12 18L11 13L20 11L18 9H11L12 2Z"/>
+  </g>
+</svg>

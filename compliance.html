@@ -1,0 +1,1415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quality &amp; Compliance | CONCEPT EXIM - Global Trade, Greater Opportunities.</title>
+  <meta name="description" content="CONCEPT EXIM maintains rigorous international quality standards, ISO 9001:2015, HACCP, FSSAI, USDA Organic, GMP, and GLOBALG.A.P. certifications across global import and export trade.">
+
+  <!-- Google Fonts: Plus Jakarta Sans & Dancing Script -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome 6 Pro Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Dedicated Compliance Stylesheet -->
+  <link rel="stylesheet" href="compliance.css">
+  <link rel="stylesheet" href="navbar.css">
+</head>
+<body>
+
+  <div class="site-wrapper">
+
+    <!-- ==========================================================================
+         1. TOP SLIM BAR (Deep Navy)
+         ========================================================================== -->
+    <div class="top-slim-bar">
+      <div class="page-container top-bar-inner">
+        <!-- Left: 4 Trust Features with Orange Icons & Dividers -->
+        <div class="top-features-list">
+          <div class="top-feature-item">
+            <i class="fa-solid fa-globe"></i>
+            <span>Global Reach</span>
+          </div>
+          <div class="top-divider"></div>
+          <div class="top-feature-item">
+            <i class="fa-solid fa-shield-halved"></i>
+            <span>Trusted Suppliers</span>
+          </div>
+          <div class="top-divider"></div>
+          <div class="top-feature-item">
+            <i class="fa-solid fa-certificate"></i>
+            <span>Quality Assured</span>
+          </div>
+          <div class="top-divider"></div>
+          <div class="top-feature-item">
+            <i class="fa-solid fa-truck-fast"></i>
+            <span>On-Time Delivery</span>
+          </div>
+        </div>
+
+        <!-- Right: Language, Login & Cart -->
+        <div class="top-right-group">
+          <button class="top-link-btn" id="topLangBtn" aria-label="Language Selector">
+            <i class="fa-solid fa-globe"></i>
+            <span>English</span>
+            <i class="fa-solid fa-chevron-down" style="font-size: 8.5px; opacity: 0.85;"></i>
+          </button>
+          <div class="top-divider"></div>
+          <a href="login.html" class="top-link-btn">
+            <i class="fa-regular fa-user"></i>
+            <span>Login / Register</span>
+          </a>
+          <div class="top-divider"></div>
+          <button class="top-cart-btn" id="openCartBtn" aria-label="View Shopping Cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="cart-badge-count" id="cartCountBadge">0</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==========================================================================
+         2. MAIN HEADER & NAVBAR (CONCEPT EXIM)
+         ========================================================================== -->
+    <header class="main-header" id="navbar">
+      <div class="page-container header-inner">
+
+        <!-- Brand Logo (CONCEPT EXIM) -->
+        <a href="index.html" class="brand-logo-link" title="CONCEPT EXIM - Global Trade, Greater Opportunities.">
+          <img src="images/concept_exim_logo.png" srcset="images/concept_exim_logo@3x.png 3x" alt="CONCEPT EXIM - Global Trade, Greater Opportunities." class="concept-exim-logo">
+        </a>
+
+        <!-- Center Nav: Home | About Us | Products | Services | Global Presence | Quality & Compliance (ACTIVE ORANGE PILL) ... -->
+        <nav class="main-nav-wrapper">
+          <ul class="main-nav-bar">
+            <li>
+              <a href="index.html" class="nav-link">
+                <span>Home</span>
+              </a>
+            </li>
+
+            <!-- About Us Dropdown -->
+            <li class="nav-item-dropdown">
+              <a href="about.html" class="nav-link" aria-expanded="false" aria-haspopup="true">
+                <span>About Us</span>
+                <span class="nav-arrow-btn" role="button" tabindex="0" aria-label="Toggle About Us submenu">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </span>
+              </a>
+              <div class="nav-dropdown-menu nav-dropdown-about" role="menu">
+                <div class="dropdown-header">
+                  <span class="dropdown-eyebrow">COMPANY OVERVIEW</span>
+                  <a href="about.html" class="dropdown-header-all">View All <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="dropdown-items-grid dropdown-col-1">
+                  <a href="about.html#who-we-are" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-building-flag"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Who We Are</span>
+                      <span class="dropdown-item-desc">Global trade leadership &amp; company story</span>
+                    </div>
+                  </a>
+                  <a href="about.html#who-we-are" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-compass"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Our Journey</span>
+                      <span class="dropdown-item-desc">From trade pioneer to global logistics</span>
+                    </div>
+                  </a>
+                  <a href="about.html#who-we-are" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-bullseye"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Mission &amp; Values</span>
+                      <span class="dropdown-item-desc">Integrity, excellence &amp; reliability</span>
+                    </div>
+                  </a>
+                  <a href="about.html#why-choose" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Why Choose Us</span>
+                      <span class="dropdown-item-desc">5 core advantages for international trade</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <!-- Products Dropdown -->
+            <li class="nav-item-dropdown">
+              <a href="products.html" class="nav-link" aria-expanded="false" aria-haspopup="true">
+                <span>Products</span>
+                <span class="nav-arrow-btn" role="button" tabindex="0" aria-label="Toggle Products submenu">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </span>
+              </a>
+              <div class="nav-dropdown-menu nav-dropdown-products" role="menu">
+                <div class="dropdown-header">
+                  <span class="dropdown-eyebrow">COMMODITIES CATALOGUE</span>
+                  <a href="products.html" class="dropdown-header-all">View All 32+ Products <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="dropdown-items-grid dropdown-col-2">
+                  <a href="products.html?category=grains" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-wheat-awn"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Rice &amp; Grains</span>
+                      <span class="dropdown-item-desc">Basmati, non-basmati &amp; organic grains</span>
+                    </div>
+                  </a>
+                  <a href="products.html?category=spices" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-mortar-pestle"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Spices &amp; Herbs</span>
+                      <span class="dropdown-item-desc">Premium whole &amp; ground spices</span>
+                    </div>
+                  </a>
+                  <a href="products.html?category=pulses" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-cubes-stacked"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Pulses &amp; Legumes</span>
+                      <span class="dropdown-item-desc">Lentils, chickpeas &amp; beans</span>
+                    </div>
+                  </a>
+                  <a href="products.html?category=fruits" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-apple-whole"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Fruits &amp; Vegetables</span>
+                      <span class="dropdown-item-desc">Fresh agricultural farm produce</span>
+                    </div>
+                  </a>
+                  <a href="products.html?category=oils" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-bottle-droplet"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Oils &amp; Fats</span>
+                      <span class="dropdown-item-desc">Edible culinary &amp; cold-pressed oils</span>
+                    </div>
+                  </a>
+                  <a href="products.html?category=dryfruits" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-seedling"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Dry Fruits &amp; Nuts</span>
+                      <span class="dropdown-item-desc">Graded cashews, almonds &amp; raisins</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="dropdown-footer-strip">
+                  <span>Looking for bulk container shipments?</span>
+                  <a href="contact.html#quote">Request Bulk Quote <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </li>
+
+            <!-- Services Dropdown -->
+            <li class="nav-item-dropdown">
+              <a href="services.html" class="nav-link" aria-expanded="false" aria-haspopup="true">
+                <span>Services</span>
+                <span class="nav-arrow-btn" role="button" tabindex="0" aria-label="Toggle Services submenu">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </span>
+              </a>
+              <div class="nav-dropdown-menu nav-dropdown-services" role="menu">
+                <div class="dropdown-header">
+                  <span class="dropdown-eyebrow">TRADE CAPABILITIES</span>
+                  <a href="services.html" class="dropdown-header-all">View All Services <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="dropdown-items-grid dropdown-col-2">
+                  <a href="services.html#card-import-solutions" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-ship"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Import Solutions</span>
+                      <span class="dropdown-item-desc">Clearance, compliance &amp; door delivery</span>
+                    </div>
+                  </a>
+                  <a href="services.html#card-export-management" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-plane-departure"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Export Management</span>
+                      <span class="dropdown-item-desc">Global shipping &amp; market outreach</span>
+                    </div>
+                  </a>
+                  <a href="services.html#card-global-sourcing" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-globe"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Global Sourcing</span>
+                      <span class="dropdown-item-desc">Verified suppliers &amp; contract terms</span>
+                    </div>
+                  </a>
+                  <a href="services.html#card-logistics-coordination" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-truck-moving"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Logistics Coordination</span>
+                      <span class="dropdown-item-desc">Multimodal ocean, air &amp; land freight</span>
+                    </div>
+                  </a>
+                  <a href="services.html#card-customs-support" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Customs Support</span>
+                      <span class="dropdown-item-desc">Duty optimization &amp; regulatory filing</span>
+                    </div>
+                  </a>
+                  <a href="services.html#card-trade-consulting" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-handshake-angle"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Trade Consulting</span>
+                      <span class="dropdown-item-desc">Cross-border advice &amp; risk management</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <!-- Global Presence Dropdown -->
+            <li class="nav-item-dropdown">
+              <a href="global-presence.html" class="nav-link" aria-expanded="false" aria-haspopup="true">
+                <span>Global Presence</span>
+                <span class="nav-arrow-btn" role="button" tabindex="0" aria-label="Toggle Global Presence submenu">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </span>
+              </a>
+              <div class="nav-dropdown-menu nav-dropdown-presence" role="menu">
+                <div class="dropdown-header">
+                  <span class="dropdown-eyebrow">WORLDWIDE FOOTPRINT</span>
+                  <a href="global-presence.html" class="dropdown-header-all">Explore Network <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="dropdown-items-grid dropdown-col-1">
+                  <a href="global-presence.html#interactive-map" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-map-location-dot"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Interactive World Map</span>
+                      <span class="dropdown-item-desc">Trade routes across 60+ countries</span>
+                    </div>
+                  </a>
+                  <a href="global-presence.html#continental-hubs" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-earth-americas"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Continental Hubs</span>
+                      <span class="dropdown-item-desc">Asia, Europe, Middle East &amp; Americas</span>
+                    </div>
+                  </a>
+                  <a href="global-presence.html#transit-calculator" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-calculator"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Transit Calculator</span>
+                      <span class="dropdown-item-desc">Estimate shipping times &amp; lane routes</span>
+                    </div>
+                  </a>
+                  <a href="global-presence.html#infrastructure" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-warehouse"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Trade Infrastructure</span>
+                      <span class="dropdown-item-desc">42+ bonded logistics &amp; cold hubs</span>
+                    </div>
+                  </a>
+                  <a href="global-presence.html#regional-desks" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-headset"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Regional Desks</span>
+                      <span class="dropdown-item-desc">Local bilingual trade advisors in 18 HQs</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <!-- Quality & Compliance Dropdown (Active) -->
+            <li class="nav-item-dropdown">
+              <a href="compliance.html" class="nav-link active" aria-expanded="false" aria-haspopup="true">
+                <span>Quality &amp; Compliance</span>
+                <span class="nav-arrow-btn" role="button" tabindex="0" aria-label="Toggle Quality &amp; Compliance submenu">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </span>
+              </a>
+              <div class="nav-dropdown-menu nav-dropdown-compliance" role="menu">
+                <div class="dropdown-header">
+                  <span class="dropdown-eyebrow">GLOBAL STANDARDS</span>
+                  <a href="compliance.html" class="dropdown-header-all">View All Standards <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="dropdown-items-grid dropdown-col-1">
+                  <a href="compliance.html#certifications" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-certificate"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Our Certifications</span>
+                      <span class="dropdown-item-desc">ISO 9001, HACCP, FSSAI, APEDA, GMP</span>
+                    </div>
+                  </a>
+                  <a href="compliance.html#quality-process" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-list-check"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Quality Assurance</span>
+                      <span class="dropdown-item-desc">5-tier testing &amp; pre-shipment audit</span>
+                    </div>
+                  </a>
+                  <a href="compliance.html#commitment" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-scale-balanced"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Regulatory Framework</span>
+                      <span class="dropdown-item-desc">Export-import guidelines &amp; safety</span>
+                    </div>
+                  </a>
+                  <a href="compliance.html#commitment" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-leaf"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">ESG &amp; Sustainability</span>
+                      <span class="dropdown-item-desc">Eco-packaging &amp; ethical trade sourcing</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <!-- Insights Dropdown -->
+            <li class="nav-item-dropdown">
+              <a href="insights.html" class="nav-link" aria-expanded="false" aria-haspopup="true">
+                <span>Insights</span>
+                <span class="nav-arrow-btn" role="button" tabindex="0" aria-label="Toggle Insights submenu">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </span>
+              </a>
+              <div class="nav-dropdown-menu nav-dropdown-insights" role="menu">
+                <div class="dropdown-header">
+                  <span class="dropdown-eyebrow">TRADE INTELLIGENCE</span>
+                  <a href="insights.html" class="dropdown-header-all">View All Insights <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="dropdown-items-grid dropdown-col-1">
+                  <a href="insights.html?category=trends" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-arrow-trend-up"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Market Trends</span>
+                      <span class="dropdown-item-desc">Global commodity cycles &amp; forecasts</span>
+                    </div>
+                  </a>
+                  <a href="insights.html?category=industry" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-chart-pie"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Industry Analysis</span>
+                      <span class="dropdown-item-desc">Deep dives into agricultural &amp; trade sectors</span>
+                    </div>
+                  </a>
+                  <a href="insights.html?category=regulations" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-gavel"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Trade Regulations</span>
+                      <span class="dropdown-item-desc">Tariff changes, customs rules &amp; compliance</span>
+                    </div>
+                  </a>
+                  <a href="insights.html?category=articles" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-newspaper"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Expert Articles</span>
+                      <span class="dropdown-item-desc">Practical import-export guides &amp; tips</span>
+                    </div>
+                  </a>
+                  <a href="insights.html?category=cases" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-book-open"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Case Studies</span>
+                      <span class="dropdown-item-desc">Real client success stories across borders</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <a href="contact.html" class="nav-link">
+                <span>Contact</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Vertical Separator Divider -->
+        <div class="nav-divider"></div>
+
+        <!-- Right: Search Bar + "Request a Quote" Button -->
+        <div class="header-right-group">
+          <div class="header-search-wrap">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" class="header-search-input" id="certSearchInput" placeholder="Search standards, ISO, certificates..." autocomplete="off">
+            <span class="search-kbd-hint">Ctrl K</span>
+          </div>
+          <a href="contact.html#quote" class="btn-request-quote" id="openQuoteModalBtn">
+            <i class="fa-regular fa-file-lines"></i>
+            <span>Request a Quote</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+
+      </div>
+    </header>
+
+    <!-- ==========================================================================
+         3. HERO BANNER SECTION (Quality & Compliance Master Panorama)
+         ========================================================================== -->
+    <section class="compliance-hero-section">
+      <div class="hero-panorama-container">
+        <img src="images/compliance_crop/compliance_hero_banner.png" alt="Quality &amp; Compliance - Trusted Quality. Global Compliance." class="hero-panorama-img" width="4096" height="1364" loading="eager" fetchpriority="high">
+      </div>
+
+      <!-- Premium Hero Features Strip with Color Icons -->
+      <div class="hero-features-strip">
+        <div class="page-container hero-features-container">
+          <div class="hero-feature-pill">
+            <div class="feature-icon-badge icon-badge-blue">
+              <i class="fa-solid fa-certificate"></i>
+            </div>
+            <div class="feature-info">
+              <span class="feature-title">ISO 9001:2015</span>
+              <span class="feature-desc">Quality Management Certified</span>
+            </div>
+          </div>
+          <div class="hero-feature-pill">
+            <div class="feature-icon-badge icon-badge-amber">
+              <i class="fa-solid fa-shield-virus"></i>
+            </div>
+            <div class="feature-info">
+              <span class="feature-title">HACCP &amp; GMP</span>
+              <span class="feature-desc">Food Safety &amp; Clean Storage</span>
+            </div>
+          </div>
+          <div class="hero-feature-pill">
+            <div class="feature-icon-badge icon-badge-emerald">
+              <i class="fa-solid fa-passport"></i>
+            </div>
+            <div class="feature-info">
+              <span class="feature-title">AEO-Tier Certified</span>
+              <span class="feature-desc">Fast-Track Customs Clearance</span>
+            </div>
+          </div>
+          <div class="hero-feature-pill">
+            <div class="feature-icon-badge icon-badge-purple">
+              <i class="fa-solid fa-seedling"></i>
+            </div>
+            <div class="feature-info">
+              <span class="feature-title">ESG &amp; Sustainability</span>
+              <span class="feature-desc">Responsible Ethical Sourcing</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         4. SECTION 2: "OUR CERTIFICATIONS"
+         Navy Lead Card + 6 Certification White Cards + Sustainability Card
+         ========================================================================== -->
+    <section class="certifications-section" id="certifications">
+      <div class="page-container">
+        <div class="certifications-row-wrap">
+
+          <!-- Left Navy Certifications Lead Card -->
+          <div class="cert-lead-card">
+            <div class="cert-lead-top">
+              <div class="cert-lead-icon-title">
+                <i class="fa-solid fa-shield-halved"></i>
+                <h2 class="cert-lead-title">Our Certifications</h2>
+              </div>
+              <span class="cert-lead-sub">Globally Recognized Standards</span>
+              <p class="cert-lead-desc">
+                We comply with internationally recognized standards and certifications to ensure consistent quality, safety and reliability across all markets.
+              </p>
+            </div>
+            <button class="btn-cert-lead" id="viewAllCertsBtn">
+              <span>View All Certifications</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+
+          <!-- Center: 6 Certification White Cards -->
+          <div class="cert-cards-grid-6" id="certGrid">
+
+            <!-- 1. ISO 9001:2015 -->
+            <article class="cert-card-item" data-cert="iso" role="button" tabindex="0" title="Click to view ISO 9001:2015 details">
+              <div class="cert-card-logo-wrap">
+                <img src="images/compliance_crop/cert_iso.svg" alt="ISO 9001:2015 Certification Logo" class="cert-card-logo-img">
+              </div>
+              <h3 class="cert-card-title">ISO 9001:2015</h3>
+              <span class="cert-card-category">Quality Management System</span>
+              <p class="cert-card-desc">Ensures consistent quality and customer satisfaction.</p>
+              <div class="cert-card-arrow-wrap" title="View Certificate Details">
+                <i class="fa-solid fa-arrow-right cert-card-arrow"></i>
+              </div>
+            </article>
+
+            <!-- 2. HACCP -->
+            <article class="cert-card-item" data-cert="haccp" role="button" tabindex="0" title="Click to view HACCP details">
+              <div class="cert-card-logo-wrap">
+                <img src="images/compliance_crop/cert_haccp.svg" alt="HACCP Certification Logo" class="cert-card-logo-img">
+              </div>
+              <h3 class="cert-card-title">HACCP</h3>
+              <span class="cert-card-category">Food Safety Management</span>
+              <p class="cert-card-desc">Prevents food safety risks at every stage.</p>
+              <div class="cert-card-arrow-wrap" title="View Certificate Details">
+                <i class="fa-solid fa-arrow-right cert-card-arrow"></i>
+              </div>
+            </article>
+
+            <!-- 3. FSSAI -->
+            <article class="cert-card-item" data-cert="fssai" role="button" tabindex="0" title="Click to view FSSAI details">
+              <div class="cert-card-logo-wrap">
+                <img src="images/compliance_crop/cert_fssai.svg" alt="FSSAI Logo" class="cert-card-logo-img">
+              </div>
+              <h3 class="cert-card-title">fssai</h3>
+              <span class="cert-card-category">Food Safety (India)</span>
+              <p class="cert-card-desc">Ensures safe and healthy food for consumers.</p>
+              <div class="cert-card-arrow-wrap" title="View Certificate Details">
+                <i class="fa-solid fa-arrow-right cert-card-arrow"></i>
+              </div>
+            </article>
+
+            <!-- 4. USDA Organic -->
+            <article class="cert-card-item" data-cert="usda" role="button" tabindex="0" title="Click to view USDA Organic details">
+              <div class="cert-card-logo-wrap">
+                <img src="images/compliance_crop/cert_usda.svg" alt="USDA Organic Certification Logo" class="cert-card-logo-img">
+              </div>
+              <h3 class="cert-card-title">USDA Organic</h3>
+              <span class="cert-card-category">Organic Compliance</span>
+              <p class="cert-card-desc">Certified organic products for a healthier planet.</p>
+              <div class="cert-card-arrow-wrap" title="View Certificate Details">
+                <i class="fa-solid fa-arrow-right cert-card-arrow"></i>
+              </div>
+            </article>
+
+            <!-- 5. GMP -->
+            <article class="cert-card-item" data-cert="gmp" role="button" tabindex="0" title="Click to view GMP details">
+              <div class="cert-card-logo-wrap">
+                <img src="images/compliance_crop/cert_gmp.svg" alt="Good Manufacturing Practice GMP Logo" class="cert-card-logo-img">
+              </div>
+              <h3 class="cert-card-title">GMP</h3>
+              <span class="cert-card-category">Good Manufacturing Practice</span>
+              <p class="cert-card-desc">Maintains product quality and safety standards.</p>
+              <div class="cert-card-arrow-wrap" title="View Certificate Details">
+                <i class="fa-solid fa-arrow-right cert-card-arrow"></i>
+              </div>
+            </article>
+
+            <!-- 6. GLOBALG.A.P. -->
+            <article class="cert-card-item" data-cert="globalgap" role="button" tabindex="0" title="Click to view GLOBALG.A.P. details">
+              <div class="cert-card-logo-wrap">
+                <img src="images/compliance_crop/cert_globalgap.svg" alt="GLOBALG.A.P. Certification Logo" class="cert-card-logo-img">
+              </div>
+              <h3 class="cert-card-title">GLOBALG.A.P.</h3>
+              <span class="cert-card-category">Responsible Sourcing</span>
+              <p class="cert-card-desc">Supports sustainable and ethical farming.</p>
+              <div class="cert-card-arrow-wrap" title="View Certificate Details">
+                <i class="fa-solid fa-arrow-right cert-card-arrow"></i>
+              </div>
+            </article>
+
+          </div>
+
+          <!-- Right: Sustainable Compliance Card -->
+          <div class="sustainability-card">
+            <img src="images/compliance_crop/card_sustainability.jpg" alt="Hand holding green growing planet earth" class="sustainability-bg-img">
+            <div class="sustainability-content">
+              <h3 class="sustainability-title">Sustainable Compliance<br>for a Better Planet</h3>
+              <button class="btn-sustainability" id="openSustainabilityBtn">
+                <span>Our Sustainability Commitment</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         5. SECTION 3: "OUR QUALITY PROCESS"
+         Navy Banner Left + 5 Sequential Process Workflow Steps Right
+         ========================================================================== -->
+    <section class="quality-process-section" id="quality-process">
+      <div class="page-container">
+        <div class="quality-process-card-wrap">
+
+          <!-- Left Process Lead Card -->
+          <div class="process-lead-col">
+            <img src="images/compliance_crop/card_quality_process.jpg" alt="Connected digital global supply chain" class="process-lead-bg">
+            <div class="process-lead-content">
+              <h2 class="process-lead-title">Our Quality Process</h2>
+              <span class="process-lead-sub">From Source to You - With Complete Confidence</span>
+              <p class="process-lead-desc">
+                We follow a rigorous quality assurance process to ensure excellence at every step of the supply chain.
+              </p>
+              <button class="btn-process-learn" id="openProcessModalBtn">
+                <span>Learn More</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Right: 5 Sequential Process Steps -->
+          <div class="process-steps-list">
+
+            <!-- Step 1: Sourcing -->
+            <div class="process-step-node">
+              <div class="step-circle-icon"><i class="fa-solid fa-leaf"></i></div>
+              <h3 class="step-node-title">1. Sourcing</h3>
+              <p class="step-node-desc">Select trusted suppliers with proven quality records.</p>
+            </div>
+
+            <i class="fa-solid fa-arrow-right step-flow-arrow"></i>
+
+            <!-- Step 2: Inspection -->
+            <div class="process-step-node">
+              <div class="step-circle-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+              <h3 class="step-node-title">2. Inspection</h3>
+              <p class="step-node-desc">Rigorous quality checks at every stage.</p>
+            </div>
+
+            <i class="fa-solid fa-arrow-right step-flow-arrow"></i>
+
+            <!-- Step 3: Testing -->
+            <div class="process-step-node">
+              <div class="step-circle-icon"><i class="fa-solid fa-flask"></i></div>
+              <h3 class="step-node-title">3. Testing</h3>
+              <p class="step-node-desc">Lab analysis & compliance verification.</p>
+            </div>
+
+            <i class="fa-solid fa-arrow-right step-flow-arrow"></i>
+
+            <!-- Step 4: Compliance -->
+            <div class="process-step-node">
+              <div class="step-circle-icon"><i class="fa-regular fa-file-lines"></i></div>
+              <h3 class="step-node-title">4. Compliance</h3>
+              <p class="step-node-desc">Meet global standards and regulations.</p>
+            </div>
+
+            <i class="fa-solid fa-arrow-right step-flow-arrow"></i>
+
+            <!-- Step 5: Delivery -->
+            <div class="process-step-node">
+              <div class="step-circle-icon"><i class="fa-solid fa-box"></i></div>
+              <h3 class="step-node-title">5. Delivery</h3>
+              <p class="step-node-desc">Safe & reliable shipment to your destination.</p>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         6. SECTION 4: "OUR COMMITMENT"
+         White Box Bar with 4 Circular Green Badge Pillars
+         ========================================================================== -->
+    <section class="commitment-section" id="commitment">
+      <div class="page-container">
+        <div class="commitment-bar-wrap">
+
+          <!-- Left Lead Title -->
+          <div class="commitment-lead-col">
+            <h2 class="commitment-main-title">Our Commitment</h2>
+            <p class="commitment-main-desc">
+              We are dedicated to maintaining the highest standards of quality, safety, and compliance in every product we deliver.
+            </p>
+          </div>
+
+          <!-- 4 Circular Green Badge Pillars -->
+          <div class="commitment-pillars-row">
+
+            <!-- Pillar 1: Sustainable Sourcing -->
+            <div class="commitment-pillar-item">
+              <div class="pillar-circle-icon"><i class="fa-solid fa-seedling"></i></div>
+              <div class="pillar-text-col">
+                <h3 class="pillar-title">Sustainable Sourcing</h3>
+                <span class="pillar-desc">Ethical and responsible procurement</span>
+              </div>
+            </div>
+
+            <!-- Pillar 2: Food Safety -->
+            <div class="commitment-pillar-item">
+              <div class="pillar-circle-icon"><i class="fa-solid fa-shield-halved"></i></div>
+              <div class="pillar-text-col">
+                <h3 class="pillar-title">Food Safety</h3>
+                <span class="pillar-desc">Strict hygiene and safety measures</span>
+              </div>
+            </div>
+
+            <!-- Pillar 3: Regulatory Compliance -->
+            <div class="commitment-pillar-item">
+              <div class="pillar-circle-icon"><i class="fa-regular fa-file-lines"></i></div>
+              <div class="pillar-text-col">
+                <h3 class="pillar-title">Regulatory Compliance</h3>
+                <span class="pillar-desc">Adhering to international trade laws</span>
+              </div>
+            </div>
+
+            <!-- Pillar 4: Better Tomorrow -->
+            <div class="commitment-pillar-item">
+              <div class="pillar-circle-icon"><i class="fa-solid fa-earth-americas"></i></div>
+              <div class="pillar-text-col">
+                <h3 class="pillar-title">Better Tomorrow</h3>
+                <span class="pillar-desc">Contributing to a healthier and more sustainable world</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         7. SECTION 5: BOTTOM TRUST & IMPACT BANNER + SUNSET VESSEL
+         ========================================================================== -->
+    <section class="trust-banner-section">
+      <div class="page-container">
+        <div class="trust-banner-inner">
+
+          <!-- Left: Handshake & Headline -->
+          <div class="trust-lead-block">
+            <div class="trust-handshake-icon"><i class="fa-solid fa-handshake"></i></div>
+            <div class="trust-text-group">
+              <h2 class="trust-headline">Your Trust Fuels Our Commitment</h2>
+              <p class="trust-subtext">
+                Quality and compliance are not just processes — they are our culture. We go beyond standards to deliver products you can trust, every time.
+              </p>
+              <button class="btn-partner-trust" id="openPartnerModalBtn">
+                <span>Partner With Us</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Center: 4 Metrics -->
+          <div class="trust-metrics-group">
+
+            <div class="trust-metric-item">
+              <div class="metric-badge-circle"><i class="fa-solid fa-certificate"></i></div>
+              <div class="metric-data-col">
+                <span class="metric-num-bold">100+</span>
+                <span class="metric-caption">Quality Checks at Every Stage</span>
+              </div>
+            </div>
+
+            <div class="trust-metric-item">
+              <div class="metric-badge-circle"><i class="fa-solid fa-users"></i></div>
+              <div class="metric-data-col">
+                <span class="metric-num-bold">2,500+</span>
+                <span class="metric-caption">Verified Suppliers Worldwide</span>
+              </div>
+            </div>
+
+            <div class="trust-metric-item">
+              <div class="metric-badge-circle"><i class="fa-solid fa-globe"></i></div>
+              <div class="metric-data-col">
+                <span class="metric-num-bold">50+</span>
+                <span class="metric-caption">Countries Served</span>
+              </div>
+            </div>
+
+            <div class="trust-metric-item">
+              <div class="metric-badge-circle"><i class="fa-solid fa-shield-halved"></i></div>
+              <div class="metric-data-col">
+                <span class="metric-num-bold">98%</span>
+                <span class="metric-caption">On-Time Delivery Rate</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right: Sunset Ocean Cargo Vessel -->
+          <div class="trust-vessel-wrap">
+            <img src="images/compliance_crop/bottom_ship_sunset.jpg" alt="Cargo vessel sailing into ocean sunset with port cranes" class="trust-vessel-img">
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= GLOBAL CORPORATE FOOTER ================= -->
+    <footer class="site-global-footer">
+      <div class="footer-waves-overlay" aria-hidden="true"></div>
+      <div class="footer-inner-container">
+        
+        <!-- Top Row: Left Brand & CTA, Right Nav & Socials -->
+        <div class="footer-main-row">
+          
+          <!-- Left: Logo + Vertical Divider + CTA Pitch & Button -->
+          <div class="footer-left-brand-group">
+            <a href="index.html" class="footer-logo-link" title="CONCEPT EXIM">
+              <img src="images/concept_exim_logo_white.png" srcset="images/concept_exim_logo_white@3x.png 3x" alt="CONCEPT EXIM - Global Trade Simplified" class="footer-concept-logo">
+            </a>
+            <div class="footer-vert-divider"></div>
+            <div class="footer-cta-text-wrap">
+              <span class="footer-cta-heading">Ready to Grow Globally?</span>
+              <span class="footer-cta-sub">Let's build your next success story together.</span>
+            </div>
+            <button type="button" class="footer-btn-quote" onclick="if(typeof openRfqModal==='function'){openRfqModal();}else if(typeof openQuoteModal==='function'){openQuoteModal();}else{window.location.href='contact.html';}">
+              <span>Get a Free Quote</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+
+          <!-- Right: Horizontal Nav Links + Social Icons -->
+          <div class="footer-right-nav-group">
+            <nav class="footer-horizontal-nav" aria-label="Footer Navigation">
+              <a href="index.html">Home</a>
+              <a href="about.html">About Us</a>
+              <a href="services.html">Services</a>
+              <a href="products.html">Products</a>
+              <a href="global-presence.html">Global Network</a>
+              <a href="insights.html">Insights</a>
+              <a href="contact.html">Contact</a>
+            </nav>
+            <div class="footer-social-icons">
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer-social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="footer-social-icon" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="footer-social-icon" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Bottom Subline: Copyright + Legal -->
+        <div class="footer-bottom-row">
+          <div class="footer-copyright-text">
+            &copy; 2026 CONCEPT EXIM. All rights reserved.
+          </div>
+          <div class="footer-legal-links">
+            <a href="compliance.html">Privacy Policy</a>
+            <span class="footer-legal-sep">|</span>
+            <a href="compliance.html">Terms &amp; Conditions</a>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- ==========================================================================
+       9. MODAL DIALOG: CERTIFICATION & AUDIT INQUIRY
+       ========================================================================== -->
+  <div class="modal-overlay" id="complianceModalOverlay" role="dialog" aria-modal="true">
+    <div class="modal-card">
+      <div class="modal-header">
+        <div class="modal-header-text">
+          <h3 id="complianceModalTitle">
+            <i class="fa-solid fa-shield-halved" style="color: var(--gold-primary); margin-right: 6px;"></i>
+            <span>Quality &amp; Compliance Portal</span>
+          </h3>
+          <span class="modal-header-sub" id="complianceModalSubtitle">Globally Verified Enterprise Standards</span>
+        </div>
+        <button class="modal-close-btn" id="closeComplianceModalBtn" aria-label="Close dialog">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <!-- Certificate Detailed Viewer (displayed when a cert card/arrow is clicked) -->
+      <div class="cert-detail-view" id="certDetailView">
+        <div class="cert-view-hero">
+          <div class="cert-view-logo-box">
+            <img id="certViewLogo" src="images/compliance_crop/cert_iso.svg" alt="Certificate Emblem">
+          </div>
+          <div class="cert-view-header-meta">
+            <div class="cert-badge-active">
+              <i class="fa-solid fa-circle-check"></i>
+              <span id="certViewStatus">Active &amp; Certified</span>
+            </div>
+            <h4 id="certViewName">ISO 9001:2015 Quality Management</h4>
+            <div class="cert-id-row">
+              <span class="cert-id-label">Registration / Lic. ID:</span>
+              <strong id="certViewId" class="cert-id-val">CQMS-GLOBAL-9001-2025</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="cert-view-body-content">
+          <div class="cert-info-grid">
+            <div class="cert-info-item">
+              <span class="info-label"><i class="fa-solid fa-building-shield"></i> Authority:</span>
+              <span class="info-value" id="certViewAuthority">International Organization for Standardization</span>
+            </div>
+            <div class="cert-info-item">
+              <span class="info-label"><i class="fa-solid fa-calendar-check"></i> Validity:</span>
+              <span class="info-value" id="certViewValidity">2024 – 2027 (Annual Audit Passed)</span>
+            </div>
+          </div>
+
+          <div class="cert-scope-box">
+            <span class="scope-label"><i class="fa-solid fa-bullseye"></i> Scope of Certification:</span>
+            <p id="certViewScope">End-to-end quality assurance, supplier auditing, commodity grading, hygienic packaging, and global export logistics across 50+ countries.</p>
+          </div>
+
+          <div class="cert-protocols-box">
+            <span class="protocols-label"><i class="fa-solid fa-clipboard-check"></i> Key Assurance Protocols:</span>
+            <ul class="protocols-list" id="certViewProtocols">
+              <li>Zero-defect packaging protocol with multi-stage quality control</li>
+              <li>Batch-specific laboratory analytical testing &amp; phytosanitary inspection</li>
+              <li>Full digital supply chain farm-to-dock traceability</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="cert-action-buttons">
+          <button class="btn-cert-action-download" id="certDownloadDossierBtn">
+            <i class="fa-solid fa-file-arrow-down"></i>
+            <span>Download Audit Dossier (PDF)</span>
+          </button>
+          <button class="btn-cert-action-inquire" id="certOpenInquiryFormBtn">
+            <i class="fa-solid fa-paper-plane"></i>
+            <span>Request Official Batch COA</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- General Inquiry Form -->
+      <form class="modal-body-form" id="complianceForm" style="display: none;">
+        <div class="form-title-bar">
+          <span id="formTitleText"><i class="fa-solid fa-envelope-open-text" style="color: var(--gold-primary); margin-right: 6px;"></i> Submit Official Inquiry</span>
+          <button type="button" class="btn-back-to-cert" id="btnBackToCert">
+            <i class="fa-solid fa-arrow-left"></i> Back to Certificate
+          </button>
+        </div>
+        <div class="form-grid-2col">
+          <div class="form-group">
+            <label for="complianceName">Full Name *</label>
+            <input type="text" id="complianceName" class="form-input" placeholder="e.g. Dr. Sarah Jenkins" required>
+          </div>
+          <div class="form-group">
+            <label for="complianceEmail">Corporate Email *</label>
+            <input type="email" id="complianceEmail" class="form-input" placeholder="e.g. sarah@enterprise.com" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="complianceStandardSelect">Standard / Topic *</label>
+          <select id="complianceStandardSelect" class="form-select" required>
+            <option value="ISO 9001:2015 Audit Report">ISO 9001:2015 Audit Report</option>
+            <option value="HACCP Food Safety Certificate">HACCP Food Safety Certificate</option>
+            <option value="FSSAI Indian Food Regulations">FSSAI Indian Food Regulations</option>
+            <option value="USDA Organic Verification">USDA Organic Verification</option>
+            <option value="GMP Good Manufacturing Compliance">GMP Good Manufacturing Compliance</option>
+            <option value="GLOBALG.A.P. Farm Traceability">GLOBALG.A.P. Farm Traceability</option>
+            <option value="Laboratory Analysis / Testing Results">Laboratory Analysis / Testing Results</option>
+            <option value="Sustainable Compliance Sourcing">Sustainable Compliance Sourcing</option>
+            <option value="Supplier Quality Partnership">Supplier Quality Partnership</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="complianceMessage">Specifications &amp; Inquiries</label>
+          <textarea id="complianceMessage" class="form-textarea" rows="3" placeholder="Specify batch verification, COA parameters, or compliance documentation..."></textarea>
+        </div>
+        <button type="submit" class="btn-modal-submit">
+          <i class="fa-solid fa-paper-plane" style="margin-right: 6px;"></i>
+          <span>Submit Compliance Request</span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast-msg" id="complianceToast">
+    <i class="fa-solid fa-circle-check" style="color: var(--gold-primary); font-size: 16px;"></i>
+    <span id="complianceToastText">Your compliance inquiry has been submitted successfully!</span>
+  </div>
+
+  <!-- ==========================================================================
+       10. INTERACTIVE JAVASCRIPT
+       ========================================================================== -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+      // Certificate Data Store
+      const CERT_DATA = {
+        iso: {
+          title: "ISO 9001:2015 Quality Management",
+          subtitle: "Quality Management System (QMS)",
+          logo: "images/compliance_crop/cert_iso.svg",
+          certNo: "CQMS-GLOBAL-9001-2025",
+          status: "Active & Accredited",
+          issuedBy: "International Organization for Standardization (IAF / UKAS Accredited)",
+          validity: "2024 – 2027 (Annual Surveillance Verified)",
+          scope: "End-to-end quality assurance, supplier auditing, commodity grading, hygienic packaging, and global export logistics across 50+ countries.",
+          protocols: [
+            "Zero-defect packaging protocol with multi-stage QA inspection",
+            "Batch-specific laboratory analytical testing & parameter validation",
+            "Full digital supply chain farm-to-dock traceability"
+          ],
+          standardSelect: "ISO 9001:2015 Audit Report"
+        },
+        haccp: {
+          title: "HACCP Food Safety Certified",
+          subtitle: "Hazard Analysis Critical Control Point",
+          logo: "images/compliance_crop/cert_haccp.svg",
+          certNo: "HACCP-EXIM-FSMS-8842",
+          status: "Active & Certified",
+          issuedBy: "Codex Alimentarius Commission Standards",
+          validity: "2024 – 2027 (Annual Verification Passed)",
+          scope: "Critical point control for biological, chemical, and physical food safety hazards across warehousing, container stuffing, and maritime transport.",
+          protocols: [
+            "Rigorous temperature & humidity monitoring throughout transit",
+            "Preventive biological & chemical cross-contamination barriers",
+            "Pre-shipment phytosanitary clearance & sealed batch verification"
+          ],
+          standardSelect: "HACCP Food Safety Certificate"
+        },
+        fssai: {
+          title: "FSSAI Central Export License",
+          subtitle: "Food Safety and Standards Authority of India",
+          logo: "images/compliance_crop/cert_fssai.svg",
+          certNo: "10022021000492 (Central License)",
+          status: "Active & Validated",
+          issuedBy: "Government of India - Food Safety & Standards Authority",
+          validity: "2023 – 2028 (Export Category Validated)",
+          scope: "Export processing, wholesale storage, lab testing, and statutory compliance for agricultural commodities, spices, basmati rice, and dry goods.",
+          protocols: [
+            "Statutory purity & pesticide residue verification per batch",
+            "Central regulatory export endorsement & customs clearance",
+            "Mandatory batch testing before port dispatch"
+          ],
+          standardSelect: "FSSAI Indian Food Regulations"
+        },
+        usda: {
+          title: "USDA National Organic Program",
+          subtitle: "National Organic Program (NOP)",
+          logo: "images/compliance_crop/cert_usda.svg",
+          certNo: "USDA-NOP-ORG-77319",
+          status: "100% Certified Organic",
+          issuedBy: "United States Department of Agriculture (NOP)",
+          validity: "2024 – 2027 (Annual Inspection Passed)",
+          scope: "Certified organic commodity sourcing, chemical-free processing, non-GMO verification, and dedicated pesticide-free export consignment containment.",
+          protocols: [
+            "100% synthetic pesticide, chemical, and GMO free verification",
+            "Dedicated segregated organic processing line",
+            "Farm-to-port organic chain of custody documentation"
+          ],
+          standardSelect: "USDA Organic Verification"
+        },
+        gmp: {
+          title: "GMP Good Manufacturing Practice",
+          subtitle: "Manufacturing Hygiene & QA Standards",
+          logo: "images/compliance_crop/cert_gmp.svg",
+          certNo: "GMP-QA-MFG-55102",
+          status: "Audited & Certified",
+          issuedBy: "WHO-GMP Guidelines / International Standards",
+          validity: "2024 – 2027 (Cleanroom Standards Passed)",
+          scope: "Strict hygiene, sanitary handling equipment, automated dust-free packaging, and climate-controlled storage across all manufacturing facilities.",
+          protocols: [
+            "Cleanroom packaging protocols and air particle filtration",
+            "Automated optical sorting & magnetic foreign matter screening",
+            "Complete hygiene sanitation logs & microbial swab testing"
+          ],
+          standardSelect: "GMP Good Manufacturing Compliance"
+        },
+        globalgap: {
+          title: "GLOBALG.A.P. Integrated Farm Assurance",
+          subtitle: "Responsible Farming & Sustainable Sourcing",
+          logo: "images/compliance_crop/cert_globalgap.svg",
+          certNo: "GGN: 4059883719024",
+          status: "Certified Partner Network",
+          issuedBy: "GLOBALG.A.P. c/o FoodPLUS GmbH",
+          validity: "2024 – 2026 (Farm Audit Validated)",
+          scope: "Good agricultural practices, soil conservation, responsible water stewardship, ethical farm worker welfare, and complete farm-level traceability.",
+          protocols: [
+            "Ethical & sustainable farming compliance audits",
+            "Worker safety & fair trade alignment on certified farms",
+            "Direct farm-to-dock batch barcode tracing"
+          ],
+          standardSelect: "GLOBALG.A.P. Farm Traceability"
+        }
+      };
+
+      // DOM Elements
+      const modal = document.getElementById('complianceModalOverlay');
+      const modalTitle = document.getElementById('complianceModalTitle');
+      const modalSubtitle = document.getElementById('complianceModalSubtitle');
+      const certDetailView = document.getElementById('certDetailView');
+      const complianceForm = document.getElementById('complianceForm');
+      const formTitleText = document.getElementById('formTitleText');
+      const btnBackToCert = document.getElementById('btnBackToCert');
+      const closeBtn = document.getElementById('closeComplianceModalBtn');
+      const selectStandard = document.getElementById('complianceStandardSelect');
+      const toast = document.getElementById('complianceToast');
+      const toastText = document.getElementById('complianceToastText');
+
+      // Certificate View Elements
+      const certViewLogo = document.getElementById('certViewLogo');
+      const certViewName = document.getElementById('certViewName');
+      const certViewStatus = document.getElementById('certViewStatus');
+      const certViewId = document.getElementById('certViewId');
+      const certViewAuthority = document.getElementById('certViewAuthority');
+      const certViewValidity = document.getElementById('certViewValidity');
+      const certViewScope = document.getElementById('certViewScope');
+      const certViewProtocols = document.getElementById('certViewProtocols');
+      const certDownloadDossierBtn = document.getElementById('certDownloadDossierBtn');
+      const certOpenInquiryFormBtn = document.getElementById('certOpenInquiryFormBtn');
+
+      let currentCertKey = 'iso';
+
+      function showToast(msg) {
+        toastText.textContent = msg;
+        toast.classList.add('show');
+        setTimeout(() => toast.classList.remove('show'), 4000);
+      }
+
+      function openModalWithCert(key) {
+        const data = CERT_DATA[key] || CERT_DATA['iso'];
+        currentCertKey = key;
+
+        if (modalTitle) modalTitle.innerHTML = `<i class="fa-solid fa-certificate" style="color: var(--gold-primary); margin-right: 6px;"></i> ${data.title}`;
+        if (modalSubtitle) modalSubtitle.textContent = data.subtitle;
+
+        certViewLogo.src = data.logo;
+        certViewLogo.alt = data.title;
+        certViewName.textContent = data.title;
+        certViewStatus.textContent = data.status;
+        certViewId.textContent = data.certNo;
+        certViewAuthority.textContent = data.issuedBy;
+        certViewValidity.textContent = data.validity;
+        certViewScope.textContent = data.scope;
+
+        certViewProtocols.innerHTML = data.protocols.map(p => `<li>${p}</li>`).join('');
+
+        // Show Cert View, hide form
+        certDetailView.style.display = 'block';
+        complianceForm.style.display = 'none';
+
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function openModalWithForm(title, subtitle, standardVal, showBackBtn = false) {
+        if (modalTitle) modalTitle.innerHTML = `<i class="fa-solid fa-envelope-open-text" style="color: var(--gold-primary); margin-right: 6px;"></i> ${title}`;
+        if (modalSubtitle) modalSubtitle.textContent = subtitle;
+        if (formTitleText) formTitleText.textContent = title;
+        if (standardVal && selectStandard) selectStandard.value = standardVal;
+
+        btnBackToCert.style.display = showBackBtn ? 'inline-flex' : 'none';
+        certDetailView.style.display = 'none';
+        complianceForm.style.display = 'block';
+
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeModal() {
+        modal.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+
+      // 1. Hook up all 6 Certificate Cards & Arrow Buttons
+      const certCards = document.querySelectorAll('.cert-card-item');
+      certCards.forEach(card => {
+        const certKey = card.getAttribute('data-cert');
+        
+        // Click on entire card
+        card.addEventListener('click', (e) => {
+          openModalWithCert(certKey);
+        });
+
+        // Keydown support (Enter / Space)
+        card.addEventListener('keydown', (e) => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            openModalWithCert(certKey);
+          }
+        });
+      });
+
+      // 2. Download Dossier Button Action
+      if (certDownloadDossierBtn) {
+        certDownloadDossierBtn.addEventListener('click', () => {
+          const data = CERT_DATA[currentCertKey] || CERT_DATA['iso'];
+          
+          // Generate downloadable text dossier
+          const fileContent = `=====================================================
+CONCEPT EXIM - OFFICIAL CERTIFICATE & AUDIT DOSSIER
+Global Trade, Greater Opportunities.
+=====================================================
+Standard: ${data.title}
+Sub-classification: ${data.subtitle}
+Certificate Registration Number: ${data.certNo}
+Verification Status: ${data.status}
+Accrediting Body: ${data.issuedBy}
+Audit Validity Period: ${data.validity}
+
+SCOPE OF CERTIFIED OPERATIONS:
+${data.scope}
+
+QUALITY ASSURANCE PROTOCOLS:
+${data.protocols.map((p, i) => `${i + 1}. ${p}`).join('\n')}
+
+VERIFICATION ENDORSEMENT:
+All shipments exported under CONCEPT EXIM are backed by batch-specific
+Certificate of Analysis (COA) and phytosanitary regulatory clearances.
+Official Regulatory Verification URL: https://conceptexim.com/compliance
+
+(c) 2025 CONCEPT EXIM. All Rights Reserved.
+=====================================================`;
+
+          const blob = new Blob([fileContent], { type: 'text/plain;charset=utf-8' });
+          const url = URL.createObjectURL(blob);
+          const a = document.createElement('a');
+          a.href = url;
+          a.download = `CONCEPT_EXIM_${currentCertKey.toUpperCase()}_Audit_Dossier.txt`;
+          document.body.appendChild(a);
+          a.click();
+          document.body.removeChild(a);
+          URL.revokeObjectURL(url);
+
+          showToast(`Downloaded official ${data.title} dossier successfully!`);
+        });
+      }
+
+      // 3. Request Batch COA Button
+      if (certOpenInquiryFormBtn) {
+        certOpenInquiryFormBtn.addEventListener('click', () => {
+          const data = CERT_DATA[currentCertKey] || CERT_DATA['iso'];
+          openModalWithForm(`Request COA: ${data.title}`, `Official Batch Verification & Documentation`, data.standardSelect, true);
+        });
+      }
+
+      // 4. Back to Certificate Button
+      if (btnBackToCert) {
+        btnBackToCert.addEventListener('click', () => {
+          openModalWithCert(currentCertKey);
+        });
+      }
+
+      // 5. Global Action Buttons
+      const quoteBtn = document.getElementById('openQuoteModalBtn');
+      if (quoteBtn) quoteBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        openModalWithForm('Request a Quality & Compliance Quote', 'Custom specifications & audit requirements', 'ISO 9001:2015 Audit Report');
+      });
+
+      const viewAllBtn = document.getElementById('viewAllCertsBtn');
+      if (viewAllBtn) viewAllBtn.addEventListener('click', () => {
+        openModalWithCert('iso');
+      });
+
+      const sustainBtn = document.getElementById('openSustainabilityBtn');
+      if (sustainBtn) sustainBtn.addEventListener('click', () => {
+        openModalWithForm('Sustainability Commitment Dossier', 'Ethical Procurement & Eco Compliance', 'Sustainable Compliance Sourcing');
+      });
+
+      const processBtn = document.getElementById('openProcessModalBtn');
+      if (processBtn) processBtn.addEventListener('click', () => {
+        openModalWithForm('Quality Assurance Workflow Breakdown', 'Source to Delivery Verification Process', 'Laboratory Analysis / Testing Results');
+      });
+
+      const partnerBtn = document.getElementById('openPartnerModalBtn');
+      if (partnerBtn) partnerBtn.addEventListener('click', () => {
+        openModalWithForm('Supplier Quality Partnership Application', 'Join our global verified supplier network', 'Supplier Quality Partnership');
+      });
+
+      // 6. Close Modal
+      if (closeBtn) closeBtn.addEventListener('click', closeModal);
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) closeModal();
+      });
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modal.classList.contains('active')) closeModal();
+      });
+
+      // 7. Form Submission
+      if (complianceForm) {
+        complianceForm.addEventListener('submit', (e) => {
+          e.preventDefault();
+          const std = selectStandard.value;
+          closeModal();
+          showToast(`Inquiry for ${std} submitted! Our compliance team will respond with credentials.`);
+          complianceForm.reset();
+        });
+      }
+
+      // 8. Live Search for Certifications
+      const certSearchInput = document.getElementById('certSearchInput');
+      if (certSearchInput) {
+        certSearchInput.addEventListener('input', (e) => {
+          const term = e.target.value.toLowerCase().trim();
+          certCards.forEach(card => {
+            const title = card.querySelector('.cert-card-title').textContent.toLowerCase();
+            const cat = card.querySelector('.cert-card-category').textContent.toLowerCase();
+            const desc = card.querySelector('.cert-card-desc').textContent.toLowerCase();
+            if (title.includes(term) || cat.includes(term) || desc.includes(term)) {
+              card.style.display = 'flex';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      }
+
+      // 9. Top Bar Language & Cart handled globally by navbar.js / cart.js
+
+      const cartBtn = document.getElementById('openCartBtn');
+      if (cartBtn) {
+        cartBtn.addEventListener('click', () => showToast('Compliance sample cart has 0 items.'));
+      }
+
+    });
+  </script>
+
+  <script src="cart.js"></script>
+  <script src="navbar.js"></script>
+</body>
+</html>

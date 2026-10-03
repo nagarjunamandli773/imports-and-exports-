@@ -1,0 +1,1219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | CONCEPT EXIM - Global Trade, Greater Opportunities.</title>
+  <meta name="description" content="CONCEPT EXIM is a leading international trade and logistics company, connecting businesses across the world with seamless, reliable and innovative supply chain solutions.">
+  
+  <!-- Google Fonts: Plus Jakarta Sans & Dancing Script -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome 6 Pro Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="about.css">
+  <link rel="stylesheet" href="navbar.css">
+</head>
+<body>
+
+  <div class="site-wrapper">
+
+    <!-- ==========================================================================
+         1. TOP SLIM BAR (Deep Navy)
+         ========================================================================== -->
+    <div class="top-slim-bar">
+      <div class="page-container top-bar-inner">
+        <!-- Left: 4 Trust Features with Orange Icons & Dividers -->
+        <div class="top-features-list">
+          <div class="top-feature-item">
+            <i class="fa-solid fa-globe"></i>
+            <span>Global Reach</span>
+          </div>
+          <div class="top-divider"></div>
+          <div class="top-feature-item">
+            <i class="fa-solid fa-shield-halved"></i>
+            <span>Trusted Suppliers</span>
+          </div>
+          <div class="top-divider"></div>
+          <div class="top-feature-item">
+            <i class="fa-solid fa-certificate"></i>
+            <span>Quality Assured</span>
+          </div>
+          <div class="top-divider"></div>
+          <div class="top-feature-item">
+            <i class="fa-solid fa-truck-fast"></i>
+            <span>On-Time Delivery</span>
+          </div>
+        </div>
+
+        <!-- Right: Language, Login & Cart -->
+        <div class="top-right-group">
+          <button class="top-link-btn" id="topLangBtn" aria-label="Language Selector">
+            <i class="fa-solid fa-globe"></i>
+            <span>English</span>
+            <i class="fa-solid fa-chevron-down" style="font-size: 8.5px; opacity: 0.85;"></i>
+          </button>
+          <div class="top-divider"></div>
+          <a href="login.html" class="top-link-btn">
+            <i class="fa-regular fa-user"></i>
+            <span>Login / Register</span>
+          </a>
+          <div class="top-divider"></div>
+          <button class="top-cart-btn" id="openCartBtn" aria-label="View Shopping Cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="cart-badge-count" id="cartCountBadge">0</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==========================================================================
+         2. MAIN HEADER & NAVBAR (CONCEPT EXIM)
+         ========================================================================== -->
+    <header class="main-header" id="navbar">
+      <div class="page-container header-inner">
+
+        <!-- Brand Logo (CONCEPT EXIM) -->
+        <a href="index.html" class="brand-logo-link" title="CONCEPT EXIM - Global Trade, Greater Opportunities.">
+          <img src="images/concept_exim_logo.png" srcset="images/concept_exim_logo@3x.png 3x" alt="CONCEPT EXIM - Global Trade, Greater Opportunities." class="concept-exim-logo">
+        </a>
+
+        <!-- Center Nav: Home | About Us (ACTIVE ORANGE PILL) | Products | Services | Global Presence | Quality & Compliance | Insights | Contact -->
+        <nav class="main-nav-wrapper">
+          <ul class="main-nav-bar">
+            <li>
+              <a href="index.html" class="nav-link">
+                <span>Home</span>
+              </a>
+            </li>
+
+            <!-- About Us Dropdown (Active) -->
+            <li class="nav-item-dropdown">
+              <a href="about.html" class="nav-link active" aria-expanded="false" aria-haspopup="true">
+                <span>About Us</span>
+                <span class="nav-arrow-btn" role="button" tabindex="0" aria-label="Toggle About Us submenu">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </span>
+              </a>
+              <div class="nav-dropdown-menu nav-dropdown-about" role="menu">
+                <div class="dropdown-header">
+                  <span class="dropdown-eyebrow">COMPANY OVERVIEW</span>
+                  <a href="about.html" class="dropdown-header-all">View All <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="dropdown-items-grid dropdown-col-1">
+                  <a href="about.html#who-we-are" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-building-flag"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Who We Are</span>
+                      <span class="dropdown-item-desc">Global trade leadership &amp; company story</span>
+                    </div>
+                  </a>
+                  <a href="about.html#who-we-are" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-compass"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Our Journey</span>
+                      <span class="dropdown-item-desc">From trade pioneer to global logistics</span>
+                    </div>
+                  </a>
+                  <a href="about.html#who-we-are" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-bullseye"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Mission &amp; Values</span>
+                      <span class="dropdown-item-desc">Integrity, excellence &amp; reliability</span>
+                    </div>
+                  </a>
+                  <a href="about.html#why-choose" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Why Choose Us</span>
+                      <span class="dropdown-item-desc">5 core advantages for international trade</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <!-- Products Dropdown -->
+            <li class="nav-item-dropdown">
+              <a href="products.html" class="nav-link" aria-expanded="false" aria-haspopup="true">
+                <span>Products</span>
+                <span class="nav-arrow-btn" role="button" tabindex="0" aria-label="Toggle Products submenu">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </span>
+              </a>
+              <div class="nav-dropdown-menu nav-dropdown-products" role="menu">
+                <div class="dropdown-header">
+                  <span class="dropdown-eyebrow">COMMODITIES CATALOGUE</span>
+                  <a href="products.html" class="dropdown-header-all">View All 32+ Products <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="dropdown-items-grid dropdown-col-2">
+                  <a href="products.html?category=grains" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-wheat-awn"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Rice &amp; Grains</span>
+                      <span class="dropdown-item-desc">Basmati, non-basmati &amp; organic grains</span>
+                    </div>
+                  </a>
+                  <a href="products.html?category=spices" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-mortar-pestle"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Spices &amp; Herbs</span>
+                      <span class="dropdown-item-desc">Premium whole &amp; ground spices</span>
+                    </div>
+                  </a>
+                  <a href="products.html?category=pulses" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-cubes-stacked"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Pulses &amp; Legumes</span>
+                      <span class="dropdown-item-desc">Lentils, chickpeas &amp; beans</span>
+                    </div>
+                  </a>
+                  <a href="products.html?category=fruits" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-apple-whole"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Fruits &amp; Vegetables</span>
+                      <span class="dropdown-item-desc">Fresh agricultural farm produce</span>
+                    </div>
+                  </a>
+                  <a href="products.html?category=oils" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-bottle-droplet"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Oils &amp; Fats</span>
+                      <span class="dropdown-item-desc">Edible culinary &amp; cold-pressed oils</span>
+                    </div>
+                  </a>
+                  <a href="products.html?category=dryfruits" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-seedling"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Dry Fruits &amp; Nuts</span>
+                      <span class="dropdown-item-desc">Graded cashews, almonds &amp; raisins</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="dropdown-footer-strip">
+                  <span>Looking for bulk container shipments?</span>
+                  <a href="contact.html#quote">Request Bulk Quote <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </li>
+
+            <!-- Services Dropdown -->
+            <li class="nav-item-dropdown">
+              <a href="services.html" class="nav-link" aria-expanded="false" aria-haspopup="true">
+                <span>Services</span>
+                <span class="nav-arrow-btn" role="button" tabindex="0" aria-label="Toggle Services submenu">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </span>
+              </a>
+              <div class="nav-dropdown-menu nav-dropdown-services" role="menu">
+                <div class="dropdown-header">
+                  <span class="dropdown-eyebrow">TRADE CAPABILITIES</span>
+                  <a href="services.html" class="dropdown-header-all">View All Services <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="dropdown-items-grid dropdown-col-2">
+                  <a href="services.html#card-import-solutions" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-ship"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Import Solutions</span>
+                      <span class="dropdown-item-desc">Clearance, compliance &amp; door delivery</span>
+                    </div>
+                  </a>
+                  <a href="services.html#card-export-management" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-plane-departure"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Export Management</span>
+                      <span class="dropdown-item-desc">Global shipping &amp; market outreach</span>
+                    </div>
+                  </a>
+                  <a href="services.html#card-global-sourcing" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-globe"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Global Sourcing</span>
+                      <span class="dropdown-item-desc">Verified suppliers &amp; contract terms</span>
+                    </div>
+                  </a>
+                  <a href="services.html#card-logistics-coordination" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-truck-moving"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Logistics Coordination</span>
+                      <span class="dropdown-item-desc">Multimodal ocean, air &amp; land freight</span>
+                    </div>
+                  </a>
+                  <a href="services.html#card-customs-support" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Customs Support</span>
+                      <span class="dropdown-item-desc">Duty optimization &amp; regulatory filing</span>
+                    </div>
+                  </a>
+                  <a href="services.html#card-trade-consulting" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-handshake-angle"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Trade Consulting</span>
+                      <span class="dropdown-item-desc">Cross-border advice &amp; risk management</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <!-- Global Presence Dropdown -->
+            <li class="nav-item-dropdown">
+              <a href="global-presence.html" class="nav-link" aria-expanded="false" aria-haspopup="true">
+                <span>Global Presence</span>
+                <span class="nav-arrow-btn" role="button" tabindex="0" aria-label="Toggle Global Presence submenu">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </span>
+              </a>
+              <div class="nav-dropdown-menu nav-dropdown-presence" role="menu">
+                <div class="dropdown-header">
+                  <span class="dropdown-eyebrow">WORLDWIDE FOOTPRINT</span>
+                  <a href="global-presence.html" class="dropdown-header-all">Explore Network <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="dropdown-items-grid dropdown-col-1">
+                  <a href="global-presence.html#interactive-map" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-map-location-dot"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Interactive World Map</span>
+                      <span class="dropdown-item-desc">Trade routes across 60+ countries</span>
+                    </div>
+                  </a>
+                  <a href="global-presence.html#continental-hubs" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-earth-americas"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Continental Hubs</span>
+                      <span class="dropdown-item-desc">Asia, Europe, Middle East &amp; Americas</span>
+                    </div>
+                  </a>
+                  <a href="global-presence.html#transit-calculator" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-calculator"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Transit Calculator</span>
+                      <span class="dropdown-item-desc">Estimate shipping times &amp; lane routes</span>
+                    </div>
+                  </a>
+                  <a href="global-presence.html#infrastructure" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-warehouse"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Trade Infrastructure</span>
+                      <span class="dropdown-item-desc">42+ bonded logistics &amp; cold hubs</span>
+                    </div>
+                  </a>
+                  <a href="global-presence.html#regional-desks" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-headset"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Regional Desks</span>
+                      <span class="dropdown-item-desc">Local bilingual trade advisors in 18 HQs</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <!-- Quality & Compliance Dropdown -->
+            <li class="nav-item-dropdown">
+              <a href="compliance.html" class="nav-link" aria-expanded="false" aria-haspopup="true">
+                <span>Quality &amp; Compliance</span>
+                <span class="nav-arrow-btn" role="button" tabindex="0" aria-label="Toggle Quality &amp; Compliance submenu">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </span>
+              </a>
+              <div class="nav-dropdown-menu nav-dropdown-compliance" role="menu">
+                <div class="dropdown-header">
+                  <span class="dropdown-eyebrow">GLOBAL STANDARDS</span>
+                  <a href="compliance.html" class="dropdown-header-all">View All Standards <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="dropdown-items-grid dropdown-col-1">
+                  <a href="compliance.html#certifications" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-certificate"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Our Certifications</span>
+                      <span class="dropdown-item-desc">ISO 9001, HACCP, FSSAI, APEDA, GMP</span>
+                    </div>
+                  </a>
+                  <a href="compliance.html#quality-process" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-list-check"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Quality Assurance</span>
+                      <span class="dropdown-item-desc">5-tier testing &amp; pre-shipment audit</span>
+                    </div>
+                  </a>
+                  <a href="compliance.html#commitment" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-scale-balanced"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Regulatory Framework</span>
+                      <span class="dropdown-item-desc">Export-import guidelines &amp; safety</span>
+                    </div>
+                  </a>
+                  <a href="compliance.html#commitment" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-leaf"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">ESG &amp; Sustainability</span>
+                      <span class="dropdown-item-desc">Eco-packaging &amp; ethical trade sourcing</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <!-- Insights Dropdown -->
+            <li class="nav-item-dropdown">
+              <a href="insights.html" class="nav-link" aria-expanded="false" aria-haspopup="true">
+                <span>Insights</span>
+                <span class="nav-arrow-btn" role="button" tabindex="0" aria-label="Toggle Insights submenu">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </span>
+              </a>
+              <div class="nav-dropdown-menu nav-dropdown-insights" role="menu">
+                <div class="dropdown-header">
+                  <span class="dropdown-eyebrow">TRADE INTELLIGENCE</span>
+                  <a href="insights.html" class="dropdown-header-all">View All Insights <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="dropdown-items-grid dropdown-col-1">
+                  <a href="insights.html?category=trends" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-arrow-trend-up"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Market Trends</span>
+                      <span class="dropdown-item-desc">Global commodity cycles &amp; forecasts</span>
+                    </div>
+                  </a>
+                  <a href="insights.html?category=industry" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-chart-pie"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Industry Analysis</span>
+                      <span class="dropdown-item-desc">Deep dives into agricultural &amp; trade sectors</span>
+                    </div>
+                  </a>
+                  <a href="insights.html?category=regulations" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-gavel"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Trade Regulations</span>
+                      <span class="dropdown-item-desc">Tariff changes, customs rules &amp; compliance</span>
+                    </div>
+                  </a>
+                  <a href="insights.html?category=articles" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-newspaper"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Expert Articles</span>
+                      <span class="dropdown-item-desc">Practical import-export guides &amp; tips</span>
+                    </div>
+                  </a>
+                  <a href="insights.html?category=cases" class="dropdown-item" role="menuitem">
+                    <div class="dropdown-icon-box">
+                      <i class="fa-solid fa-book-open"></i>
+                    </div>
+                    <div class="dropdown-item-info">
+                      <span class="dropdown-item-title">Case Studies</span>
+                      <span class="dropdown-item-desc">Real client success stories across borders</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <a href="contact.html" class="nav-link">
+                <span>Contact</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Vertical Separator Divider -->
+        <div class="nav-divider"></div>
+
+        <!-- Right Side: Search + Quote Button -->
+        <div class="header-right-group">
+          <div class="header-search-wrap">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" class="header-search-input" id="aboutSearchInput" placeholder="Search about CONCEPT EXIM..." autocomplete="off">
+            <span class="search-kbd-hint">Ctrl K</span>
+          </div>
+          <a href="contact.html#quote" class="btn-request-quote" id="openQuoteModalBtn">
+            <i class="fa-regular fa-file-lines"></i>
+            <span>Request a Quote</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+
+      </div>
+    </header>
+
+    <!-- ==========================================================================
+         2. HERO / ABOUT INTRODUCTION SECTION
+         ========================================================================== -->
+    <section class="hero-about-section">
+      <div class="main-container hero-layout-grid">
+        
+        <!-- Left Side Hero Content -->
+        <div class="hero-content-col">
+          <span class="eyebrow-badge"><i class="fa-solid fa-building-flag" style="color: #df8b1a; margin-right: 6px;"></i>ABOUT CONCEPT EXIM</span>
+          
+          <h1 class="hero-main-title">
+            <span class="hero-title-navy">Your Trusted Partner in</span>
+            <span class="hero-title-gold">Global Trade</span>
+          </h1>
+
+          <p class="hero-lead-text">
+            Concept Exim is a leading international trade and logistics company, connecting businesses across the world with seamless, reliable and innovative supply chain solutions.
+          </p>
+
+          <!-- Four Statistics Horizontally -->
+          <div class="hero-stats-row">
+            
+            <!-- Stat 1: 150+ Countries -->
+            <div class="stat-item">
+              <div class="stat-icon-wrap stat-icon-blue">
+                <i class="fa-solid fa-globe"></i>
+              </div>
+              <div class="stat-info-col">
+                <span class="stat-number">150+</span>
+                <span class="stat-label">Countries Served</span>
+              </div>
+            </div>
+
+            <!-- Stat 2: 2,500+ Shipments -->
+            <div class="stat-item">
+              <div class="stat-icon-wrap stat-icon-amber">
+                <i class="fa-solid fa-ship"></i>
+              </div>
+              <div class="stat-info-col">
+                <span class="stat-number">2,500+</span>
+                <span class="stat-label">Successful Shipments</span>
+              </div>
+            </div>
+
+            <!-- Stat 3: 500+ Partners -->
+            <div class="stat-item">
+              <div class="stat-icon-wrap stat-icon-emerald">
+                <i class="fa-solid fa-people-group"></i>
+              </div>
+              <div class="stat-info-col">
+                <span class="stat-number">500+</span>
+                <span class="stat-label">Global Partners</span>
+              </div>
+            </div>
+
+            <!-- Stat 4: 98% Delivery -->
+            <div class="stat-item">
+              <div class="stat-icon-wrap stat-icon-purple">
+                <i class="fa-regular fa-clock"></i>
+              </div>
+              <div class="stat-info-col">
+                <span class="stat-number">98%</span>
+                <span class="stat-label">On-Time Delivery</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Right Side Hero Visual Collage -->
+        <div class="hero-visual-col">
+          <div class="hero-composite-wrapper">
+            <!-- Composite graphic containing ship, plane, truck, cranes, map and script text -->
+            <img src="images/hero_visual_clean.jpg" alt="Global logistics network with container ship, cargo airplane, semi-truck and port cranes" class="hero-composite-img">
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         3. WHO WE ARE SECTION (Four-part horizontal arrangement)
+         ========================================================================== -->
+    <section class="who-we-are-section" id="who-we-are">
+      <div class="main-container who-grid-layout">
+        
+        <!-- Left: HQ Building Image Card with "Our Journey" & Play Button -->
+        <div class="journey-image-card">
+          <img src="images/building_clean.jpg" alt="Concept Exim Corporate Headquarters" class="journey-bg-img">
+          <div class="journey-card-overlay"></div>
+          
+          <div class="journey-card-content">
+            <h2 class="journey-card-title">Our Journey</h2>
+            <p class="journey-card-desc">
+              From a vision to a global presence, Concept Exim has grown into a trusted name in international trade and logistics.
+            </p>
+            <button type="button" class="btn-watch-story" id="openStoryVideoBtn" aria-haspopup="dialog" aria-controls="storyVideoModal" title="Watch Our Story Video">
+              <span class="play-circle-gold">
+                <i class="fa-solid fa-play"></i>
+              </span>
+              <span>Watch Our Story</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Middle: Who We Are Content & "Get to Know Us" Button -->
+        <div class="who-center-col">
+          <span class="who-eyebrow">WHO WE ARE</span>
+          
+          <h2 class="who-main-title">
+            End-to-End Trade Solutions<br>for a Connected World
+          </h2>
+
+          <p class="who-desc-p1">
+            Concept Exim connects businesses worldwide with comprehensive import-export solutions. We specialize in bridging markets, streamlining logistics and ensuring your goods reach their destination — safely, on time, and with complete transparency.
+          </p>
+
+          <p class="who-desc-p2">
+            With a global network of trusted partners, advanced logistics capabilities and a customer-first approach, we empower businesses to grow, trade and succeed beyond borders.
+          </p>
+
+          <button class="btn-get-to-know" id="btnGetToKnowUs">
+            <span>Get to Know Us</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+
+        <!-- Right: Mission / Vision / Values Timeline -->
+        <div class="timeline-col">
+          <div class="timeline-track-line"></div>
+
+          <!-- Item 1: Mission -->
+          <div class="timeline-entry">
+            <div class="timeline-node">
+              <i class="fa-solid fa-bullseye"></i>
+            </div>
+            <div class="timeline-content">
+              <h3 class="timeline-item-title">Our Mission</h3>
+              <p class="timeline-item-text">
+                To simplify global trade and deliver value through reliable, efficient and innovative solutions.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 2: Vision -->
+          <div class="timeline-entry">
+            <div class="timeline-node">
+              <i class="fa-regular fa-eye"></i>
+            </div>
+            <div class="timeline-content">
+              <h3 class="timeline-item-title">Our Vision</h3>
+              <p class="timeline-item-text">
+                To be the most trusted global trade and logistics partner, connecting businesses to a better tomorrow.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 3: Values -->
+          <div class="timeline-entry">
+            <div class="timeline-node">
+              <i class="fa-regular fa-gem"></i>
+            </div>
+            <div class="timeline-content">
+              <h3 class="timeline-item-title">Our Values</h3>
+              <p class="timeline-item-text">
+                Integrity, Excellence, Collaboration, Innovation and Customer Focus.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Far Right: Quote Card with Handshake Photo -->
+        <div class="quote-card-col">
+          <div class="handshake-photo-wrap">
+            <img src="images/handshake_clean.jpg" alt="Corporate handshake representing trusted global partnerships" class="handshake-photo">
+          </div>
+          
+          <div class="quote-body-wrap">
+            <div class="quote-mark-gold">“</div>
+            <blockquote class="quote-statement">
+              Trade is not just about moving goods, it’s about building stronger relationships.”
+            </blockquote>
+            <cite class="quote-author-sig">— Concept Exim</cite>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         4. WHY CHOOSE CONCEPT EXIM SECTION
+         ========================================================================== -->
+    <section class="why-choose-section" id="why-choose">
+      <div class="main-container why-layout-grid">
+        
+        <!-- Left: Section Heading -->
+        <div class="why-title-col">
+          <span class="why-eyebrow">WHY CHOOSE CONCEPT EXIM</span>
+          <h2 class="why-heading">
+            More Than a Trading Company<br>— We Are Your Growth Partner
+          </h2>
+        </div>
+
+        <!-- Right: 5 Feature Columns -->
+        <div class="why-features-grid">
+          
+          <!-- Feature 1: Trusted & Transparent -->
+          <div class="feature-col">
+            <div class="feature-icon-box">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <h3 class="feature-title">Trusted & Transparent</h3>
+            <p class="feature-desc">Build lasting relationships with honesty and integrity.</p>
+          </div>
+
+          <!-- Feature 2: Global Reach -->
+          <div class="feature-col">
+            <div class="feature-icon-box">
+              <i class="fa-solid fa-globe"></i>
+            </div>
+            <h3 class="feature-title">Global Reach</h3>
+            <p class="feature-desc">Access to markets across continents.</p>
+          </div>
+
+          <!-- Feature 3: End-to-End Support -->
+          <div class="feature-col">
+            <div class="feature-icon-box">
+              <i class="fa-solid fa-gear"></i>
+            </div>
+            <h3 class="feature-title">End-to-End Support</h3>
+            <p class="feature-desc">From sourcing to delivery, we’re with you at every step.</p>
+          </div>
+
+          <!-- Feature 4: Innovative Solutions -->
+          <div class="feature-col">
+            <div class="feature-icon-box">
+              <i class="fa-regular fa-lightbulb"></i>
+            </div>
+            <h3 class="feature-title">Innovative Solutions</h3>
+            <p class="feature-desc">Leveraging technology for smarter, faster trade.</p>
+          </div>
+
+          <!-- Feature 5: Customer First -->
+          <div class="feature-col">
+            <div class="feature-icon-box">
+              <i class="fa-solid fa-users"></i>
+            </div>
+            <h3 class="feature-title">Customer First</h3>
+            <p class="feature-desc">Your success is our priority.</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= GLOBAL CORPORATE FOOTER ================= -->
+    <footer class="site-global-footer">
+      <div class="footer-waves-overlay" aria-hidden="true"></div>
+      <div class="footer-inner-container">
+        
+        <!-- Top Row: Left Brand & CTA, Right Nav & Socials -->
+        <div class="footer-main-row">
+          
+          <!-- Left: Logo + Vertical Divider + CTA Pitch & Button -->
+          <div class="footer-left-brand-group">
+            <a href="index.html" class="footer-logo-link" title="CONCEPT EXIM">
+              <img src="images/concept_exim_logo_white.png" srcset="images/concept_exim_logo_white@3x.png 3x" alt="CONCEPT EXIM - Global Trade Simplified" class="footer-concept-logo">
+            </a>
+            <div class="footer-vert-divider"></div>
+            <div class="footer-cta-text-wrap">
+              <span class="footer-cta-heading">Ready to Grow Globally?</span>
+              <span class="footer-cta-sub">Let's build your next success story together.</span>
+            </div>
+            <button type="button" class="footer-btn-quote" onclick="if(typeof openRfqModal==='function'){openRfqModal();}else if(typeof openQuoteModal==='function'){openQuoteModal();}else{window.location.href='contact.html';}">
+              <span>Get a Free Quote</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+
+          <!-- Right: Horizontal Nav Links + Social Icons -->
+          <div class="footer-right-nav-group">
+            <nav class="footer-horizontal-nav" aria-label="Footer Navigation">
+              <a href="index.html">Home</a>
+              <a href="about.html">About Us</a>
+              <a href="services.html">Services</a>
+              <a href="products.html">Products</a>
+              <a href="global-presence.html">Global Network</a>
+              <a href="insights.html">Insights</a>
+              <a href="contact.html">Contact</a>
+            </nav>
+            <div class="footer-social-icons">
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer-social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="footer-social-icon" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="footer-social-icon" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Bottom Subline: Copyright + Legal -->
+        <div class="footer-bottom-row">
+          <div class="footer-copyright-text">
+            &copy; 2026 CONCEPT EXIM. All rights reserved.
+          </div>
+          <div class="footer-legal-links">
+            <a href="compliance.html">Privacy Policy</a>
+            <span class="footer-legal-sep">|</span>
+            <a href="compliance.html">Terms &amp; Conditions</a>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- ==========================================================================
+       MODAL: WATCH OUR STORY VIDEO
+       ========================================================================== -->
+  <div class="modal-backdrop" id="storyVideoModal" aria-hidden="true" role="dialog" aria-labelledby="storyModalTitle">
+    <div class="modal-container story-modal-container">
+      <button class="modal-close-btn" id="closeStoryModal" aria-label="Close Story Video">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <!-- Modal Top Title Bar -->
+      <div class="story-modal-header">
+        <div class="story-header-top-row">
+          <div class="story-company-badge">
+            <i class="fa-solid fa-globe"></i>
+            <span>CONCEPT EXIM</span>
+          </div>
+          <div class="story-modal-badge">
+            <span class="live-dot"></span>
+            <span>Corporate Documentary &bull; 4K</span>
+          </div>
+        </div>
+        <h3 id="storyModalTitle" class="story-modal-title">
+          <span class="story-brand-highlight">CONCEPT EXIM</span><span class="story-title-sep">&mdash;</span>The Journey Across Borders
+        </h3>
+        <p class="story-modal-subtitle">
+          Discover how <strong>Concept Exim</strong> connects global manufacturing hubs, international trade corridors, and premier supply chains across 150+ nations.
+        </p>
+      </div>
+      
+      <!-- Video Player Viewport -->
+      <div class="video-frame-box">
+        <iframe id="storyVideoIframe" 
+                src="" 
+                title="Concept Exim Corporate Story Video" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen>
+        </iframe>
+        <!-- Interactive Fallback & Poster Preview State -->
+        <div class="video-poster-overlay" id="videoPosterOverlay">
+          <img src="images/story_video_poster.jpg" alt="Concept Exim Global Shipping Fleet" class="video-poster-bg">
+          <div class="video-poster-shade"></div>
+          <div class="video-poster-content">
+            <button type="button" class="btn-play-pulse" id="btnPosterPlay" aria-label="Play Corporate Story Video">
+              <i class="fa-solid fa-play"></i>
+            </button>
+            <div class="video-poster-meta">
+              <span class="video-tag">OFFICIAL 4K SHOWCASE</span>
+              <h4 class="video-poster-heading">Global Orbit &amp; Multimodal Freight Lines</h4>
+              <p class="video-poster-summary">Click play to launch the corporate documentary stream.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Story Timeline Chapters Navigation -->
+      <div class="story-chapters-bar">
+        <div class="story-chapter-item active" onclick="switchStoryChapter(1, 'https://www.youtube-nocookie.com/embed/M7lc1UVf-VE?autoplay=1&rel=0')">
+          <span class="chapter-num">01</span>
+          <div class="chapter-text">
+            <strong>Founding Vision</strong>
+            <small>Global Port Logistics &amp; Sourcing</small>
+          </div>
+        </div>
+        <div class="story-chapter-item" onclick="switchStoryChapter(2, 'https://www.youtube-nocookie.com/embed/5_nJvE_s9vQ?autoplay=1&rel=0')">
+          <span class="chapter-num">02</span>
+          <div class="chapter-text">
+            <strong>Ocean &amp; Air Fleet</strong>
+            <small>Intermodal Trade Corridors</small>
+          </div>
+        </div>
+        <div class="story-chapter-item" onclick="switchStoryChapter(3, 'https://www.youtube-nocookie.com/embed/21X5lGlDOfg?autoplay=1&rel=0')">
+          <span class="chapter-num">03</span>
+          <div class="chapter-text">
+            <strong>Digital Trade Tech</strong>
+            <small>Customs Automation &amp; IoT</small>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="story-modal-footer">
+        <div class="story-stat-pill">
+          <i class="fa-solid fa-earth-americas"></i>
+          <span><strong>150+</strong> Nations Served</span>
+        </div>
+        <div class="story-stat-pill">
+          <i class="fa-solid fa-boxes-stacked"></i>
+          <span><strong>4.2M+</strong> TEU Moved</span>
+        </div>
+        <div class="story-stat-pill">
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <span><strong>99.4%</strong> On-Time Dispatch</span>
+        </div>
+        <button type="button" class="btn-quote-from-story" id="btnStoryGetQuote">
+          <span>Request Trade Quote</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       MODAL: GET A QUOTE
+       ========================================================================== -->
+  <div class="modal-backdrop" id="quoteModal" aria-hidden="true" role="dialog">
+    <div class="modal-container">
+      <button class="modal-close-btn" id="closeQuoteModal" aria-label="Close Modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="modal-header-block">
+        <h3 class="modal-title-text">Request a Corporate Trade Quote</h3>
+        <p class="modal-subtitle-text">Connect with our international logistics specialists within 2 business hours.</p>
+      </div>
+
+      <div class="modal-body-block">
+        <form id="tradeQuoteForm" onsubmit="handleQuoteSubmit(event)">
+          <div class="quote-form-grid">
+            <div class="form-group-field">
+              <label for="quoteName">Full Name *</label>
+              <input type="text" id="quoteName" class="form-input" placeholder="e.g. Alexander Vance" required>
+            </div>
+            <div class="form-group-field">
+              <label for="quoteCompany">Company Name *</label>
+              <input type="text" id="quoteCompany" class="form-input" placeholder="e.g. Apex Global Trade" required>
+            </div>
+            <div class="form-group-field">
+              <label for="quoteEmail">Business Email *</label>
+              <input type="email" id="quoteEmail" class="form-input" placeholder="name@company.com" required>
+            </div>
+            <div class="form-group-field">
+              <label for="quoteService">Service Required *</label>
+              <select id="quoteService" class="form-input" required>
+                <option value="">Select Service...</option>
+                <option value="ocean">Ocean Container Freight (FCL/LCL)</option>
+                <option value="air">Air Cargo Expedited</option>
+                <option value="customs">Customs Brokerage & Clearance</option>
+                <option value="sourcing">Global Procurement & Sourcing</option>
+              </select>
+            </div>
+            <div class="form-group-field form-full-width">
+              <label for="quoteDetails">Shipment Route & Cargo Specifications</label>
+              <textarea id="quoteDetails" rows="3" class="form-input" placeholder="Origin port, destination, commodity type, volume/weight..."></textarea>
+            </div>
+          </div>
+          <button type="submit" class="btn-form-submit">
+            <span>Submit Quote Request</span>
+            <i class="fa-solid fa-arrow-right" style="margin-left: 6px;"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       MODAL: GLOBAL SEARCH
+       ========================================================================== -->
+  <div class="modal-backdrop" id="searchModal" aria-hidden="true" role="dialog">
+    <div class="modal-container" style="max-width: 480px;">
+      <button class="modal-close-btn" id="closeSearchModal" aria-label="Close Search">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="modal-header-block" style="padding: 24px 28px 16px;">
+        <h3 class="modal-title-text">Search Concept Exim</h3>
+        <p class="modal-subtitle-text">Find services, commodity categories, trade routes, or documentation.</p>
+        <div style="position: relative; margin-top: 14px;">
+          <input type="text" id="searchInput" class="form-input" placeholder="Search shipping routes, container tracking, customs..." style="padding-left: 36px;">
+          <i class="fa-solid fa-magnifying-glass" style="position: absolute; left: 12px; top: 12px; color: #94a3b8;"></i>
+        </div>
+      </div>
+      <div style="padding: 0 28px 24px; font-size: 12px; color: #64748b;">
+        <span style="font-weight: 600;">Popular searches:</span>
+        <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 8px;">
+          <span style="background: #f1f5f9; padding: 4px 10px; border-radius: 20px; cursor: pointer;">Container Tracking</span>
+          <span style="background: #f1f5f9; padding: 4px 10px; border-radius: 20px; cursor: pointer;">Agricultural Export</span>
+          <span style="background: #f1f5f9; padding: 4px 10px; border-radius: 20px; cursor: pointer;">Customs Clearance</span>
+          <span style="background: #f1f5f9; padding: 4px 10px; border-radius: 20px; cursor: pointer;">Incoterms 2026</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript Interactions -->
+  <script>
+    // Story Video Modal logic
+    const storyModal = document.getElementById('storyVideoModal');
+    const openStoryBtn = document.getElementById('openStoryVideoBtn');
+    const closeStoryBtn = document.getElementById('closeStoryModal');
+    const storyVideoIframe = document.getElementById('storyVideoIframe');
+    const videoPosterOverlay = document.getElementById('videoPosterOverlay');
+    const btnPosterPlay = document.getElementById('btnPosterPlay');
+    const btnStoryGetQuote = document.getElementById('btnStoryGetQuote');
+
+    const defaultStoryVideoUrl = 'https://www.youtube-nocookie.com/embed/M7lc1UVf-VE?autoplay=1&rel=0';
+
+    function openStoryModalFunc() {
+      if (!storyModal) return;
+      storyModal.classList.add('is-open');
+      storyModal.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+      if (storyVideoIframe) {
+        storyVideoIframe.src = defaultStoryVideoUrl;
+      }
+      if (videoPosterOverlay) {
+        videoPosterOverlay.classList.add('video-playing');
+      }
+    }
+
+    function closeStoryModalFunc() {
+      if (!storyModal) return;
+      storyModal.classList.remove('is-open');
+      storyModal.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+      if (storyVideoIframe) {
+        storyVideoIframe.src = '';
+      }
+      if (videoPosterOverlay) {
+        videoPosterOverlay.classList.remove('video-playing');
+      }
+    }
+
+    if (openStoryBtn) {
+      openStoryBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        openStoryModalFunc();
+      });
+    }
+
+    if (closeStoryBtn) {
+      closeStoryBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        closeStoryModalFunc();
+      });
+    }
+
+    if (btnPosterPlay) {
+      btnPosterPlay.addEventListener('click', () => {
+        if (storyVideoIframe) {
+          storyVideoIframe.src = defaultStoryVideoUrl;
+        }
+        if (videoPosterOverlay) {
+          videoPosterOverlay.classList.add('video-playing');
+        }
+      });
+    }
+
+    if (btnStoryGetQuote) {
+      btnStoryGetQuote.addEventListener('click', () => {
+        closeStoryModalFunc();
+        const quoteModal = document.getElementById('quoteModal');
+        if (quoteModal) {
+          quoteModal.classList.add('is-open');
+          quoteModal.setAttribute('aria-hidden', 'false');
+          document.body.style.overflow = 'hidden';
+        }
+      });
+    }
+
+    window.switchStoryChapter = function(chapterNum, videoUrl) {
+      const items = document.querySelectorAll('.story-chapter-item');
+      items.forEach((it, idx) => {
+        if (idx === chapterNum - 1) {
+          it.classList.add('active');
+        } else {
+          it.classList.remove('active');
+        }
+      });
+      if (storyVideoIframe) {
+        storyVideoIframe.src = videoUrl;
+      }
+      if (videoPosterOverlay) {
+        videoPosterOverlay.classList.add('video-playing');
+      }
+    };
+
+    // Auto-open modal if URL hash is #story-video or #watch-story
+    if (window.location.hash === '#story-video' || window.location.hash === '#watch-story') {
+      setTimeout(() => openStoryModalFunc(), 150);
+    }
+
+    // Quote Modal
+    const quoteModal = document.getElementById('quoteModal');
+    const openQuoteBtn = document.getElementById('openQuoteModalBtn');
+    const closeQuoteBtn = document.getElementById('closeQuoteModal');
+
+    if (openQuoteBtn) {
+      openQuoteBtn.addEventListener('click', () => {
+        quoteModal.classList.add('is-open');
+        quoteModal.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+      });
+    }
+
+    if (closeQuoteBtn) {
+      closeQuoteBtn.addEventListener('click', () => {
+        quoteModal.classList.remove('is-open');
+        quoteModal.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+      });
+    }
+
+    // Search Modal
+    const searchModal = document.getElementById('searchModal');
+    const searchToggleBtn = document.getElementById('searchToggleBtn');
+    const closeSearchBtn = document.getElementById('closeSearchModal');
+
+    if (searchToggleBtn) {
+      searchToggleBtn.addEventListener('click', () => {
+        searchModal.classList.add('is-open');
+        searchModal.setAttribute('aria-hidden', 'false');
+        setTimeout(() => document.getElementById('searchInput').focus(), 100);
+      });
+    }
+
+    if (closeSearchBtn) {
+      closeSearchBtn.addEventListener('click', () => {
+        searchModal.classList.remove('is-open');
+        searchModal.setAttribute('aria-hidden', 'true');
+      });
+    }
+
+    // Close modals on clicking backdrop
+    if (storyModal) {
+      storyModal.addEventListener('click', (e) => {
+        if (e.target === storyModal) {
+          closeStoryModalFunc();
+        }
+      });
+    }
+
+    [quoteModal, searchModal].forEach(modal => {
+      if (modal) {
+        modal.addEventListener('click', (e) => {
+          if (e.target === modal) {
+            modal.classList.remove('is-open');
+            modal.setAttribute('aria-hidden', 'true');
+            document.body.style.overflow = '';
+          }
+        });
+      }
+    });
+
+    // Close modals on ESC
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeStoryModalFunc();
+        [quoteModal, searchModal].forEach(modal => {
+          if (modal) {
+            modal.classList.remove('is-open');
+            modal.setAttribute('aria-hidden', 'true');
+          }
+        });
+        document.body.style.overflow = '';
+      }
+    });
+
+    // Handle Quote Form Submit
+    function handleQuoteSubmit(e) {
+      e.preventDefault();
+      const form = document.getElementById('tradeQuoteForm');
+      form.innerHTML = `
+        <div style="text-align: center; padding: 24px 10px;">
+          <div style="width: 50px; height: 50px; border-radius: 50%; background: #dcfce7; color: #15803d; font-size: 22px; display: inline-flex; align-items: center; justify-content: center; margin-bottom: 14px;">
+            <i class="fa-solid fa-check"></i>
+          </div>
+          <h4 style="font-size: 18px; color: #0b1a30; font-weight: 800; margin-bottom: 6px;">Quote Request Received</h4>
+          <p style="font-size: 13px; color: #526077; max-width: 360px; margin: 0 auto 16px;">
+            Thank you! A dedicated Concept Exim trade specialist has been assigned to your request and will contact you shortly.
+          </p>
+          <button type="button" class="btn-get-quote" onclick="document.getElementById('quoteModal').classList.remove('is-open')">Close</button>
+        </div>
+      `;
+    }
+
+    // "Get to Know Us" scroll down
+    const btnGetToKnowUs = document.getElementById('btnGetToKnowUs');
+    if (btnGetToKnowUs) {
+      btnGetToKnowUs.addEventListener('click', () => {
+        const whySection = document.getElementById('why-choose');
+        if (whySection) whySection.scrollIntoView({ behavior: 'smooth' });
+      });
+    }
+
+    // Language Toggle Tooltip
+    const langBtn = document.getElementById('langToggleBtn');
+    if (langBtn) {
+      langBtn.addEventListener('click', () => {
+        alert('Supported languages: English (Active), Español, Français, Deutsch, 中文, العربية.');
+      });
+    }
+  </script>
+
+  <script src="cart.js"></script>
+  <script src="navbar.js"></script>
+</body>
+</html>

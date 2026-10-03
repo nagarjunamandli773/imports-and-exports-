@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100" width="100%" height="100%">
+  <defs>
+    <linearGradient id="fssaiOrange" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff7700"/>
+      <stop offset="100%" stop-color="#e05a00"/>
+    </linearGradient>
+    <linearGradient id="fssaiGreen" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#15803d"/>
+      <stop offset="100%" stop-color="#166534"/>
+    </linearGradient>
+  </defs>
+  <!-- Leaves / Curved top ribbon -->
+  <path d="M125 18 C135 12 148 14 152 22 C146 26 135 24 125 18 Z" fill="#15803d"/>
+  <path d="M118 24 C122 18 132 18 138 22 C132 25 124 26 118 24 Z" fill="#df8b1a"/>
+
+  <!-- Iconic bold lowercase fssai text -->
+  <text x="35" y="58" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="38" font-weight="900" fill="#1e3a8a" letter-spacing="-1">
+    <tspan fill="#1e3a8a">f</tspan><tspan fill="#1e3a8a">s</tspan><tspan fill="#1e3a8a">s</tspan><tspan fill="#df8b1a">a</tspan><tspan fill="#15803d">i</tspan>
+  </text>
+  
+  <!-- Underline strip -->
+  <rect x="35" y="66" width="130" height="3" rx="1.5" fill="#1e3a8a"/>
+  
+  <text x="35" y="78" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="7.5" font-weight="700" fill="#475569" letter-spacing="0.2">FOOD SAFETY AND STANDARDS</text>
+  <text x="35" y="87" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="7.5" font-weight="700" fill="#15803d" letter-spacing="0.2">AUTHORITY OF INDIA</text>
+</svg>

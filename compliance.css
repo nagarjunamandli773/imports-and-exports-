@@ -1,0 +1,1550 @@
+/* ==========================================================================
+   KLANEXIM CORPORATE "QUALITY & COMPLIANCE" PAGE STYLESHEET
+   Matches reference image exactly in colors, backgrounds, typography & alignment
+   Deep Navy (#07192f, #091b31), Golden Amber (#df8b1a, #e59819), Soft Blue (#f0f5fa)
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --navy-darkest: #051324;
+  --navy-dark: #07192f;
+  --navy-primary: #091b31;
+  --navy-secondary: #0e2039;
+  --navy-card: #081b32;
+  --gold-primary: #df8b1a;
+  --gold-active: #e59819;
+  --gold-hover: #cf7d12;
+  --gold-light: #fff8ee;
+  --gold-gradient: linear-gradient(135deg, #f5bf58 0%, #df8b1a 100%);
+  --green-primary: #15803d;
+  --green-dark: #14532d;
+  --green-light: #dcfce7;
+  --bg-page: #f0f5fa;
+  --bg-white: #ffffff;
+  --text-dark: #0b1a30;
+  --text-body: #4a5c75;
+  --text-muted: #64748b;
+  --text-light: #94a3b8;
+  --border-color: #e2eaf1;
+  --border-card: #e5edf5;
+  --radius-sm: 6px;
+  --radius-md: 9px;
+  --radius-lg: 12px;
+  --radius-pill: 50px;
+  --font-main: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-script: 'Dancing Script', cursive;
+}
+
+/* Reset & Base */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 14px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--bg-page);
+  color: var(--text-dark);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.2s ease;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  transition: all 0.2s ease;
+}
+
+.site-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navigation & Top bar styles are unified in navbar.css */
+
+/* ==========================================================================
+   3. HERO BANNER SECTION (Quality & Compliance Master Panorama)
+   Clean Navy Blue (#07192f) and White styling - strictly NO black colors
+   ========================================================================== */
+.compliance-hero-section {
+  position: relative;
+  width: 100%;
+  background: #ffffff;
+  overflow: hidden;
+  display: block;
+}
+
+.hero-panorama-container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.hero-panorama-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+/* ==========================================================================
+   4. SECTION 2: "OUR CERTIFICATIONS"
+   Navy Lead Card + 6 Certification White Cards + Sustainability Card
+   ========================================================================== */
+.certifications-section {
+  width: 100%;
+  padding: 22px 0 16px;
+}
+
+.certifications-row-wrap {
+  display: grid;
+  grid-template-columns: 205px 1fr 170px;
+  gap: 14px;
+  align-items: stretch;
+}
+
+/* Left Navy Certifications Lead Card */
+.cert-lead-card {
+  background: var(--navy-card);
+  border-radius: var(--radius-md);
+  padding: 16px 14px;
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 12px rgba(9, 27, 49, 0.12);
+}
+
+.cert-lead-card::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  right: -15px;
+  width: 110px;
+  height: 110px;
+  background: radial-gradient(circle, rgba(223, 139, 26, 0.15) 0%, rgba(8, 27, 50, 0) 70%);
+  pointer-events: none;
+}
+
+.cert-lead-top {
+  display: flex;
+  flex-direction: column;
+}
+
+.cert-lead-icon-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 2px;
+}
+
+.cert-lead-icon-title i {
+  color: var(--gold-primary);
+  font-size: 16px;
+}
+
+.cert-lead-title {
+  font-size: 14px;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: -0.2px;
+}
+
+.cert-lead-sub {
+  font-size: 10px;
+  color: #94a3b8;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.cert-lead-desc {
+  font-size: 10.5px;
+  color: #cbd5e1;
+  line-height: 1.45;
+  margin-bottom: 12px;
+}
+
+.btn-cert-lead {
+  background: var(--gold-gradient);
+  color: #ffffff;
+  font-size: 10.5px;
+  font-weight: 700;
+  padding: 6px 12px;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  align-self: flex-start;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease;
+}
+
+.btn-cert-lead:hover {
+  background: var(--gold-hover);
+  transform: translateY(-1px);
+}
+
+/* Center: 6 Certification White Cards */
+.cert-cards-grid-6 {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 12px;
+}
+
+.cert-card-item {
+  background: #ffffff;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-card);
+  padding: 14px 10px 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  user-select: none;
+  transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+  box-shadow: 0 2px 8px rgba(11, 26, 48, 0.04);
+}
+
+.cert-card-item:hover, .cert-card-item:focus-visible {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 22px rgba(2, 46, 81, 0.1);
+  border-color: #cbd5e1;
+}
+
+.cert-card-logo-wrap {
+  width: 100%;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+  padding: 2px 4px;
+}
+
+.cert-card-logo-img {
+  max-width: 100%;
+  max-height: 46px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.cert-card-title {
+  font-size: 11.5px;
+  font-weight: 800;
+  color: var(--navy-dark);
+  line-height: 1.2;
+  margin-bottom: 3px;
+}
+
+.cert-card-category {
+  font-size: 9.5px;
+  font-weight: 600;
+  color: #025091;
+  margin-bottom: 4px;
+}
+
+.cert-card-desc {
+  font-size: 9px;
+  color: #64748b;
+  line-height: 1.35;
+  margin-bottom: 10px;
+  flex: 1;
+}
+
+.cert-card-arrow-wrap {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #f1f5f9;
+  border: 1px solid #e2e8f0;
+  color: var(--navy-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10.5px;
+  align-self: flex-end;
+  margin-top: auto;
+  transition: all 0.22s ease;
+}
+
+.cert-card-item:hover .cert-card-arrow-wrap {
+  background: var(--gold-primary);
+  border-color: var(--gold-primary);
+  color: #ffffff;
+  transform: translateX(2px) scale(1.06);
+}
+
+/* Right: Sustainable Compliance Card */
+.sustainability-card {
+  position: relative;
+  background: #081e13;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(11, 26, 48, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 190px;
+}
+
+.sustainability-bg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  opacity: 0.95;
+  transition: transform 0.4s ease;
+}
+
+.sustainability-card:hover .sustainability-bg-img {
+  transform: scale(1.05);
+}
+
+.sustainability-content {
+  position: relative;
+  z-index: 2;
+  padding: 12px 10px;
+  background: linear-gradient(to top, rgba(7, 28, 17, 0.96) 65%, rgba(7, 28, 17, 0.2) 100%);
+  display: flex;
+  flex-direction: column;
+}
+
+.sustainability-title {
+  color: #ffffff;
+  font-size: 11.5px;
+  font-weight: 800;
+  line-height: 1.28;
+  margin-bottom: 8px;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.btn-sustainability {
+  background: var(--gold-gradient);
+  color: #ffffff;
+  font-size: 9.5px;
+  font-weight: 700;
+  padding: 6px 10px;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  align-self: flex-start;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.btn-sustainability:hover {
+  background: var(--gold-hover);
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+/* ==========================================================================
+   5. SECTION 3: "OUR QUALITY PROCESS"
+   Navy Banner Left + 5 Sequential Process Workflow Steps Right
+   ========================================================================== */
+.quality-process-section {
+  width: 100%;
+  padding: 8px 0 16px;
+}
+
+.quality-process-card-wrap {
+  background: #ffffff;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-card);
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(11, 26, 48, 0.04);
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  align-items: stretch;
+}
+
+/* Left Process Navy Box */
+.process-lead-col {
+  background: var(--navy-dark);
+  color: #ffffff;
+  padding: 18px 16px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.process-lead-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.35;
+  pointer-events: none;
+}
+
+.process-lead-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.process-lead-title {
+  font-size: 16px;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: -0.3px;
+  margin-bottom: 3px;
+}
+
+.process-lead-sub {
+  font-size: 10px;
+  color: #94a3b8;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.process-lead-desc {
+  font-size: 10.5px;
+  color: #cbd5e1;
+  line-height: 1.45;
+  margin-bottom: 14px;
+}
+
+.btn-process-learn {
+  background: var(--gold-gradient);
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  align-self: flex-start;
+  transition: all 0.2s ease;
+}
+
+.btn-process-learn:hover {
+  background: var(--gold-hover);
+  transform: translateY(-1px);
+}
+
+/* Right 5 Process Steps Workflow */
+.process-steps-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  gap: 12px;
+}
+
+.process-step-node {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1;
+  max-width: 160px;
+}
+
+.step-circle-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 1.5px solid #0b1a30;
+  color: #0b1a30;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  margin-bottom: 8px;
+  background: #ffffff;
+  transition: all 0.2s ease;
+}
+
+.process-step-node:hover .step-circle-icon {
+  border-color: var(--gold-primary);
+  color: var(--gold-primary);
+  background: var(--gold-light);
+  transform: scale(1.08);
+}
+
+.step-node-title {
+  font-size: 12px;
+  font-weight: 800;
+  color: var(--navy-dark);
+  margin-bottom: 4px;
+}
+
+.step-node-desc {
+  font-size: 9.5px;
+  color: #64748b;
+  line-height: 1.35;
+}
+
+.step-flow-arrow {
+  color: #cbd5e1;
+  font-size: 13px;
+  margin: 0 4px;
+}
+
+/* ==========================================================================
+   6. SECTION 4: "OUR COMMITMENT"
+   White Box Bar with 4 Circular Green Badge Pillars
+   ========================================================================== */
+.commitment-section {
+  width: 100%;
+  padding: 4px 0 16px;
+}
+
+.commitment-bar-wrap {
+  background: #ffffff;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-card);
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  box-shadow: 0 2px 6px rgba(11, 26, 48, 0.03);
+}
+
+.commitment-lead-col {
+  flex: 0 0 23%;
+  max-width: 250px;
+}
+
+.commitment-main-title {
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--navy-dark);
+  margin-bottom: 3px;
+}
+
+.commitment-main-desc {
+  font-size: 10px;
+  color: #64748b;
+  line-height: 1.4;
+}
+
+.commitment-pillars-row {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.commitment-pillar-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+}
+
+.pillar-circle-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: var(--green-dark);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  flex-shrink: 0;
+  box-shadow: 0 2px 6px rgba(20, 83, 45, 0.2);
+  transition: transform 0.2s ease;
+}
+
+.commitment-pillar-item:hover .pillar-circle-icon {
+  transform: scale(1.08);
+  background: var(--green-primary);
+}
+
+.pillar-text-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.pillar-title {
+  font-size: 11.5px;
+  font-weight: 800;
+  color: var(--navy-dark);
+  line-height: 1.25;
+}
+
+.pillar-desc {
+  font-size: 9.5px;
+  color: #64748b;
+  line-height: 1.35;
+}
+
+/* ==========================================================================
+   7. SECTION 5: BOTTOM TRUST & IMPACT BANNER + SUNSET VESSEL
+   Deep Navy (#07192f) with Handshake, Headline, 4 Stats & Sailing Container Ship
+   ========================================================================== */
+.trust-banner-section {
+  width: 100%;
+  background-color: var(--navy-dark);
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.trust-banner-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+  gap: 20px;
+  position: relative;
+}
+
+/* Left: Handshake Icon & "Your Trust Fuels Our Commitment" */
+.trust-lead-block {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex: 0 0 32%;
+  max-width: 380px;
+}
+
+.trust-handshake-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1.5px solid var(--gold-primary);
+  color: var(--gold-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  flex-shrink: 0;
+  background: rgba(223, 139, 26, 0.08);
+}
+
+.trust-text-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.trust-headline {
+  font-size: 13.5px;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 2px;
+}
+
+.trust-subtext {
+  font-size: 10px;
+  color: #94a3b8;
+  line-height: 1.4;
+  margin-bottom: 8px;
+}
+
+.btn-partner-trust {
+  background: var(--gold-gradient);
+  color: var(--navy-dark);
+  font-size: 11px;
+  font-weight: 700;
+  padding: 5px 12px;
+  border-radius: 50px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  align-self: flex-start;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease;
+}
+
+.btn-partner-trust:hover {
+  background: var(--gold-hover);
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+/* Center: 4 Metrics */
+.trust-metrics-group {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex: 1;
+}
+
+.trust-metric-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.metric-badge-circle {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1px solid rgba(223, 139, 26, 0.4);
+  color: var(--gold-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  background: rgba(223, 139, 26, 0.08);
+  flex-shrink: 0;
+}
+
+.metric-data-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.metric-num-bold {
+  font-size: 14px;
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.15;
+}
+
+.metric-caption {
+  font-size: 9.5px;
+  color: #94a3b8;
+  line-height: 1.25;
+}
+
+/* Right: Sunset Ocean Cargo Vessel */
+.trust-vessel-wrap {
+  flex: 0 0 240px;
+  height: 78px;
+  overflow: hidden;
+  border-radius: var(--radius-sm);
+  position: relative;
+}
+
+.trust-vessel-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+/* ==========================================================================
+   8. HOME CORPORATE FOOTER (SPACIOUS, CRISP & LUXURIOUS)
+   ========================================================================== */
+.home-corporate-footer {
+  background: linear-gradient(180deg, #0b2545 0%, #07192f 100%);
+  color: #e2e8f0;
+  position: relative;
+  overflow: hidden;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  padding: clamp(52px, 5.5vw, 72px) 0 clamp(28px, 3.5vw, 40px);
+  width: 100%;
+}
+
+.home-corporate-footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 850px;
+  height: 200px;
+  background: radial-gradient(ellipse at center, rgba(59, 130, 246, 0.18) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.footer-page-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 clamp(24px, 4vw, 56px);
+  position: relative;
+  z-index: 2;
+}
+
+/* Top 3-Column Grid */
+.footer-top-grid {
+  display: grid;
+  grid-template-columns: 1.35fr 1.15fr 1.25fr;
+  gap: clamp(40px, 5vw, 80px);
+  align-items: flex-start;
+  padding-bottom: clamp(40px, 4.5vw, 54px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Col 1: Brand */
+.footer-brand-column {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  max-width: 420px;
+}
+
+.footer-brand-logo-link {
+  display: inline-flex;
+  align-items: center;
+  align-self: flex-start;
+  background: #ffffff;
+  padding: 8px 16px;
+  border-radius: 8px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.18);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.footer-brand-logo-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+.footer-brand-logo-img {
+  height: 32px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.footer-brand-mission-text {
+  font-size: 13.5px;
+  color: #cbd5e1;
+  line-height: 1.65;
+  margin: 0;
+  letter-spacing: 0.1px;
+}
+
+/* Col 2: Navigation */
+.footer-nav-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-section-heading {
+  font-size: 13.5px;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  margin: 0 0 22px 0;
+}
+
+.footer-nav-links-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px 28px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-nav-links-grid a {
+  font-size: 13px;
+  color: #cbd5e1;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.22s ease;
+  display: inline-block;
+}
+
+.footer-nav-links-grid a:hover {
+  color: var(--gold-primary);
+  transform: translateX(3px);
+}
+
+.footer-nav-links-grid a.nav-highlight-gold {
+  color: var(--gold-primary);
+  font-weight: 700;
+}
+
+.footer-nav-links-grid a.nav-highlight-gold:hover {
+  color: #f59e0b;
+}
+
+/* Col 3: Helpdesk */
+.footer-helpdesk-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-helpdesk-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer-helpdesk-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 13px;
+  color: #cbd5e1;
+  line-height: 1.4;
+}
+
+.footer-helpdesk-item i {
+  color: var(--gold-primary);
+  font-size: 15px;
+  width: 18px;
+  flex-shrink: 0;
+  text-align: center;
+}
+
+.footer-helpdesk-item span {
+  color: #cbd5e1;
+}
+
+/* Bottom Strip */
+.footer-bottom-strip {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding-top: clamp(24px, 3vw, 36px);
+  flex-wrap: wrap;
+}
+
+.footer-copyright-text {
+  font-size: 12px;
+  color: #94a3b8;
+  flex: 1;
+  min-width: 260px;
+}
+
+/* Center Social Icons */
+.footer-social-icons-center {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+.footer-social-circle {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #cbd5e1;
+  font-size: 13px;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  text-decoration: none;
+}
+
+.footer-social-circle:hover {
+  background: var(--gold-primary);
+  border-color: var(--gold-primary);
+  color: #040b15;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(223, 139, 26, 0.35);
+}
+
+/* Right Legal Links */
+.footer-legal-links-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 12px;
+  color: #94a3b8;
+  justify-content: flex-end;
+  flex: 1;
+  min-width: 260px;
+}
+
+.footer-legal-links-right a {
+  color: #94a3b8;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-legal-links-right a:hover {
+  color: var(--gold-primary);
+}
+
+.legal-dot {
+  color: #64748b;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .footer-top-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 36px;
+  }
+
+  .footer-brand-column {
+    grid-column: span 2;
+    max-width: 100%;
+  }
+
+  .footer-bottom-strip {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 18px;
+  }
+
+  .footer-copyright-text,
+  .footer-legal-links-right {
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 680px) {
+  .footer-top-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .footer-brand-column {
+    grid-column: span 1;
+  }
+
+  .footer-nav-links-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px 20px;
+  }
+}
+
+/* ==========================================================================
+   9. MODAL DIALOG: CERTIFICATION DETAILS & AUDIT INQUIRY
+   ========================================================================== */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(7, 25, 47, 0.72);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.25s ease;
+  padding: 20px;
+}
+
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-card {
+  background: #ffffff;
+  border-radius: var(--radius-lg);
+  width: 100%;
+  max-width: 580px;
+  box-shadow: 0 20px 48px rgba(7, 25, 47, 0.35);
+  overflow: hidden;
+  transform: translateY(20px) scale(0.97);
+  transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-overlay.active .modal-card {
+  transform: translateY(0) scale(1);
+}
+
+.modal-header {
+  background: var(--navy-dark);
+  color: #ffffff;
+  padding: 16px 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid var(--gold-primary);
+}
+
+.modal-header-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-header h3 {
+  font-size: 15px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+
+.modal-header-sub {
+  font-size: 10.5px;
+  color: #94a3b8;
+  margin-top: 2px;
+}
+
+.modal-close-btn {
+  color: #94a3b8;
+  font-size: 18px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.modal-close-btn:hover {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Certificate Detailed Viewer */
+.cert-detail-view {
+  padding: 22px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.cert-view-hero {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: var(--radius-md);
+  padding: 14px 16px;
+}
+
+.cert-view-logo-box {
+  width: 90px;
+  height: 64px;
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  flex-shrink: 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.cert-view-logo-box img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.cert-view-header-meta {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.cert-badge-active {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: #dcfce7;
+  color: #15803d;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 50px;
+  align-self: flex-start;
+  border: 1px solid #bbf7d0;
+}
+
+.cert-view-header-meta h4 {
+  font-size: 15px;
+  font-weight: 800;
+  color: var(--navy-dark);
+  line-height: 1.25;
+}
+
+.cert-id-row {
+  font-size: 11px;
+  color: #475569;
+}
+
+.cert-id-val {
+  color: var(--navy-dark);
+  background: #e2e8f0;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: monospace;
+  font-size: 11px;
+  margin-left: 4px;
+}
+
+.cert-view-body-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.cert-info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.cert-info-item {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 8px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.info-label {
+  font-size: 10px;
+  font-weight: 700;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.info-label i {
+  color: var(--gold-primary);
+}
+
+.info-value {
+  font-size: 11.5px;
+  font-weight: 600;
+  color: var(--navy-dark);
+}
+
+.cert-scope-box {
+  background: #f0f7fd;
+  border: 1px solid #cce1f5;
+  border-radius: 6px;
+  padding: 10px 12px;
+}
+
+.scope-label {
+  font-size: 10.5px;
+  font-weight: 700;
+  color: #025091;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 4px;
+}
+
+.cert-scope-box p {
+  font-size: 11px;
+  color: #334155;
+  line-height: 1.5;
+}
+
+.cert-protocols-box {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 10px 12px;
+}
+
+.protocols-label {
+  font-size: 10.5px;
+  font-weight: 700;
+  color: var(--navy-dark);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 6px;
+}
+
+.protocols-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.protocols-list li {
+  font-size: 11px;
+  color: #475569;
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  position: relative;
+  padding-left: 16px;
+}
+
+.protocols-list li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #16a34a;
+  font-weight: 800;
+  font-size: 11px;
+}
+
+.cert-action-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.btn-cert-action-download {
+  flex: 1;
+  background: var(--gold-gradient);
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 11.5px;
+  padding: 10px 16px;
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  box-shadow: 0 2px 8px rgba(223, 139, 26, 0.25);
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.btn-cert-action-download:hover {
+  background: var(--gold-hover);
+  transform: translateY(-1px);
+}
+
+.btn-cert-action-inquire {
+  flex: 1;
+  background: #ffffff;
+  color: var(--navy-dark);
+  border: 1.5px solid var(--navy-dark);
+  font-weight: 700;
+  font-size: 11.5px;
+  padding: 9px 16px;
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.btn-cert-action-inquire:hover {
+  background: var(--navy-dark);
+  color: #ffffff;
+}
+
+/* General Inquiry Form */
+.modal-body-form {
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  overflow-y: auto;
+}
+
+.form-title-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4px;
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--navy-dark);
+}
+
+.btn-back-to-cert {
+  font-size: 11px;
+  font-weight: 600;
+  color: #025091;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  padding: 3px 8px;
+  border-radius: 4px;
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  transition: all 0.2s ease;
+}
+
+.btn-back-to-cert:hover {
+  background: #dbeafe;
+}
+
+.form-grid-2col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.form-group label {
+  font-size: 11.5px;
+  font-weight: 600;
+  color: var(--navy-dark);
+}
+
+.form-input, .form-select, .form-textarea {
+  width: 100%;
+  padding: 8px 12px;
+  border-radius: var(--radius-sm);
+  border: 1px solid #cbd5e1;
+  font-family: inherit;
+  font-size: 12px;
+  outline: none;
+  background-color: #f8fafc;
+}
+
+.form-input:focus, .form-select:focus, .form-textarea:focus {
+  border-color: var(--gold-primary);
+  background-color: #ffffff;
+  box-shadow: 0 0 0 3px rgba(223, 139, 26, 0.15);
+}
+
+.btn-modal-submit {
+  background: var(--gold-gradient);
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 12px;
+  padding: 10px;
+  border-radius: var(--radius-sm);
+  margin-top: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-modal-submit:hover {
+  background: var(--gold-hover);
+}
+
+/* Toast Message */
+.toast-msg {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background: #0f2b48;
+  color: #ffffff;
+  padding: 12px 18px;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  font-weight: 600;
+  z-index: 10000;
+  opacity: 0;
+  transform: translateY(15px);
+  transition: all 0.3s ease;
+  pointer-events: none;
+  border-left: 4px solid var(--gold-primary);
+}
+
+.toast-msg.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ==========================================================================
+   10. RESPONSIVE BREAKPOINTS
+   ========================================================================== */
+@media (max-width: 1200px) {
+  .certifications-row-wrap {
+    grid-template-columns: 190px 1fr 160px;
+  }
+  .cert-cards-grid-6 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .trust-banner-inner {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 992px) {
+  .certifications-row-wrap {
+    grid-template-columns: 1fr;
+  }
+  .cert-cards-grid-6 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .quality-process-card-wrap {
+    grid-template-columns: 1fr;
+  }
+  .process-steps-list {
+    flex-wrap: wrap;
+  }
+  .commitment-bar-wrap {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .commitment-pillars-row {
+    flex-wrap: wrap;
+  }
+  .trust-banner-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .trust-vessel-wrap {
+    width: 100%;
+    height: 100px;
+  }
+}
+
+@media (max-width: 640px) {
+  .page-container {
+    padding: 0 18px;
+  }
+  .top-slim-bar {
+    display: none;
+  }
+  .cert-cards-grid-6 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .trust-metrics-group {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+}
