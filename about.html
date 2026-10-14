@@ -622,7 +622,7 @@
             With a global network of trusted partners, advanced logistics capabilities and a customer-first approach, we empower businesses to grow, trade and succeed beyond borders.
           </p>
 
-          <button class="btn-get-to-know" id="btnGetToKnowUs">
+          <button type="button" class="btn-get-to-know" id="btnGetToKnowUs" aria-haspopup="dialog" aria-controls="companyProfileModal" title="Get to Know Concept Exim - Company Profile &amp; Dossier">
             <span>Get to Know Us</span>
             <i class="fa-solid fa-arrow-right"></i>
           </button>
@@ -818,6 +818,389 @@
       </div>
     </footer>
 
+  </div>
+
+  <!-- ==========================================================================
+       MODAL: GET TO KNOW US - COMPANY PROFILE & DOSSIER
+       ========================================================================== -->
+  <div class="modal-backdrop" id="companyProfileModal" aria-hidden="true" role="dialog" aria-labelledby="profileModalTitle">
+    <div class="modal-container profile-modal-container">
+      <button type="button" class="modal-close-btn" id="closeProfileModal" aria-label="Close Company Profile">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <!-- Modal Header -->
+      <div class="profile-modal-header">
+        <div class="profile-header-top-row">
+          <div class="profile-company-badge">
+            <i class="fa-solid fa-globe"></i>
+            <span>CONCEPT EXIM</span>
+          </div>
+          <div class="profile-status-badge">
+            <span class="pulse-emerald-dot"></span>
+            <span>Global Trade Dossier &bull; Verified</span>
+          </div>
+        </div>
+        <h3 id="profileModalTitle" class="profile-modal-title">
+          Get to Know <span class="brand-text-gold">CONCEPT EXIM</span>
+        </h3>
+        <p class="profile-modal-subtitle">
+          Leading international trade, cross-border freight forwarding, and sovereign supply chain solutions connecting 150+ nations since 2012.
+        </p>
+      </div>
+
+      <!-- Navigation Tabs -->
+      <div class="profile-tabs-nav" role="tablist" aria-label="Company Profile Sections">
+        <button type="button" class="profile-tab-btn active" role="tab" id="tabBtnOverview" aria-selected="true" aria-controls="panelOverview" data-tab="overview">
+          <i class="fa-solid fa-building-columns"></i>
+          <span>Overview &amp; Heritage</span>
+        </button>
+        <button type="button" class="profile-tab-btn" role="tab" id="tabBtnLeadership" aria-selected="false" aria-controls="panelLeadership" data-tab="leadership">
+          <i class="fa-solid fa-user-tie"></i>
+          <span>Leadership Team</span>
+        </button>
+        <button type="button" class="profile-tab-btn" role="tab" id="tabBtnCertifications" aria-selected="false" aria-controls="panelCertifications" data-tab="certifications">
+          <i class="fa-solid fa-shield-halved"></i>
+          <span>Certifications &amp; Standards</span>
+        </button>
+        <button type="button" class="profile-tab-btn" role="tab" id="tabBtnNetwork" aria-selected="false" aria-controls="panelNetwork" data-tab="network">
+          <i class="fa-solid fa-network-wired"></i>
+          <span>Global Network</span>
+        </button>
+      </div>
+
+      <!-- Tab Content Panels Area -->
+      <div class="profile-tabs-content">
+        <!-- Panel 1: Overview & Heritage -->
+        <div class="profile-tab-panel active" id="panelOverview" role="tabpanel" aria-labelledby="tabBtnOverview">
+          <div class="profile-overview-layout">
+            <div class="profile-overview-main">
+              <h4 class="panel-section-title">Built on Trust, Powered by Global Logistics</h4>
+              <p class="panel-p">
+                Founded in 2012, <strong>Concept Exim</strong> was established with a singular vision: to dismantle barriers in cross-border trade and provide enterprises with transparent, secure, and predictable global supply chains.
+              </p>
+              <p class="panel-p">
+                Today, Concept Exim operates multimodal trade corridors spanning the Americas, Europe, Middle East, Africa, and Asia-Pacific. We specialize in high-value bulk commodities, precision pharmaceuticals, industrial machinery, and time-sensitive agricultural products.
+              </p>
+
+              <!-- Milestone Timeline -->
+              <div class="profile-milestones-track">
+                <div class="milestone-step">
+                  <div class="milestone-badge">2012</div>
+                  <div class="milestone-desc">
+                    <strong>Foundation &amp; Inception</strong>
+                    <span>Launched agricultural trade corridors across South Asia and GCC markets.</span>
+                  </div>
+                </div>
+                <div class="milestone-step">
+                  <div class="milestone-badge">2016</div>
+                  <div class="milestone-desc">
+                    <strong>Multimodal Expansion</strong>
+                    <span>Integrated ocean freight chartering, bonded FTWZ warehousing, and air cargo routes.</span>
+                  </div>
+                </div>
+                <div class="milestone-step">
+                  <div class="milestone-badge">2021</div>
+                  <div class="milestone-desc">
+                    <strong>Digital Trade Platform</strong>
+                    <span>Deployed AI-assisted customs clearance and IoT telematics across 50,000+ container TEU.</span>
+                  </div>
+                </div>
+                <div class="milestone-step">
+                  <div class="milestone-badge">2026</div>
+                  <div class="milestone-desc">
+                    <strong>150+ Global Ports</strong>
+                    <span>Over 2.4M metric tons moved annually with green decarbonized maritime lanes.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Overview Stat Cards Column -->
+            <div class="profile-overview-stats">
+              <div class="overview-stat-card">
+                <div class="stat-card-icon icon-gold">
+                  <i class="fa-solid fa-award"></i>
+                </div>
+                <div class="stat-card-data">
+                  <span class="stat-card-val">14+</span>
+                  <span class="stat-card-label">Years of Trade Mastery</span>
+                </div>
+              </div>
+
+              <div class="overview-stat-card">
+                <div class="stat-card-icon icon-navy">
+                  <i class="fa-solid fa-ship"></i>
+                </div>
+                <div class="stat-card-data">
+                  <span class="stat-card-val">150+</span>
+                  <span class="stat-card-label">Global Ports Connected</span>
+                </div>
+              </div>
+
+              <div class="overview-stat-card">
+                <div class="stat-card-icon icon-emerald">
+                  <i class="fa-solid fa-box-open"></i>
+                </div>
+                <div class="stat-card-data">
+                  <span class="stat-card-val">2.4M+</span>
+                  <span class="stat-card-label">Metric Tons Shipped</span>
+                </div>
+              </div>
+
+              <div class="overview-stat-card">
+                <div class="stat-card-icon icon-purple">
+                  <i class="fa-solid fa-handshake"></i>
+                </div>
+                <div class="stat-card-data">
+                  <span class="stat-card-val">500+</span>
+                  <span class="stat-card-label">Vetted Trade Partners</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel 2: Leadership Team -->
+        <div class="profile-tab-panel" id="panelLeadership" role="tabpanel" aria-labelledby="tabBtnLeadership">
+          <div class="panel-header-intro">
+            <h4 class="panel-section-title">Executive Leadership &amp; Trade Specialists</h4>
+            <p class="panel-p">Our executive leadership brings over a century of collective experience in maritime logistics, sovereign customs treaties, and structured trade finance.</p>
+          </div>
+
+          <div class="leadership-cards-grid">
+            <div class="leader-card">
+              <div class="leader-avatar-wrap">
+                <div class="leader-initials initials-navy">RM</div>
+                <div class="leader-badge-pill">Founder</div>
+              </div>
+              <div class="leader-details">
+                <h5 class="leader-name">Rajesh Mandli</h5>
+                <span class="leader-role">Founder &amp; Chief Executive Officer</span>
+                <p class="leader-bio">20+ years spearheading cross-border trade corridors, commodity arbitrage, and multilateral logistics partnerships across Europe and Asia.</p>
+                <div class="leader-specialties">
+                  <span>Trade Finance</span>
+                  <span>Macro Strategy</span>
+                  <span>Port Operations</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="leader-card">
+              <div class="leader-avatar-wrap">
+                <div class="leader-initials initials-gold">ER</div>
+                <div class="leader-badge-pill">Operations</div>
+              </div>
+              <div class="leader-details">
+                <h5 class="leader-name">Elena Rostova</h5>
+                <span class="leader-role">Chief Operating Officer (COO)</span>
+                <p class="leader-bio">Former Maersk Senior Logistics Director; oversees multimodal container fleet allocation, vessel chartering, and 24/7 port dispatch hubs.</p>
+                <div class="leader-specialties">
+                  <span>Maritime Logistics</span>
+                  <span>Intermodal Freight</span>
+                  <span>Vessel Charter</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="leader-card">
+              <div class="leader-avatar-wrap">
+                <div class="leader-initials initials-emerald">MT</div>
+                <div class="leader-badge-pill">Compliance</div>
+              </div>
+              <div class="leader-details">
+                <h5 class="leader-name">Marcus Thorne</h5>
+                <span class="leader-role">VP of Trade Compliance &amp; Customs</span>
+                <p class="leader-bio">Licensed international customs broker with deep expertise in WTO tariffs, AEO certification, preferential FTAs, and anti-tamper security.</p>
+                <div class="leader-specialties">
+                  <span>AEO / C-TPAT</span>
+                  <span>Customs Law</span>
+                  <span>Tariff Audit</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="leader-card">
+              <div class="leader-avatar-wrap">
+                <div class="leader-initials initials-purple">AA</div>
+                <div class="leader-badge-pill">Finance</div>
+              </div>
+              <div class="leader-details">
+                <h5 class="leader-name">Aisha Al-Mansoor</h5>
+                <span class="leader-role">Chief Financial Officer &amp; VP Treasury</span>
+                <p class="leader-bio">Specialist in structured trade lines, letters of credit (LC), cross-currency hedging, and escrow guarantees for sovereign bulk trade.</p>
+                <div class="leader-specialties">
+                  <span>Trade Escrow</span>
+                  <span>Letter of Credit</span>
+                  <span>FX Risk Management</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel 3: Certifications & Standards -->
+        <div class="profile-tab-panel" id="panelCertifications" role="tabpanel" aria-labelledby="tabBtnCertifications">
+          <div class="panel-header-intro">
+            <h4 class="panel-section-title">International Accreditations &amp; Quality Certifications</h4>
+            <p class="panel-p">Concept Exim adheres to stringent international regulatory standards, ensuring zero customs delays, verifiable cargo security, and ISO quality management.</p>
+          </div>
+
+          <div class="certifications-grid">
+            <div class="cert-card">
+              <div class="cert-card-header">
+                <div class="cert-icon-wrap icon-gold">
+                  <i class="fa-solid fa-certificate"></i>
+                </div>
+                <span class="cert-status-tag">Verified Active</span>
+              </div>
+              <h5 class="cert-name">ISO 9001:2015 Quality Management</h5>
+              <span class="cert-id">Cert Reg: QA-981240-EX</span>
+              <p class="cert-desc">Audited quality management systems for international sourcing, container freight handling, moisture testing, and customer satisfaction.</p>
+            </div>
+
+            <div class="cert-card">
+              <div class="cert-card-header">
+                <div class="cert-icon-wrap icon-emerald">
+                  <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <span class="cert-status-tag">Tier-2 Priority</span>
+              </div>
+              <h5 class="cert-name">AEO (Authorized Economic Operator)</h5>
+              <span class="cert-id">Customs Auth: AEO-T2-08841</span>
+              <p class="cert-desc">Certified green-channel customs clearance protocol providing prioritized physical inspections and expedited release at global terminals.</p>
+            </div>
+
+            <div class="cert-card">
+              <div class="cert-card-header">
+                <div class="cert-icon-wrap icon-navy">
+                  <i class="fa-solid fa-truck-ramp-box"></i>
+                </div>
+                <span class="cert-status-tag">Full Member</span>
+              </div>
+              <h5 class="cert-name">FIATA Multimodal Transport Operator</h5>
+              <span class="cert-id">Member ID: FIATA-GL-7721</span>
+              <p class="cert-desc">Federation of Freight Forwarders accredited for negotiable multimodal transport bills of lading (FBL) recognized in 150+ jurisdictions.</p>
+            </div>
+
+            <div class="cert-card">
+              <div class="cert-card-header">
+                <div class="cert-icon-wrap icon-blue">
+                  <i class="fa-solid fa-plane-departure"></i>
+                </div>
+                <span class="cert-status-tag">Accredited Agent</span>
+              </div>
+              <h5 class="cert-name">IATA Cargo Agent Certification</h5>
+              <span class="cert-id">IATA Code: 882-9014-EX</span>
+              <p class="cert-desc">Certified air freight handling protocols for high-value cargo, sensitive cold-chain biologics, and dangerous goods (HAZMAT) compliance.</p>
+            </div>
+
+            <div class="cert-card">
+              <div class="cert-card-header">
+                <div class="cert-icon-wrap icon-purple">
+                  <i class="fa-solid fa-lock"></i>
+                </div>
+                <span class="cert-status-tag">Security Certified</span>
+              </div>
+              <h5 class="cert-name">C-TPAT / WCO SAFE Framework</h5>
+              <span class="cert-id">Security Reg: CTPAT-90312-GL</span>
+              <p class="cert-desc">Supply chain anti-tamper security verified through GPS-enabled smart container e-seals, vetted port personnel, and biometric depot access.</p>
+            </div>
+
+            <div class="cert-card">
+              <div class="cert-card-header">
+                <div class="cert-icon-wrap icon-orange">
+                  <i class="fa-solid fa-wheat-awn"></i>
+                </div>
+                <span class="cert-status-tag">Sanitary Certified</span>
+              </div>
+              <h5 class="cert-name">FDA &amp; Global Phytosanitary Standards</h5>
+              <span class="cert-id">Phyto Registry: FSSAI/FDA-2026-EX</span>
+              <p class="cert-desc">Full compliance with international quarantine regulations, non-GMO certificates, fumigation documentation, and lab purity assays.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel 4: Global Network & Capabilities -->
+        <div class="profile-tab-panel" id="panelNetwork" role="tabpanel" aria-labelledby="tabBtnNetwork">
+          <div class="panel-header-intro">
+            <h4 class="panel-section-title">Worldwide Infrastructure &amp; Multimodal Capability</h4>
+            <p class="panel-p">With regional logistics command centers in Singapore, Rotterdam, Dubai, Houston, and Mumbai, we synchronize seamless maritime, air, and overland freight.</p>
+          </div>
+
+          <div class="network-features-grid">
+            <div class="network-feat-card">
+              <div class="feat-icon-bubble">
+                <i class="fa-solid fa-ship"></i>
+              </div>
+              <h5 class="feat-heading">Maritime &amp; Container Logistics</h5>
+              <ul class="feat-bullets">
+                <li><i class="fa-solid fa-check"></i> FCL &amp; LCL container consolidation across 12 major ocean lanes</li>
+                <li><i class="fa-solid fa-check"></i> Reefer cold-chain monitoring with real-time IoT telemetry</li>
+                <li><i class="fa-solid fa-check"></i> Breakbulk &amp; project cargo chartering for oversized equipment</li>
+              </ul>
+            </div>
+
+            <div class="network-feat-card">
+              <div class="feat-icon-bubble">
+                <i class="fa-solid fa-plane-up"></i>
+              </div>
+              <h5 class="feat-heading">Expedited Global Air Cargo</h5>
+              <ul class="feat-bullets">
+                <li><i class="fa-solid fa-check"></i> Guaranteed next-flight-out dispatch for critical shipments</li>
+                <li><i class="fa-solid fa-check"></i> Temperature-controlled pharma &amp; perishable corridors</li>
+                <li><i class="fa-solid fa-check"></i> Full and part charter solutions for oversized urgent cargo</li>
+              </ul>
+            </div>
+
+            <div class="network-feat-card">
+              <div class="feat-icon-bubble">
+                <i class="fa-solid fa-warehouse"></i>
+              </div>
+              <h5 class="feat-heading">Bonded FTWZ Warehousing</h5>
+              <ul class="feat-bullets">
+                <li><i class="fa-solid fa-check"></i> 1.2M+ sq. ft. of climate-controlled bonded storage</li>
+                <li><i class="fa-solid fa-check"></i> Duty-deferred re-export &amp; value-added packing facilities</li>
+                <li><i class="fa-solid fa-check"></i> High-security RFID inventory tracking &amp; barcode audits</li>
+              </ul>
+            </div>
+
+            <div class="network-feat-card">
+              <div class="feat-icon-bubble">
+                <i class="fa-solid fa-passport"></i>
+              </div>
+              <h5 class="feat-heading">Automated Customs Clearance</h5>
+              <ul class="feat-bullets">
+                <li><i class="fa-solid fa-check"></i> In-house licensed customs brokers in 45 key trade ports</li>
+                <li><i class="fa-solid fa-check"></i> Pre-arrival EDI filing for 98% instant green-channel release</li>
+                <li><i class="fa-solid fa-check"></i> Comprehensive tariff optimization &amp; preferential duty analysis</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="profile-modal-footer">
+        <div class="profile-footer-left">
+          <button type="button" class="btn-profile-secondary" id="btnProfileWatchStory">
+            <i class="fa-solid fa-circle-play"></i>
+            <span>Watch 4K Corporate Story</span>
+          </button>
+          <a href="global-presence.html" class="btn-profile-link">
+            <i class="fa-solid fa-earth-americas"></i>
+            <span>Explore Global Map</span>
+          </a>
+        </div>
+        <div class="profile-footer-right">
+          <button type="button" class="btn-profile-cta" id="btnProfileOpenQuote">
+            <span>Request Trade Consultation</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+
+    </div>
   </div>
 
   <!-- ==========================================================================
@@ -1142,11 +1525,106 @@
       });
     }
 
+    // Company Profile Modal ("Get to Know Us")
+    const companyProfileModal = document.getElementById('companyProfileModal');
+    const closeProfileBtn = document.getElementById('closeProfileModal');
+    const btnGetToKnowUs = document.getElementById('btnGetToKnowUs');
+    const btnProfileWatchStory = document.getElementById('btnProfileWatchStory');
+    const btnProfileOpenQuote = document.getElementById('btnProfileOpenQuote');
+
+    function openProfileModalFunc() {
+      if (!companyProfileModal) return;
+      companyProfileModal.classList.add('is-open');
+      companyProfileModal.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeProfileModalFunc() {
+      if (!companyProfileModal) return;
+      companyProfileModal.classList.remove('is-open');
+      companyProfileModal.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    }
+
+    if (btnGetToKnowUs) {
+      btnGetToKnowUs.addEventListener('click', (e) => {
+        e.preventDefault();
+        openProfileModalFunc();
+      });
+    }
+
+    if (closeProfileBtn) {
+      closeProfileBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        closeProfileModalFunc();
+      });
+    }
+
+    if (btnProfileWatchStory) {
+      btnProfileWatchStory.addEventListener('click', () => {
+        closeProfileModalFunc();
+        openStoryModalFunc();
+      });
+    }
+
+    if (btnProfileOpenQuote) {
+      btnProfileOpenQuote.addEventListener('click', () => {
+        closeProfileModalFunc();
+        const quoteModal = document.getElementById('quoteModal');
+        if (quoteModal) {
+          quoteModal.classList.add('is-open');
+          quoteModal.setAttribute('aria-hidden', 'false');
+          document.body.style.overflow = 'hidden';
+        }
+      });
+    }
+
+    // Tab Switching for Company Profile
+    const profileTabBtns = document.querySelectorAll('.profile-tab-btn');
+    const profileTabPanels = document.querySelectorAll('.profile-tab-panel');
+
+    profileTabBtns.forEach(tabBtn => {
+      tabBtn.addEventListener('click', () => {
+        const targetTab = tabBtn.getAttribute('data-tab');
+        
+        // Update tab buttons
+        profileTabBtns.forEach(btn => {
+          btn.classList.remove('active');
+          btn.setAttribute('aria-selected', 'false');
+        });
+        tabBtn.classList.add('active');
+        tabBtn.setAttribute('aria-selected', 'true');
+
+        // Update tab panels
+        profileTabPanels.forEach(panel => {
+          panel.classList.remove('active');
+        });
+        const targetPanelId = 'panel' + targetTab.charAt(0).toUpperCase() + targetTab.slice(1);
+        const activePanel = document.getElementById(targetPanelId);
+        if (activePanel) {
+          activePanel.classList.add('active');
+        }
+      });
+    });
+
+    // Auto-open modal if URL hash is #get-to-know or #company-profile or #dossier
+    if (window.location.hash === '#get-to-know' || window.location.hash === '#company-profile' || window.location.hash === '#dossier') {
+      setTimeout(() => openProfileModalFunc(), 150);
+    }
+
     // Close modals on clicking backdrop
     if (storyModal) {
       storyModal.addEventListener('click', (e) => {
         if (e.target === storyModal) {
           closeStoryModalFunc();
+        }
+      });
+    }
+
+    if (companyProfileModal) {
+      companyProfileModal.addEventListener('click', (e) => {
+        if (e.target === companyProfileModal) {
+          closeProfileModalFunc();
         }
       });
     }
@@ -1167,6 +1645,7 @@
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape') {
         closeStoryModalFunc();
+        closeProfileModalFunc();
         [quoteModal, searchModal].forEach(modal => {
           if (modal) {
             modal.classList.remove('is-open');
@@ -1193,15 +1672,6 @@
           <button type="button" class="btn-get-quote" onclick="document.getElementById('quoteModal').classList.remove('is-open')">Close</button>
         </div>
       `;
-    }
-
-    // "Get to Know Us" scroll down
-    const btnGetToKnowUs = document.getElementById('btnGetToKnowUs');
-    if (btnGetToKnowUs) {
-      btnGetToKnowUs.addEventListener('click', () => {
-        const whySection = document.getElementById('why-choose');
-        if (whySection) whySection.scrollIntoView({ behavior: 'smooth' });
-      });
     }
 
     // Language Toggle Tooltip

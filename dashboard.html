@@ -118,7 +118,6 @@
 
     <!-- Sidebar Bottom Status & Branding -->
     <div class="sidebar-footer-wrap">
-      
       <div class="system-status-indicator">
         <span class="status-pulse-dot"></span>
         <div class="status-text-block">
@@ -126,16 +125,6 @@
           <span class="status-time">Last updated: Today, Live Sync</span>
         </div>
       </div>
-
-      <!-- Below Settings: CONCEPT EXIM Brand Logo -->
-      <div class="sidebar-mini-brand">
-        <img src="images/concept_exim_logo_white.png" srcset="images/concept_exim_logo_white@3x.png 3x" alt="CONCEPT EXIM" class="sidebar-mini-logo-img">
-        <div class="mini-brand-text">
-          <span class="mini-title">CONCEPT EXIM</span>
-          <span class="mini-tag">Global Trade, Greater Opportunities.</span>
-        </div>
-      </div>
-
     </div>
 
   </aside>
@@ -307,9 +296,11 @@
             <div class="welcome-hero-navy-fade"></div>
           </div>
           <div class="welcome-hero-content-layer">
-            <div class="welcome-hero-text-block">
-              <h1 class="welcome-hero-title">Welcome Back, Rahul!</h1>
-              <p class="welcome-hero-subtitle">Here's your complete trade overview and compliance status.</p>
+            <div class="welcome-hero-top-row">
+              <div class="welcome-hero-text-block">
+                <h1 class="welcome-hero-title">Welcome Back, Rahul!</h1>
+                <p class="welcome-hero-subtitle">Here's your complete trade overview and compliance status.</p>
+              </div>
             </div>
             <div class="welcome-hero-badges-strip">
               <div class="wh-stat-badge">
@@ -474,47 +465,91 @@
                   <i class="fa-solid fa-earth-americas color-blue"></i>
                   <h3 class="card-headline">Global Trade Overview</h3>
                 </div>
-                <button class="btn-card-action" onclick="switchTab('shipments')" title="Explore Shipments">
+                <button class="btn-card-action" onclick="openModal('modalFullTradeMap')" title="Inspect Interactive World Map Matrix">
                   <span>View Full Map</span>
                   <i class="fa-solid fa-arrow-right"></i>
                 </button>
               </div>
 
-              <div class="trade-overview-body">
-                <div class="world-map-wrap">
-                  <img src="images/dashboard_crop/world_map_graphic.jpg" alt="Global Trade Routes Map" class="world-map-img" onerror="this.src='https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?w=600&auto=format&fit=crop&q=80';">
-                  <div class="map-legend-pills">
-                    <span class="legend-pill"><i class="fa-solid fa-circle dot-suppliers"></i> Suppliers</span>
-                    <span class="legend-pill"><i class="fa-solid fa-circle dot-buyers"></i> Buyers</span>
-                    <span class="legend-pill"><i class="fa-solid fa-circle dot-shipments"></i> Active Routes</span>
+              <div class="trade-overview-body-modern">
+                <!-- 1. Panoramic High-Tech World Trade Map -->
+                <div class="world-map-wrap-modern" onclick="openModal('modalFullTradeMap')" title="Click to open interactive trade matrix">
+                  <div class="map-radar-topbar">
+                    <span class="map-radar-status"><span class="radar-dot-pulse"></span> LIVE SATELLITE RADAR</span>
+                    <span class="map-radar-stats"><i class="fa-solid fa-satellite-dish"></i> 12 ACTIVE CORRIDORS</span>
+                  </div>
+                  <img src="images/dashboard_crop/dashboard_world_map_hd.jpg" alt="Global Trade Routes Map" class="world-map-img-hd">
+                  <div class="map-interactive-overlay">
+                    <!-- Interactive Radar Beacons -->
+                    <div class="map-beacon-pin pin-mumbai">
+                      <span class="beacon-pulse-ring"></span>
+                      <span class="beacon-core-dot"></span>
+                      <span class="beacon-tooltip">Mumbai HQ &bull; JNPT Central</span>
+                    </div>
+                    <div class="map-beacon-pin pin-dubai">
+                      <span class="beacon-pulse-ring"></span>
+                      <span class="beacon-core-dot"></span>
+                      <span class="beacon-tooltip">Dubai JAFZA Hub</span>
+                    </div>
+                    <div class="map-beacon-pin pin-rotterdam">
+                      <span class="beacon-pulse-ring"></span>
+                      <span class="beacon-core-dot"></span>
+                      <span class="beacon-tooltip">Rotterdam Port (EU)</span>
+                    </div>
+                    <div class="map-beacon-pin pin-newyork">
+                      <span class="beacon-pulse-ring"></span>
+                      <span class="beacon-core-dot"></span>
+                      <span class="beacon-tooltip">New York / NJ Port</span>
+                    </div>
+                    <div class="map-beacon-pin pin-singapore">
+                      <span class="beacon-pulse-ring"></span>
+                      <span class="beacon-core-dot"></span>
+                      <span class="beacon-tooltip">Singapore Straits Hub</span>
+                    </div>
+                  </div>
+                  <div class="map-legend-pills-modern">
+                    <span class="legend-pill-m"><i class="fa-solid fa-circle dot-suppliers"></i> 28 Origin States</span>
+                    <span class="legend-pill-m"><i class="fa-solid fa-circle dot-buyers"></i> 50+ Destination Markets</span>
+                    <span class="legend-pill-m"><i class="fa-solid fa-circle dot-shipments"></i> 12 Corridors</span>
+                    <span class="legend-expand-hint"><i class="fa-solid fa-expand"></i> Click to Expand</span>
                   </div>
                 </div>
 
-                <div class="trade-stats-col">
-                  <div class="trade-stat-box" onclick="switchTab('suppliers')" style="cursor: pointer;">
-                    <div class="stat-circle-icon"><i class="fa-solid fa-warehouse"></i></div>
-                    <div class="stat-info">
-                      <span class="stat-title">Origin Hubs</span>
-                      <strong class="stat-big-val">28 States</strong>
-                      <span class="stat-sub">Across India</span>
+                <!-- 2. Three Metric Cards in 3 Columns Below Map -->
+                <div class="trade-stats-row-modern">
+                  <div class="trade-stat-card-m" onclick="switchTab('suppliers')" style="cursor: pointer;" title="Explore Verified Indian Suppliers">
+                    <div class="stat-card-top">
+                      <div class="stat-circle-icon-m bg-icon-blue"><i class="fa-solid fa-warehouse"></i></div>
+                      <span class="stat-badge-trend">+5 New</span>
+                    </div>
+                    <div class="stat-info-m">
+                      <span class="stat-title-m">Origin Hubs</span>
+                      <strong class="stat-big-val-m">28 States</strong>
+                      <span class="stat-sub-m">Across India</span>
                     </div>
                   </div>
 
-                  <div class="trade-stat-box" onclick="switchTab('buyers')" style="cursor: pointer;">
-                    <div class="stat-circle-icon"><i class="fa-solid fa-earth-europe"></i></div>
-                    <div class="stat-info">
-                      <span class="stat-title">Export Destinations</span>
-                      <strong class="stat-big-val">50+ Countries</strong>
-                      <span class="stat-sub">Worldwide</span>
+                  <div class="trade-stat-card-m" onclick="switchTab('buyers')" style="cursor: pointer;" title="Explore International Buyers">
+                    <div class="stat-card-top">
+                      <div class="stat-circle-icon-m bg-icon-amber"><i class="fa-solid fa-earth-americas"></i></div>
+                      <span class="stat-badge-trend">+15%</span>
+                    </div>
+                    <div class="stat-info-m">
+                      <span class="stat-title-m">Export Markets</span>
+                      <strong class="stat-big-val-m">50+ Countries</strong>
+                      <span class="stat-sub-m">Worldwide</span>
                     </div>
                   </div>
 
-                  <div class="trade-stat-box" onclick="switchTab('shipments')" style="cursor: pointer;">
-                    <div class="stat-circle-icon"><i class="fa-solid fa-compass"></i></div>
-                    <div class="stat-info">
-                      <span class="stat-title">Trade Corridors</span>
-                      <strong class="stat-big-val">12 Major</strong>
-                      <span class="stat-sub">Sea &amp; Air Routes</span>
+                  <div class="trade-stat-card-m" onclick="switchTab('shipments')" style="cursor: pointer;" title="Explore Active Trade Corridors">
+                    <div class="stat-card-top">
+                      <div class="stat-circle-icon-m bg-icon-teal"><i class="fa-solid fa-compass"></i></div>
+                      <span class="stat-badge-trend">98% On-Time</span>
+                    </div>
+                    <div class="stat-info-m">
+                      <span class="stat-title-m">Trade Corridors</span>
+                      <strong class="stat-big-val-m">12 Major</strong>
+                      <span class="stat-sub-m">Sea &amp; Air Routes</span>
                     </div>
                   </div>
                 </div>
@@ -531,7 +566,10 @@
                   <i class="fa-solid fa-chart-pie color-teal"></i>
                   <h3 class="card-headline">Shipment Status</h3>
                 </div>
-                <button class="btn-card-action" onclick="switchTab('shipments')">Details &rarr;</button>
+                <button class="btn-card-action" onclick="handleShipmentStatusDetails()" title="View Shipment Breakdown Details">
+                  <span>Details</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
               </div>
 
               <div class="donut-chart-container">
@@ -580,7 +618,10 @@
                   <i class="fa-solid fa-list-check color-blue"></i>
                   <h3 class="card-headline">Recent Shipments</h3>
                 </div>
-                <button class="btn-card-action" onclick="switchTab('shipments')">View All &rarr;</button>
+                <button class="btn-card-action" onclick="handleViewAllShipments()" title="View Master Shipments Ledger">
+                  <span>View All</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
               </div>
 
               <div class="table-responsive-wrap">
@@ -703,7 +744,10 @@
                 <i class="fa-solid fa-cubes color-blue"></i>
                 <h3 class="card-headline">Top Product Categories</h3>
               </div>
-              <a href="products.html" class="card-header-link">View All &rarr;</a>
+              <a href="products.html" class="btn-card-action" title="View Full Product Catalog">
+                <span>View All</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
             </div>
 
             <div class="categories-bars-list">
@@ -764,7 +808,10 @@
                 <i class="fa-solid fa-certificate color-teal"></i>
                 <h3 class="card-headline">Compliance Highlights</h3>
               </div>
-              <a href="compliance.html" class="card-header-link">View All &rarr;</a>
+              <a href="compliance.html" class="btn-card-action" title="View Quality Certifications Hub">
+                <span>View All</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
             </div>
 
             <div class="certifications-badges-row">
@@ -809,7 +856,7 @@
           <div class="dash-card card-trust-banner">
             <div class="trust-banner-inner">
               <div class="trust-banner-left">
-                <div class="trust-eyebrow-icon"><i class="fa-solid fa-shield-check"></i></div>
+                <div class="trust-eyebrow-icon"><i class="fa-solid fa-shield-halved"></i></div>
                 <h4 class="trust-heading">Ensuring Trust<br>Through Compliance</h4>
                 <p class="trust-desc">We follow global standards and regulations to deliver safe, high-quality and sustainable products across the world.</p>
                 <a href="compliance.html" class="btn-trust-learn">
@@ -897,8 +944,10 @@
                 <td>May 14, 2025</td>
                 <td><span class="status-pill status-transit">In Transit</span></td>
                 <td style="text-align: right;">
-                  <button class="btn-table-action" onclick="openTrackingModal('SHP-2025-0891', 'Organic Basmati Rice', 'Mundra, IN → Rotterdam, NL')"><i class="fa-solid fa-location-crosshairs"></i> Track GPS</button>
-                  <button class="btn-table-action" onclick="showToast('Downloading Packing List &amp; Invoice for SHP-2025-0891...')"><i class="fa-solid fa-download"></i></button>
+                  <div class="table-actions-group">
+                    <button class="btn-table-action" onclick="openTrackingModal('SHP-2025-0891', 'Organic Basmati Rice', 'Mundra, IN → Rotterdam, NL')"><i class="fa-solid fa-location-crosshairs"></i> Track GPS</button>
+                    <button class="btn-table-icon" title="Download Packing List &amp; Invoice" onclick="showToast('Downloading Packing List &amp; Invoice for SHP-2025-0891...')"><i class="fa-solid fa-download"></i></button>
+                  </div>
                 </td>
               </tr>
               <tr data-status="Delivered">
@@ -910,8 +959,10 @@
                 <td>Apr 28, 2025</td>
                 <td><span class="status-pill status-delivered">Delivered</span></td>
                 <td style="text-align: right;">
-                  <button class="btn-table-action" onclick="openTrackingModal('SHP-2025-0890', 'Indian Spices Assortment', 'JNPT, IN → Dubai, UAE')"><i class="fa-solid fa-location-crosshairs"></i> Track GPS</button>
-                  <button class="btn-table-action" onclick="showToast('Downloading Proof of Delivery for SHP-2025-0890...')"><i class="fa-solid fa-download"></i></button>
+                  <div class="table-actions-group">
+                    <button class="btn-table-action" onclick="openTrackingModal('SHP-2025-0890', 'Indian Spices Assortment', 'JNPT, IN → Dubai, UAE')"><i class="fa-solid fa-location-crosshairs"></i> Track GPS</button>
+                    <button class="btn-table-icon" title="Download Proof of Delivery" onclick="showToast('Downloading Proof of Delivery for SHP-2025-0890...')"><i class="fa-solid fa-download"></i></button>
+                  </div>
                 </td>
               </tr>
               <tr data-status="Customs">
@@ -923,8 +974,10 @@
                 <td>May 04, 2025</td>
                 <td><span class="status-pill status-customs">Customs</span></td>
                 <td style="text-align: right;">
-                  <button class="btn-table-action" onclick="openTrackingModal('SHP-2025-0889', 'Solar PV Modules', 'Chennai, IN → Hamburg, DE')"><i class="fa-solid fa-location-crosshairs"></i> Track GPS</button>
-                  <button class="btn-table-action" onclick="showToast('Initiating Customs Clearance Accelerate for SHP-2025-0889...')"><i class="fa-solid fa-shield-check"></i></button>
+                  <div class="table-actions-group">
+                    <button class="btn-table-action" onclick="openTrackingModal('SHP-2025-0889', 'Solar PV Modules', 'Chennai, IN → Hamburg, DE')"><i class="fa-solid fa-location-crosshairs"></i> Track GPS</button>
+                    <button class="btn-table-icon" title="Initiate Customs Clearance" onclick="showToast('Initiating Customs Clearance Accelerate for SHP-2025-0889...')"><i class="fa-solid fa-shield-halved"></i></button>
+                  </div>
                 </td>
               </tr>
               <tr data-status="In Transit">
@@ -936,8 +989,10 @@
                 <td>May 22, 2025</td>
                 <td><span class="status-pill status-transit">In Transit</span></td>
                 <td style="text-align: right;">
-                  <button class="btn-table-action" onclick="openTrackingModal('SHP-2025-0888', 'Organic Cotton Textiles', 'Kolkata, IN → New York, US')"><i class="fa-solid fa-location-crosshairs"></i> Track GPS</button>
-                  <button class="btn-table-action" onclick="showToast('Downloading Bill of Lading for SHP-2025-0888...')"><i class="fa-solid fa-download"></i></button>
+                  <div class="table-actions-group">
+                    <button class="btn-table-action" onclick="openTrackingModal('SHP-2025-0888', 'Organic Cotton Textiles', 'Kolkata, IN → New York, US')"><i class="fa-solid fa-location-crosshairs"></i> Track GPS</button>
+                    <button class="btn-table-icon" title="Download Bill of Lading" onclick="showToast('Downloading Bill of Lading for SHP-2025-0888...')"><i class="fa-solid fa-download"></i></button>
+                  </div>
                 </td>
               </tr>
               <tr data-status="In Transit">
@@ -949,8 +1004,10 @@
                 <td>May 02, 2025</td>
                 <td><span class="status-pill status-transit">In Transit</span></td>
                 <td style="text-align: right;">
-                  <button class="btn-table-action" onclick="openTrackingModal('SHP-2025-0887', 'Pharma Active Salts', 'AMD, IN → London, UK')"><i class="fa-solid fa-location-crosshairs"></i> Track GPS</button>
-                  <button class="btn-table-action" onclick="showToast('Downloading Airway Bill for SHP-2025-0887...')"><i class="fa-solid fa-download"></i></button>
+                  <div class="table-actions-group">
+                    <button class="btn-table-action" onclick="openTrackingModal('SHP-2025-0887', 'Pharma Active Salts', 'AMD, IN → London, UK')"><i class="fa-solid fa-location-crosshairs"></i> Track GPS</button>
+                    <button class="btn-table-icon" title="Download Airway Bill" onclick="showToast('Downloading Airway Bill for SHP-2025-0887...')"><i class="fa-solid fa-download"></i></button>
+                  </div>
                 </td>
               </tr>
               <tr data-status="Delivered">
@@ -962,8 +1019,10 @@
                 <td>Apr 22, 2025</td>
                 <td><span class="status-pill status-delivered">Delivered</span></td>
                 <td style="text-align: right;">
-                  <button class="btn-table-action" onclick="openTrackingModal('SHP-2025-0886', 'Sesame Oil', 'Mundra, IN → Singapore')"><i class="fa-solid fa-location-crosshairs"></i> Track GPS</button>
-                  <button class="btn-table-action" onclick="showToast('Downloading Delivery Certificate for SHP-2025-0886...')"><i class="fa-solid fa-download"></i></button>
+                  <div class="table-actions-group">
+                    <button class="btn-table-action" onclick="openTrackingModal('SHP-2025-0886', 'Sesame Oil', 'Mundra, IN → Singapore')"><i class="fa-solid fa-location-crosshairs"></i> Track GPS</button>
+                    <button class="btn-table-icon" title="Download Delivery Certificate" onclick="showToast('Downloading Delivery Certificate for SHP-2025-0886...')"><i class="fa-solid fa-download"></i></button>
+                  </div>
                 </td>
               </tr>
               <tr data-status="Customs">
@@ -975,8 +1034,10 @@
                 <td>May 08, 2025</td>
                 <td><span class="status-pill status-customs">Customs</span></td>
                 <td style="text-align: right;">
-                  <button class="btn-table-action" onclick="openTrackingModal('SHP-2025-0885', 'CNC Machine Parts', 'JNPT, IN → Tokyo, JP')"><i class="fa-solid fa-location-crosshairs"></i> Track GPS</button>
-                  <button class="btn-table-action" onclick="showToast('Inspecting Customs Docs for SHP-2025-0885...')"><i class="fa-solid fa-download"></i></button>
+                  <div class="table-actions-group">
+                    <button class="btn-table-action" onclick="openTrackingModal('SHP-2025-0885', 'CNC Machine Parts', 'JNPT, IN → Tokyo, JP')"><i class="fa-solid fa-location-crosshairs"></i> Track GPS</button>
+                    <button class="btn-table-icon" title="Inspect Customs Documentation" onclick="showToast('Inspecting Customs Docs for SHP-2025-0885...')"><i class="fa-solid fa-download"></i></button>
+                  </div>
                 </td>
               </tr>
               <tr data-status="In Transit">
@@ -988,8 +1049,10 @@
                 <td>May 26, 2025</td>
                 <td><span class="status-pill status-transit">In Transit</span></td>
                 <td style="text-align: right;">
-                  <button class="btn-table-action" onclick="openTrackingModal('SHP-2025-0884', 'Ceramic Tiles', 'Kandla, IN → Sydney, AU')"><i class="fa-solid fa-location-crosshairs"></i> Track GPS</button>
-                  <button class="btn-table-action" onclick="showToast('Downloading Cargo Manifest for SHP-2025-0884...')"><i class="fa-solid fa-download"></i></button>
+                  <div class="table-actions-group">
+                    <button class="btn-table-action" onclick="openTrackingModal('SHP-2025-0884', 'Ceramic Tiles', 'Kandla, IN → Sydney, AU')"><i class="fa-solid fa-location-crosshairs"></i> Track GPS</button>
+                    <button class="btn-table-icon" title="Download Cargo Manifest" onclick="showToast('Downloading Cargo Manifest for SHP-2025-0884...')"><i class="fa-solid fa-download"></i></button>
+                  </div>
                 </td>
               </tr>
             </tbody>
@@ -1154,7 +1217,7 @@
                 <strong class="dir-title">Punjab Agro Organics Ltd.</strong>
                 <span class="dir-country"><i class="fa-solid fa-location-dot"></i> Amritsar, Punjab, India</span>
               </div>
-              <span class="dir-badge-verified"><i class="fa-solid fa-shield-check"></i> Verified</span>
+              <span class="dir-badge-verified"><i class="fa-solid fa-shield-halved"></i> Verified</span>
             </div>
             <div class="dir-info-list">
               <div class="dir-info-row"><span>Category:</span><strong>Basmati Rice &amp; Organic Grains</strong></div>
@@ -1174,7 +1237,7 @@
                 <strong class="dir-title">Malabar Spices &amp; Plantations</strong>
                 <span class="dir-country"><i class="fa-solid fa-location-dot"></i> Kochi, Kerala, India</span>
               </div>
-              <span class="dir-badge-verified"><i class="fa-solid fa-shield-check"></i> Verified</span>
+              <span class="dir-badge-verified"><i class="fa-solid fa-shield-halved"></i> Verified</span>
             </div>
             <div class="dir-info-list">
               <div class="dir-info-row"><span>Category:</span><strong>Cardamom, Pepper, Turmeric</strong></div>
@@ -1194,7 +1257,7 @@
                 <strong class="dir-title">Gujarat Solartronics Fab PVT</strong>
                 <span class="dir-country"><i class="fa-solid fa-location-dot"></i> Ahmedabad, Gujarat, India</span>
               </div>
-              <span class="dir-badge-verified"><i class="fa-solid fa-shield-check"></i> Verified</span>
+              <span class="dir-badge-verified"><i class="fa-solid fa-shield-halved"></i> Verified</span>
             </div>
             <div class="dir-info-list">
               <div class="dir-info-row"><span>Category:</span><strong>Solar PV Panels &amp; Inverters</strong></div>
@@ -1214,7 +1277,7 @@
                 <strong class="dir-title">Coimbatore Cotton Mills Co.</strong>
                 <span class="dir-country"><i class="fa-solid fa-location-dot"></i> Coimbatore, Tamil Nadu, India</span>
               </div>
-              <span class="dir-badge-verified"><i class="fa-solid fa-shield-check"></i> Verified</span>
+              <span class="dir-badge-verified"><i class="fa-solid fa-shield-halved"></i> Verified</span>
             </div>
             <div class="dir-info-list">
               <div class="dir-info-row"><span>Category:</span><strong>Organic Cotton &amp; Yarn</strong></div>
@@ -1234,7 +1297,7 @@
                 <strong class="dir-title">Morbi Ceramics International</strong>
                 <span class="dir-country"><i class="fa-solid fa-location-dot"></i> Morbi, Gujarat, India</span>
               </div>
-              <span class="dir-badge-verified"><i class="fa-solid fa-shield-check"></i> Verified</span>
+              <span class="dir-badge-verified"><i class="fa-solid fa-shield-halved"></i> Verified</span>
             </div>
             <div class="dir-info-list">
               <div class="dir-info-row"><span>Category:</span><strong>Porcelain Tiles &amp; Sanitaryware</strong></div>
@@ -1254,7 +1317,7 @@
                 <strong class="dir-title">Hyderabad Bio-Pharma Labs</strong>
                 <span class="dir-country"><i class="fa-solid fa-location-dot"></i> Hyderabad, Telangana, India</span>
               </div>
-              <span class="dir-badge-verified"><i class="fa-solid fa-shield-check"></i> Verified</span>
+              <span class="dir-badge-verified"><i class="fa-solid fa-shield-halved"></i> Verified</span>
             </div>
             <div class="dir-info-list">
               <div class="dir-info-row"><span>Category:</span><strong>Active Pharmaceutical Ingredients</strong></div>
@@ -1454,7 +1517,7 @@
             <button class="btn-action-outline" style="width:100%; justify-content:center;" onclick="showToast('Generating FTA Duty Savings Report...')"><i class="fa-solid fa-download"></i> Download Report (PDF)</button>
           </div>
           <div class="report-card">
-            <div class="report-card-title"><i class="fa-solid fa-shield-check color-green"></i> Annual ESG &amp; Compliance Audit</div>
+            <div class="report-card-title"><i class="fa-solid fa-shield-halved color-green"></i> Annual ESG &amp; Compliance Audit</div>
             <p style="font-size:11.5px; color:#475569; margin-bottom:10px;">Achieved <strong>99.4% audit score</strong> with zero customs infractions and 100% paperless digital Bill of Lading adoption.</p>
             <button class="btn-action-outline" style="width:100%; justify-content:center;" onclick="showToast('Generating ESG &amp; Compliance Statement...')"><i class="fa-solid fa-download"></i> Download Report (PDF)</button>
           </div>
@@ -1923,7 +1986,7 @@
           </div>
           <div style="display:flex; justify-content:flex-end; gap:10px; margin-top:10px;">
             <button type="button" class="btn-action-outline" onclick="closeModal('modalUploadDoc')">Cancel</button>
-            <button type="submit" class="btn-action-primary"><i class="fa-solid fa-shield-check"></i> Upload &amp; Verify</button>
+            <button type="submit" class="btn-action-primary"><i class="fa-solid fa-shield-halved"></i> Upload &amp; Verify</button>
           </div>
         </form>
       </div>
@@ -1932,52 +1995,148 @@
 
   <!-- 5. TRACK SHIPMENT MODAL -->
   <div class="dash-modal-overlay" id="modalTrackShipment">
-    <div class="dash-modal-card" style="max-width: 600px;">
-      <div class="dash-modal-header">
-        <h3><i class="fa-solid fa-location-crosshairs color-teal"></i> Live Satellite GPS Cargo Tracking</h3>
-        <button class="dash-modal-close" onclick="closeModal('modalTrackShipment')">&times;</button>
+    <div class="dash-modal-card track-modal-card">
+      <div class="dash-modal-header track-modal-header">
+        <div class="track-modal-title-left">
+          <div class="radar-pulse-avatar">
+            <i class="fa-solid fa-satellite-dish"></i>
+          </div>
+          <div class="track-modal-title-text">
+            <h3>Live Satellite GPS Cargo Tracking</h3>
+            <span class="track-modal-subtitle">Inmarsat-C AIS Real-Time Maritime Telemetry</span>
+          </div>
+        </div>
+        <div style="display: flex; align-items: center; gap: 12px;">
+          <span class="ais-live-badge"><span class="ais-dot-beacon"></span> AIS SYNC: LIVE</span>
+          <button class="dash-modal-close" onclick="closeModal('modalTrackShipment')" title="Close Window">&times;</button>
+        </div>
       </div>
-      <div class="dash-modal-body">
-        <div class="track-route-header">
-          <div>
-            <strong style="font-size: 13.5px; color: var(--navy-dark);" id="modalTrackShpId">SHP-2025-0891</strong>
-            <p style="font-size: 11px; color: #475569; margin: 2px 0 0;" id="modalTrackProduct">Organic Basmati Rice (24 MT)</p>
+      
+      <div class="dash-modal-body" style="gap: 14px; max-height: calc(90vh - 70px); overflow-y: auto;">
+        <!-- Telemetry Overview Header Card -->
+        <div class="track-overview-card">
+          <div class="track-overview-top">
+            <div>
+              <span class="track-shp-pill"><i class="fa-solid fa-ship"></i> <span id="modalTrackShpId">SHP-2025-0886</span></span>
+              <strong class="track-prod-title" id="modalTrackProduct">Sesame Oil (24 MT Premium Grade)</strong>
+            </div>
+            <div class="track-overview-badges">
+              <span class="status-pill status-transit" id="modalTrackStatus"><span class="ais-dot-beacon" style="background:#0284c7; box-shadow:0 0 6px #0284c7;"></span> In Transit</span>
+              <span class="track-eta-badge" id="modalTrackEta"><i class="fa-regular fa-clock"></i> ETA: May 14, 2025</span>
+            </div>
           </div>
-          <div style="text-align: right;">
-            <span class="status-pill status-transit" id="modalTrackStatus">In Transit</span>
-            <p style="font-size: 10.5px; color: #64748b; margin: 3px 0 0;">ETA: May 14, 2025</p>
+
+          <!-- Port Route Corridor -->
+          <div class="track-corridor-bar">
+            <div class="corridor-point">
+              <span class="corridor-label">Port of Origin</span>
+              <strong class="corridor-name" id="modalTrackOrigin">Mundra Port (INMUN1)</strong>
+            </div>
+            <div class="corridor-transit">
+              <div class="corridor-icon-track">
+                <i class="fa-solid fa-anchor"></i>
+                <i class="fa-solid fa-arrow-right-long" style="font-size: 13px;"></i>
+                <i class="fa-solid fa-ship"></i>
+              </div>
+              <span class="corridor-dist">Vessel Corridor: Arabian Sea</span>
+            </div>
+            <div class="corridor-point" style="text-align: right;">
+              <span class="corridor-label">Destination Port</span>
+              <strong class="corridor-name" id="modalTrackDest">Port of Singapore (SGSIN)</strong>
+            </div>
+          </div>
+
+          <!-- Voyage Progress Bar -->
+          <div class="voyage-progress-container">
+            <div class="voyage-progress-labels">
+              <span>Voyage Completion Track</span>
+              <strong id="modalTrackProgressPercent">68% Completed (On Schedule)</strong>
+            </div>
+            <div class="voyage-track-bg">
+              <div class="voyage-track-fill" id="modalTrackProgressBar" style="width: 68%;"></div>
+            </div>
           </div>
         </div>
 
-        <div style="position: relative; border-radius: 8px; overflow: hidden; height: 160px; margin-bottom: 12px; border: 1px solid #cce1f5;">
-          <img src="images/dashboard_crop/world_map_graphic.jpg" alt="Vessel GPS Route" style="width: 100%; height: 100%; object-fit: cover;">
-          <div style="position: absolute; bottom: 8px; left: 8px; background: rgba(7,25,47,0.85); color: #fff; padding: 4px 8px; border-radius: 4px; font-size: 10.5px;">
-            <i class="fa-solid fa-satellite-dish" style="color: #10b981;"></i> Vessel: <strong>Maersk Mc-Kinney (23.4°N, 64.8°E)</strong>
+        <!-- High-Tech Vessel GPS Satellite Radar Map Frame -->
+        <div class="track-map-viewport">
+          <img src="images/dashboard_crop/vessel_gps_radar_map.jpg" alt="Vessel GPS Route Radar" class="track-map-img">
+          <div class="track-map-scanline"></div>
+          
+          <div class="hud-tag hud-top-left">
+            <i class="fa-solid fa-satellite color-teal"></i> DGPS 3D FIX &bull; INMARSAT-C ACTIVE
+          </div>
+          <div class="hud-tag hud-bottom-left">
+            <i class="fa-solid fa-ship"></i> Vessel: <strong id="modalTrackVessel">Maersk Mc-Kinney (IMO 9632064)</strong>
+          </div>
+          <div class="hud-tag hud-bottom-right">
+            <i class="fa-solid fa-crosshairs"></i> 23.412°N, 64.821°E &bull; 19.4 Knots
           </div>
         </div>
 
-        <strong style="font-size: 12px; color: var(--navy-dark);"><i class="fa-solid fa-route color-blue"></i> Route Milestones:</strong>
-        <div class="track-timeline-steps">
-          <div class="timeline-step-node completed">
-            <span class="step-node-name">Port Departure &bull; Mundra Port (INMUN1)</span>
-            <span class="step-node-time">Apr 26, 2025 &bull; Customs Export Cleared &amp; Loaded</span>
+        <!-- Real-Time Telemetry Stats Grid -->
+        <div class="track-telemetry-grid">
+          <div class="telemetry-item">
+            <span class="telemetry-lbl">Cruising Speed</span>
+            <span class="telemetry-val" style="color: #0284c7;"><i class="fa-solid fa-gauge-high"></i> 19.4 Knots</span>
           </div>
-          <div class="timeline-step-node completed">
-            <span class="step-node-name">Arabian Sea Corridor Transit</span>
-            <span class="step-node-time">Apr 29, 2025 &bull; Speed: 19.4 Knots (Nominal Conditions)</span>
+          <div class="telemetry-item">
+            <span class="telemetry-lbl">Course Bearing</span>
+            <span class="telemetry-val"><i class="fa-regular fa-compass"></i> 291° WNW</span>
           </div>
-          <div class="timeline-step-node active">
-            <span class="step-node-name">Suez Canal Maritime Waypoint (Current Location)</span>
-            <span class="step-node-time">Live Status &bull; On-schedule for Mediterranean entry</span>
+          <div class="telemetry-item">
+            <span class="telemetry-lbl">Maritime Zone</span>
+            <span class="telemetry-val" style="color: #059669;"><i class="fa-solid fa-water"></i> Gulf Corridor</span>
           </div>
-          <div class="timeline-step-node">
-            <span class="step-node-name">Customs Pre-Arrival &bull; Port of Rotterdam, Netherlands</span>
-            <span class="step-node-time">Expected: May 14, 2025 &bull; Digital BL Registered</span>
+          <div class="telemetry-item">
+            <span class="telemetry-lbl">Next Waypoint</span>
+            <span class="telemetry-val" style="color: #475569;"><i class="fa-solid fa-map-pin"></i> Suez Approach</span>
           </div>
         </div>
 
-        <div style="display:flex; justify-content:flex-end; gap:10px; margin-top:6px;">
-          <button type="button" class="btn-action-primary" onclick="closeModal('modalTrackShipment')">Close Tracking</button>
+        <!-- Route Milestones Vertical Timeline -->
+        <div class="track-milestones-box">
+          <div class="milestones-title-row">
+            <strong><i class="fa-solid fa-route color-blue"></i> Route Milestones &amp; Waypoint Log</strong>
+            <span>4 of 4 Milestones Monitored</span>
+          </div>
+          <div class="track-steps-list">
+            <div class="track-step-row done">
+              <div class="step-marker"><i class="fa-solid fa-check"></i></div>
+              <span class="track-step-name">Port Departure &bull; Mundra Port (INMUN1)</span>
+              <span class="track-step-time">Apr 26, 2025 &bull; Customs Export Cleared &amp; Stowed</span>
+            </div>
+            <div class="track-step-row done">
+              <div class="step-marker"><i class="fa-solid fa-check"></i></div>
+              <span class="track-step-name">Arabian Sea Corridor Transit</span>
+              <span class="track-step-time">Apr 29, 2025 &bull; Deep-sea waypoint cleared at 19.4 knots</span>
+            </div>
+            <div class="track-step-row active">
+              <div class="step-marker"><i class="fa-solid fa-location-dot"></i></div>
+              <span class="track-step-name">Suez Canal Maritime Waypoint (Current Location)</span>
+              <span class="track-step-time">Live Status &bull; On-schedule for Mediterranean entry &bull; Sea state calm</span>
+            </div>
+            <div class="track-step-row">
+              <div class="step-marker"><i class="fa-regular fa-flag"></i></div>
+              <span class="track-step-name">Customs Pre-Arrival &bull; Port of Destination</span>
+              <span class="track-step-time">Expected: May 14, 2025 &bull; Digital Bill of Lading Registered</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal Footer Actions -->
+        <div class="track-modal-footer">
+          <button type="button" class="btn-modal-action-sec" onclick="showToast('Generating official AIS Voyage Tracking Certificate &amp; Manifest (PDF)...')">
+            <i class="fa-solid fa-file-pdf" style="color: #ef4444;"></i> Export Voyage Certificate (PDF)
+          </button>
+          <div style="display: flex; gap: 8px;">
+            <button type="button" class="btn-modal-action-sec" onclick="refreshTrackingRadar()">
+              <i class="fa-solid fa-arrows-rotate" id="refreshAisIcon"></i> Ping Telemetry
+            </button>
+            <button type="button" class="btn-modal-action-pri" onclick="closeModal('modalTrackShipment')">
+              <i class="fa-solid fa-check"></i> Close Tracking
+            </button>
+          </div>
         </div>
       </div>
     </div>
@@ -2026,6 +2185,106 @@
     </div>
   </div>
 
+  <!-- 7. FULL TRADE MAP MODAL -->
+  <div class="dash-modal-overlay" id="modalFullTradeMap">
+    <div class="dash-modal-card modal-map-expanded" style="max-width: 920px; width: 95%;">
+      <div class="dash-modal-header" style="background: linear-gradient(135deg, #021631 0%, #0c3666 100%); color: #ffffff; border-bottom: 1px solid rgba(255,255,255,0.1); border-radius: 12px 12px 0 0; padding: 16px 20px;">
+        <div>
+          <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+            <i class="fa-solid fa-earth-americas" style="color: #38bdf8; font-size: 20px;"></i>
+            <h3 style="color: #ffffff; margin: 0; font-size: 16.5px; font-weight: 700;">Global Trade Network &amp; Logistics Corridors</h3>
+            <span style="display: inline-flex; align-items: center; gap: 6px; padding: 3px 10px; border-radius: 9999px; background: rgba(56, 189, 248, 0.15); border: 1px solid rgba(56, 189, 248, 0.4); color: #38bdf8; font-size: 11px; font-weight: 600;">
+              <span class="radar-dot-pulse"></span> 12 Active Corridors Live
+            </span>
+          </div>
+          <p style="margin: 4px 0 0; font-size: 12px; color: #94a3b8;">Real-time maritime shipping lanes, customs clearance gateways, and multimodal air routes connecting India to 50+ global destinations.</p>
+        </div>
+        <button class="dash-modal-close" onclick="closeModal('modalFullTradeMap')" style="color: #cbd5e1; font-size: 22px; cursor: pointer; background: transparent; border: none;">&times;</button>
+      </div>
+
+      <div class="dash-modal-body" style="padding: 20px; background: #07172b; border-radius: 0 0 12px 12px;">
+        <!-- Large Interactive Map Frame -->
+        <div style="position: relative; border-radius: 12px; overflow: hidden; border: 1px solid rgba(56, 189, 248, 0.25); background: #030d1a; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+          <img src="images/dashboard_crop/dashboard_world_map_hd.jpg" alt="Master Global Trade Map" style="width: 100%; height: auto; max-height: 420px; object-fit: cover; display: block;">
+          
+          <!-- Animated Radar Scanline -->
+          <div class="modal-map-scanline"></div>
+
+          <!-- Interactive Trade Markers -->
+          <div class="map-beacon-pin pin-mumbai" style="position:absolute; left:67%; top:48%;">
+            <span class="beacon-pulse-ring"></span>
+            <span class="beacon-core-dot"></span>
+            <span class="beacon-tooltip">Mumbai HQ &bull; JNPT Port (Central Ops)</span>
+          </div>
+          <div class="map-beacon-pin pin-dubai" style="position:absolute; left:59%; top:43%;">
+            <span class="beacon-pulse-ring"></span>
+            <span class="beacon-core-dot"></span>
+            <span class="beacon-tooltip">Dubai JAFZA &bull; Middle East Gateway</span>
+          </div>
+          <div class="map-beacon-pin pin-rotterdam" style="position:absolute; left:49%; top:30%;">
+            <span class="beacon-pulse-ring"></span>
+            <span class="beacon-core-dot"></span>
+            <span class="beacon-tooltip">Port of Rotterdam &bull; EU Central Hub</span>
+          </div>
+          <div class="map-beacon-pin pin-newyork" style="position:absolute; left:28%; top:35%;">
+            <span class="beacon-pulse-ring"></span>
+            <span class="beacon-core-dot"></span>
+            <span class="beacon-tooltip">New York / NJ Port &bull; Americas Gateway</span>
+          </div>
+          <div class="map-beacon-pin pin-singapore" style="position:absolute; left:76%; top:60%;">
+            <span class="beacon-pulse-ring"></span>
+            <span class="beacon-core-dot"></span>
+            <span class="beacon-tooltip">Singapore Port &bull; ASEAN Straits</span>
+          </div>
+
+          <!-- Telemetry Bar -->
+          <div style="position: absolute; bottom: 12px; left: 14px; right: 14px; display: flex; justify-content: space-between; align-items: center; background: rgba(7, 25, 47, 0.85); backdrop-filter: blur(8px); padding: 8px 14px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); font-size: 11.5px; color: #cbd5e1; flex-wrap: wrap; gap: 8px;">
+            <div style="display: flex; gap: 16px; flex-wrap: wrap;">
+              <span><i class="fa-solid fa-ship" style="color: #38bdf8;"></i> <strong>8 Sea Routes</strong></span>
+              <span><i class="fa-solid fa-plane" style="color: #fbbf24;"></i> <strong>4 Air Lanes</strong></span>
+              <span><i class="fa-solid fa-boxes-packing" style="color: #34d399;"></i> <strong>1,248 Active Shipments</strong></span>
+            </div>
+            <span style="color: #38bdf8; font-size: 11px;"><i class="fa-solid fa-satellite"></i> GPS Satellite Tracking Active (Live Sync)</span>
+          </div>
+        </div>
+
+        <!-- Corridors Cards Grid -->
+        <div style="margin-top: 16px; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px;">
+          <div style="background: rgba(14, 43, 77, 0.6); border: 1px solid rgba(56,189,248,0.2); border-radius: 8px; padding: 12px; color: #e2e8f0;">
+            <div style="font-size: 10.5px; color: #38bdf8; font-weight: 600; text-transform: uppercase;">Maritime Corridor #1</div>
+            <div style="font-size: 13px; font-weight: 700; color: #ffffff; margin: 4px 0 2px;">Mundra &rarr; Rotterdam</div>
+            <div style="font-size: 11px; color: #94a3b8;">18 Days &bull; 4 Vessels in Transit</div>
+          </div>
+          <div style="background: rgba(14, 43, 77, 0.6); border: 1px solid rgba(56,189,248,0.2); border-radius: 8px; padding: 12px; color: #e2e8f0;">
+            <div style="font-size: 10.5px; color: #38bdf8; font-weight: 600; text-transform: uppercase;">Maritime Corridor #2</div>
+            <div style="font-size: 13px; font-weight: 700; color: #ffffff; margin: 4px 0 2px;">JNPT Mumbai &rarr; Dubai</div>
+            <div style="font-size: 11px; color: #94a3b8;">4 Days &bull; 6 Vessels in Transit</div>
+          </div>
+          <div style="background: rgba(14, 43, 77, 0.6); border: 1px solid rgba(56,189,248,0.2); border-radius: 8px; padding: 12px; color: #e2e8f0;">
+            <div style="font-size: 10.5px; color: #38bdf8; font-weight: 600; text-transform: uppercase;">Maritime Corridor #3</div>
+            <div style="font-size: 13px; font-weight: 700; color: #ffffff; margin: 4px 0 2px;">Chennai &rarr; Hamburg</div>
+            <div style="font-size: 11px; color: #94a3b8;">21 Days &bull; 3 Vessels in Transit</div>
+          </div>
+          <div style="background: rgba(14, 43, 77, 0.6); border: 1px solid rgba(56,189,248,0.2); border-radius: 8px; padding: 12px; color: #e2e8f0;">
+            <div style="font-size: 10.5px; color: #38bdf8; font-weight: 600; text-transform: uppercase;">Air Cargo Corridor</div>
+            <div style="font-size: 13px; font-weight: 700; color: #ffffff; margin: 4px 0 2px;">Delhi &rarr; London (LHR)</div>
+            <div style="font-size: 11px; color: #94a3b8;">9 Hours &bull; Priority Express Cargo</div>
+          </div>
+        </div>
+
+        <!-- Footer Actions -->
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 18px; padding-top: 14px; border-top: 1px solid rgba(255,255,255,0.1); flex-wrap: wrap; gap: 10px;">
+          <a href="global-presence.html" class="btn-action-outline" style="color: #38bdf8; border-color: rgba(56,189,248,0.4); background: rgba(56,189,248,0.08); text-decoration: none; display: inline-flex; align-items: center; gap: 8px; padding: 8px 16px; border-radius: 8px; font-size: 12px; font-weight: 600;" target="_blank">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> Open Full 18 Global HQs Page
+          </a>
+          <button type="button" class="btn-action-primary" onclick="closeModal('modalFullTradeMap')" style="display: inline-flex; align-items: center; gap: 8px; padding: 8px 18px; border-radius: 8px; font-size: 12px; font-weight: 600; cursor: pointer;">
+            <i class="fa-solid fa-check"></i> Close Map Matrix
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- ================= NOTIFICATION TOAST ================= -->
   <div class="toast-popup" id="dashboardToast" role="alert" aria-live="polite">
     <i class="fa-solid fa-circle-check toast-icon" id="toastIcon"></i>
@@ -2045,6 +2304,19 @@
       setTimeout(() => {
         toast.classList.remove('show');
       }, 3200);
+    }
+
+    // --- Global Card Action Button Handlers ---
+    function handleShipmentStatusDetails() {
+      switchTab('shipments');
+      showToast('Displaying status breakdown analytics for 1,248 active export consignments.');
+    }
+
+    function handleViewAllShipments() {
+      switchTab('shipments');
+      const allFilterBtn = document.querySelector('#shipmentFilterPills .filter-pill-btn[data-filter="all"]');
+      if (allFilterBtn) allFilterBtn.click();
+      showToast('Displaying complete ledger of all 1,248 active export consignments.');
     }
 
     // --- Tab Switching Logic ---
@@ -2151,9 +2423,34 @@
     function openTrackingModal(shpId, productName, route) {
       const elId = document.getElementById('modalTrackShpId');
       const elProd = document.getElementById('modalTrackProduct');
-      if (elId) elId.textContent = shpId;
-      if (elProd) elProd.textContent = `${productName} (${route})`;
+      const elOrigin = document.getElementById('modalTrackOrigin');
+      const elDest = document.getElementById('modalTrackDest');
+
+      if (elId) elId.textContent = shpId || 'SHP-2025-0886';
+      if (elProd) elProd.textContent = productName ? `${productName} (Active Consignment)` : 'Sesame Oil (24 MT Premium Grade)';
+      
+      if (route) {
+        const parts = route.split(/→|->|   |\s{2,}/);
+        if (parts.length >= 2) {
+          if (elOrigin) elOrigin.textContent = parts[0].trim();
+          if (elDest) elDest.textContent = parts[1].trim();
+        } else {
+          if (elOrigin) elOrigin.textContent = 'Mundra Port (INMUN1)';
+          if (elDest) elDest.textContent = route.trim();
+        }
+      }
+
       openModal('modalTrackShipment');
+    }
+
+    function refreshTrackingRadar() {
+      const icon = document.getElementById('refreshAisIcon');
+      if (icon) icon.classList.add('fa-spin');
+      showToast('Connecting to Inmarsat-C satellite network for live AIS telemetry...');
+      setTimeout(() => {
+        if (icon) icon.classList.remove('fa-spin');
+        showToast('AIS telemetry updated: Vessel speed 19.4 Knots, position 23.412°N, 64.821°E confirmed.');
+      }, 1000);
     }
 
     // --- Form Submissions ---
@@ -2180,8 +2477,10 @@
           <td>${date}</td>
           <td><span class="status-pill status-transit">In Transit</span></td>
           <td style="text-align: right;">
-            <button class="btn-table-action" onclick="openTrackingModal('${shpId}', '${prod}', '${origin} → ${dest}')"><i class="fa-solid fa-location-crosshairs"></i> Track GPS</button>
-            <button class="btn-table-action" onclick="showToast('Downloading Cargo Manifest for ${shpId}...')"><i class="fa-solid fa-download"></i></button>
+            <div class="table-actions-group">
+              <button class="btn-table-action" onclick="openTrackingModal('${shpId}', '${prod}', '${origin} → ${dest}')"><i class="fa-solid fa-location-crosshairs"></i> Track GPS</button>
+              <button class="btn-table-icon" title="Download Cargo Manifest" onclick="showToast('Downloading Cargo Manifest for ${shpId}...')"><i class="fa-solid fa-download"></i></button>
+            </div>
           </td>
         `;
         tbody.prepend(tr);
@@ -2210,7 +2509,7 @@
               <strong class="dir-title">${name}</strong>
               <span class="dir-country"><i class="fa-solid fa-location-dot"></i> ${loc}</span>
             </div>
-            <span class="dir-badge-verified"><i class="fa-solid fa-shield-check"></i> Verified</span>
+            <span class="dir-badge-verified"><i class="fa-solid fa-shield-halved"></i> Verified</span>
           </div>
           <div class="dir-info-list">
             <div class="dir-info-row"><span>Category:</span><strong>${cat}</strong></div>
